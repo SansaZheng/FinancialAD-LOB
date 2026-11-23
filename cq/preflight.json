@@ -1,0 +1,56 @@
+{
+  "name": "FinancialAD-LOB storage and legacy-input preflight 20261123",
+  "work": "FinancialAD-LOB",
+  "code": {
+    "git": "SansaZheng/FinancialAD-LOB",
+    "commit": "f0910311eb1771209369705fdba9976e94ff0515"
+  },
+  "home": {
+    "name": "financialad-lob",
+    "from": "c224"
+  },
+  "command": [
+    "python3",
+    "scripts/preflight.py"
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "resources": {
+    "gpus": 0,
+    "cpus": 1,
+    "ram_gb": 1,
+    "disk_gb": 0.05
+  },
+  "limits": {
+    "max_hours": 0.1,
+    "max_attempts": 1,
+    "max_usd": 0
+  },
+  "placement": {
+    "target": "school",
+    "allow_rent": false,
+    "prefer": [],
+    "avoid": []
+  },
+  "outputs": {
+    "dest": "/home/sudingli/cq-home/financialad-lob/results/20261123-preflight",
+    "expect": [
+      {
+        "path": "preflight.json",
+        "contains": "\"storage_passed\": true"
+      },
+      {
+        "path": "progress.txt",
+        "contains": "1/1"
+      }
+    ],
+    "progress": {
+      "path": "progress.txt",
+      "stall_min": 3
+    }
+  },
+  "idempotent": true
+}

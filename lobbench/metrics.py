@@ -52,18 +52,33 @@ def summarize(records, scores, threshold):
     positive = sum(y)
     negative = len(y) - positive
     events = defaultdict(list)
+    event_intervals = {}
+    intervals_complete = True
     for r, s in zip(records, scores):
         if r["label"]:
-            events[(r["source_id"], r["event_id"])].append((r["end"], s >= threshold))
+            key = (r["source_id"], r["event_id"])
+            events[key].append((r["end"], s >= threshold))
+            if "event_start" not in r or "event_end" not in r:
+                intervals_complete = False
+            else:
+                interval = (r["event_start"], r["event_end"])
+                if any(not math.isfinite(v) for v in interval) or interval[0] > interval[1]:
+                    raise ValueError("Invalid event interval")
+                if key in event_intervals and event_intervals[key] != interval:
+                    raise ValueError("Inconsistent event interval")
+                event_intervals[key] = interval
     # An alarm is observable only at window END; never backdate to window start.
     hit_events = sum(any(hit for _, hit in rows) for rows in events.values())
+    timely_hits = sum(any(hit and event_intervals[key][0] <= t <= event_intervals[key][1]
+                         for t, hit in rows) for key, rows in events.items()) if intervals_complete else None
     return {"average_precision": average_precision(y, scores), "prevalence": positive / len(y),
             "window_precision": tp / (tp + fp) if tp + fp else 0.0,
             "window_recall": tp / positive if positive else None,
             "window_fpr": fp / negative if negative else None,
-            "event_recall": hit_events / len(events) if events else None,
+            "window_covered_event_recall": hit_events / len(events) if events else None,
+            "event_recall": timely_hits / len(events) if events and timely_hits is not None else None,
             "event_count": len(events), "threshold": threshold,
-            "note": "Window FPR is not alarms/hour. Event delay requires authoritative onset timestamps."}
+            "note": "Window FPR is not alarms/hour. Covered-event recall is a proxy; timely event recall requires authoritative event intervals."}
 
 
 def paired_block_bootstrap(records, scores_a, scores_b, repeats=2000, seed=0):

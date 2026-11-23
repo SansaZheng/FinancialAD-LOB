@@ -1,0 +1,175 @@
+{
+  "verified_at": "2026-11-23T17:37:02.646648+08:00",
+  "repository": "SansaZheng/FinancialAD-LOB",
+  "commit": "f0910311eb1771209369705fdba9976e94ff0515",
+  "method": "independent fresh SSH clone then SHA256 comparison of every tracked file",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 81,
+      "sha256": "a1c40fdaa79c638f26e3cb238f03e6e7793943f30f22c30c1d32c005327cf493"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2957,
+      "sha256": "dfb152f4eb59729a3772cc4b054ddbdecacff753e6b515f0c9c35071c75870dd"
+    },
+    {
+      "path": "configs/combined.engineering-example.json",
+      "bytes": 140,
+      "sha256": "d17f02aee4140ce62837e03f3bfc965d06f9b30e05e86d519528ce340efd8e7b"
+    },
+    {
+      "path": "configs/date.engineering-example.json",
+      "bytes": 100,
+      "sha256": "a1a9f84d7d81d18407677f4b408afc5c17e926cf72de4520a4e83243e00a72cb"
+    },
+    {
+      "path": "configs/stock.engineering-example.json",
+      "bytes": 179,
+      "sha256": "7174f64940097748fce0000d2f878506076edab39aafe2b9820ae40597c10987"
+    },
+    {
+      "path": "docs/baselines.md",
+      "bytes": 2126,
+      "sha256": "fc21155ebcb6a4f98eeab20871f38f484d6f1170cbf03120766d4a7b479c3635"
+    },
+    {
+      "path": "docs/data-contract.md",
+      "bytes": 3259,
+      "sha256": "6de2f58ff1b5ffe27dccf3c4c94427400f3b48a0946a11ba90988e7d23bd52af"
+    },
+    {
+      "path": "docs/method.md",
+      "bytes": 2324,
+      "sha256": "8c7f78dc3bea41f6d465caac2431bc88f69d236d3641c929f3a7d88c23d4c141"
+    },
+    {
+      "path": "docs/protocol.md",
+      "bytes": 5736,
+      "sha256": "c848f11a894e945e456ac3529d97c45ba36b9375cb696533bcf218e3d47a633f"
+    },
+    {
+      "path": "docs/steps.md",
+      "bytes": 2309,
+      "sha256": "c4fd073f30291296024b834e3349b60db348365d846ae163448e15cff103a6da"
+    },
+    {
+      "path": "lobbench/__init__.py",
+      "bytes": 90,
+      "sha256": "fd516c9080a9ee6fafba57d1d8f47c1e678701c5471e5d4c38df8d8c47d3438a"
+    },
+    {
+      "path": "lobbench/liquidity.py",
+      "bytes": 2696,
+      "sha256": "1606065981a57809f5453398b471563dd2202c508f5922af30ba04e646536e0e"
+    },
+    {
+      "path": "lobbench/metrics.py",
+      "bytes": 3855,
+      "sha256": "325ce73d9cf2dc6446fa5fd5a8323f72e45003c7d4649d33923d758cb0dfafd0"
+    },
+    {
+      "path": "lobbench/models.py",
+      "bytes": 2037,
+      "sha256": "b7e8747303d4873caba949f2f8804604dd038834ff594c113c7d5f33cccf6d16"
+    },
+    {
+      "path": "lobbench/protocol.py",
+      "bytes": 5273,
+      "sha256": "68120079fe7106b3f850d18099180badc044474bd96257547264dac9ef2a9305"
+    },
+    {
+      "path": "lobbench/run.py",
+      "bytes": 7277,
+      "sha256": "7c8e20fda3384c8be75c7bfbb163e367d4698f871c7f6eb307d9076f9734504d"
+    },
+    {
+      "path": "migration/legacy-inventory.json",
+      "bytes": 48606,
+      "sha256": "7b6bb19c8b52fb3904c4586338fd06ea969dcf22f8f116c6943176981ac31ae2"
+    },
+    {
+      "path": "migration/status.md",
+      "bytes": 1551,
+      "sha256": "5a5741a58491dfa250e9fd6bef22fab165c9266c6dc29e41271c02c559ba4881"
+    },
+    {
+      "path": "paper/workflow/config.json",
+      "bytes": 1515,
+      "sha256": "5fbe9be6ae64b1b8e583a408bf10cfe055fb0db5d903b145beb70947858d4191"
+    },
+    {
+      "path": "paper/workflow/current.md",
+      "bytes": 362,
+      "sha256": "c6a6c2d91aad410ba2727d4c4ab45fb2e0ebb4f37d11001cfd8a858fb2f68389"
+    },
+    {
+      "path": "paper/workflow/events.jsonl",
+      "bytes": 229,
+      "sha256": "6c04eee73861ebe995de6d9f67e2165f78c131a067a6b021461a54827d19b1ea"
+    },
+    {
+      "path": "paper/workflow/prompts/007-ccfa-protocol-and-archive.md",
+      "bytes": 1322,
+      "sha256": "c7a5b01369e7003dfd1259c1866eca7e0c9cc669350161e66f5e1d7b9d9464c5"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 74,
+      "sha256": "147ac8a93fec7521ce59c9914479b1c5bdcdcafea32749de37ba48dfecc8c4ca"
+    },
+    {
+      "path": "results/engineering/contracts/progress.txt",
+      "bytes": 14,
+      "sha256": "36f1f3b13e50450d3dbec3cc5e6bd7ba212d686d8be0cde7850467b5489d91d9"
+    },
+    {
+      "path": "results/engineering/contracts/qualification.json",
+      "bytes": 87,
+      "sha256": "5444fd099f9d28d7ab2a8644e1aaf11a0b4fdc5f070eb988ec49b3da85800bc2"
+    },
+    {
+      "path": "results/engineering/contracts/tests.log",
+      "bytes": 5769,
+      "sha256": "98f796f1ee4abaf3b1d3a6c4c99069a286ec80a000f1f9690af18f1f89457cc9"
+    },
+    {
+      "path": "results/engineering/local-versions.json",
+      "bytes": 112,
+      "sha256": "74d28e8a488184781d14e990e978b955784da64686ba6bf0668598fc4ba054ff"
+    },
+    {
+      "path": "scripts/inventory_legacy.py",
+      "bytes": 1301,
+      "sha256": "7b525fd6b8b703755441687e5e23047c0a2146a64b62910e8b00f159e16caa02"
+    },
+    {
+      "path": "scripts/preflight.py",
+      "bytes": 1712,
+      "sha256": "3dd31558ffd220c7cbdb65f3cabc58fad6322cb6f97aaf615fc4cb523afbc766"
+    },
+    {
+      "path": "scripts/qualify.py",
+      "bytes": 799,
+      "sha256": "e0afffb135b75ce4860bae7c426a64de9715eb1751950565d38da3348ff74146"
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "bytes": 3953,
+      "sha256": "fb199f120abe31d2222025eee75aa795c7ca2df980d1a6ae4edaf34507b4e6ca"
+    },
+    {
+      "path": "tests/test_models.py",
+      "bytes": 1335,
+      "sha256": "f2eb993638416f6a08661b951375f35a15c5cc2c606c8f92551f45dd33cf3942"
+    },
+    {
+      "path": "tests/test_runner.py",
+      "bytes": 2475,
+      "sha256": "552d5d8da6a52c5b50a51167c9191dffb70adc7c471302193ddcfe36bb7ed77a"
+    }
+  ],
+  "verified_file_count": 33,
+  "legacy_data_backed_up": false
+}

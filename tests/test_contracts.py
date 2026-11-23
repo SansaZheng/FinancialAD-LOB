@@ -1,7 +1,7 @@
 import math
 import unittest
 from lobbench.protocol import split_records, audit_splits, select_labels
-from lobbench.metrics import average_precision, threshold_at_fpr, paired_block_bootstrap
+from lobbench.metrics import average_precision, threshold_at_fpr, paired_block_bootstrap, summarize
 from lobbench.liquidity import price_aligned_changes, encode_snapshot
 
 
@@ -49,6 +49,17 @@ class Contracts(unittest.TestCase):
     def test_fpr_ties_are_conservative(self):
         t = threshold_at_fpr([0, 0, 0, 0, 1], [2, 2, 1, 0, 3], .25)
         self.assertGreater(t, 2)
+
+    def test_alarm_after_event_is_not_timely_detection(self):
+        r = record(1, start=0, end=10, label=1, event="e")
+        r.update(event_start=2, event_end=5)
+        result = summarize([r, record(2, start=20, end=21)], [1, 0], .5)
+        self.assertEqual(result["window_covered_event_recall"], 1)
+        self.assertEqual(result["event_recall"], 0)
+
+    def test_missing_event_interval_does_not_fabricate_recall(self):
+        result = summarize([record(1, label=1, event="e"), record(2)], [1, 0], .5)
+        self.assertIsNone(result["event_recall"])
 
     def test_block_bootstrap_requires_multiple_sessions(self):
         with self.assertRaisesRegex(ValueError, "multiple"):

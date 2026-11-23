@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-11-23T17:36:51.610416+08:00",
+  "command": [
+    "cq",
+    "--json",
+    "submit",
+    "cq/preflight.json"
+  ],
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "cq: POST /v1/jobs: HTTP 400 code.git: only repositories of SuuTTT can be cloned on the lab servers (push yours there; got SansaZheng)\n"
+}

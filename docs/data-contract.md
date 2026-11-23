@@ -13,6 +13,11 @@ they are not established merely by setting booleans. Store source URLs, download
 dates, hashes, tick size, timestamp units, session calendars, label definitions,
 license, generator revision and partition recipe alongside them.
 
+For timely event recall, positive rows additionally carry authoritative
+`event_start` and `event_end` in the same timestamp units. An alert emitted after
+the event ends is not a timely hit. Without these fields the runner reports only
+`window_covered_event_recall` as a proxy and leaves `event_recall` null.
+
 Never put IDs, stock names, date encodings, generator family, injected flags,
 future cancellation times, labels or future returns into the feature vector.
 Only data available by the endpoint may contribute. Normalization is fitted

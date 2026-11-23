@@ -1,0 +1,12 @@
+FinancialAD-LOB continuation — 2026-11-23
+Canonical repository: https://github.com/SansaZheng/FinancialAD-LOB
+New lightweight checkout: /Users/zyy/.local/share/financialad-lob/repo
+Current state: https://github.com/SansaZheng/FinancialAD-LOB/blob/main/paper/workflow/current.md
+
+Old files here are preserved iCloud placeholders; their contents have NOT yet
+been migrated or remotely checksum-verified. Do not delete them as if backed up.
+The new repository contains newly implemented code and documents, engineering
+checks and the legacy metadata inventory. CQ submission was rejected by its
+repository-owner allowlist; no job ID was created. Multi-date input is pending.
+
+中文结论：请从 GitHub 当前状态继续；旧数据尚未完成迁移，不能据此删除云端原件。
