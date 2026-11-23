@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-23",
+  "removed": "temporary independent GitHub verification clone only",
+  "verified_commit": "0c19a87121da7716e292b0ced8490a42a531ddd7",
+  "temporary_clone_allocated_bytes_before_removal": 253952,
+  "old_data_deleted_bytes": 0,
+  "old_data_files_deleted": 0,
+  "new_staging_code_retained": true,
+  "note": "Allocated clone bytes are not a measurement of net filesystem space gain; legacy iCloud originals preserved."
+}

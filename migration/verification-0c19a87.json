@@ -1,0 +1,225 @@
+{
+  "verified_at": "2026-11-23T17:40:20.082048+08:00",
+  "repository": "SansaZheng/FinancialAD-LOB",
+  "commit": "0c19a87121da7716e292b0ced8490a42a531ddd7",
+  "method": "independent SSH fetch and SHA256 comparison of every file",
+  "verified_file_count": 43,
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "a1c40fdaa79c638f26e3cb238f03e6e7793943f30f22c30c1d32c005327cf493",
+      "bytes": 81
+    },
+    {
+      "path": "README.md",
+      "sha256": "dfb152f4eb59729a3772cc4b054ddbdecacff753e6b515f0c9c35071c75870dd",
+      "bytes": 2957
+    },
+    {
+      "path": "configs/combined.engineering-example.json",
+      "sha256": "d17f02aee4140ce62837e03f3bfc965d06f9b30e05e86d519528ce340efd8e7b",
+      "bytes": 140
+    },
+    {
+      "path": "configs/date.engineering-example.json",
+      "sha256": "a1a9f84d7d81d18407677f4b408afc5c17e926cf72de4520a4e83243e00a72cb",
+      "bytes": 100
+    },
+    {
+      "path": "configs/stock.engineering-example.json",
+      "sha256": "7174f64940097748fce0000d2f878506076edab39aafe2b9820ae40597c10987",
+      "bytes": 179
+    },
+    {
+      "path": "cq/README.md",
+      "sha256": "61fc18bd5eecc6b85cb6dbf7c76663143ca4872ef167e57583519f7fec6371f2",
+      "bytes": 2295
+    },
+    {
+      "path": "cq/preflight.json",
+      "sha256": "2d5c2ade4fbe75bbfad58ec5fdf0eff6ef683bee41c4845e5863aa6c2dcfd5c5",
+      "bytes": 1124
+    },
+    {
+      "path": "docs/baselines.md",
+      "sha256": "fc21155ebcb6a4f98eeab20871f38f484d6f1170cbf03120766d4a7b479c3635",
+      "bytes": 2126
+    },
+    {
+      "path": "docs/data-contract.md",
+      "sha256": "23af0efccebe833989a13c5fe2719ba98db182d9d5f3758e1d186c1fd9ccef47",
+      "bytes": 3568
+    },
+    {
+      "path": "docs/method.md",
+      "sha256": "8c7f78dc3bea41f6d465caac2431bc88f69d236d3641c929f3a7d88c23d4c141",
+      "bytes": 2324
+    },
+    {
+      "path": "docs/protocol.md",
+      "sha256": "c848f11a894e945e456ac3529d97c45ba36b9375cb696533bcf218e3d47a633f",
+      "bytes": 5736
+    },
+    {
+      "path": "docs/steps.md",
+      "sha256": "c4fd073f30291296024b834e3349b60db348365d846ae163448e15cff103a6da",
+      "bytes": 2309
+    },
+    {
+      "path": "lobbench/__init__.py",
+      "sha256": "fd516c9080a9ee6fafba57d1d8f47c1e678701c5471e5d4c38df8d8c47d3438a",
+      "bytes": 90
+    },
+    {
+      "path": "lobbench/liquidity.py",
+      "sha256": "1606065981a57809f5453398b471563dd2202c508f5922af30ba04e646536e0e",
+      "bytes": 2696
+    },
+    {
+      "path": "lobbench/metrics.py",
+      "sha256": "bc979eda8d615d57556edcf445a4ea0d92c623263e75c46e5fb899151e91a59a",
+      "bytes": 4828
+    },
+    {
+      "path": "lobbench/models.py",
+      "sha256": "b7e8747303d4873caba949f2f8804604dd038834ff594c113c7d5f33cccf6d16",
+      "bytes": 2037
+    },
+    {
+      "path": "lobbench/protocol.py",
+      "sha256": "68120079fe7106b3f850d18099180badc044474bd96257547264dac9ef2a9305",
+      "bytes": 5273
+    },
+    {
+      "path": "lobbench/run.py",
+      "sha256": "7c8e20fda3384c8be75c7bfbb163e367d4698f871c7f6eb307d9076f9734504d",
+      "bytes": 7277
+    },
+    {
+      "path": "migration/github-verification.json",
+      "sha256": "8b771a87e01a09d73d6cecd84e9ab52df4ed1d75c5796145c91e2918c342df7b",
+      "bytes": 5589
+    },
+    {
+      "path": "migration/legacy-inventory.json",
+      "sha256": "7b6bb19c8b52fb3904c4586338fd06ea969dcf22f8f116c6943176981ac31ae2",
+      "bytes": 48606
+    },
+    {
+      "path": "migration/legacy-workspace-pointer.txt",
+      "sha256": "1dc8f1b6f1d07b0e8c6b20e64fef29a29924a012ecb0ba9b8a7e632ea6a064de",
+      "bytes": 789
+    },
+    {
+      "path": "migration/status.md",
+      "sha256": "5a5741a58491dfa250e9fd6bef22fab165c9266c6dc29e41271c02c559ba4881",
+      "bytes": 1551
+    },
+    {
+      "path": "paper/workflow/claim-map.md",
+      "sha256": "ace47db9b025be3628ae9271808a274e579589b767ed4fd7ab8652e107429133",
+      "bytes": 1340
+    },
+    {
+      "path": "paper/workflow/config-changes.md",
+      "sha256": "2265c1b817c1ffce06a51c9a90af46f4e93630efb594cbcfbbc936590947ce59",
+      "bytes": 1177
+    },
+    {
+      "path": "paper/workflow/config.json",
+      "sha256": "5fbe9be6ae64b1b8e583a408bf10cfe055fb0db5d903b145beb70947858d4191",
+      "bytes": 1515
+    },
+    {
+      "path": "paper/workflow/current.md",
+      "sha256": "117a813d83af9ef0d427b8041e9ab91395b5d0231a5932024747d114db5bc731",
+      "bytes": 2485
+    },
+    {
+      "path": "paper/workflow/events.jsonl",
+      "sha256": "f3c9d5b14808a7b60506b96edf2fc9e40c6e00a892703b9e77e73f59882160eb",
+      "bytes": 1256
+    },
+    {
+      "path": "paper/workflow/experiment-report.md",
+      "sha256": "0d3f70d06f313162e7ccbf9b0c6bd6a83e1212bb859b2ff3226810b04c8091de",
+      "bytes": 1567
+    },
+    {
+      "path": "paper/workflow/impact-analysis.md",
+      "sha256": "31f36d72d2f925ed92cfb865808dd405bf84be6b4d5c67fe8ae5a4bbf3616635",
+      "bytes": 1318
+    },
+    {
+      "path": "paper/workflow/prompts/007-ccfa-protocol-and-archive.md",
+      "sha256": "c7a5b01369e7003dfd1259c1866eca7e0c9cc669350161e66f5e1d7b9d9464c5",
+      "bytes": 1322
+    },
+    {
+      "path": "paper/workflow/state.md",
+      "sha256": "117a813d83af9ef0d427b8041e9ab91395b5d0231a5932024747d114db5bc731",
+      "bytes": 2485
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "147ac8a93fec7521ce59c9914479b1c5bdcdcafea32749de37ba48dfecc8c4ca",
+      "bytes": 74
+    },
+    {
+      "path": "results/engineering/contracts/progress.txt",
+      "sha256": "36f1f3b13e50450d3dbec3cc5e6bd7ba212d686d8be0cde7850467b5489d91d9",
+      "bytes": 14
+    },
+    {
+      "path": "results/engineering/contracts/qualification.json",
+      "sha256": "18045c86f318bda51799445bfecd4018203235607a12063ad0844072bcceec15",
+      "bytes": 87
+    },
+    {
+      "path": "results/engineering/contracts/tests.log",
+      "sha256": "d072241d9da34122482acf2e0f6e023ecb7b364c9d92490a4c20a88ed9f269c9",
+      "bytes": 6246
+    },
+    {
+      "path": "results/engineering/cq-submission.json",
+      "sha256": "238bf2c38c4ee6d7efa0ca596083ff92b03977ef7cd501a0022955179c89c2cf",
+      "bytes": 322
+    },
+    {
+      "path": "results/engineering/local-versions.json",
+      "sha256": "74d28e8a488184781d14e990e978b955784da64686ba6bf0668598fc4ba054ff",
+      "bytes": 112
+    },
+    {
+      "path": "scripts/inventory_legacy.py",
+      "sha256": "7b525fd6b8b703755441687e5e23047c0a2146a64b62910e8b00f159e16caa02",
+      "bytes": 1301
+    },
+    {
+      "path": "scripts/preflight.py",
+      "sha256": "3dd31558ffd220c7cbdb65f3cabc58fad6322cb6f97aaf615fc4cb523afbc766",
+      "bytes": 1712
+    },
+    {
+      "path": "scripts/qualify.py",
+      "sha256": "e0afffb135b75ce4860bae7c426a64de9715eb1751950565d38da3348ff74146",
+      "bytes": 799
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "sha256": "a19a70402ee025651d5df7235c90a3fb46ae74992137c7770c160e956ebd1f27",
+      "bytes": 4526
+    },
+    {
+      "path": "tests/test_models.py",
+      "sha256": "f2eb993638416f6a08661b951375f35a15c5cc2c606c8f92551f45dd33cf3942",
+      "bytes": 1335
+    },
+    {
+      "path": "tests/test_runner.py",
+      "sha256": "552d5d8da6a52c5b50a51167c9191dffb70adc7c471302193ddcfe36bb7ed77a",
+      "bytes": 2475
+    }
+  ],
+  "legacy_data_backed_up": false
+}
