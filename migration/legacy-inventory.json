@@ -1,0 +1,1898 @@
+{
+  "scope": "legacy LOB project only; excludes environment and caches",
+  "inventory_is_not_a_backup": true,
+  "files": [
+    {
+      "path": "README.md",
+      "logical_bytes": 3310,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": ".gitignore",
+      "logical_bytes": 26,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "requirements-lock.txt",
+      "logical_bytes": 266,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/2508.17086v2.pdf",
+      "logical_bytes": 1536079,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/claim-map.md",
+      "logical_bytes": 839,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/pilot-report.md",
+      "logical_bytes": 3601,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/evidence-audit.md",
+      "logical_bytes": 4263,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/006-cq-prior-state.md",
+      "logical_bytes": 1217,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/experiment-report.md",
+      "logical_bytes": 3601,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/remote-environment.md",
+      "logical_bytes": 1183,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/config.json",
+      "logical_bytes": 1835,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/state.md",
+      "logical_bytes": 1842,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/author-request.txt",
+      "logical_bytes": 974,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/events.jsonl",
+      "logical_bytes": 4035,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/compute-plan.md",
+      "logical_bytes": 3131,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/current.md",
+      "logical_bytes": 1842,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/data-recovery.md",
+      "logical_bytes": 3879,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/config-history/revision-3.json",
+      "logical_bytes": 1310,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/config-history/revision-2.json",
+      "logical_bytes": 468,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/config-history/revision-1.json",
+      "logical_bytes": 477,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/prompts/004-pilot.md",
+      "logical_bytes": 681,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/prompts/002-remote-setup.md",
+      "logical_bytes": 491,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/prompts/003-recover-data.md",
+      "logical_bytes": 529,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/prompts/005-capacity.md",
+      "logical_bytes": 634,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/prompts/006-cq-resume.md",
+      "logical_bytes": 786,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "paper/workflow/prompts/001-audit-reference.md",
+      "logical_bytes": 732,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/source-manifest.json",
+      "logical_bytes": 719,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/host-inventory.json",
+      "logical_bytes": 8487,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/provenance.json",
+      "logical_bytes": 591,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/jfds-archive.json",
+      "logical_bytes": 5205,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/smoke.json",
+      "logical_bytes": 340,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/jfds-compat.json",
+      "logical_bytes": 267,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/cq-resume-20261020.json",
+      "logical_bytes": 43785,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/baseline-2.joblib",
+      "logical_bytes": 32265,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/summary.json",
+      "logical_bytes": 1813,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/audit.json",
+      "logical_bytes": 493,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/baseline-0.pt",
+      "logical_bytes": 103989,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/baseline-1.pt",
+      "logical_bytes": 103989,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/delta-2.json",
+      "logical_bytes": 1527,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/delta-2.pt",
+      "logical_bytes": 108541,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/baseline-0.joblib",
+      "logical_bytes": 30329,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/run.log",
+      "logical_bytes": 1908,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/baseline-2.json",
+      "logical_bytes": 1534,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/test_predictions.npz",
+      "logical_bytes": 23352,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/delta-1.joblib",
+      "logical_bytes": 31977,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/baseline-0.json",
+      "logical_bytes": 1543,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/baseline-1.joblib",
+      "logical_bytes": 31705,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/baseline-1.json",
+      "logical_bytes": 1539,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/delta-2.joblib",
+      "logical_bytes": 31433,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/baseline-2.pt",
+      "logical_bytes": 103989,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/delta-1.pt",
+      "logical_bytes": 108541,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/delta-1.json",
+      "logical_bytes": 1535,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/delta-0.json",
+      "logical_bytes": 1540,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/delta-0.joblib",
+      "logical_bytes": 30329,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/pilot/delta-0.pt",
+      "logical_bytes": 108541,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/c203/gpu-check-0.json",
+      "logical_bytes": 478,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/c203/gpu-check-1.json",
+      "logical_bytes": 480,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/c203/gpu-check-1.log",
+      "logical_bytes": 448,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/c203/gpu-check-0.log",
+      "logical_bytes": 446,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/remote/smoke.log",
+      "logical_bytes": 340,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/remote/smoke.json",
+      "logical_bytes": 340,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "results/remote/environment.json",
+      "logical_bytes": 136,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "scripts/gpu_check.py",
+      "logical_bytes": 2152,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "scripts/audit_hosts.py",
+      "logical_bytes": 1210,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "data/source/INTC_2012-06-21_orderbook_5.csv",
+      "logical_bytes": 74390357,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "data/source/jfds.zip",
+      "logical_bytes": 192318152,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "data/source/INTC_2012-06-21_message_5.csv",
+      "logical_bytes": 23894821,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "data/pilot/manifest.json",
+      "logical_bytes": 8718,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "data/pilot/windows.npz",
+      "logical_bytes": 796805,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/JFDS/03_model_training.py",
+      "logical_bytes": 4877,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/JFDS/requirements.txt",
+      "logical_bytes": 68,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/JFDS/04_model_scoring.py",
+      "logical_bytes": 20407,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/JFDS/README.md",
+      "logical_bytes": 1934,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/JFDS/02_data_preprocessing.py",
+      "logical_bytes": 9124,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/JFDS/01_data_formatting.py",
+      "logical_bytes": 38627,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/JFDS/models/models.py",
+      "logical_bytes": 10726,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/JFDS/train/utilities.py",
+      "logical_bytes": 11552,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/JFDS/scoring/utilities.py",
+      "logical_bytes": 7895,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/JFDS/preprocessing/utilities.py",
+      "logical_bytes": 15805,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/JFDS/data/LOBSTER_SampleFiles_ReadMe.txt",
+      "logical_bytes": 4790,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/README.md",
+      "logical_bytes": 5774,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/requirements_final.txt",
+      "logical_bytes": 2290,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/.gitignore",
+      "logical_bytes": 714,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/config_template.json",
+      "logical_bytes": 1596,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/config/config.py",
+      "logical_bytes": 5050,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/config/__init__.py",
+      "logical_bytes": 116,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/utils/xmls.py",
+      "logical_bytes": 5372,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/utils/single.py",
+      "logical_bytes": 563,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/utils/__init__.py",
+      "logical_bytes": 340,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/utils/masking.py",
+      "logical_bytes": 832,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/utils/test.py",
+      "logical_bytes": 0,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/utils/logger.py",
+      "logical_bytes": 3476,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/utils/file.py",
+      "logical_bytes": 5332,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/utils/lob_utils.py",
+      "logical_bytes": 0,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/utils/cal_pre_recall.py",
+      "logical_bytes": 6994,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/utils/transform.py",
+      "logical_bytes": 555,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/utils/padding.py",
+      "logical_bytes": 2574,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/script/reconstruction_comparison.ipynb",
+      "logical_bytes": 1842140,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/script/run_experiments_configs_in_folder.sh",
+      "logical_bytes": 1019,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/script/docker-start.sh",
+      "logical_bytes": 500,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/script/scci.sh",
+      "logical_bytes": 227,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/new_lob_ae_pred.py",
+      "logical_bytes": 10562,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/TimesNet.py",
+      "logical_bytes": 7772,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/cnn_lstm_ae.py",
+      "logical_bytes": 6940,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/decoder.py",
+      "logical_bytes": 1742,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/complete_hcnn.py",
+      "logical_bytes": 4437,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/test_itransformer.ipynb",
+      "logical_bytes": 7216,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/Trans_LOB_large.py",
+      "logical_bytes": 8217,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/linear_autoencoder.py",
+      "logical_bytes": 2071,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/iTransformer.py",
+      "logical_bytes": 5531,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/dla.py",
+      "logical_bytes": 1952,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/__init__.py",
+      "logical_bytes": 584,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/CNN2.py",
+      "logical_bytes": 9370,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/TransLOB.py",
+      "logical_bytes": 13660,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/SimLOB.py",
+      "logical_bytes": 20754,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/Transformer.py",
+      "logical_bytes": 7614,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/TimeMixer.py",
+      "logical_bytes": 15149,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/new_lob_ae.py",
+      "logical_bytes": 19876,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/DeepLOB.py",
+      "logical_bytes": 11673,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/cnn1_ae.py",
+      "logical_bytes": 4529,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/LSTM.py",
+      "logical_bytes": 5628,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/test.ipynb",
+      "logical_bytes": 715,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/base.py",
+      "logical_bytes": 12195,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/vae.py",
+      "logical_bytes": 10109,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/lob_transformer.py",
+      "logical_bytes": 4266,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/layers/StandardNorm.py",
+      "logical_bytes": 2184,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/layers/Embed.py",
+      "logical_bytes": 6959,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/layers/Pyraformer_EncDec.py",
+      "logical_bytes": 7433,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/layers/SelfAttention_Family.py",
+      "logical_bytes": 12058,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/layers/__init__.py",
+      "logical_bytes": 0,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/layers/Autoformer_EncDec.py",
+      "logical_bytes": 6831,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/layers/AutoCorrelation.py",
+      "logical_bytes": 6440,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/layers/Crossformer_EncDec.py",
+      "logical_bytes": 4333,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/layers/Transformer_EncDec.py",
+      "logical_bytes": 4929,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/layers/FourierCorrelation.py",
+      "logical_bytes": 7346,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/layers/Projection.py",
+      "logical_bytes": 1163,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/layers/Conv_Blocks.py",
+      "logical_bytes": 2367,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/layers/MultiWaveletCorrelation.py",
+      "logical_bytes": 23039,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/layers/ETSformer_EncDec.py",
+      "logical_bytes": 11395,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/encoder/cnn2.py",
+      "logical_bytes": 0,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/encoder/test.ipynb",
+      "logical_bytes": 25948,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/encoder/base.py",
+      "logical_bytes": 2624,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/prediction/pca_svm.py",
+      "logical_bytes": 2397,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/prediction/cnn1.py",
+      "logical_bytes": 3419,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/prediction/__init__.py",
+      "logical_bytes": 0,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/prediction/mlp.py",
+      "logical_bytes": 1796,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/prediction/lob_presentation.py",
+      "logical_bytes": 16007,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/prediction/cnn2.py",
+      "logical_bytes": 3758,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/prediction/transformer.py",
+      "logical_bytes": 3760,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/prediction/lstm.py",
+      "logical_bytes": 3475,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/model/prediction/base.py",
+      "logical_bytes": 2810,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/experiment/predict.py",
+      "logical_bytes": 2170,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/experiment/__init__.py",
+      "logical_bytes": 0,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/experiment/executor.py",
+      "logical_bytes": 6639,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/experiment/coef_sensitivity/result_analysis.py",
+      "logical_bytes": 3277,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/experiment/coef_sensitivity/params_study_coef_gen.py",
+      "logical_bytes": 3427,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/experiment/coef_sensitivity/__init__.py",
+      "logical_bytes": 0,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/experiment/coef_sensitivity/execute_exp.py",
+      "logical_bytes": 2802,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/experiment/exp_settings_sample/reconstruction_sz000001.json",
+      "logical_bytes": 1067,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/experiment/exp_settings_sample/deeplob_sz000001.json",
+      "logical_bytes": 627,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/experiment/exp_settings_sample/prediction_sz000858.json",
+      "logical_bytes": 426,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/experiment/exp_settings_sample/default.json",
+      "logical_bytes": 805,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/experiment/exp_settings_sample/default_ashare.json",
+      "logical_bytes": 687,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/metric/__init__.py",
+      "logical_bytes": 1619,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/metric/masked_loss.py",
+      "logical_bytes": 2969,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/metric/loss_func.py",
+      "logical_bytes": 7486,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/metric/visualizer.py",
+      "logical_bytes": 3734,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/data/data_comet.py",
+      "logical_bytes": 0,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/data/latent_RL.py",
+      "logical_bytes": 7363,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/data/data_sampling.py",
+      "logical_bytes": 3112,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/data/__init__.py",
+      "logical_bytes": 334,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/data/simu_data_processing.py",
+      "logical_bytes": 3597,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/data/data_processing.py",
+      "logical_bytes": 18301,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/data/data_ashare.py",
+      "logical_bytes": 25610,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/data/data_lobcast.py",
+      "logical_bytes": 10073,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/data/data_prepare.py",
+      "logical_bytes": 1930,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/data/data_manager.py",
+      "logical_bytes": 881,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/data/data_compare.py",
+      "logical_bytes": 3998,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/data/data_database.py",
+      "logical_bytes": 9417,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/data/data.ipynb",
+      "logical_bytes": 140949,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/trainer/train_model.py",
+      "logical_bytes": 6789,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/trainer/__init__.py",
+      "logical_bytes": 0,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "vendor/LOBench/trainer/predict_trainer.py",
+      "logical_bytes": 1836,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "src/jfds_compat.py",
+      "logical_bytes": 2951,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "src/smoke_test.py",
+      "logical_bytes": 1461,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "src/prepare_pilot.py",
+      "logical_bytes": 4037,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "src/reference.py",
+      "logical_bytes": 7656,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "src/run_pilot.py",
+      "logical_bytes": 2650,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    },
+    {
+      "path": "src/audit_pilot.py",
+      "logical_bytes": 2348,
+      "allocated_bytes": 0,
+      "dataless": true,
+      "symlink": false,
+      "sha256": null,
+      "backup_verified": false,
+      "deletion_allowed": false
+    }
+  ],
+  "logical_bytes": 296574050,
+  "allocated_bytes": 0
+}

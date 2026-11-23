@@ -1,0 +1,6 @@
+{
+  "mode": "date",
+  "train_end": "2026-01-01",
+  "validation_end": "2026-01-02",
+  "embargo": 0
+}

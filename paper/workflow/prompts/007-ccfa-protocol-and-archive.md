@@ -1,0 +1,6 @@
+# Local task specification — 007
+Executor: Codex. Configuration revision: 5. Date: 2026-11-23 Asia/Singapore.
+
+Advance the LOB project toward a CCF A quality target, without promising acceptance. Build a fair, leakage-resistant cross-stock/cross-date benchmark contract and explicit label/tuning budgets. Implement baselines and a falsifiable price-aligned liquidity dynamics candidate. Verify scientific invariants with bounded CPU tests. Commit key code, protocol, provenance and engineering results to SansaZheng/FinancialAD-LOB. Inspect current CQ capacity and own jobs, pin a pushed commit, qualify input/env -> smoke -> experiments. Do not spend paid-cloud units, bypass scheduler policy, or mutate other jobs. Use authorized server storage. Inventory old Mac data without hydrating large iCloud files; upload only material with redistribution permission, verify remote hashes before deletion. Preserve unverified sole copies. Record failures and missing inputs. Finish every report with a Chinese conclusion.
+
+Success criteria: remote code/protocol commit verified; tested split/budget/metric invariants; exact CQ status and job IDs (or explicit rejection evidence); auditable migration receipts with actual bytes freed. Scientific gains require real matched experiments and are not implied by engineering tests.
