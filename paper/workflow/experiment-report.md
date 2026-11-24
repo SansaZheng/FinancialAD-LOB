@@ -1,38 +1,31 @@
-# Progress report / 进展报告 — 2026-11-24
+# Stage 009 report / 阶段 009 报告 — 2026-11-25
 
-CQ access was prioritized and retried after checking the queue and GitHub rights.
-It still rejects SansaZheng-owned source repositories with HTTP 400; no job ID
-was issued. The proposed SuuTTT execution fork is absent. The connector does
-not expose fork creation, and browser inspection did not provide a usable
-SuuTTT login. Exact allowlisting or an owner-created fork is the pending action.
-The canonical archive remains SansaZheng/FinancialAD-LOB.
+**CQ access is working.** The official free Kaggle CPU backend accepted and ran
+canonical SansaZheng/FinancialAD-LOB code. Environment, dependent smoke and
+three-stock expansion jobs all completed with verified outputs. The old lab
+owner restriction was not modified. No fork/admin intervention is now required
+for this CPU route, and no paid/GPU budget was used.
 
-**已执行的数据工作：** WSELOB-2017 主站明确提供 CC BY 4.0 许可。五只股票的
-订单/成交文件元数据已核对；KGHM 和 PEKAO 在 2017-01-10、11、12 的六个
-真实分区各读取 4,096 条消息，共 24,576 条。独立回放生成 192 个五档快照，
-全部具备五档深度，28 个交叉或锁定盘口被标记。样本包含重传和开盘前状态，
-不能直接作为连续交易时段评测集，更不包含真实操纵意图标签。
+**本轮已实现的提升：** 明确区分不可观测事件与已观测零值，新增缺失通道屏蔽；
+实现同输入的因果 TCN、Transformer 与流动性候选模型训练入口，统一标签子集、
+批次、六次验证搜索和训练步数。参数分别为 31,187、31,915、30,561，最大差距约
+4.2%。31 项工程测试在本机和 CQ 均通过，包含真实优化器步骤及因果性检查。
 
-Saved artifacts include raw permitted CSV prefixes, reconstructed JSON snapshots,
-per-file hashes, source/license metadata, data-ingestion and replay audits, a
-bounded range reader, event replay adapter, CQ-only full acquisition command,
-and exact steps. The first combined read's HTTP range failure is preserved;
-PEKAO then completed in a separate bounded run. The full 2017 files were not
-copied to the Mac. No full-source SHA256 verification is claimed yet.
+The WSE dataset qualification now covers five stocks on three dates: 61,440
+messages, 480 snapshots and 387 valid adjacent feature pairs. 61 crossed/locked
+snapshots are explicitly flagged; 7,740 event-channel values remain unknown.
+Overlapping local/remote feature values differ by at most 8.88e-16, with exact
+identity/mask equality and matching source hashes. The inputs are unlabeled
+prefixes, including preopen/retransmission, not full-session performance data.
 
-Quant-Arena's pinned release manifest and license were extracted from its large
-archive using ranges. It lists 289 stocks and up to 484 days, but its 15-second
-quotes do not replace event-level spoofing data. Redistribution provenance remains
-pending and no market-data rows from it have been validated.
+**强基线来源：** 从公开 CC BY 归档中提取并保存 JFDS 前作原始模型和训练代码，
+未下载完整数据包，未运行原始脚本。该源码尚未接入公平基线，且存在 CPU 训练路径
+兼容性问题。通用 Transformer 对照不等同于 Lin–Yang 的完整级联对比学习方法。
 
-26 bounded CPU engineering tests pass. Two full-download guard checks reject
-non-CQ execution and paths outside /date or /data. These are implementation/data
-checks, not scientific evidence of AP improvement. Formal CQ environment, full
-acquisition, session filters, labeling controls, neural baselines, cross-domain
-performance and methodology ablations remain incomplete.
+Evidence: `results/engineering/stage-009-summary.json`, `results/cq-009/`,
+`results/engineering/cross-runtime-audit-009.json`, `docs/improvement-009.md`,
+and `vendor/jfds_reference/PROVENANCE.md`. Exact specs and hashes are archived.
+No detector AP improvement is reported; missing labels/session audit, original
+cascade/detector integration and full scientific comparisons remain open.
 
-Canonical commit `594a829bef1856aa4f8ea66f13110fe3be3d1773` was pushed and
-independently cloned: 95 files, 3,117,531 bytes, all SHA256 values matched.
-The temporary verification clone was removed; legacy originals were preserved.
-
-中文结论：本轮已完成真实多日多股票数据的小样本读取、回放和工程验证，本轮新证据已随代码推送并独立核验；CQ 接入仍需管理员放行或创建执行镜像，不能宣称已复现或超越原论文，也不能宣称已达到 CCF A 录用水平。
+中文结论：本轮提升已落到代码、真实样本和三个已完成的 CQ 任务；当前可继续正式实验准备与扩展，尚不能把工程通过或样本增加等同于超过论文 0.675 或达到 CCF A 录用水平。

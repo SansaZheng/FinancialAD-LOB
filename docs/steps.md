@@ -103,7 +103,8 @@ cq submit cq/009-kaggle-smoke.json
 cq fetch j-1125-32c77e --to results/cq-009
 cq fetch j-1125-951eab --to results/cq-009
 cq submit cq/009-kaggle-expand.json
-# j-1125-e0f1ad: depends on smoke; retrieve and verify before claiming completion
+# j-1125-e0f1ad: depends on smoke; done; 9 added stock-day prefixes verified
+cq fetch j-1125-e0f1ad --to results/cq-009
 ```
 
 CPU provider versions are recorded in `results/cq-009/j-1125-32c77e/environment.json`:
@@ -116,3 +117,15 @@ These CQ jobs qualify code and real data semantics; they do not report scientifi
 manipulation AP. Each provider notebook is isolated, and no other job was changed.
 
 中文结论：CQ 环境和测试任务已真实完成；本轮结果验证可运行性、输入语义与跨环境一致性，正式检测性能比较仍需合格标签与完整评测集。
+
+## JFDS predecessor source recovery
+
+The primary Zenodo API confirms CC BY 4.0 for record 11048480. Only five small
+source/readme/dependency members were selectively extracted from its 192 MB ZIP
+using HTTP ranges and ZIP CRC validation. No archive data or model weights were
+extracted, and no original script was executed. `scripts/fetch_jfds_reference.py`
+reproduces this bounded retrieval; `vendor/jfds_reference/PROVENANCE.md` and
+`results/engineering/jfds-source-discovery-009.json` retain attribution and hashes.
+Full archive MD5 was not verified by selective reads.
+
+中文结论：原始前作源码已恢复并存档；完整 2025 管线复现和性能比较仍需后续实现与实验。

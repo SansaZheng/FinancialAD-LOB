@@ -1,0 +1,143 @@
+{
+  "evidence_class": "real_unlabeled_feature_audit",
+  "feature_names": [
+    "side",
+    "mid_distance_ticks",
+    "log_volume",
+    "aligned_added",
+    "aligned_removed",
+    "cancel_volume",
+    "execute_volume",
+    "price_observed_both",
+    "cancel_observed",
+    "execute_observed"
+  ],
+  "price_distance_unit": "1 PLN diagnostic scale, not a verified exchange tick size",
+  "inputs": [
+    {
+      "path": "/kaggle/working/out/public-prefixes/PKNORLEN-2017-01-10-snapshots.json",
+      "sha256": "2c3841dce635070eed1e78782f1cdd28fbcdde3b82267494ef0cd9fdbd7636fe"
+    },
+    {
+      "path": "/kaggle/working/out/public-prefixes/PKNORLEN-2017-01-11-snapshots.json",
+      "sha256": "3122ca830a0c500c8d2b53d13e43aa29b5c8d6fe51b83b8ccef4e98210971a41"
+    },
+    {
+      "path": "/kaggle/working/out/public-prefixes/PKNORLEN-2017-01-12-snapshots.json",
+      "sha256": "8d6120aad22da44ca472a7ca2dc3f082128477c26afcf93934a2c180450f4b4c"
+    },
+    {
+      "path": "/kaggle/working/out/public-prefixes/PKOBP-2017-01-10-snapshots.json",
+      "sha256": "e8a72b31917cc3fafb5ae2f5504f534535c3afb92ebbad03a93c5839e6abb1e1"
+    },
+    {
+      "path": "/kaggle/working/out/public-prefixes/PKOBP-2017-01-11-snapshots.json",
+      "sha256": "25eff8bdf3459981fca0e1fc176f782487909facd1c6ea711f19d8e65ca42c47"
+    },
+    {
+      "path": "/kaggle/working/out/public-prefixes/PKOBP-2017-01-12-snapshots.json",
+      "sha256": "3667d74409c4801b144e8b6e48f5e87f38e5bd2c6f5e8319b648821564a92cc1"
+    },
+    {
+      "path": "/kaggle/working/out/public-prefixes/PZU-2017-01-10-snapshots.json",
+      "sha256": "047ffb9d8e6e8a5fdac06f9e34b71a2c002a58ffdf4f11e39ed9796e134a9be5"
+    },
+    {
+      "path": "/kaggle/working/out/public-prefixes/PZU-2017-01-11-snapshots.json",
+      "sha256": "85a8907a989cb5f0260b13cddd59e9497648e307c51e01a56d28198812418dbf"
+    },
+    {
+      "path": "/kaggle/working/out/public-prefixes/PZU-2017-01-12-snapshots.json",
+      "sha256": "c1e171cae7d59900d350bf07e6ab17d5b91cd4a3eab7a1d51c9cfddbb8dbcc28"
+    }
+  ],
+  "partitions": [
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-01-10",
+      "valid_adjacent_pairs": 26,
+      "excluded_crossed_endpoint_pairs": 5,
+      "excluded_equal_or_backward_time_pairs": 0,
+      "translation_max_abs_error": 4.263256414560601e-14,
+      "currency_unit_max_abs_error": 1.3655743202889425e-14
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-01-11",
+      "valid_adjacent_pairs": 28,
+      "excluded_crossed_endpoint_pairs": 3,
+      "excluded_equal_or_backward_time_pairs": 0,
+      "translation_max_abs_error": 4.263256414560601e-14,
+      "currency_unit_max_abs_error": 1.6486811915683575e-14
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-01-12",
+      "valid_adjacent_pairs": 27,
+      "excluded_crossed_endpoint_pairs": 4,
+      "excluded_equal_or_backward_time_pairs": 0,
+      "translation_max_abs_error": 4.263256414560601e-14,
+      "currency_unit_max_abs_error": 1.8762769116165146e-14
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-01-10",
+      "valid_adjacent_pairs": 27,
+      "excluded_crossed_endpoint_pairs": 4,
+      "excluded_equal_or_backward_time_pairs": 0,
+      "translation_max_abs_error": 3.907985046680551e-14,
+      "currency_unit_max_abs_error": 4.260480856999038e-15
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-01-11",
+      "valid_adjacent_pairs": 26,
+      "excluded_crossed_endpoint_pairs": 5,
+      "excluded_equal_or_backward_time_pairs": 0,
+      "translation_max_abs_error": 3.907985046680551e-14,
+      "currency_unit_max_abs_error": 4.274358644806853e-15
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-01-12",
+      "valid_adjacent_pairs": 26,
+      "excluded_crossed_endpoint_pairs": 5,
+      "excluded_equal_or_backward_time_pairs": 0,
+      "translation_max_abs_error": 3.552713678800501e-14,
+      "currency_unit_max_abs_error": 4.260480856999038e-15
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-01-10",
+      "valid_adjacent_pairs": 27,
+      "excluded_crossed_endpoint_pairs": 4,
+      "excluded_equal_or_backward_time_pairs": 0,
+      "translation_max_abs_error": 2.842170943040401e-14,
+      "currency_unit_max_abs_error": 8.243405957841787e-15
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-01-11",
+      "valid_adjacent_pairs": 25,
+      "excluded_crossed_endpoint_pairs": 6,
+      "excluded_equal_or_backward_time_pairs": 0,
+      "translation_max_abs_error": 4.263256414560601e-14,
+      "currency_unit_max_abs_error": 7.389922007661198e-15
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-01-12",
+      "valid_adjacent_pairs": 23,
+      "excluded_crossed_endpoint_pairs": 8,
+      "excluded_equal_or_backward_time_pairs": 0,
+      "translation_max_abs_error": 3.552713678800501e-14,
+      "currency_unit_max_abs_error": 6.8209327075408055e-15
+    }
+  ],
+  "performance_metrics": null,
+  "valid_pairs": 235,
+  "tokens": 2350,
+  "unknown_event_channel_values": 4700,
+  "verified_zero_event_channel_values": 0,
+  "features_sha256": "54be03bdd646fe186ded632e8b189aa9b7627aa7357b1c34611fef77a0e49286"
+}

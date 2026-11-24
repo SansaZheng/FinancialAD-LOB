@@ -10,7 +10,7 @@ All statuses are implementation statuses, not measured scientific performance.
 | Histogram gradient boosting | Runnable tabular control | Same label subset and validation |
 | Volume / cancellation rule | Pending event-aligned calibration | Threshold fitted on validation |
 | OC-SVM / Isolation Forest | Pending integration | Separate clean-normal regime |
-| JFDS original representation | Legacy adapter, unreadable iCloud source | Recover exact official code, avoid claiming reproduction |
+| JFDS predecessor representation | Original source recovered from CC BY Zenodo release; integration pending | Device compatibility and exact original/cascade protocols still require validation |
 | Lin–Yang cascade | Original protocol/data unavailable | Equal-label supervised comparator needed |
 | TCN | Runnable causal supervised adapter; engineering-qualified | Same input, labels, batches and parameter ceiling |
 | Transformer | Runnable causal supervised adapter; engineering-qualified | Generic control, not the Lin–Yang cascade |

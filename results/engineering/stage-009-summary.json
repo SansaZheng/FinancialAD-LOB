@@ -1,0 +1,35 @@
+{
+  "evidence_class": "real_unlabeled_ingestion_and_replay",
+  "stocks": [
+    "KGHM",
+    "PEKAO",
+    "PKNORLEN",
+    "PKOBP",
+    "PZU"
+  ],
+  "dates": [
+    "2017-01-10",
+    "2017-01-11",
+    "2017-01-12"
+  ],
+  "stock_day_partitions": 15,
+  "messages_replayed": 61440,
+  "snapshots": 480,
+  "crossed_or_locked_snapshots": 61,
+  "valid_feature_pairs": 387,
+  "unknown_event_channel_values": 7740,
+  "manipulation_AP": null,
+  "full_day_coverage": false,
+  "full_source_hash_verified": false,
+  "completed_cq_jobs": [
+    "j-1125-32c77e",
+    "j-1125-951eab",
+    "j-1125-e0f1ad"
+  ],
+  "cq_code_commit": "7023f84a036c91703a3ca54130af6d07aea7198e",
+  "replay_audit_paths": [
+    "results/wselob-probe-20261124/replay-audit.json",
+    "results/wselob-probe-20261124-pekao/replay-audit.json",
+    "results/cq-009/j-1125-e0f1ad/public-prefixes/replay-audit.json"
+  ]
+}

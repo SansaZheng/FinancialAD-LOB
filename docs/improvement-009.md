@@ -81,6 +81,18 @@ Toy AP values cannot establish comparability with the reported 0.675.
 
 ## Next discriminating experiments
 
+CQ environment and smoke jobs both completed successfully on canonical source
+commit 7023f84a036c. A subsequent CQ acquisition job expanded real-prefix coverage
+to five stocks: 61,440 messages, 480 snapshots, 387 valid adjacent feature pairs.
+See `results/engineering/stage-009-summary.json`. Scientific training and original
+paper reproduction remain pending; these jobs validate data and implementation.
+
+The JFDS predecessor's original model/training source was recovered from its
+[CC BY Zenodo release](https://zenodo.org/records/11048480) without downloading
+the full archive. `vendor/jfds_reference/PROVENANCE.md` records exact boundaries.
+Only static inspection has run; CPU-incompatible unconditional CUDA calls exist
+in its training paths and need a documented adapter before integration.
+
 1. Compare raw snapshots, price-aligned changes and observation masks using
    identical frozen windows. Restore rank-wise deltas as an alignment ablation.
 2. Add interval duration and order-lifetime dynamics after attribution and

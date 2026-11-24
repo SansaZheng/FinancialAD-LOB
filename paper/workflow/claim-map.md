@@ -13,7 +13,10 @@
 | Public-data reader and order parser tested | `results/engineering/qualification-20261124/tests.log` | 26 total engineering checks; no AP claim |
 | Current public data/code archive matches 95 files | `migration/github-verification-20261124.json` | Independent GitHub clone at 594a829 + SHA256; 3,117,531 bytes |
 | Legacy data migrated | None | Not done; placeholders unreadable |
-| CQ experiment running | `results/engineering/cq-submission-20261124.json` | False: submission rejected, no job ID |
+| CQ canonical source can execute | `results/cq-009/`, `cq/009-kaggle-*.json` | Three CPU jobs completed through official free Kaggle route |
+| Five-stock real-prefix replay completed | `results/engineering/stage-009-summary.json` | 15 stock-days, 61,440 messages; unlabeled prefixes only |
+| Three neural controls share labels/batches/budgets | `tests/test_sequence.py`, CQ smoke tests.log | Verified on engineering fixtures; actual parameter counts reported |
+| Missing values do not masquerade as observed zeros | `results/wse-feature-audit-009/`, `tests/test_sequence.py` | 10-channel explicit masks; no AP gain implied |
 | Cross-date/cross-stock scientific gains | None | Real prefixes available; full inputs, labels, controls and CQ batches pending |
 | Original paper reproduced / exceeded | None | Unsupported |
 | CCF A quality achieved | None | Aspiration only |

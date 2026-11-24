@@ -1,0 +1,393 @@
+{
+  "status": "complete",
+  "requested_stocks": [
+    "PKNORLEN",
+    "PKOBP",
+    "PZU"
+  ],
+  "requested_days": [
+    "2017-01-10",
+    "2017-01-11",
+    "2017-01-12"
+  ],
+  "evidence_class": "real_public_data_ingestion_only",
+  "dataset": "WSELOB-2017 V1",
+  "source_url": "https://data.mendeley.com/datasets/3g4mhdp899/1",
+  "license": "CC BY 4.0",
+  "attribution": "Marsza\u0142ek, Adam (2023), WSELOB-2017, Mendeley Data V1, DOI 10.17632/3g4mhdp899.1; CC BY 4.0; order replay, causal features and evaluation added; as-is, no warranty or endorsement.",
+  "h5py": "3.14.0",
+  "numpy": "2.1.3",
+  "label_status": "No manipulation labels provided or inferred",
+  "sampling": "First contiguous rows per requested stock/day; not random or representative",
+  "full_source_hash_verified": false,
+  "partitions": [
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-01-10",
+      "source_rows": 119904,
+      "sample_rows": 4096,
+      "fields": [
+        "index",
+        "time",
+        "priority_date",
+        "order_date",
+        "symbol_idx",
+        "price",
+        "agg_volume",
+        "volume",
+        "order_id",
+        "num_orders",
+        "side",
+        "order_type",
+        "action_type",
+        "price_level"
+      ],
+      "action_counts": {
+        "F": 1,
+        "Y": 232,
+        "A": 1939,
+        "D": 1850,
+        "M": 74
+      },
+      "symbol_ids": [
+        11319
+      ],
+      "time_ns_min": 1484020894357710000,
+      "time_ns_max": 1484035768692701000,
+      "timestamp_backsteps": 0,
+      "first_action": "F",
+      "sample_file": "PKNORLEN-2017-01-10-prefix.csv",
+      "sample_sha256": "9740618d74f470321840af5bbeceb7e953b5e84d4bc42b4c9fb3b972dc6e81ee"
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-01-11",
+      "source_rows": 138834,
+      "sample_rows": 4096,
+      "fields": [
+        "index",
+        "time",
+        "priority_date",
+        "order_date",
+        "symbol_idx",
+        "price",
+        "agg_volume",
+        "volume",
+        "order_id",
+        "num_orders",
+        "side",
+        "order_type",
+        "action_type",
+        "price_level"
+      ],
+      "action_counts": {
+        "F": 1,
+        "Y": 263,
+        "A": 1944,
+        "D": 1829,
+        "M": 59
+      },
+      "symbol_ids": [
+        11319
+      ],
+      "time_ns_min": 1484107294602804000,
+      "time_ns_max": 1484122233849666000,
+      "timestamp_backsteps": 0,
+      "first_action": "F",
+      "sample_file": "PKNORLEN-2017-01-11-prefix.csv",
+      "sample_sha256": "417bd5a57d5248a67f518cb74f5f35feec77d3edf587908e04efff459558d3e8"
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-01-12",
+      "source_rows": 123341,
+      "sample_rows": 4096,
+      "fields": [
+        "index",
+        "time",
+        "priority_date",
+        "order_date",
+        "symbol_idx",
+        "price",
+        "agg_volume",
+        "volume",
+        "order_id",
+        "num_orders",
+        "side",
+        "order_type",
+        "action_type",
+        "price_level"
+      ],
+      "action_counts": {
+        "F": 1,
+        "Y": 328,
+        "A": 1925,
+        "D": 1744,
+        "M": 98
+      },
+      "symbol_ids": [
+        11319
+      ],
+      "time_ns_min": 1484193694476345000,
+      "time_ns_max": 1484208688426824000,
+      "timestamp_backsteps": 0,
+      "first_action": "F",
+      "sample_file": "PKNORLEN-2017-01-12-prefix.csv",
+      "sample_sha256": "f739ee6d67f9699eb558d2b8c1886d536042de17d82c6a3d57577748d0164245"
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-01-10",
+      "source_rows": 57153,
+      "sample_rows": 4096,
+      "fields": [
+        "index",
+        "time",
+        "priority_date",
+        "order_date",
+        "symbol_idx",
+        "price",
+        "agg_volume",
+        "volume",
+        "order_id",
+        "num_orders",
+        "side",
+        "order_type",
+        "action_type",
+        "price_level"
+      ],
+      "action_counts": {
+        "F": 1,
+        "Y": 1559,
+        "A": 1337,
+        "D": 1132,
+        "M": 67
+      },
+      "symbol_ids": [
+        11314
+      ],
+      "time_ns_min": 1484020894357720000,
+      "time_ns_max": 1484036237892359000,
+      "timestamp_backsteps": 0,
+      "first_action": "F",
+      "sample_file": "PKOBP-2017-01-10-prefix.csv",
+      "sample_sha256": "54ecc877a2ecf46fc1131e6137ecf421fe9164b7f11baf86f35a8811b50b7b06"
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-01-11",
+      "source_rows": 65029,
+      "sample_rows": 4096,
+      "fields": [
+        "index",
+        "time",
+        "priority_date",
+        "order_date",
+        "symbol_idx",
+        "price",
+        "agg_volume",
+        "volume",
+        "order_id",
+        "num_orders",
+        "side",
+        "order_type",
+        "action_type",
+        "price_level"
+      ],
+      "action_counts": {
+        "F": 1,
+        "Y": 1635,
+        "A": 1302,
+        "D": 1090,
+        "M": 68
+      },
+      "symbol_ids": [
+        11314
+      ],
+      "time_ns_min": 1484107294602814000,
+      "time_ns_max": 1484122670341952000,
+      "timestamp_backsteps": 0,
+      "first_action": "F",
+      "sample_file": "PKOBP-2017-01-11-prefix.csv",
+      "sample_sha256": "4877f09a034320a5a0dce8c589fcc1df873d88ce0242267c56c2251b12f3a7f6"
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-01-12",
+      "source_rows": 65296,
+      "sample_rows": 4096,
+      "fields": [
+        "index",
+        "time",
+        "priority_date",
+        "order_date",
+        "symbol_idx",
+        "price",
+        "agg_volume",
+        "volume",
+        "order_id",
+        "num_orders",
+        "side",
+        "order_type",
+        "action_type",
+        "price_level"
+      ],
+      "action_counts": {
+        "F": 1,
+        "Y": 1659,
+        "A": 1283,
+        "D": 1069,
+        "M": 84
+      },
+      "symbol_ids": [
+        11314
+      ],
+      "time_ns_min": 1484193694476355000,
+      "time_ns_max": 1484208967778620000,
+      "timestamp_backsteps": 0,
+      "first_action": "F",
+      "sample_file": "PKOBP-2017-01-12-prefix.csv",
+      "sample_sha256": "afb18deee79965dc10241ff9d0643eae2fcb87c477476694678484a975c13236"
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-01-10",
+      "source_rows": 66893,
+      "sample_rows": 4096,
+      "fields": [
+        "index",
+        "time",
+        "priority_date",
+        "order_date",
+        "symbol_idx",
+        "price",
+        "agg_volume",
+        "volume",
+        "order_id",
+        "num_orders",
+        "side",
+        "order_type",
+        "action_type",
+        "price_level"
+      ],
+      "action_counts": {
+        "F": 1,
+        "Y": 1276,
+        "A": 1478,
+        "D": 1222,
+        "M": 119
+      },
+      "symbol_ids": [
+        10735
+      ],
+      "time_ns_min": 1484020894357820000,
+      "time_ns_max": 1484035767546412000,
+      "timestamp_backsteps": 0,
+      "first_action": "F",
+      "sample_file": "PZU-2017-01-10-prefix.csv",
+      "sample_sha256": "8d0c5677f8762326c8c76580779ea74859a2fcd0cb8d33eb870ce48b450d00c8"
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-01-11",
+      "source_rows": 63551,
+      "sample_rows": 4096,
+      "fields": [
+        "index",
+        "time",
+        "priority_date",
+        "order_date",
+        "symbol_idx",
+        "price",
+        "agg_volume",
+        "volume",
+        "order_id",
+        "num_orders",
+        "side",
+        "order_type",
+        "action_type",
+        "price_level"
+      ],
+      "action_counts": {
+        "F": 1,
+        "Y": 1243,
+        "A": 1499,
+        "D": 1218,
+        "M": 135
+      },
+      "symbol_ids": [
+        10735
+      ],
+      "time_ns_min": 1484107294602914000,
+      "time_ns_max": 1484122281959893000,
+      "timestamp_backsteps": 0,
+      "first_action": "F",
+      "sample_file": "PZU-2017-01-11-prefix.csv",
+      "sample_sha256": "19b228e418295afe2739ab3f3cc01037d2d00d7a6e676281a5ef5a7d4da01d92"
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-01-12",
+      "source_rows": 76123,
+      "sample_rows": 4096,
+      "fields": [
+        "index",
+        "time",
+        "priority_date",
+        "order_date",
+        "symbol_idx",
+        "price",
+        "agg_volume",
+        "volume",
+        "order_id",
+        "num_orders",
+        "side",
+        "order_type",
+        "action_type",
+        "price_level"
+      ],
+      "action_counts": {
+        "F": 1,
+        "Y": 1303,
+        "A": 1470,
+        "D": 1197,
+        "M": 125
+      },
+      "symbol_ids": [
+        10735
+      ],
+      "time_ns_min": 1484193694476455000,
+      "time_ns_max": 1484209090880920000,
+      "timestamp_backsteps": 0,
+      "first_action": "F",
+      "sample_file": "PZU-2017-01-12-prefix.csv",
+      "sample_sha256": "d10ca7376039ad03922811de31b776d260d41406816e6c41ce097eab38aa7108"
+    }
+  ],
+  "transfers": [
+    {
+      "stock": "PKNORLEN",
+      "bytes": 851968,
+      "requests": 13,
+      "range_rejections": 0,
+      "source_size": 290678577,
+      "full_file_downloaded": false
+    },
+    {
+      "stock": "PKOBP",
+      "bytes": 851968,
+      "requests": 13,
+      "range_rejections": 0,
+      "source_size": 281092890,
+      "full_file_downloaded": false
+    },
+    {
+      "stock": "PZU",
+      "bytes": 851968,
+      "requests": 13,
+      "range_rejections": 0,
+      "source_size": 262873333,
+      "full_file_downloaded": false
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "title": "Deep Unsupervised Anomaly Detection in High-Frequency Markets - JFDS",
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "source": "https://zenodo.org/records/11048480",
+  "files": [
+    {
+      "name": "JFDS Repo.zip",
+      "size": 192318152,
+      "checksum": "md5:5c44e0ee2adbcdf85309dc628252e077",
+      "url": "https://zenodo.org/api/records/11048480/files/JFDS%20Repo.zip/content"
+    }
+  ],
+  "whole_archive_verified": false,
+  "code_listing": [
+    {
+      "name": "01_data_formatting.py",
+      "bytes": 38627
+    },
+    {
+      "name": "02_data_preprocessing.py",
+      "bytes": 9124
+    },
+    {
+      "name": "03_model_training.py",
+      "bytes": 4877
+    },
+    {
+      "name": "04_model_scoring.py",
+      "bytes": 20407
+    },
+    {
+      "name": "data/LOBSTER_SampleFiles_ReadMe.txt",
+      "bytes": 4790
+    },
+    {
+      "name": "models/models.py",
+      "bytes": 10726
+    },
+    {
+      "name": "preprocessing/utilities.py",
+      "bytes": 15805
+    },
+    {
+      "name": "requirements.txt",
+      "bytes": 68
+    },
+    {
+      "name": "scoring/utilities.py",
+      "bytes": 7895
+    },
+    {
+      "name": "train/utilities.py",
+      "bytes": 11552
+    },
+    {
+      "name": "README.md",
+      "bytes": 1934
+    }
+  ],
+  "range_bytes": 35528,
+  "extracted_source_files": [
+    {
+      "path": "vendor/jfds_reference/models/models.py",
+      "bytes": 10726,
+      "sha256": "4616a0ec6b38458506e6b9548f55146770e0e8405c8453ffd9ac153f5bc6962b",
+      "zip_crc_checked": true
+    },
+    {
+      "path": "vendor/jfds_reference/train/utilities.py",
+      "bytes": 11552,
+      "sha256": "f99b639e8bec35641d7280aaad41cc58c81b25be101873c6a2d52ee302c3a0c3",
+      "zip_crc_checked": true
+    },
+    {
+      "path": "vendor/jfds_reference/03_model_training.py",
+      "bytes": 4877,
+      "sha256": "2e8930bd66166c225b464e193d5b5f95222b965aaac4b893ff2d9df441cd9070",
+      "zip_crc_checked": true
+    },
+    {
+      "path": "vendor/jfds_reference/requirements.txt",
+      "bytes": 68,
+      "sha256": "924e1f42e7e0f31f118086bd1bb7b7c87dcd81841b3c2baf68951219d4b07083",
+      "zip_crc_checked": true
+    },
+    {
+      "path": "vendor/jfds_reference/README.md",
+      "bytes": 1934,
+      "sha256": "227134b72357736bee3180f6757c8f58a119e98a035fc9f7575a5436dd95c856",
+      "zip_crc_checked": true
+    }
+  ],
+  "extract_range_bytes": 101064,
+  "not_executed": true
+}

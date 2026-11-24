@@ -1,5 +1,13 @@
 # Public data qualification — 2026-11-24
 
+**Stage 009 update, 2026-11-25:** CQ job `j-1125-e0f1ad` completed acquisition
+and replay of PKNORLEN, PKOBP and PZU prefixes on the same three dates. Combined
+coverage is now five stocks, 15 stock-days, 61,440 messages and 480 snapshots,
+with 61 crossed/locked snapshots flagged. 387 adjacent feature pairs survive
+the endpoint checks. These remain unlabeled prefixes, not full trading sessions.
+New outputs are in `results/cq-009/j-1125-e0f1ad/`; the earlier two-stock evidence
+below is retained unchanged as the history of the first acquisition.
+
 ## Selected primary source: WSELOB-2017
 
 [Adam Marszałek (2023), WSELOB-2017 v1, Mendeley Data](https://data.mendeley.com/datasets/3g4mhdp899/1),
