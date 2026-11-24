@@ -28,4 +28,8 @@ and `vendor/jfds_reference/PROVENANCE.md`. Exact specs and hashes are archived.
 No detector AP improvement is reported; missing labels/session audit, original
 cascade/detector integration and full scientific comparisons remain open.
 
+The archived commit `bc0e9bd086348e1f0bae8a571fc95533e463ab9d` was independently
+cloned and all 163 files (7,755,223 bytes) matched SHA256. The temporary
+verification clone was removed. Legacy originals were preserved.
+
 中文结论：本轮提升已落到代码、真实样本和三个已完成的 CQ 任务；当前可继续正式实验准备与扩展，尚不能把工程通过或样本增加等同于超过论文 0.675 或达到 CCF A 录用水平。

@@ -32,7 +32,9 @@ archive; original source files preserved with hashes. It was statically inspecte
 not executed or relabeled as the complete 2025 cascaded/contrastive framework.
 
 All execution specs, small raw permitted samples, derived artifacts, receipts,
-code and steps are being synchronized to canonical GitHub. Legacy iCloud files
+code and steps were pushed to canonical GitHub at bc0e9bd086348e1f0bae8a571fc95533e463ab9d.
+An independent clone verified all 163 files / 7,755,223 bytes by SHA256.
+Receipt: migration/github-verification-009.json. Legacy iCloud files
 remain preserved; no old-data migration or disk-space-reclamation claim.
 
 Next scientific stage: qualify full-day sessions/attribution and genuine or
