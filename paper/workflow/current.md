@@ -22,8 +22,9 @@ source manifest, CC attribution and steps. 26 engineering tests pass; full fetch
 storage guards also rejected non-CQ and non-/date-or-/data invocation as intended.
 No complete neural training pipeline or matched scientific benchmark has run.
 
-Archiving: new work is being synchronized to the canonical repository; final
-push/verification receipts are tracked separately. Legacy 189 iCloud placeholders
+Archiving: commit 594a829bef1856aa4f8ea66f13110fe3be3d1773 was pushed, independently
+cloned and all 95 tracked files (3,117,531 bytes) matched SHA256. Receipt:
+migration/github-verification-20261124.json. The verification clone was removed. Legacy 189 iCloud placeholders
 are preserved; no claim of migration or old-data space reclaimed.
 
 Next: account owner creates SuuTTT/FinancialAD-LOB execution fork or CQ admin

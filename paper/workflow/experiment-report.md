@@ -31,4 +31,8 @@ checks, not scientific evidence of AP improvement. Formal CQ environment, full
 acquisition, session filters, labeling controls, neural baselines, cross-domain
 performance and methodology ablations remain incomplete.
 
-中文结论：本轮已完成真实多日多股票数据的小样本读取、回放和工程验证，所有新证据将随代码存档；CQ 接入仍需管理员放行或创建执行镜像，不能宣称已复现或超越原论文，也不能宣称已达到 CCF A 录用水平。
+Canonical commit `594a829bef1856aa4f8ea66f13110fe3be3d1773` was pushed and
+independently cloned: 95 files, 3,117,531 bytes, all SHA256 values matched.
+The temporary verification clone was removed; legacy originals were preserved.
+
+中文结论：本轮已完成真实多日多股票数据的小样本读取、回放和工程验证，本轮新证据已随代码推送并独立核验；CQ 接入仍需管理员放行或创建执行镜像，不能宣称已复现或超越原论文，也不能宣称已达到 CCF A 录用水平。

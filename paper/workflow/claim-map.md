@@ -11,6 +11,7 @@
 | WSE public event prefixes actually acquired | `results/engineering/public-data-summary-20261124.json` | 2 stocks × 3 dates, 24,576 messages; CC BY 4.0 |
 | WSE five-level replay executed | `results/wselob-probe-20261124*/replay-audit.json` | 192 snapshots; 28 crossed/locked; no manipulation labels |
 | Public-data reader and order parser tested | `results/engineering/qualification-20261124/tests.log` | 26 total engineering checks; no AP claim |
+| Current public data/code archive matches 95 files | `migration/github-verification-20261124.json` | Independent GitHub clone at 594a829 + SHA256; 3,117,531 bytes |
 | Legacy data migrated | None | Not done; placeholders unreadable |
 | CQ experiment running | `results/engineering/cq-submission-20261124.json` | False: submission rejected, no job ID |
 | Cross-date/cross-stock scientific gains | None | Real prefixes available; full inputs, labels, controls and CQ batches pending |
