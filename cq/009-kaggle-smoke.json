@@ -1,0 +1,63 @@
+{
+  "name": "FinancialAD LOB 31-test and real WSE feature CPU smoke 009",
+  "work": "FinancialAD-LOB",
+  "code": {
+    "github": "SansaZheng/FinancialAD-LOB",
+    "commit": "7023f84a036c91703a3ca54130af6d07aea7198e"
+  },
+  "command": [
+    "bash",
+    "-lc",
+    "set -euo pipefail\npython3 scripts/qualify.py\npython3 -m scripts.audit_wse_features --folders results/wselob-probe-20261124 results/wselob-probe-20261124-pekao --output \"$CQ_OUTPUT_DIR/real-feature-audit\""
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "resources": {
+    "gpus": 0,
+    "cpus": 1,
+    "ram_gb": 2,
+    "disk_gb": 0.1
+  },
+  "limits": {
+    "max_hours": 0.5,
+    "max_attempts": 1,
+    "max_usd": 0
+  },
+  "placement": {
+    "target": "kaggle",
+    "allow_rent": false
+  },
+  "outputs": {
+    "dest": "/Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/009-smoke-7023f84a",
+    "expect": [
+      {
+        "path": "qualification.json",
+        "contains": "\"passed\": true"
+      },
+      {
+        "path": "tests.log",
+        "contains": "Ran 31 tests"
+      },
+      {
+        "path": "real-feature-audit/audit.json",
+        "contains": "\"valid_pairs\": 152"
+      },
+      {
+        "path": "progress.txt",
+        "contains": "1/1"
+      }
+    ],
+    "progress": {
+      "path": "progress.txt",
+      "stall_min": 10
+    }
+  },
+  "idempotent": true,
+  "depends_on": [
+    "j-1125-32c77e"
+  ]
+}

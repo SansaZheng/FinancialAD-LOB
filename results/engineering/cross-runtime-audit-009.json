@@ -1,0 +1,11 @@
+{
+  "local_sha256": "937b0b04cfc0da599773c91213bf80dff3b2eb6a2774b2aa0bce679de161d49c",
+  "cq_sha256": "e766ceb53279da06db189b57e094e0f301f8c2b85c5f1ff1b6e0d33e215d873e",
+  "byte_identical": false,
+  "identities_and_masks_exact_match": true,
+  "pairs": 152,
+  "max_abs_feature_difference": 8.881784197001252e-16,
+  "tolerance": 1e-10,
+  "numerical_match": true,
+  "cq_source_hashes_match_local": true
+}

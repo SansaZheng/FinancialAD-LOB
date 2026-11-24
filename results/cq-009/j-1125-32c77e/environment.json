@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "python": "3.13.18 (main, Oct 26 2026, 15:28:15) [GCC 13.3.0]",
+  "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+  "versions": {
+    "numpy": "2.1.3",
+    "sklearn": "1.6.1",
+    "torch": "2.11.0+cpu",
+    "h5py": "3.14.0"
+  },
+  "errors": {},
+  "seconds": 9.04511153300001,
+  "max_rss_native_units": 353912,
+  "source_sha256": {
+    "lobbench/sequence_models.py": "203d739bb1fb79138648afa7fadb95ae07fabb2e81f181183d00244aa8aa9c80",
+    "lobbench/sequence_run.py": "f68b23ac0a6583a7c19030ade007d85fd9860f003f38aa2897c6f69c45352d80",
+    "lobbench/liquidity.py": "6dca81843f70174045a018734730263a15302c55dfae1be49c07f42b159babce"
+  },
+  "evidence_class": "environment_qualification_only",
+  "package_install_performed": false
+}

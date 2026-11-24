@@ -75,3 +75,44 @@ The full acquisition command has **not** been executed. No raw full-data backup
 or training is implied by the existence of this script.
 
 中文结论：本次步骤可复现已完成的小样本真实数据回放；完整数据下载和正式 CQ 实验仍需先解除仓库接入限制。
+
+## Stage 009: observation-aware controls and official CQ Kaggle route
+
+See `docs/improvement-009.md` for feature semantics, model budgets and limitations.
+The supported CQ Kaggle CPU backend accepts canonical `code.github` directly;
+this does not alter the lab server's owner whitelist. The local client was updated
+to 2fe77566 using `cq update`, after preserving its existing .prev backup.
+
+Executed local validation:
+
+```bash
+CQ_OUTPUT_DIR=results/engineering/qualification-009-final OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 scripts/qualify.py
+python3 -m scripts.audit_wse_features --folders results/wselob-probe-20261124 results/wselob-probe-20261124-pekao --output results/wse-feature-audit-009
+```
+
+The output folder must be fresh when rerunning the feature audit. 31 tests pass.
+The feature audit reports 152 valid pairs and 3,040 unknown event-channel values.
+
+Executed CQ chain, with pinned SHA in each spec, CPU=1, GPU=0, RAM=2 GB, $0:
+
+```bash
+cq submit cq/009-kaggle-env.json
+# j-1125-32c77e: done; existing provider packages, no installs
+cq submit cq/009-kaggle-smoke.json
+# j-1125-951eab: depends on env; done, 31 tests and WSE feature audit passed
+cq fetch j-1125-32c77e --to results/cq-009
+cq fetch j-1125-951eab --to results/cq-009
+cq submit cq/009-kaggle-expand.json
+# j-1125-e0f1ad: depends on smoke; retrieve and verify before claiming completion
+```
+
+CPU provider versions are recorded in `results/cq-009/j-1125-32c77e/environment.json`:
+Python 3.13.18, numpy 2.1.3, sklearn 1.6.1, torch 2.11.0+cpu, h5py 3.14.0.
+Local and remote source SHA256 values match. Feature JSON bytes differ because
+of floating-point serialization; identities/masks match exactly and numerical
+max difference is 8.88e-16, below the predeclared 1e-10 tolerance.
+
+These CQ jobs qualify code and real data semantics; they do not report scientific
+manipulation AP. Each provider notebook is isolated, and no other job was changed.
+
+中文结论：CQ 环境和测试任务已真实完成；本轮结果验证可运行性、输入语义与跨环境一致性，正式检测性能比较仍需合格标签与完整评测集。

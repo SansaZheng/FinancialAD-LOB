@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "stdout": "queued j-1125-951eab: FinancialAD LOB 31-test and real WSE feature CPU smoke 009 (waiting for the first placement pass)\n",
+  "stderr": "",
+  "spec": "cq/009-kaggle-smoke.json"
+}

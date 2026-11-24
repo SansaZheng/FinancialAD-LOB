@@ -1,4 +1,19 @@
-# CQ access resolution — observed 2026-11-24
+# CQ access resolution — updated 2026-11-25
+
+**Resolved for the current work through official CQ Kaggle CPU execution.**
+After updating the local CQ client to 2fe77566 (both previous versions preserved),
+guide section 9 explicitly permits arbitrary `code.github=owner/repo` on the free
+Kaggle backend. Canonical SansaZheng source commit 7023f84a036c was accepted:
+`j-1125-32c77e` environment and `j-1125-951eab` dependent smoke both completed
+with verified outputs. The smoke passed 31 tests and the real-prefix feature
+audit. No GPU quota or paid capacity was requested. No package installation was
+needed in the isolated provider image.
+
+A fork/admin change is no longer a prerequisite for current CQ CPU work. Lab
+server source-owner restrictions remain unchanged. The historical rejection and
+optional lab remedies below are retained as evidence, not the current status.
+
+## Historical lab-only restriction
 
 Canonical repository: **SansaZheng/FinancialAD-LOB**. The GitHub connector now
 reports push permission for its SuuTTT identity, and the local GitHub SSH identity
@@ -23,8 +38,8 @@ Two supported remedies:
 The proposed mirror returned 404 during this run. `SuuTTT/FinancialAD-target`
 is a different crypto project and is **not** an execution mirror. The installed
 GitHub connector exposes no repository/fork creation action. Available browser
-inspection did not yield a usable SuuTTT signed-in session. A concrete request
-to the account owner/admin is pending; this is a missing account capability,
+inspection did not yield a usable SuuTTT signed-in session. The earlier request
+to the account owner/admin is no longer blocking the Kaggle route; this was a missing account capability,
 not a request to repeat authorization already given by the user.
 
 After access is changed: query current project jobs to avoid duplication, pin
@@ -35,4 +50,4 @@ authorized `/date` or `/data` backing, not Mac storage or another user's home.
 CPU environment -> smoke -> batch dependency order still applies. No cloud
 spending until an explicit budget is supplied.
 
-中文结论：仓库写权限已具备，但 CQ 的所有者白名单仍未放行；需要管理员精确放行或 SuuTTT 创建执行镜像，才能启动正式作业。
+中文结论：已通过官方免费 Kaggle 后端完成 CQ 环境与测试作业，当前推进无需等待 fork；实验室服务器的所有者白名单限制仍保留。

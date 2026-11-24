@@ -1,0 +1,51 @@
+{
+  "name": "FinancialAD LOB observation-aware CPU environment 009",
+  "work": "FinancialAD-LOB",
+  "code": {
+    "github": "SansaZheng/FinancialAD-LOB",
+    "commit": "7023f84a036c91703a3ca54130af6d07aea7198e"
+  },
+  "command": [
+    "python3",
+    "scripts/cq_environment.py"
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "resources": {
+    "gpus": 0,
+    "cpus": 1,
+    "ram_gb": 2,
+    "disk_gb": 0.1
+  },
+  "limits": {
+    "max_hours": 0.25,
+    "max_attempts": 1,
+    "max_usd": 0
+  },
+  "placement": {
+    "target": "kaggle",
+    "allow_rent": false
+  },
+  "outputs": {
+    "dest": "/Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/009-env-7023f84a",
+    "expect": [
+      {
+        "path": "environment.json",
+        "contains": "\"passed\": true"
+      },
+      {
+        "path": "progress.txt",
+        "contains": "1/1"
+      }
+    ],
+    "progress": {
+      "path": "progress.txt",
+      "stall_min": 10
+    }
+  },
+  "idempotent": true
+}

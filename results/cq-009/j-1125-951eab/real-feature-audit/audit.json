@@ -1,0 +1,104 @@
+{
+  "evidence_class": "real_unlabeled_feature_audit",
+  "feature_names": [
+    "side",
+    "mid_distance_ticks",
+    "log_volume",
+    "aligned_added",
+    "aligned_removed",
+    "cancel_volume",
+    "execute_volume",
+    "price_observed_both",
+    "cancel_observed",
+    "execute_observed"
+  ],
+  "price_distance_unit": "1 PLN diagnostic scale, not a verified exchange tick size",
+  "inputs": [
+    {
+      "path": "results/wselob-probe-20261124/KGHM-2017-01-10-snapshots.json",
+      "sha256": "b282df7cda4085df5d84b21706ae74b819f18ce285cc031b8cfa4bd6f7c638b1"
+    },
+    {
+      "path": "results/wselob-probe-20261124/KGHM-2017-01-11-snapshots.json",
+      "sha256": "26c9f7e9ff33042b378c185083e1dbe43d0e6cb0f1c603dbadb76cf02e33e1ad"
+    },
+    {
+      "path": "results/wselob-probe-20261124/KGHM-2017-01-12-snapshots.json",
+      "sha256": "52d7900d27a64ce73f932d84b61f0b710b71d9de8c74a8bcfa321444a1f0cdc9"
+    },
+    {
+      "path": "results/wselob-probe-20261124-pekao/PEKAO-2017-01-10-snapshots.json",
+      "sha256": "5c2d899e0c1b3169304c8aa13eeed0410e55e3f6119ea4227bf84e236cb7e792"
+    },
+    {
+      "path": "results/wselob-probe-20261124-pekao/PEKAO-2017-01-11-snapshots.json",
+      "sha256": "31b2d1e48bc35a0d4e55f3294e5631fd3e117fc64071140df17ca9f1c07039c2"
+    },
+    {
+      "path": "results/wselob-probe-20261124-pekao/PEKAO-2017-01-12-snapshots.json",
+      "sha256": "f68e83c5739fe498372ca233216af4750ec8e4791dea7f17b4b595e070ad1a63"
+    }
+  ],
+  "partitions": [
+    {
+      "stock": "KGHM",
+      "date": "2017-01-10",
+      "valid_adjacent_pairs": 26,
+      "excluded_crossed_endpoint_pairs": 5,
+      "excluded_equal_or_backward_time_pairs": 0,
+      "translation_max_abs_error": 4.263256414560601e-14,
+      "currency_unit_max_abs_error": 1.762479051592436e-14
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-01-11",
+      "valid_adjacent_pairs": 22,
+      "excluded_crossed_endpoint_pairs": 9,
+      "excluded_equal_or_backward_time_pairs": 0,
+      "translation_max_abs_error": 4.263256414560601e-14,
+      "currency_unit_max_abs_error": 1.7763568394002505e-14
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-01-12",
+      "valid_adjacent_pairs": 19,
+      "excluded_crossed_endpoint_pairs": 12,
+      "excluded_equal_or_backward_time_pairs": 0,
+      "translation_max_abs_error": 4.263256414560601e-14,
+      "currency_unit_max_abs_error": 1.7763568394002505e-14
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-01-10",
+      "valid_adjacent_pairs": 28,
+      "excluded_crossed_endpoint_pairs": 3,
+      "excluded_equal_or_backward_time_pairs": 0,
+      "translation_max_abs_error": 1.4210854715202004e-14,
+      "currency_unit_max_abs_error": 2.955968803064479e-14
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-01-11",
+      "valid_adjacent_pairs": 29,
+      "excluded_crossed_endpoint_pairs": 2,
+      "excluded_equal_or_backward_time_pairs": 0,
+      "translation_max_abs_error": 1.4210854715202004e-14,
+      "currency_unit_max_abs_error": 2.955968803064479e-14
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-01-12",
+      "valid_adjacent_pairs": 28,
+      "excluded_crossed_endpoint_pairs": 3,
+      "excluded_equal_or_backward_time_pairs": 0,
+      "translation_max_abs_error": 1.4210854715202004e-14,
+      "currency_unit_max_abs_error": 2.955968803064479e-14
+    }
+  ],
+  "performance_metrics": null,
+  "valid_pairs": 152,
+  "tokens": 1520,
+  "unknown_event_channel_values": 3040,
+  "verified_zero_event_channel_values": 0,
+  "features_sha256": "e766ceb53279da06db189b57e094e0f301f8c2b85c5f1ff1b6e0d33e215d873e"
+}

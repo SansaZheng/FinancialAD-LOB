@@ -18,8 +18,9 @@ model and cannot establish intent from anonymous snapshots.
 `paired_loss` combines supervised BCE and prediction consistency. Only valid
 label-preserving augmentations may enter that loss. Arbitrarily altering the
 execution/cancellation outcome is **not** label-preserving. The augmentation
-generator and full neural experiment runner are pending; the existence of the
-loss function is not a completed training experiment.
+generator is pending. A matched-budget supervised neural runner is implemented
+in `lobbench.sequence_run`; paired loss stays inactive until an augmentation is
+validated. See `improvement-009.md` for the observation-aware wrapper and controls.
 
 Planned ablations:
 

@@ -12,9 +12,9 @@ All statuses are implementation statuses, not measured scientific performance.
 | OC-SVM / Isolation Forest | Pending integration | Separate clean-normal regime |
 | JFDS original representation | Legacy adapter, unreadable iCloud source | Recover exact official code, avoid claiming reproduction |
 | Lin–Yang cascade | Original protocol/data unavailable | Equal-label supervised comparator needed |
-| TCN | Pending full training adapter | Same input channels and parameter control |
-| Transformer | Pending full training adapter | Same input channels, training steps and labels |
-| Price-aligned liquidity candidate | Prototype + optimizer check | Same-input and no-alignment ablations |
+| TCN | Runnable causal supervised adapter; engineering-qualified | Same input, labels, batches and parameter ceiling |
+| Transformer | Runnable causal supervised adapter; engineering-qualified | Generic control, not the Lin–Yang cascade |
+| Price-aligned liquidity candidate | Runnable observation-aware wrapper and trainer | Scientific alignment ablations pending |
 
 Recent literature search checked 2026 works on November 23. Two relevant search
 candidates exist but are not adopted as executable baselines yet:
@@ -29,4 +29,7 @@ candidates exist but are not adopted as executable baselines yet:
 Neither date nor a similar title establishes a useful strong baseline. The two
 2026-method planning target remains unmet until compatibility is verified.
 
-中文结论：四个监督学习控制基线已具备运行入口；原论文及神经网络强基线仍需补齐，不能将清单数量视作实验完成数量。
+See [observation-aware comparisons](improvement-009.md) for sequence budgets and
+actual parameter counts. Original-paper cascade and detector regimes remain pending.
+
+中文结论：四个表格控制基线及三个序列模型入口已实现；工程验证不是金融性能结果，原论文完整管线和跨域实验仍需补齐。

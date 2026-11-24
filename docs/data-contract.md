@@ -38,9 +38,23 @@ inside the training pipeline. The same feature schema is shared by controls.
   acquisition/license/identity boundaries not verified in this session. Consider
   for representation robustness, not as ground-truth manipulation labels.
 
-Cross-date experiments stay blocked until multiple real trading dates with
-verifiable stock/session identity are present. Do not manufacture dates or reuse
-intraday segments as different days.
+WSELOB prefixes now provide two verifiable stocks and three real trading dates;
+see `public-data.md`. Full-day session filtering and valid manipulation labels
+remain pending. Do not manufacture dates or reuse intraday segments as days.
+
+## Observation-aware sequence v2
+
+The neural runner additionally requires `sequence` per row, shaped `[time, level,
+channel]`, plus manifest `sequence_shape` and the exact ten ordered names in
+`lobbench.liquidity.FEATURE_NAMES`. Finite values and binary masks are checked.
+The existing `features` vector serves tabular contracts; the neural runner uses
+only `sequence`. Fixed-shape full-depth windows are required; variable padding
+is not supported. Normalization is fitted on the labeled training subset only.
+
+Source audits must specify complete interval cancel/execute coverage. Unknown
+values carry mask=0, distinct from known zero with mask=1. A deletion is not
+automatically a cancellation. Unlabeled WSE diagnostic output has `label: null`
+and is intentionally inadmissible as supervised training input.
 
 ## Public GitHub storage
 

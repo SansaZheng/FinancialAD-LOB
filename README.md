@@ -14,8 +14,9 @@ matching or exceeding the source paper's 0.675 AUC-PR.
 * [Candidate mechanism](docs/method.md): causal price-aligned liquidity dynamics.
 * [Baseline status](docs/baselines.md) and [data contract](docs/data-contract.md).
 * [Public data qualification](docs/public-data.md): actual two-stock, three-date WSE event replay.
-* [CQ access resolution](docs/cq-access.md): observed owner policy and supported remedies.
-* [Current state](paper/workflow/current.md) and [execution prompt](paper/workflow/prompts/008-cq-access-public-data.md).
+* [Observation-aware improvements](docs/improvement-009.md): matched causal sequence controls.
+* [CQ access resolution](docs/cq-access.md): free Kaggle environment and smoke jobs completed.
+* [Current state](paper/workflow/current.md) and [execution prompt](paper/workflow/prompts/009-observation-aware-baselines.md).
 * [Legacy inventory](migration/legacy-inventory.json): metadata **not backup**.
 * [Engineering checks](results/engineering/): no financial benchmark conclusions.
 
