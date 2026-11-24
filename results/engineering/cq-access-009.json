@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-11-25T00:25:57.256967+08:00",
+  "mirror": "SuuTTT/FinancialAD-LOB",
+  "mirror_status": "404",
+  "work": "FinancialAD-LOB",
+  "jobs": 0,
+  "new_submission": false,
+  "client_update_requested": true,
+  "client_commit": "2fe77566",
+  "lab_git_owners": [
+    "SuuTTT"
+  ],
+  "registered_FinancialAD_project": "Different HIMVHAD/graph project; no jobs reused or modified",
+  "supported_alternative": "Official guide section 9: free Kaggle CPU, code.github owner/repo; testing canonical source directly",
+  "kaggle_gpu_hours_requested": 0,
+  "paid_compute_requested": false
+}
