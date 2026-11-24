@@ -1,0 +1,74 @@
+{
+  "dataset": "WSELOB-2017 V1",
+  "source_url": "https://data.mendeley.com/datasets/3g4mhdp899/1",
+  "license": "CC BY 4.0",
+  "attribution": "Marsza\u0142ek, Adam (2023), WSELOB-2017, Mendeley Data V1, DOI 10.17632/3g4mhdp899.1; CC BY 4.0; order replay, causal features and evaluation added; as-is, no warranty or endorsement.",
+  "symbol_identity_source": "Depositor order_data.ipynb, ASSETS mapping; SHA256 from public-api file metadata.",
+  "files": {
+    "KGHM": {
+      "filename": "KGHM_lob_2017_zlib.h5",
+      "sha256": "0246f994b42af04c65deb38f28f64988b7b6fa71d0fb83e41bda8487afff4c5c",
+      "bytes": 325838174,
+      "url": "https://data.mendeley.com/public-files/datasets/3g4mhdp899/files/d30e1966-5bc7-492e-993d-2a1e4c5e6da0/file_downloaded"
+    },
+    "PEKAO": {
+      "filename": "PEKAO_lob_2017_zlib.h5",
+      "sha256": "3c418a55a492ebe2e39c8513cd7fc7e3e6827dc1a176af09fdcaad9f3485bae6",
+      "bytes": 152759953,
+      "url": "https://data.mendeley.com/public-files/datasets/3g4mhdp899/files/63e3f3ab-f562-4389-a740-357446266a6c/file_downloaded"
+    },
+    "PKNORLEN": {
+      "filename": "PKNORLEN_lob_2017_zlib.h5",
+      "sha256": "5b8f394144b8a3dace3e08bb2b4228d63231a12ae21f5f27aa662a8d09f3fa40",
+      "bytes": 290678577,
+      "url": "https://data.mendeley.com/public-files/datasets/3g4mhdp899/files/337abfb0-285e-4f9b-a4ab-992417991e1d/file_downloaded"
+    },
+    "PKOBP": {
+      "filename": "PKOBP_lob_2017_zlib.h5",
+      "sha256": "ecf94a905b04836442c9124c7f7d7edc5b7d98e7236ca4026f0ec37b9407407e",
+      "bytes": 281092890,
+      "url": "https://data.mendeley.com/public-files/datasets/3g4mhdp899/files/ba14a4f2-865d-4d8b-8068-4af9a2efdda6/file_downloaded"
+    },
+    "PZU": {
+      "filename": "PZU_lob_2017_zlib.h5",
+      "sha256": "4ca8f7c136c940d71b271cc427d641c3881857e01b43555792d484d9eb2f4b8c",
+      "bytes": 262873333,
+      "url": "https://data.mendeley.com/public-files/datasets/3g4mhdp899/files/e1acaa20-c404-4cbb-bfdf-a3eab7593ca3/file_downloaded"
+    }
+  },
+  "locator_note": "File URLs, sizes and publisher-provided SHA256 hashes independently matched against the Mendeley public API on 2026-11-24. Full source files not downloaded or hash-verified.",
+  "locator_source": "https://github.com/DeepCogNeural/microstructure-lab/blob/main/configs/wselob_sources_v1.json",
+  "primary_orders_metadata_url": "https://data.mendeley.com/public-api/datasets/3g4mhdp899/files?folder_id=e61ed81a-3e4e-4272-8512-4e5b988b8bc0&version=1",
+  "trades": {
+    "KGHM": {
+      "filename": "KGHM_trades_2017_zlib.h5",
+      "bytes": 11144901,
+      "sha256": "c062f1b8d12b149af6c129a1400a94ec2a67cad9100ec508eb6009823798e5c4",
+      "url": "https://data.mendeley.com/public-files/datasets/3g4mhdp899/files/2c61561f-e683-412d-bd45-ec11f957a2d3/file_downloaded"
+    },
+    "PEKAO": {
+      "filename": "PEKAO_trades_2017_zlib.h5",
+      "bytes": 7684603,
+      "sha256": "7101a929f1882842f857e1467faf56b192c7f0df763027995b06a3fb7b9f1d53",
+      "url": "https://data.mendeley.com/public-files/datasets/3g4mhdp899/files/4f19d1b9-5c0a-4e25-a5f8-67dba0613ccb/file_downloaded"
+    },
+    "PKNORLEN": {
+      "filename": "PKNORLEN_trades_2017_zlib.h5",
+      "bytes": 9406549,
+      "sha256": "817a5428b0a98aa352dc0ad18b328651117ef720b94a778d50c7dc3eb61ca938",
+      "url": "https://data.mendeley.com/public-files/datasets/3g4mhdp899/files/bd6e42d7-9b88-41bc-babc-5b0ccb1aef6f/file_downloaded"
+    },
+    "PKOBP": {
+      "filename": "PKOBP_trades_2017_zlib.h5",
+      "bytes": 9453680,
+      "sha256": "5154320d33c781bd9dac66e662cdf379b79039e279f68ea80ffdf6ee1e0380cb",
+      "url": "https://data.mendeley.com/public-files/datasets/3g4mhdp899/files/d9d9d93a-3b7e-492a-a572-3c33a190b192/file_downloaded"
+    },
+    "PZU": {
+      "filename": "PZU_trades_2017_zlib.h5",
+      "bytes": 9431581,
+      "sha256": "c87cc034e6a0d104b4b945365aa58123ac95bc683d4eda61ce0017018bb37187",
+      "url": "https://data.mendeley.com/public-files/datasets/3g4mhdp899/files/66e9ad51-8803-4a5c-ad48-80232cb51a97/file_downloaded"
+    }
+  }
+}

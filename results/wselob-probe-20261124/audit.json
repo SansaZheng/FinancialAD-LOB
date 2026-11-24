@@ -1,0 +1,141 @@
+{
+  "evidence_class": "real_public_data_ingestion_only",
+  "dataset": "WSELOB-2017 V1",
+  "source_url": "https://data.mendeley.com/datasets/3g4mhdp899/1",
+  "license": "CC BY 4.0",
+  "attribution": "Marsza\u0142ek, Adam (2023), WSELOB-2017, Mendeley Data V1, DOI 10.17632/3g4mhdp899.1; CC BY 4.0; order replay, causal features and evaluation added; as-is, no warranty or endorsement.",
+  "h5py": "3.12.1",
+  "numpy": "2.0.2",
+  "label_status": "No manipulation labels provided or inferred",
+  "sampling": "First contiguous rows per requested stock/day; not random or representative",
+  "full_source_hash_verified": false,
+  "partitions": [
+    {
+      "stock": "KGHM",
+      "date": "2017-01-10",
+      "source_rows": 218864,
+      "sample_rows": 4096,
+      "fields": [
+        "index",
+        "time",
+        "priority_date",
+        "order_date",
+        "symbol_idx",
+        "price",
+        "agg_volume",
+        "volume",
+        "order_id",
+        "num_orders",
+        "side",
+        "order_type",
+        "action_type",
+        "price_level"
+      ],
+      "action_counts": {
+        "F": 1,
+        "Y": 1907,
+        "A": 1096,
+        "D": 960,
+        "M": 132
+      },
+      "symbol_ids": [
+        10783
+      ],
+      "time_ns_min": 1484020894357292000,
+      "time_ns_max": 1484035365976175000,
+      "timestamp_backsteps": 0,
+      "first_action": "F",
+      "sample_file": "KGHM-2017-01-10-prefix.csv",
+      "sample_sha256": "dc678e74bb9bfc88805b084085314533c0fe7fa19d10cf1ed4537e45fdb4e449"
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-01-11",
+      "source_rows": 144260,
+      "sample_rows": 4096,
+      "fields": [
+        "index",
+        "time",
+        "priority_date",
+        "order_date",
+        "symbol_idx",
+        "price",
+        "agg_volume",
+        "volume",
+        "order_id",
+        "num_orders",
+        "side",
+        "order_type",
+        "action_type",
+        "price_level"
+      ],
+      "action_counts": {
+        "F": 1,
+        "Y": 1711,
+        "A": 1281,
+        "D": 904,
+        "M": 199
+      },
+      "symbol_ids": [
+        10783
+      ],
+      "time_ns_min": 1484107294602397000,
+      "time_ns_max": 1484121784709199000,
+      "timestamp_backsteps": 0,
+      "first_action": "F",
+      "sample_file": "KGHM-2017-01-11-prefix.csv",
+      "sample_sha256": "af01990a4736258a5eed2cb52bb3fef8a72e1c145578c9ba97de10a260a8542a"
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-01-12",
+      "source_rows": 199666,
+      "sample_rows": 4096,
+      "fields": [
+        "index",
+        "time",
+        "priority_date",
+        "order_date",
+        "symbol_idx",
+        "price",
+        "agg_volume",
+        "volume",
+        "order_id",
+        "num_orders",
+        "side",
+        "order_type",
+        "action_type",
+        "price_level"
+      ],
+      "action_counts": {
+        "F": 1,
+        "Y": 1768,
+        "A": 1269,
+        "D": 802,
+        "M": 256
+      },
+      "symbol_ids": [
+        10783
+      ],
+      "time_ns_min": 1484193694475942000,
+      "time_ns_max": 1484208091293910000,
+      "timestamp_backsteps": 0,
+      "first_action": "F",
+      "sample_file": "KGHM-2017-01-12-prefix.csv",
+      "sample_sha256": "8282375894c10154b94933197f9df38182064c7ec051e4953358cf6f4165e889"
+    }
+  ],
+  "transfers": [],
+  "status": "partial",
+  "requested_stocks": [
+    "KGHM",
+    "PEKAO"
+  ],
+  "requested_days": [
+    "2017-01-10",
+    "2017-01-11",
+    "2017-01-12"
+  ],
+  "interruption": "HTTP range mismatch on PEKAO. All three KGHM partitions completed. PEKAO retried separately in results/wselob-probe-20261124-pekao.",
+  "transfer_accounting": "Initial interrupted run did not persist final transfer counters; no total download claim."
+}

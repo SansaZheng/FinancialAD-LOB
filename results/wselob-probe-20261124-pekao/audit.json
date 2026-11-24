@@ -1,0 +1,138 @@
+{
+  "evidence_class": "real_public_data_ingestion_only",
+  "dataset": "WSELOB-2017 V1",
+  "source_url": "https://data.mendeley.com/datasets/3g4mhdp899/1",
+  "license": "CC BY 4.0",
+  "attribution": "Marsza\u0142ek, Adam (2023), WSELOB-2017, Mendeley Data V1, DOI 10.17632/3g4mhdp899.1; CC BY 4.0; order replay, causal features and evaluation added; as-is, no warranty or endorsement.",
+  "h5py": "3.12.1",
+  "numpy": "2.0.2",
+  "label_status": "No manipulation labels provided or inferred",
+  "sampling": "First contiguous rows per requested stock/day; not random or representative",
+  "full_source_hash_verified": false,
+  "partitions": [
+    {
+      "stock": "PEKAO",
+      "date": "2017-01-10",
+      "source_rows": 52396,
+      "sample_rows": 4096,
+      "fields": [
+        "index",
+        "time",
+        "priority_date",
+        "order_date",
+        "symbol_idx",
+        "price",
+        "agg_volume",
+        "volume",
+        "order_id",
+        "num_orders",
+        "side",
+        "order_type",
+        "action_type",
+        "price_level"
+      ],
+      "action_counts": {
+        "F": 1,
+        "Y": 485,
+        "D": 1691,
+        "A": 1841,
+        "M": 78
+      },
+      "symbol_ids": [
+        11322
+      ],
+      "time_ns_min": 1484020894357688000,
+      "time_ns_max": 1484036367976108000,
+      "timestamp_backsteps": 0,
+      "first_action": "F",
+      "sample_file": "PEKAO-2017-01-10-prefix.csv",
+      "sample_sha256": "f78995dc7ee6187f66ca87f529172357e74e6d2f1452621355d8314ab31b4524"
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-01-11",
+      "source_rows": 30834,
+      "sample_rows": 4096,
+      "fields": [
+        "index",
+        "time",
+        "priority_date",
+        "order_date",
+        "symbol_idx",
+        "price",
+        "agg_volume",
+        "volume",
+        "order_id",
+        "num_orders",
+        "side",
+        "order_type",
+        "action_type",
+        "price_level"
+      ],
+      "action_counts": {
+        "F": 1,
+        "Y": 517,
+        "D": 1673,
+        "A": 1827,
+        "M": 78
+      },
+      "symbol_ids": [
+        11322
+      ],
+      "time_ns_min": 1484107294602782000,
+      "time_ns_max": 1484124257825825000,
+      "timestamp_backsteps": 0,
+      "first_action": "F",
+      "sample_file": "PEKAO-2017-01-11-prefix.csv",
+      "sample_sha256": "efc8ed97d0b38a91f7be61ef49b8dfab3befb29defc570a204842279cc9d1497"
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-01-12",
+      "source_rows": 51982,
+      "sample_rows": 4096,
+      "fields": [
+        "index",
+        "time",
+        "priority_date",
+        "order_date",
+        "symbol_idx",
+        "price",
+        "agg_volume",
+        "volume",
+        "order_id",
+        "num_orders",
+        "side",
+        "order_type",
+        "action_type",
+        "price_level"
+      ],
+      "action_counts": {
+        "F": 1,
+        "Y": 537,
+        "A": 1780,
+        "D": 1667,
+        "M": 111
+      },
+      "symbol_ids": [
+        11322
+      ],
+      "time_ns_min": 1484193694476322000,
+      "time_ns_max": 1484209789446699000,
+      "timestamp_backsteps": 0,
+      "first_action": "F",
+      "sample_file": "PEKAO-2017-01-12-prefix.csv",
+      "sample_sha256": "ed62c07d9e44247b5c1fb756357fc05cf612a6791e5bfbc9df1bf8336ad9a11c"
+    }
+  ],
+  "transfers": [
+    {
+      "stock": "PEKAO",
+      "bytes": 786432,
+      "requests": 12,
+      "range_rejections": 0,
+      "source_size": 152759953,
+      "full_file_downloaded": false
+    }
+  ]
+}

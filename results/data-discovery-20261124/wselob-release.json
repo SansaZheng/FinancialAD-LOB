@@ -1,0 +1,18 @@
+{
+  "id": "3g4mhdp899",
+  "version": 1,
+  "name": "WSELOB-2017: The year-long database of limit order books for the five biggest companies listed on the Warsaw Stock Exchange",
+  "doi": "10.17632/3g4mhdp899.1",
+  "publish_date": "2023-10-16T06:06:45.475Z",
+  "description": "This dataset containing raw data from the five largest companies listed on the Warsaw Stock Exchange (WSE) in 2017. The comprehensive data, including the limit order book and trades associated with these companies, were obtained as historical binary messages from the WSE trading platform. To make this data more accessible for research purposes, we converted the raw binary messages into numerical and text data and stored it in the user-friendly HDF5 data format. Researchers and scholars will find this dataset valuable for various applications, including microstructure market analysis, liquidity risk measurement, high-frequency time series prediction, and automated trading.",
+  "method": "The historical data has been obtained as binary files containing all messages (WSE Real-Time Message) from the WSE trading platform. The raw messages of orders and trades relating to the five biggest companies listed on WSE have been filtered and parsed into numerical and text data and saved in the easily manipulated HDF5 data format.",
+  "licence": {
+    "id": "01d9c749-3c4d-4431-9df3-620b2dcfe144",
+    "short_name": "CC BY 4.0",
+    "full_name": "Creative Commons Attribution 4.0 International",
+    "description": "You can share, copy and modify this dataset so long as you give appropriate credit, provide a link to the CC BY license, and indicate if changes were made, but you may not do so in a way that suggests the rights holder has endorsed you or your use of the dataset. Note that further permission may be required for any content within the dataset that is identified as belonging to a third party.",
+    "url": "http://creativecommons.org/licenses/by/4.0",
+    "category": "Creative",
+    "customer_id": null
+  }
+}

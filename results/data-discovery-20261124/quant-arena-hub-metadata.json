@@ -1,0 +1,43 @@
+{
+  "id": "Ashitemaru/Quant-Arena-Public-L1",
+  "sha": "fa85d7b95e56e81317ac349f52e916ca482f0f68",
+  "lastModified": "2026-10-21T22:19:29.000Z",
+  "gated": false,
+  "disabled": false,
+  "cardData": {
+    "license": "cc-by-nc-4.0",
+    "pretty_name": "Quant-Arena Public L1",
+    "language": [
+      "en"
+    ],
+    "tags": [
+      "finance",
+      "quantitative-finance",
+      "market-microstructure",
+      "limit-order-book",
+      "time-series",
+      "benchmark",
+      "llm-agents"
+    ],
+    "task_categories": [
+      "time-series-forecasting"
+    ],
+    "size_categories": [
+      "100M<n<1B"
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "quant-arena-public-l1-v1.tar"
+    },
+    {
+      "rfilename": "quant-arena-public-l1-v1.tar.sha256"
+    }
+  ]
+}

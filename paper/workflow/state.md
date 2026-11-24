@@ -1,39 +1,34 @@
-# Current execution — 2026-11-23
+# Current execution — 2026-11-24
 
-007-ccfa-protocol-and-archive | Codex | blocked after independent deliverables
+008-cq-access-public-data | Codex | independent data work completed; CQ blocked
+Configuration revision 5. Target: CCF A quality aspiration, venue undecided.
+Canonical: https://github.com/SansaZheng/FinancialAD-LOB
 
-Target: CCF A quality aspiration; specific venue undecided. Config revision 5.
-Canonical repository: https://github.com/SansaZheng/FinancialAD-LOB
-Working checkout: /Users/zyy/.local/share/financialad-lob/repo
-Legacy files: /Users/zyy/Documents/ChatGPT/FinancialAD/lob-manipulation (preserved).
+CQ: today's retry again rejected the SansaZheng owner (HTTP 400); no job ID.
+GitHub write access is present, but CQ's owner policy is separate. Supported
+remedies and the concrete pending owner/admin action are in docs/cq-access.md.
+No unrelated jobs, shared environments, policy settings or paid capacity changed.
 
-Completed: fair split/label/metric contracts; four tabular baseline runners;
-causal price-aligned liquidity candidate and loss prototype; 18 passing bounded
-CPU engineering checks, including four-baseline subset equivalence; research,
-data, baseline, migration and execution documentation. Initial commit
-f0910311eb1771209369705fdba9976e94ff0515 pushed and independently cloned; all 33
-tracked files matched SHA256. Scientific training has not started.
+Data: WSELOB v1 primary release explicitly CC BY 4.0; five stocks' order/trade
+metadata matched to the primary API. Actual acquisition and deterministic replay
+completed for KGHM and PEKAO on 2017-01-10/11/12: 24,576 event messages, 192
+five-level snapshots, 28 crossed/locked snapshots flagged. Full source hashes
+are not yet verified. Prefixes include retransmission/preopen states; no intent
+labels or manipulation detection performance is inferred. Quant-Arena metadata
+is archived as a secondary provenance-pending candidate, with no market rows read.
 
-CQ: connected; queried current-agent and FinancialAD-LOB jobs (both zero).
-Attempted the committed preflight spec. Server rejected it with HTTP 400:
-code.git permits SuuTTT repositories only, whereas the user specified SansaZheng.
-No job ID returned. No scheduler policy modified, no paid resources used and no
-other project's jobs changed. Obtain administrator allowlisting or an approved
-mirror; do not bypass this check. Work registry acceptance is not yet verified.
+Code: bounded HTTP reader, WSE event parser/replay, acquisition/probe/audit scripts,
+source manifest, CC attribution and steps. 26 engineering tests pass; full fetch
+storage guards also rejected non-CQ and non-/date-or-/data invocation as intended.
+No complete neural training pipeline or matched scientific benchmark has run.
 
-Data: multi-date, multi-stock benchmark with verified labels/session identities
-not acquired. Exact original benchmark remains unavailable. Public sample route
-can help cross-stock engineering; one day cannot support cross-date claims.
-Raw redistribution rights remain unconfirmed, so raw market data are not uploaded.
+Archiving: new work is being synchronized to the canonical repository; final
+push/verification receipts are tracked separately. Legacy 189 iCloud placeholders
+are preserved; no claim of migration or old-data space reclaimed.
 
-Migration: 189 legacy artifacts, 296,574,050 logical bytes, zero allocated data
-blocks in the inventory. They are iCloud placeholders, not verified remote
-backups. Their contents were not migrated; no old files deleted. Actual old-data
-bytes freed: 0. Small local integration-test temporary files clean up themselves.
+Next: account owner creates SuuTTT/FinancialAD-LOB execution fork or CQ admin
+allows canonical repo; then check duplicates, pin pushed SHA, CQ storage preflight,
+environment qualification, full WSE checksum acquisition, session/label audits,
+and the registered date/stock fair-control and innovation/ablation experiments.
 
-Next: (1) resolve CQ repository access; (2) run storage/input preflight; (3) recover
-and verify old artifacts via CQ, or restore readable iCloud contents; (4) acquire
-legal multi-date data; (5) qualify environment and neural baselines; (6) execute
-frozen fair-control batches; (7) verify GitHub result backups before cleanup.
-
-中文结论：新代码与协议已保存并验证，但 CQ 正式作业、真实跨域实验和旧数据迁移尚未完成；不能宣称性能超越或清理出旧数据空间。
+中文结论：真实公开多日多股票样本已读取并回放，数据接入不再停留在文献准备；CQ 仓库白名单仍是正式训练的外部阻塞，尚无超越原论文的证据。

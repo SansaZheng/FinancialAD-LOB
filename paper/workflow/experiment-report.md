@@ -1,21 +1,34 @@
-# Progress report / 进展报告 — 2026-11-23
+# Progress report / 进展报告 — 2026-11-24
 
-The project now has explicit supervision budgets, stock/date isolation, leakage
-checks, validation-only calibration and a causal liquidity-dynamics prototype.
-Eighteen engineering checks pass, including identical splits and labeled subsets
-for four supervised controls. These checks do not establish market performance.
+CQ access was prioritized and retried after checking the queue and GitHub rights.
+It still rejects SansaZheng-owned source repositories with HTTP 400; no job ID
+was issued. The proposed SuuTTT execution fork is absent. The connector does
+not expose fork creation, and browser inspection did not provide a usable
+SuuTTT login. Exact allowlisting or an owner-created fork is the pending action.
+The canonical archive remains SansaZheng/FinancialAD-LOB.
 
-已完成四个监督基线入口、公平划分与标签预算、验证集选择，以及价格对齐的因果流动性原型。18 项工程检查通过，但未运行可支撑论文性能结论的真实行情实验。
+**已执行的数据工作：** WSELOB-2017 主站明确提供 CC BY 4.0 许可。五只股票的
+订单/成交文件元数据已核对；KGHM 和 PEKAO 在 2017-01-10、11、12 的六个
+真实分区各读取 4,096 条消息，共 24,576 条。独立回放生成 192 个五档快照，
+全部具备五档深度，28 个交叉或锁定盘口被标记。样本包含重传和开盘前状态，
+不能直接作为连续交易时段评测集，更不包含真实操纵意图标签。
 
-The first 33 GitHub files were independently downloaded and SHA256 verified.
-CQ rejected the preflight submission because only SuuTTT-owned repositories are
-allowed; the specified canonical repository belongs to SansaZheng. No job started.
-Multi-date stock data and original benchmark details are still missing.
+Saved artifacts include raw permitted CSV prefixes, reconstructed JSON snapshots,
+per-file hashes, source/license metadata, data-ingestion and replay audits, a
+bounded range reader, event replay adapter, CQ-only full acquisition command,
+and exact steps. The first combined read's HTTP range failure is preserved;
+PEKAO then completed in a separate bounded run. The full 2017 files were not
+copied to the Mac. No full-source SHA256 verification is claimed yet.
 
-首批 33 个仓库文件已独立回读核验。CQ 因仓库所有者限制拒绝提交，任务 ID 为空。跨日期行情与原论文完整输入仍缺失，后续应先解决这些条件再启动训练。
+Quant-Arena's pinned release manifest and license were extracted from its large
+archive using ranges. It lists 289 stocks and up to 484 days, but its 15-second
+quotes do not replace event-level spoofing data. Redistribution provenance remains
+pending and no market-data rows from it have been validated.
 
-Legacy inventory lists 189 iCloud placeholder files with zero allocated data
-bytes. No original data were deleted or claimed as migrated. Public raw-data
-redistribution needs source-specific permission. Existing evidence remains intact.
+26 bounded CPU engineering tests pass. Two full-download guard checks reject
+non-CQ execution and paths outside /date or /data. These are implementation/data
+checks, not scientific evidence of AP improvement. Formal CQ environment, full
+acquisition, session filters, labeling controls, neural baselines, cross-domain
+performance and methodology ablations remain incomplete.
 
-中文结论：本次完成了可测试的代码基础、研究协议和新文件的 GitHub 核验；正式 CQ 实验和旧数据迁移尚受接入、数据与许可条件限制，未虚报性能或释放空间。
+中文结论：本轮已完成真实多日多股票数据的小样本读取、回放和工程验证，所有新证据将随代码存档；CQ 接入仍需管理员放行或创建执行镜像，不能宣称已复现或超越原论文，也不能宣称已达到 CCF A 录用水平。

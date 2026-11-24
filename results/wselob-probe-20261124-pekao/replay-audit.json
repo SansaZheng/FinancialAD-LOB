@@ -1,0 +1,40 @@
+{
+  "evidence_class": "real_data_replay_engineering_only",
+  "partitions": [
+    {
+      "stock": "PEKAO",
+      "date": "2017-01-10",
+      "messages_replayed": 4096,
+      "snapshots": 32,
+      "crossed_or_locked": 2,
+      "complete_five_level_depth": 32,
+      "live_orders": 635,
+      "snapshots_sha256": "5c2d899e0c1b3169304c8aa13eeed0410e55e3f6119ea4227bf84e236cb7e792"
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-01-11",
+      "messages_replayed": 4096,
+      "snapshots": 32,
+      "crossed_or_locked": 1,
+      "complete_five_level_depth": 32,
+      "live_orders": 671,
+      "snapshots_sha256": "31b2d1e48bc35a0d4e55f3294e5631fd3e117fc64071140df17ca9f1c07039c2"
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-01-12",
+      "messages_replayed": 4096,
+      "snapshots": 32,
+      "crossed_or_locked": 2,
+      "complete_five_level_depth": 32,
+      "live_orders": 650,
+      "snapshots_sha256": "f68e83c5739fe498372ca233216af4750ec8e4791dea7f17b4b595e070ad1a63"
+    }
+  ],
+  "snapshot_stride_events": 128,
+  "limit_orders_only": true,
+  "manipulation_labels": null,
+  "AP": null,
+  "warning": "Prefixes include retransmission and preopen/auction states; not a continuous-session benchmark."
+}
