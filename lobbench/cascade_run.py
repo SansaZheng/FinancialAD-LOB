@@ -175,7 +175,7 @@ def run(dataset,output,regimes,seeds,epochs=10,device='cpu',engineering=False,fo
     torch.use_deterministic_algorithms(True)
     all_data=np.load(dataset,allow_pickle=False)
     data={k:all_data[k] for k in all_data.files}
-    raw=data['raw'];manual=data['manual'].reshape(len(raw),-1)
+    raw=data['raw'];manual=data['manual'][:,:,[0,1,2,3,12]].reshape(len(raw),-1)
     dynamics={k:data[k].reshape(len(raw),-1) for k in ('aligned','rank')}
     reports=[]
     for regime in regimes:

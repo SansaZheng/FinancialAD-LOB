@@ -48,7 +48,7 @@ an exact implementation of the target paper's millisecond order injection.
 The complete injection ledger is archived for auditing and is never given to
 predictors. Neither stock/date IDs nor style names enter models. Eight manual
 execution/cancellation channels are unavailable and uniformly zero across all
-classes. Deletion events are not relabeled as cancellations. Observed book
+classes; all models omit these unavailable fields from their inputs. Deletion events are not relabeled as cancellations. Observed book
 changes are called liquidity additions/removals, not proven order intentions.
 
 Dataset:

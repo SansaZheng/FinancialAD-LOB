@@ -61,7 +61,7 @@ class CascadeTests(unittest.TestCase):
         loss=(reconstruct(m,x)-x).square().mean();loss.backward()
         self.assertTrue(torch.isfinite(loss))
     def test_fusion_parameter_budgets(self):
-        counts=[sum(p.numel() for p in Fusion(d).parameters()) for d in (389,689,625)]
+        counts=[sum(p.numel() for p in Fusion(d).parameters()) for d in (189,489,425)]
         self.assertLess(max(counts)/min(counts),1.01)
 
 if __name__=='__main__':unittest.main()

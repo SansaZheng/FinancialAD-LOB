@@ -12,7 +12,7 @@ We implement the described cascade: MSE-pretrained multilevel LOB Transformer, f
 | Injection ambiguity | Appendix says BidPrice1/AskPrice1 ≥1.0008, impossible for an uncrossed book; also text/table discrepancies in price offset and interarrival ranges. We do not silently repair these and call the result exact reproduction. |
 | Controls | Positive layering/staggered withdrawal and benign persistent/independent additions share volume and side distributions. Added volumes are integer shares, and every injected style requires at least two visible affected levels; windows failing this common observability gate are excluded. Ledger fields never enter predictors. An observational pattern cannot establish trader intent. |
 | Timing | 25 contiguous event snapshots, stride64, spread-normalized prices and log volumes. Injection is in event steps, not paper millisecond timestamps. No oversampling of test examples. |
-| Manual features | Best bid/ask log returns, their differences and log time delta available. Eight trade/cancel channels are uniformly unavailable/zero. WSE deletion D is not interpreted as cancellation. |
+| Manual features | Best bid/ask log returns, their differences and log time delta available. Eight trade/cancel channels are uniformly unavailable/zero in archived data and are omitted from every model input, avoiding inactive parameters in capacity matching. WSE deletion D is not interpreted as cancellation. |
 | JFDS architecture | Same preserved Transformer class and portable teacher-forced decoder; compact width64/FF128/layers2/heads8 rather than predecessor width128/FF512/layers6. Device adaptation is explicit. |
 | Training | Paper sequence25, batch256, Adam1e-4, 10 epochs per stage. Alpha0.1 and temperature0.1 are registered assumptions, not recovered author settings. Full generated training supervision (~5% positives) differs substantially from paper ~0.03%. |
 | Fusion capacity | Hidden width chosen by input dimension so all fusion variants have approximately200k parameters, within1%; same labels, batch schedule, epochs and six detector-selection trials. |
@@ -23,3 +23,7 @@ Method hypothesis: price-aligned observed liquidity addition/removal sequences b
 All splits are source-stock/date based. Every background segment is used once; no clean/injected twins are split across sets. Five seeds repeat initialization and training; they do not create five independent markets. A small number of dates remains a material limitation for a CCF A claim.
 
 中文结论：本阶段是有明确复现差异记录的 WSE 半合成外部评测；只有在相同数据、划分、标签预算下稳定优于级联基线，才能声称该方法在此协议上改进。不能据此宣称精确复现或真正超过论文的 0.675。
+
+Pre-training amendment v1.2: review found that counting weights connected to eight always-zero channels overstates effective capacity. All methods now use only the five available manual channels. This was fixed before any scientific run began; queued pre-amendment pilot j-1125-e79ab8 was cancelled without starting. No test metrics informed the change.
+
+中文结论：在正式训练前统一剔除不可观测的手工特征，使参数量比较更可靠；原始缺失标记仍完整保留。
