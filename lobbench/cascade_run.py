@@ -6,16 +6,19 @@ import os
 from pathlib import Path
 import random
 import resource
+import sys
+import sklearn
 import time
 import numpy as np
 import torch
-from sklearn.ensemble import IsolationForest
+from sklearn.ensemble import IsolationForest,HistGradientBoostingClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import average_precision_score,roc_auc_score,precision_recall_curve,auc
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import OneClassSVM
 from lobbench.cascade import jfds_autoencoder,encode,reconstruct,Fusion,paper_contrastive
 
-METHODS=('raw_ocsvm','dynamics_ocsvm','cascade_ocsvm','cascade_if','price_cascade_ocsvm','rank_cascade_ocsvm','price_no_scl','price_no_lob')
+METHODS=('raw_ocsvm','dynamics_ocsvm','cascade_ocsvm','cascade_if','price_cascade_ocsvm','rank_cascade_ocsvm','price_no_scl','price_no_lob','supervised_logistic','supervised_hgb')
 
 
 def splits(data,regime):
@@ -136,6 +139,23 @@ def detector_fit(ztrain,ytrain,zval,yval,kind,seed):
     return model,scaler,dict(selected=cfg,validation_ap=ap,threshold=threshold,trials=trials),score
 
 
+def supervised_fit(xtrain,ytrain,xval,yval,method,seed):
+    grid=([dict(C=c) for c in (.01,.1,1.,10.,100.,1000.)] if method=='supervised_logistic'
+          else [dict(max_leaf_nodes=n,learning_rate=lr) for n in (7,15,31) for lr in (.03,.1)])
+    best=None;trials=[]
+    for trial,cfg in enumerate(grid):
+        if method=='supervised_logistic':
+            model=LogisticRegression(solver='liblinear',max_iter=1000,class_weight='balanced',random_state=seed,**cfg)
+        else:
+            model=HistGradientBoostingClassifier(max_iter=100,early_stopping=False,class_weight='balanced',random_state=seed,**cfg)
+        model.fit(xtrain,ytrain);score=model.predict_proba(xval)[:,1]
+        ap=float(average_precision_score(yval,score));trials.append(dict(trial=trial,validation_ap=ap,**cfg))
+        if best is None or ap>best[0]:best=(ap,model,score,cfg)
+    ap,model,score,cfg=best;negative=np.sort(score[yval==0])
+    threshold=float(negative[min(len(negative)-1,int(np.ceil(.99*len(negative))))])
+    return model,dict(selected=cfg,validation_ap=ap,threshold=threshold,trials=trials),score
+
+
 def evaluate(y,score,threshold):
     precision,recall,_=precision_recall_curve(y,score)
     return dict(ap=float(average_precision_score(y,score)),pr_auc_trapezoidal=float(auc(recall,precision)),
@@ -183,12 +203,15 @@ def run(dataset,output,regimes,seeds,epochs=10,device='cpu',engineering=False):
                                     raw_mean=norm.mean_,raw_scale=norm.scale_)
                 runinfo=dict(fold=fold,seed=seed,epochs=epochs,device=device,cq_job=os.environ.get('CQ_JOB_ID'),
                              dataset_sha256=hashlib.sha256(dataset.read_bytes()).hexdigest(),
+                             versions=dict(python=sys.version,numpy=np.__version__,torch=torch.__version__,sklearn=sklearn.__version__),
+                             code_sha256={f:hashlib.sha256(Path(f).read_bytes()).hexdigest() for f in ['lobbench/cascade.py','lobbench/cascade_run.py','lobbench/semisynthetic.py','configs/010-preregistered.json']},
                              sizes=dict(train=len(tr),validation=len(va),test=len(te)),representation=repinfo,methods={},
                              evidence_class='engineering_only' if engineering else 'semisynthetic_external_dataset_adaptation')
                 cached={}
                 for method in METHODS:
-                    israw=method=='raw_ocsvm';isdyn=method=='dynamics_ocsvm'
-                    if israw:features=rx.reshape(len(rx),-1)
+                    israw=method=='raw_ocsvm';isdyn=method=='dynamics_ocsvm';issuper=method.startswith('supervised_')
+                    if issuper:features=np.concatenate([rx.reshape(len(rx),-1),manual[index],dynamics['aligned'][index]],axis=1)
+                    elif israw:features=rx.reshape(len(rx),-1)
                     elif isdyn:features=np.concatenate([manual[index],dynamics['aligned'][index]],axis=1)
                     else:
                         parts=[] if method=='price_no_lob' else [rep]
@@ -199,23 +222,29 @@ def run(dataset,output,regimes,seeds,epochs=10,device='cpu',engineering=False):
                     (features,),sc=standardize(features[:ntr],[features])
                     fusionkey='cascade' if method in ('cascade_ocsvm','cascade_if') else method
                     modelinfo={}
-                    if not israw and not isdyn:
+                    if not israw and not isdyn and not issuper:
                         if fusionkey not in cached:
                             cached[fusionkey]=train_fusion(features[:ntr],data['y'][tr],features,seed,epochs,device,
                                                           0 if method=='price_no_scl' else .1,dest/(fusionkey+'.pt'))
                         z,modelinfo=cached[fusionkey]
                     else:z=features
                     kind='if' if method=='cascade_if' else 'ocsvm'
-                    detector,detscaler,selection,vscore=detector_fit(z[:ntr],data['y'][tr],z[ntr:ntr+nva],data['y'][va],kind,seed)
+                    if issuper:
+                        detector,selection,vscore=supervised_fit(z[:ntr],data['y'][tr],z[ntr:ntr+nva],data['y'][va],method,seed)
+                        testscore=detector.predict_proba(z[ntr+nva:])[:,1]
+                        detscaler=None
+                    else:
+                        detector,detscaler,selection,vscore=detector_fit(z[:ntr],data['y'][tr],z[ntr:ntr+nva],data['y'][va],kind,seed)
+                        testscore=-detector.score_samples(detscaler.transform(z[ntr+nva:]))
                     # Test labels are consumed only after representation and detector selection.
-                    testscore=-detector.score_samples(detscaler.transform(z[ntr+nva:]))
                     metrics=evaluate(data['y'][te],testscore,selection['threshold'])
                     np.savez_compressed(dest/(method+'-predictions.npz'),id=data['id'][te],stock=data['stock'][te],date=data['date'][te],
                                         kind=data['kind'][te],y=data['y'][te],score=testscore,validation_id=data['id'][va],validation_y=data['y'][va],
                                         validation_score=vscore)
                     # Rebuild embeddings from saved model states, inputs and normalizers; no unsafe pickle of sklearn estimators.
                     np.savez_compressed(dest/(method+'-normalizers.npz'),feature_mean=sc.mean_,feature_scale=sc.scale_,
-                                        detector_mean=detscaler.mean_,detector_scale=detscaler.scale_)
+                                        detector_mean=detscaler.mean_ if detscaler else np.zeros(z.shape[1]),
+                                        detector_scale=detscaler.scale_ if detscaler else np.ones(z.shape[1]))
                     runinfo['methods'][method]=dict(metrics=metrics,selection=selection,fusion=modelinfo)
                     (dest/'metrics.json').write_text(json.dumps(runinfo,indent=2)+'\n')
                     print(f'{fold} seed={seed} {method} AP={metrics["ap"]:.6f}',flush=True)

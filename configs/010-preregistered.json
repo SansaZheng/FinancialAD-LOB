@@ -1,8 +1,18 @@
 {
-  "version": "stage010-v1-before-any-test-results",
+  "version": "stage010-v1.1-before-any-test-results",
   "source": "WSELOB-2017 CC BY 4.0 complete HDF daily partitions",
-  "stocks": ["KGHM", "PEKAO", "PKNORLEN", "PKOBP", "PZU"],
-  "dates": ["2017-01-10", "2017-01-11", "2017-01-12"],
+  "stocks": [
+    "KGHM",
+    "PEKAO",
+    "PKNORLEN",
+    "PKOBP",
+    "PZU"
+  ],
+  "dates": [
+    "2017-01-10",
+    "2017-01-11",
+    "2017-01-12"
+  ],
   "scope": "First complete-session batch; 20-date planning target remains outstanding",
   "generator_seed": 17086,
   "generator": "wse-event-overlay-v1",
@@ -10,8 +20,19 @@
   "stride": 64,
   "positive_probability": 0.05,
   "benign_control_probability": 0.05,
-  "seeds": [0, 1, 2, 3, 4],
-  "regimes": ["date", "stock", "combined", "style"],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "regimes": [
+    "date",
+    "stock",
+    "combined",
+    "style"
+  ],
   "date_split": "Jan10 train / Jan11 validation / Jan12 test, five stocks",
   "stock_split": "Five folds; held-out stock test, next alphabetical stock validation, other three train; all dates",
   "combined_split": "Same stock folds, and Jan10 train / Jan11 validation / Jan12 test",
@@ -27,12 +48,74 @@
   "alpha": 0.1,
   "temperature": 0.1,
   "detector_trials": 6,
-  "ocsvm_grid": {"nu": [0.01, 0.05, 0.1], "gamma_factor_per_dimension": [0.1, 1.0]},
-  "if_grid": {"n_estimators": 100, "max_samples": [128, 256, 512], "max_features": [0.5, 1.0]},
+  "ocsvm_grid": {
+    "nu": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "gamma_factor_per_dimension": [
+      0.1,
+      1.0
+    ]
+  },
+  "if_grid": {
+    "n_estimators": 100,
+    "max_samples": [
+      128,
+      256,
+      512
+    ],
+    "max_features": [
+      0.5,
+      1.0
+    ]
+  },
   "selection": "validation AP only, earliest trial breaks ties; no test-dependent method revision",
   "threshold": "conservative validation-negative order statistic for target 1% empirical FPR",
   "primary": "window average precision, paired across identical folds/seeds",
-  "secondary": ["trapezoidal PR AUC", "AUROC", "recall at validation-calibrated 1% FPR", "actual test FPR", "benign-control false positives", "per-style AP"],
+  "secondary": [
+    "trapezoidal PR AUC",
+    "AUROC",
+    "recall at validation-calibrated 1% FPR",
+    "actual test FPR",
+    "benign-control false positives",
+    "per-style AP"
+  ],
   "uncertainty": "paired stock-day cluster bootstrap where enough clusters; seeds alone are not independent market samples",
-  "paper_0675_comparison": "Not directly comparable: different market, labels, prevalence, architecture budget, metrics/aggregation and split"
+  "paper_0675_comparison": "Not directly comparable: different market, labels, prevalence, architecture budget, metrics/aggregation and split",
+  "methods": [
+    "raw_ocsvm",
+    "dynamics_ocsvm",
+    "cascade_ocsvm",
+    "cascade_if",
+    "price_cascade_ocsvm",
+    "rank_cascade_ocsvm",
+    "price_no_scl",
+    "price_no_lob",
+    "supervised_logistic",
+    "supervised_hgb"
+  ],
+  "supervised_controls": "Identical labels and all available raw/manual/aligned inputs, six validation-only trials",
+  "logistic_C_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "hgb_grid": {
+    "max_leaf_nodes": [
+      7,
+      15,
+      31
+    ],
+    "learning_rate": [
+      0.03,
+      0.1
+    ],
+    "max_iter": 100,
+    "early_stopping": false
+  }
 }

@@ -20,7 +20,7 @@ if __name__=='__main__':
         if not torch.cuda.is_available():raise RuntimeError('CUDA unavailable')
         print(torch.cuda.get_device_name(0),flush=True)
     reports=run(dataset,out/'smoke',['date'],[0],1,a.device,engineering=True)
-    assert len(reports)==1 and len(reports[0]['methods'])==8
+    assert len(reports)==1 and len(reports[0]['methods'])==10
     report=dict(passed=True,evidence_class='engineering_only_not_financial_performance',device=a.device,
                 torch=torch.__version__,numpy=np.__version__,python=platform.python_version(),
                 seconds=time.monotonic()-started,peak_rss_native=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,

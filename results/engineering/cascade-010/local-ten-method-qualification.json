@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "evidence_class": "engineering_only_not_financial_performance",
+  "device": "cpu",
+  "torch": "2.8.0",
+  "numpy": "2.0.2",
+  "python": "3.9.6",
+  "seconds": 4.623517874999999,
+  "peak_rss_native": 364118016,
+  "peak_cuda_bytes": 0,
+  "source_sha256": {
+    "lobbench/cascade.py": "958bc77b491cf993897932d76eb81c01cc9df57b9fce3c5129e4e0b506779d39",
+    "lobbench/cascade_run.py": "545709837db9904ee614d5cef341ab3146764516e5aa78a4968fc942831ab4e4",
+    "lobbench/semisynthetic.py": "6e5e622c569dc71f5177c3b0937b6dd3f1324647a6cceb4defb7473ecd081d5c"
+  }
+}
