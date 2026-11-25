@@ -1,0 +1,14 @@
+{
+  "native_real_pilot_job": "j-1125-810108",
+  "native_seconds": 333.3653,
+  "native_peak_rss_bytes": 1234944000,
+  "workers": 4,
+  "normal_fit_cap": 5000,
+  "largest_validation_stock_windows": 8612,
+  "maximum_two_gamma_kernel_cache_bytes": 1088960000,
+  "ram_estimate_with_30pct_buffer_gb": 12.0843008,
+  "declared_ram_gb": 14,
+  "declared_disk_gb": 1,
+  "gpus": 0,
+  "paid_rental": false
+}

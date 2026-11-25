@@ -31,3 +31,7 @@ Pre-training amendment v1.2: review found that counting weights connected to eig
 Numerical implementation note (before reading native pilot results): repeated RBF kernels are cached across the same six nu/gamma trials. A six-setting solver comparison on an engineering fixture agrees within1e-8. The mathematical OC-SVM objective, hyperparameters, validation selection, labels and model budgets are unchanged. Native pilot j-1125-810108 is retained for resource and prediction-parity auditing; the final suite reruns date/seed0 with the cached implementation rather than mixing backends. This is a computational optimization, not a method adjustment based on test results.
 
 中文结论：通过复用核矩阵减少重复计算，正式对照仍使用相同的模型、数据、标签和调参预算；原始计算版本结果保留供核对。
+
+Parameter-count disclosure: the registered200,000 value is a nominal target. Measured fusion counts are200,021 (cascade),199,925 (price/rank/no-SCL),200,145 (no-LOB), a0.11% range; the implementation counts an extra bias per hidden unit relative to its width estimate. Actual counts are always reported. Architecture is frozen; this small bookkeeping discrepancy is not corrected after pilot outcomes.
+
+中文结论：如实报告实际参数量和适配限制，保持实验架构冻结；不会因初步成绩修改基线或隐藏强基线结果。

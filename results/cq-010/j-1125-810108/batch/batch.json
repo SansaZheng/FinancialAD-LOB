@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "tasks": [
+    {
+      "regime": "date",
+      "fold": "date",
+      "seed": 0,
+      "returncode": 0,
+      "seconds": 344.14341193000007,
+      "folder": "date-s0"
+    }
+  ],
+  "total": 1
+}
