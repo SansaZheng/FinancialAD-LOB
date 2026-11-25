@@ -14,6 +14,7 @@ matching or exceeding the source paper's 0.675 AUC-PR.
 * [Candidate mechanism](docs/method.md): causal price-aligned liquidity dynamics.
 * [Baseline status](docs/baselines.md) and [data contract](docs/data-contract.md).
 * [Public data qualification](docs/public-data.md): prefix provenance and public-source licensing.
+* [Stage010 dataset card](docs/dataset-010.md): complete-day coverage,22,206 windows, labels and source hashes.
 * [Complete-day cascade protocol](paper/010-reproduction-fidelity.md): 15 complete stock-days, explicitly semi-synthetic labels, original-described cascade and one-class controls.
 * [Registered stage010 suite](configs/010-preregistered.json): 10 methods, 5 seeds, date/stock/combined/style tests; planned runs are not completed results.
 * [Observation-aware improvements](docs/improvement-009.md): matched causal sequence controls.
