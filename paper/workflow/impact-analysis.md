@@ -20,3 +20,6 @@ budgets. Do not transplant the previous pilot numbers into cross-date/cross-stoc
 tables or label them as performance of the new candidate.
 
 中文结论：旧试验只保留其原有证据范围；新研究路线必须重新运行可比实验，不能直接沿用旧数字支撑新方法。
+
+## Stage011 impact
+Reusable:source license/manifests, complete-day acquisition, WSE replay, cascade/OC-SVM implementation, frozen10-method/5-seed budgets, split/metric verification. Needs revalidation:new persistent-order overlay, per-level feature tensors, memory/runtime on fresh dates. Inapplicable as final research evidence:stage010 snapshot-overlay performance; preserve it as diagnostic and negative evidence. Native/cache parity remains an engineering question. No model tuning against stage010 test scores.

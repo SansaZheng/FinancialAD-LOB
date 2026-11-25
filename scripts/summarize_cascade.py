@@ -7,10 +7,10 @@ import numpy as np
 from sklearn.metrics import average_precision_score
 
 
-def summarize(root,output,replicates=2000,exclude_jobs=()):
+def summarize(root,output,replicates=2000,exclude_jobs=(),protocol=Path('configs/010-preregistered.json')):
     output.mkdir(parents=True,exist_ok=True)
     records=[];seen=set()
-    config=json.loads(Path("configs/010-preregistered.json").read_text())
+    config=json.loads(protocol.read_text())
     for path in sorted(root.glob('**/metrics.json')):
         if any(job in path.parts for job in exclude_jobs):continue
         report=json.loads(path.read_text())
@@ -23,7 +23,7 @@ def summarize(root,output,replicates=2000,exclude_jobs=()):
         regime=report['fold'].split('-')[0]
         for method,item in report['methods'].items():
             pred=np.load(path.parent/(method+'-predictions.npz'),allow_pickle=False)
-            benign=np.isin(pred['kind'],['persistent','independent'])
+            benign=np.isin(pred['kind'],['persistent','independent','benign_burst','benign_wave'])
             per_style={}
             for style in ('layered','staggered'):
                 ix=(pred['y']==0)|(pred['kind']==style)
@@ -50,7 +50,7 @@ def summarize(root,output,replicates=2000,exclude_jobs=()):
                                 mean_test_fpr=float(np.mean([r['metrics']['test_fpr'] for r in rr])),
                                 mean_recall_at_validation_1pct_fpr=float(np.mean([r['metrics']['recall_at_validation_1pct_fpr'] for r in rr])),
                                 mean_benign_fpr=float(np.mean([r['benign_fpr'] for r in rr if r['benign_fpr'] is not None]))))
-        methods=['price_cascade_ocsvm','rank_cascade_ocsvm','price_no_scl','price_no_lob','dynamics_ocsvm','raw_ocsvm']
+        methods=['price_cascade_ocsvm','rank_cascade_ocsvm','price_no_scl','price_no_lob','dynamics_ocsvm','raw_ocsvm','l1_cascade_ocsvm','supervised_logistic','supervised_hgb']
         base={(r['fold'],r['seed']):r for r in records if r['regime']==regime and r['method']=='cascade_ocsvm'}
         for method in methods:
             delta={}
@@ -92,4 +92,5 @@ def summarize(root,output,replicates=2000,exclude_jobs=()):
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
     p.add_argument('--exclude-jobs',nargs='*',default=[])
-    a=p.parse_args();summarize(a.root,a.output,exclude_jobs=a.exclude_jobs)
+    p.add_argument('--protocol',type=Path,default=Path('configs/010-preregistered.json'))
+    a=p.parse_args();summarize(a.root,a.output,exclude_jobs=a.exclude_jobs,protocol=a.protocol)

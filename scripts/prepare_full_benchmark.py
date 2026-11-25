@@ -9,7 +9,7 @@ from lobbench.wselob import WSEBook
 from lobbench.semisynthetic import build
 
 
-def prepare(source,output):
+def prepare(source,output,generator='snapshot'):
     if not os.environ.get('CQ_JOB_ID'):
         raise RuntimeError('Full-day processing requires CQ')
     audit=json.loads((source/'audit.json').read_text())
@@ -44,7 +44,10 @@ def prepare(source,output):
         print(json.dumps(checks[-1]),flush=True)
     output.mkdir(exist_ok=True,parents=True)
     (output/'full-day-validation.json').write_text(json.dumps(dict(passed=True,partitions=checks),indent=2)+'\n')
-    report=build(source,output)
+    if generator=='passive':
+        from lobbench.passive_overlay import build as make
+    else:make=build
+    report=make(source,output)
     for p in report['partitions']:
         if p['windows']<100 or p['positive']<2:
             raise ValueError('Insufficient qualified windows/labels; do not train')
@@ -52,4 +55,5 @@ def prepare(source,output):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--source',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
-    a=p.parse_args();prepare(a.source,a.output)
+    p.add_argument('--generator',choices=['snapshot','passive'],default='snapshot')
+    a=p.parse_args();prepare(a.source,a.output,a.generator)

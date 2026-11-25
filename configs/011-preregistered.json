@@ -1,0 +1,140 @@
+{
+  "version": "stage011-v1-before-fresh-date-results",
+  "source": "WSELOB-2017 CC BY 4.0 complete HDF daily partitions",
+  "stocks": [
+    "KGHM",
+    "PEKAO",
+    "PKNORLEN",
+    "PKOBP",
+    "PZU"
+  ],
+  "dates": [
+    "2017-01-16",
+    "2017-01-17",
+    "2017-01-18"
+  ],
+  "scope": "Fresh-date evaluation after stage010 generator audit; old diagnostics not reused as confirmatory evidence",
+  "generator_seed": 17087,
+  "generator": "persistent-passive-depth-v2",
+  "length": 25,
+  "stride": 64,
+  "positive_probability": 0.05,
+  "benign_control_probability": 0.05,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "regimes": [
+    "date",
+    "stock",
+    "combined",
+    "style"
+  ],
+  "date_split": "Jan16 train / Jan17 validation / Jan18 test, five stocks",
+  "stock_split": "Five folds; held-out stock test, next alphabetical stock validation, other three train; all dates",
+  "combined_split": "Same held-out-stock folds, plus Jan16 train / Jan17 validation / Jan18 test",
+  "style_split": "Date split plus staggered positive style held out of train/validation and layered positives excluded from test",
+  "epochs_lob": 10,
+  "epochs_fusion": 10,
+  "optimizer": "Adam lr=0.0001",
+  "batch": 256,
+  "fusion_batch": "128 background/benign + 128 positive, oversampling only when class <128",
+  "supervision": "Identical generated training labels for all supervised fusion variants; unsupervised controls get no positive labels for fitting",
+  "lob_architecture": "Preserved JFDS TransformerAutoencoder, portable teacher-forced decoder; d_model64 dim_ff128 layers2 heads8",
+  "alpha": 0.1,
+  "temperature": 0.1,
+  "detector_trials": 6,
+  "ocsvm_grid": {
+    "nu": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "gamma_factor_per_dimension": [
+      0.1,
+      1.0
+    ]
+  },
+  "if_grid": {
+    "n_estimators": 100,
+    "max_samples": [
+      128,
+      256,
+      512
+    ],
+    "max_features": [
+      0.5,
+      1.0
+    ]
+  },
+  "selection": "validation AP only, earliest trial breaks ties; no test-dependent method revision",
+  "threshold": "conservative validation-negative order statistic for target 1% empirical FPR",
+  "primary": "window average precision, paired across identical folds/seeds",
+  "secondary": [
+    "trapezoidal PR AUC",
+    "AUROC",
+    "recall at validation-calibrated 1% FPR",
+    "actual test FPR",
+    "benign-control false positives",
+    "per-style AP"
+  ],
+  "uncertainty": "paired stock-day cluster bootstrap where enough clusters; seeds alone are not independent market samples",
+  "paper_0675_comparison": "Not directly comparable: different market, labels, prevalence, architecture budget, metrics/aggregation and split",
+  "methods": [
+    "raw_ocsvm",
+    "dynamics_ocsvm",
+    "cascade_ocsvm",
+    "cascade_if",
+    "price_cascade_ocsvm",
+    "rank_cascade_ocsvm",
+    "price_no_scl",
+    "price_no_lob",
+    "supervised_logistic",
+    "supervised_hgb",
+    "l1_cascade_ocsvm"
+  ],
+  "supervised_controls": "Identical labels and all available raw/manual/aligned inputs, six validation-only trials",
+  "logistic_C_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "hgb_grid": {
+    "max_leaf_nodes": [
+      7,
+      15,
+      31
+    ],
+    "learning_rate": [
+      0.03,
+      0.1
+    ],
+    "max_iter": 100,
+    "early_stopping": false
+  },
+  "available_manual_columns": [
+    0,
+    1,
+    2,
+    3,
+    12
+  ],
+  "missing_manual_handling": "Eight unavailable fields remain zero in archived data but are omitted identically from every model input to avoid counting inactive parameters",
+  "numerical_backend": "Cached float64 RBF kernels reused across identical nu/gamma trials; mathematical objective unchanged",
+  "native_pilot_policy": "Stage010 native/cached outputs are diagnostic only and are never pooled with stage011 results",
+  "feature_schema": "depth-resolved-v2",
+  "drop_train_constant_features": true,
+  "timing_control": "Burst controls share per-order lifetime marginals; wave controls share lifetime multiset but permute level order; random observational collisions retained and counted",
+  "passive_order_rule": "Merge base top-five and persistent active orders; reject entire injected window if any active order becomes marketable; no invented fills",
+  "flow_features": "Per side/level added-at-current-price, removed-at-previous-price, and both coverage masks; absent price means zero only inside observed support",
+  "rank_ablation": "Same coverage masks, replace price-matched volumes with same-rank volumes",
+  "l1_control": "Same fusion/labels/budget, only best-level coverage-aware flows added to the paper-structure baseline",
+  "fusion_parameter_target": 200000,
+  "constant_feature_handling": "Fit variance mask on training only; remove constant columns before selecting matched fusion width; save mask"
+}

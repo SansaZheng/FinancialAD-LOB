@@ -18,3 +18,6 @@ payloads. Actual legacy allocated bytes were zero, so no old-data space saving
 was claimed.
 
 中文结论：已按用户要求更新目标和归档位置；保留旧配置与旧数据，实际实验仍受 CQ 接入和数据条件约束。
+
+## Revision6,2026-11-25
+Route lob-generalization-v1 → lob-passive-lifecycle-v2. A concrete audit found474/2222 old injections with passive-volume truncation inside the visible book and46 with marketable inserted orders. Preserve old diagnostics; cancel only unstarted old-data stock/combined jobs; use fresh dates2017-01-16/17/18. Venue/topic unchanged. User already authorized continuing methodological improvements and CQ experiments.

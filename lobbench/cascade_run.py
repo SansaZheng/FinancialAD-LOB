@@ -19,7 +19,7 @@ from sklearn.svm import OneClassSVM
 from sklearn.metrics.pairwise import rbf_kernel
 from lobbench.cascade import jfds_autoencoder,encode,reconstruct,Fusion,paper_contrastive
 
-METHODS=('raw_ocsvm','dynamics_ocsvm','cascade_ocsvm','cascade_if','price_cascade_ocsvm','rank_cascade_ocsvm','price_no_scl','price_no_lob','supervised_logistic','supervised_hgb')
+METHODS=('raw_ocsvm','dynamics_ocsvm','cascade_ocsvm','cascade_if','price_cascade_ocsvm','rank_cascade_ocsvm','price_no_scl','price_no_lob','supervised_logistic','supervised_hgb','l1_cascade_ocsvm')
 
 
 def splits(data,regime):
@@ -179,13 +179,17 @@ def evaluate(y,score,threshold):
                 test_fpr=float(np.mean(score[y==0]>threshold)))
 
 
-def run(dataset,output,regimes,seeds,epochs=10,device='cpu',engineering=False,folds=None):
+def run(dataset,output,regimes,seeds,epochs=10,device='cpu',engineering=False,folds=None,protocol=Path('configs/010-preregistered.json')):
     if not engineering and not os.environ.get('CQ_JOB_ID'):
         raise RuntimeError('Scientific runs require CQ')
     if engineering and (epochs>1 or dataset.stat().st_size>10*1024**2):
         raise ValueError('Local engineering run budget exceeded')
     if device=='cuda' and not torch.cuda.is_available():raise RuntimeError('Requested GPU unavailable')
     output.mkdir(parents=True,exist_ok=True)
+    configuration=json.loads(protocol.read_text())
+    selected_methods=configuration['methods']
+    if not set(selected_methods)<=set(METHODS):raise ValueError('Unregistered method')
+    drop_constants=configuration.get('drop_train_constant_features',False)
     torch.set_num_threads(1)
     torch.use_deterministic_algorithms(True)
     all_data=np.load(dataset,allow_pickle=False)
@@ -220,11 +224,11 @@ def run(dataset,output,regimes,seeds,epochs=10,device='cpu',engineering=False,fo
                 runinfo=dict(fold=fold,seed=seed,epochs=epochs,device=device,cq_job=os.environ.get('CQ_JOB_ID'),
                              dataset_sha256=hashlib.sha256(dataset.read_bytes()).hexdigest(),
                              versions=dict(python=sys.version,numpy=np.__version__,torch=torch.__version__,sklearn=sklearn.__version__),
-                             code_sha256={f:hashlib.sha256(Path(f).read_bytes()).hexdigest() for f in ['lobbench/cascade.py','lobbench/cascade_run.py','lobbench/semisynthetic.py','configs/010-preregistered.json']},
+                             code_sha256={f:hashlib.sha256(Path(f).read_bytes()).hexdigest() for f in ['lobbench/cascade.py','lobbench/cascade_run.py','lobbench/semisynthetic.py',str(protocol)]},
                              sizes=dict(train=len(tr),validation=len(va),test=len(te)),representation=repinfo,methods={},
                              evidence_class='engineering_only' if engineering else 'semisynthetic_external_dataset_adaptation')
                 cached={}
-                for method in METHODS:
+                for method in selected_methods:
                     method_started=time.monotonic()
                     israw=method=='raw_ocsvm';isdyn=method=='dynamics_ocsvm';issuper=method.startswith('supervised_')
                     if issuper:features=np.concatenate([rx.reshape(len(rx),-1),manual[index],dynamics['aligned'][index]],axis=1)
@@ -235,8 +239,14 @@ def run(dataset,output,regimes,seeds,epochs=10,device='cpu',engineering=False,fo
                         parts.append(manual[index])
                         if method.startswith('price'):parts.append(dynamics['aligned'][index])
                         elif method.startswith('rank'):parts.append(dynamics['rank'][index])
+                        elif method.startswith('l1'):
+                            if data['aligned'].shape[-1]!=40:raise ValueError('L1 control requires depth-resolved inputs')
+                            parts.append(data['aligned'][index].reshape(-1,25,2,5,4)[:,:,:,0,:].reshape(len(index),-1))
                         features=np.concatenate(parts,axis=1)
                     (features,),sc=standardize(features[:ntr],[features])
+                    keep=sc.var_>0 if drop_constants else np.ones(features.shape[1],dtype=bool)
+                    if not keep.any():raise ValueError('All training features constant')
+                    if drop_constants:features=np.ascontiguousarray(features[:,keep])
                     fusionkey='cascade' if method in ('cascade_ocsvm','cascade_if') else method
                     modelinfo={}
                     if not israw and not isdyn and not issuper:
@@ -259,7 +269,7 @@ def run(dataset,output,regimes,seeds,epochs=10,device='cpu',engineering=False,fo
                                         kind=data['kind'][te],y=data['y'][te],score=testscore,validation_id=data['id'][va],validation_y=data['y'][va],
                                         validation_score=vscore)
                     # Rebuild embeddings from saved model states, inputs and normalizers; no unsafe pickle of sklearn estimators.
-                    np.savez_compressed(dest/(method+'-normalizers.npz'),feature_mean=sc.mean_,feature_scale=sc.scale_,
+                    np.savez_compressed(dest/(method+'-normalizers.npz'),feature_mean=sc.mean_,feature_scale=sc.scale_,feature_keep=keep,
                                         detector_mean=detscaler.mean_ if detscaler else np.zeros(z.shape[1]),
                                         detector_scale=detscaler.scale_ if detscaler else np.ones(z.shape[1]))
                     runinfo['methods'][method]=dict(metrics=metrics,selection=selection,fusion=modelinfo,seconds=time.monotonic()-method_started)
@@ -280,5 +290,5 @@ if __name__=='__main__':
     p.add_argument('--regimes',nargs='+',choices=['date','stock','combined','style'],default=['date','stock','combined'])
     p.add_argument('--seeds',nargs='+',type=int,default=[0,1,2,3,4]);p.add_argument('--epochs',type=int,default=10)
     p.add_argument('--device',choices=['cpu','cuda'],default='cpu');p.add_argument('--engineering',action='store_true')
-    p.add_argument('--folds',nargs='+')
-    args=p.parse_args();run(args.dataset,args.output,args.regimes,args.seeds,args.epochs,args.device,args.engineering,args.folds)
+    p.add_argument('--folds',nargs='+');p.add_argument('--protocol',type=Path,default=Path('configs/010-preregistered.json'))
+    args=p.parse_args();run(args.dataset,args.output,args.regimes,args.seeds,args.epochs,args.device,args.engineering,args.folds,args.protocol)

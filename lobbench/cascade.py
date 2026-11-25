@@ -33,7 +33,7 @@ def reconstruct(model,x):
 class Fusion(nn.Module):
     def __init__(self,dimensions):
         super().__init__()
-        hidden=max(8,(200000-dimensions-32)//(2*dimensions+65))
+        hidden=max(8,round((200000-dimensions-32)/(2*dimensions+66)))
         self.encoder=nn.Sequential(nn.Linear(dimensions,hidden),nn.ReLU(),nn.Linear(hidden,32))
         self.decoder=nn.Sequential(nn.Linear(32,hidden),nn.ReLU(),nn.Linear(hidden,dimensions))
     def forward(self,x):

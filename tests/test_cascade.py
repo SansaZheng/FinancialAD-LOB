@@ -11,7 +11,7 @@ from sklearn.metrics.pairwise import rbf_kernel
 from lobbench.semisynthetic import overlay,inputs
 
 
-def fixture(n=48):
+def fixture(n=48,depth_resolved=False):
     rng=np.random.default_rng(42);data={k:[] for k in ('raw','manual','aligned','rank','y','stock','date','id','kind','start_ns','end_ns')}
     for day,date in enumerate(('2017-01-10','2017-01-11','2017-01-12')):
         for stock in ('KGHM','PEKAO','PKNORLEN','PKOBP','PZU'):
@@ -21,7 +21,11 @@ def fixture(n=48):
                 kind=['background','layered','staggered','persistent','independent'][i%5]
                 if kind!='background':x,_=overlay(x,rng,kind)
                 raw,manual,dyn=inputs(x,ts)
-                values=dict(raw=raw,manual=manual,aligned=dyn,rank=inputs(x,ts,False)[2],y=int(kind in ('layered','staggered')),
+                rank=inputs(x,ts,False)[2]
+                if depth_resolved:
+                    from lobbench.passive_overlay import level_flows
+                    dyn=level_flows(x,True);rank=level_flows(x,False)
+                values=dict(raw=raw,manual=manual,aligned=dyn,rank=rank,y=int(kind in ('layered','staggered')),
                             stock=stock,date=date,id=f'{date}-{stock}-{i}',kind=kind,start_ns=ts[0],end_ns=ts[-1])
                 for k,v in values.items():data[k].append(v)
     return {k:np.asarray(v) for k,v in data.items()}

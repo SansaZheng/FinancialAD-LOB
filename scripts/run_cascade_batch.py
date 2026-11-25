@@ -9,12 +9,12 @@ import sys
 import time
 
 
-def execute(task,dataset,output,device,epochs,engineering=False):
+def execute(task,dataset,output,device,epochs,engineering=False,protocol=Path('configs/010-preregistered.json')):
     regime,fold,seed=task
     dest=output/f'{fold}-s{seed}'
     dest.mkdir(parents=True,exist_ok=True)
     command=[sys.executable,'-m','lobbench.cascade_run','--dataset',str(dataset),'--output',str(dest),
-             '--regimes',regime,'--folds',fold,'--seeds',str(seed),'--epochs',str(epochs),'--device',device]
+             '--regimes',regime,'--folds',fold,'--seeds',str(seed),'--epochs',str(epochs),'--device',device,'--protocol',str(protocol)]
     if engineering:command.append('--engineering')
     start=time.monotonic()
     with (dest/'run.log').open('w') as log:
@@ -22,7 +22,7 @@ def execute(task,dataset,output,device,epochs,engineering=False):
     return dict(regime=regime,fold=fold,seed=seed,returncode=result.returncode,seconds=time.monotonic()-start,folder=str(dest.name))
 
 
-def main(dataset,output,regimes,seeds,workers,device,epochs,engineering=False):
+def main(dataset,output,regimes,seeds,workers,device,epochs,engineering=False,protocol=Path('configs/010-preregistered.json')):
     if not os.environ.get('CQ_JOB_ID') and not engineering:raise RuntimeError('CQ required')
     if workers>4 or workers<1 or (device=='cuda' and workers!=1):raise ValueError('Unqualified worker/device allocation')
     output.mkdir(parents=True,exist_ok=True)
@@ -31,7 +31,7 @@ def main(dataset,output,regimes,seeds,workers,device,epochs,engineering=False):
     reports=[]
     (output/'progress.txt').write_text(f'0/{len(tasks)} started\n')
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures=[pool.submit(execute,t,dataset,output,device,epochs,engineering) for t in tasks]
+        futures=[pool.submit(execute,t,dataset,output,device,epochs,engineering,protocol) for t in tasks]
         for future in as_completed(futures):
             report=future.result();reports.append(report)
             print(json.dumps(report),flush=True)
@@ -45,4 +45,5 @@ if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--dataset',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
     p.add_argument('--regimes',nargs='+',choices=['date','stock','combined','style'],required=True);p.add_argument('--seeds',nargs='+',type=int,default=[0,1,2,3,4])
     p.add_argument('--workers',type=int,default=1);p.add_argument('--device',choices=['cpu','cuda'],default='cpu');p.add_argument('--epochs',type=int,default=10);p.add_argument('--engineering',action='store_true')
-    a=p.parse_args();main(a.dataset,a.output,a.regimes,a.seeds,a.workers,a.device,a.epochs,a.engineering)
+    p.add_argument('--protocol',type=Path,default=Path('configs/010-preregistered.json'))
+    a=p.parse_args();main(a.dataset,a.output,a.regimes,a.seeds,a.workers,a.device,a.epochs,a.engineering,a.protocol)
