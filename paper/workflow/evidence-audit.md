@@ -1,0 +1,11 @@
+# Scientific evidence audit — stage011
+
+The complete 60-run/660-evaluation matrix is independently verified; see complete-metric-verification.json, results.csv and paper/011-results.md. Full daily replay and generator invariants passed, while labels remain explicitly semi-synthetic. Fixed split IDs avoid overlapping windows; normalization/constant-feature masks fit training only. Hyperparameters use six validation-only trials; thresholds use validation negatives, never test outcomes. Normal-only detectors and supervised baselines have different supervision contracts, clearly identified. Neural variants share labels and training budgets; L1/rank/no-SCL/no-LOB controls isolate the registered changes within about 0.8% fusion parameter spread.
+
+The strongest mean-AP comparator is HGB in date/stock/style and logistic in combined. The full proposed candidate does not beat it. Removal of contrastive loss improves mean AP in every regime; raw-book representation is not clearly necessary. Price-aligned depth information is the supported incremental result. Benign-control false positives remain high. Do not highlight only the weak adapted-paper baseline or the old, flawed generator scores.
+
+Limitations: three fresh dates, five stocks in one market/year, one synthetic generator seed, policy collisions and marketability censoring, no endogenous response or real intent, missing trade/cancel indicators, compact adapted architecture, window AP versus original aggregation, exploratory cluster intervals without multiplicity correction. Training seeds do not create new independent market samples. These gaps prevent a CCF A-ready or original-paper-superiority claim. Source-paper artifacts and real adjudicated data remain unavailable.
+
+All exact result paths/hashes are listed in migration/stage011-result-manifest.json. Code/data were remotely archived before execution; new complete-result upload is blocked as recorded in current.md. Original and unpublished copies are preserved. Figure source and exported PNG/PDF/SVG live under scripts/plot_cascade_results.py and paper/figures/011-complete.*.
+
+中文结论：证据完整支持本轮半合成评测与价格对齐的局部贡献，尚不支持完整模型优越性或原论文超越；失败结果、数据限制和同步阻塞均已明确保留。

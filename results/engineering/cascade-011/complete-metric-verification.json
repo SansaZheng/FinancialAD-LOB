@@ -1,0 +1,381 @@
+{
+  "passed": true,
+  "complete_suite": true,
+  "fold_seed_runs": 60,
+  "selected_method_evaluations": 660,
+  "missing_fold_seeds": [],
+  "protocol_sha256": "821a8dc6450119c672bb61d9ada704b5cb95fd89220d6ed4125b3701f8705ac1",
+  "dataset_sha256": "edf460e5a3fc84140528f35765ac21b94b966090d8f73e0e6740a2bba5d5c082",
+  "excluded_jobs": [],
+  "checks": [
+    {
+      "fold": "date",
+      "seed": 0,
+      "methods_checked": 11,
+      "metrics_sha256": "6a98cfb040c6f1fecc31799996cfda3c29c5395d1efbabcf95b8a9588fa0df31"
+    },
+    {
+      "fold": "date",
+      "seed": 1,
+      "methods_checked": 11,
+      "metrics_sha256": "7c787230ead970cae346a75fae6a62923c810e052823ee4d21b5585a6892b851"
+    },
+    {
+      "fold": "date",
+      "seed": 2,
+      "methods_checked": 11,
+      "metrics_sha256": "14137b9cb01120f46c466b39a363af29dbafe0a1534322e8130f0f6df3af2b28"
+    },
+    {
+      "fold": "date",
+      "seed": 3,
+      "methods_checked": 11,
+      "metrics_sha256": "72ab47fccf85b4b20efc81ce85296fe729c4ff9376cde603549a979643414c02"
+    },
+    {
+      "fold": "date",
+      "seed": 4,
+      "methods_checked": 11,
+      "metrics_sha256": "178c48438577f4e1b0d675de674b14447df6e5d48018584e117492d8ebd9a803"
+    },
+    {
+      "fold": "style",
+      "seed": 0,
+      "methods_checked": 11,
+      "metrics_sha256": "be3708c1362b3928d15f09d0f59084e859038e2e4bb0c36fbf3b5c591b04876c"
+    },
+    {
+      "fold": "style",
+      "seed": 1,
+      "methods_checked": 11,
+      "metrics_sha256": "18ec02756169cca5a0d47047060c66c640ea495a415b6da7dbf415073230f679"
+    },
+    {
+      "fold": "style",
+      "seed": 2,
+      "methods_checked": 11,
+      "metrics_sha256": "36b7c4a25d8c159977ce5419f2cee5e0bcfbd01b142facd8599bba4f8ac9db57"
+    },
+    {
+      "fold": "style",
+      "seed": 3,
+      "methods_checked": 11,
+      "metrics_sha256": "72edc2e3a6bb5c7f7e5cb459d2b08d45d9dabe558c24df4faa528b184bc3fff8"
+    },
+    {
+      "fold": "style",
+      "seed": 4,
+      "methods_checked": 11,
+      "metrics_sha256": "cf2d4e8b1d782f0bc4c0ea54ef21f0dcff2945fe37a0c66edb2bb772f25acb01"
+    },
+    {
+      "fold": "stock-KGHM",
+      "seed": 0,
+      "methods_checked": 11,
+      "metrics_sha256": "a9ac39a8925943d1e9338453b7a1a62145a2a3dcd8ffbeeb93cbc2c10d56128a"
+    },
+    {
+      "fold": "stock-KGHM",
+      "seed": 1,
+      "methods_checked": 11,
+      "metrics_sha256": "ebd206d1f312edf373d4439f29f4752283acb495e340ed6464f945f48f82692f"
+    },
+    {
+      "fold": "stock-KGHM",
+      "seed": 2,
+      "methods_checked": 11,
+      "metrics_sha256": "10f0ac0ae00165b9b7797397c1b3cf09ad4afb5bb87e4f89ef7521645a4b6c5d"
+    },
+    {
+      "fold": "stock-KGHM",
+      "seed": 3,
+      "methods_checked": 11,
+      "metrics_sha256": "5eab38576ca31f24826fc092174835222a7949142aa9d43d0777f1b449bcde6f"
+    },
+    {
+      "fold": "stock-KGHM",
+      "seed": 4,
+      "methods_checked": 11,
+      "metrics_sha256": "8a079d623ec3eddaa1cfa0bf594721ccdeb260ad606c8b1b948c4ebe1b7d56c3"
+    },
+    {
+      "fold": "stock-PEKAO",
+      "seed": 0,
+      "methods_checked": 11,
+      "metrics_sha256": "05083f0511e46845b4227bf5132c221148a168567d5b42862f940c0efcfd28dc"
+    },
+    {
+      "fold": "stock-PEKAO",
+      "seed": 1,
+      "methods_checked": 11,
+      "metrics_sha256": "9844be5b0fea7bde47602aec116d8b96f5110def78a7beca1b0940bb1ff9ed4b"
+    },
+    {
+      "fold": "stock-PEKAO",
+      "seed": 2,
+      "methods_checked": 11,
+      "metrics_sha256": "c27316ea72f4c53980bcc80e544cd0c7d5ea3d842d91e5381027c80b1c14802d"
+    },
+    {
+      "fold": "stock-PEKAO",
+      "seed": 3,
+      "methods_checked": 11,
+      "metrics_sha256": "3970011e70828dac3936a6999b26a313b6f3acfa457bf7128ce342f4f3a0a4b6"
+    },
+    {
+      "fold": "stock-PEKAO",
+      "seed": 4,
+      "methods_checked": 11,
+      "metrics_sha256": "08862e88ccb8514bf8e6f0c5b9a1a0a1e78b03a28cd8c3d5a3c230ed0760a27b"
+    },
+    {
+      "fold": "stock-PKNORLEN",
+      "seed": 0,
+      "methods_checked": 11,
+      "metrics_sha256": "7f90584066ef6955e462f3f39ac0e78c6c18a04a879d53c85243b840f25d5ae0"
+    },
+    {
+      "fold": "stock-PKNORLEN",
+      "seed": 1,
+      "methods_checked": 11,
+      "metrics_sha256": "e5f27519ec384d0cddf431e062c7c0b80e001aeb8a996ee7fba4b2d5941063d5"
+    },
+    {
+      "fold": "stock-PKNORLEN",
+      "seed": 2,
+      "methods_checked": 11,
+      "metrics_sha256": "25477e415537deec81413be6a2546f6b03f0afa0b6ebd40d8f5a6f04bffa5290"
+    },
+    {
+      "fold": "stock-PKNORLEN",
+      "seed": 3,
+      "methods_checked": 11,
+      "metrics_sha256": "791bac6bf7a05132cc9190751d69aa9b630671130a8778308f8e69e86f4ea061"
+    },
+    {
+      "fold": "stock-PKNORLEN",
+      "seed": 4,
+      "methods_checked": 11,
+      "metrics_sha256": "b82f664edbcebb9dc09220600e365976acbc750a8cc27953b6fa896d4493b284"
+    },
+    {
+      "fold": "stock-PKOBP",
+      "seed": 0,
+      "methods_checked": 11,
+      "metrics_sha256": "eec4c54257a70ac38358696e414fa50f8247387cc87c1a89d02ebf345eb3f633"
+    },
+    {
+      "fold": "stock-PKOBP",
+      "seed": 1,
+      "methods_checked": 11,
+      "metrics_sha256": "fd3155004d9cb8dd1b6f55c394e9b67bc7f23a924bcd07bc352e07bef983bc96"
+    },
+    {
+      "fold": "stock-PKOBP",
+      "seed": 2,
+      "methods_checked": 11,
+      "metrics_sha256": "647bc80d0a48521464312bb4ef14062ab0d47680d3f08f86dac30c5ac0d4ee86"
+    },
+    {
+      "fold": "stock-PKOBP",
+      "seed": 3,
+      "methods_checked": 11,
+      "metrics_sha256": "7b5c9a924595d56c34f31c31aee7f3972e0c783b7e3c9572e0563b711a08bfae"
+    },
+    {
+      "fold": "stock-PKOBP",
+      "seed": 4,
+      "methods_checked": 11,
+      "metrics_sha256": "6ad753078bbc2f375cb0befa52e60290db411cfa12dd137e22b763df9cb477c3"
+    },
+    {
+      "fold": "stock-PZU",
+      "seed": 0,
+      "methods_checked": 11,
+      "metrics_sha256": "eeb449545daecf00260a4ab17127749b6df6362e8448dce9919a4edfe2790483"
+    },
+    {
+      "fold": "stock-PZU",
+      "seed": 1,
+      "methods_checked": 11,
+      "metrics_sha256": "ba0fe6a2402075fb3cec0f5541202d597b7a0b03127ae3335a2eb171b0d84273"
+    },
+    {
+      "fold": "stock-PZU",
+      "seed": 2,
+      "methods_checked": 11,
+      "metrics_sha256": "902a87d1c786a92db6bd743956a39cd39efd0fedd330d2ca12d2cf45bea3674a"
+    },
+    {
+      "fold": "stock-PZU",
+      "seed": 3,
+      "methods_checked": 11,
+      "metrics_sha256": "e0bf9461f89d109f5c66c1b644a3165a21c325fefa4994b1b27cb23e93f43c1c"
+    },
+    {
+      "fold": "stock-PZU",
+      "seed": 4,
+      "methods_checked": 11,
+      "metrics_sha256": "7082f01916b1cc23d633870c615447c80ce267522c889bd34ee61c34c6bf1440"
+    },
+    {
+      "fold": "combined-KGHM",
+      "seed": 0,
+      "methods_checked": 11,
+      "metrics_sha256": "904657221f7c104c855a6d8c1b344f6f0e110225dce1ed1666cd7666affbed10"
+    },
+    {
+      "fold": "combined-KGHM",
+      "seed": 1,
+      "methods_checked": 11,
+      "metrics_sha256": "43537bf7e5bd52066a30869f2c31cf0814f29773a99520895843f36a19ddde41"
+    },
+    {
+      "fold": "combined-KGHM",
+      "seed": 2,
+      "methods_checked": 11,
+      "metrics_sha256": "d527ecaa8721e9f57df093599a908d244e69eeb1bd96774f0342b744d446418c"
+    },
+    {
+      "fold": "combined-KGHM",
+      "seed": 3,
+      "methods_checked": 11,
+      "metrics_sha256": "6344568e8540ea0f23409a9c9f2eb5bf69e7c3121d2257fd5778708d26c59f47"
+    },
+    {
+      "fold": "combined-KGHM",
+      "seed": 4,
+      "methods_checked": 11,
+      "metrics_sha256": "0771aa5aea6949b3638600ce6b88a76d9ed82d74874e63a8def973f52cec6302"
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seed": 0,
+      "methods_checked": 11,
+      "metrics_sha256": "709f6f3dcefdbbf2c39a6d771931f0bf2b549626726a6af5dc73d6ff74ee03a3"
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seed": 1,
+      "methods_checked": 11,
+      "metrics_sha256": "ed0bde45e37217b5c4e50faa7bdd52d7f23d3d929d423aadbbd5d1d7c023265d"
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seed": 2,
+      "methods_checked": 11,
+      "metrics_sha256": "3e34593d175fedf6daa4feaacf745ccb48f08b3f0a1387e4aafe01f7f1eefb30"
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seed": 3,
+      "methods_checked": 11,
+      "metrics_sha256": "d804711564b83c309cdb2b07e1287f1a149c68dc948a8960bbab50bc676b3082"
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seed": 4,
+      "methods_checked": 11,
+      "metrics_sha256": "5d7dc890d96c67747205169179946d14212d898b1f457c07b6c6a9fa05a625b1"
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 0,
+      "methods_checked": 11,
+      "metrics_sha256": "7e73b84e4db48b5e85258c796f00b721c876a588706608727659b9b827d7720f"
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 1,
+      "methods_checked": 11,
+      "metrics_sha256": "f9fd6933fb0474d45d29848a803300aed2f5fcf346be11257c2f7a5376991c68"
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 2,
+      "methods_checked": 11,
+      "metrics_sha256": "96fd9c2470f8a04a4fcd73c51d4f93091709804b81565df2e37ff2a96bc23fb3"
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 3,
+      "methods_checked": 11,
+      "metrics_sha256": "52e9265cdffca0e5f6cdf0437759b6e3871759946a2794e7ea1a4f49013298c1"
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 4,
+      "methods_checked": 11,
+      "metrics_sha256": "7009e71b1e2324c876e6571f74e4c2027c129beed0b2f808d8b529055c55edd9"
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 0,
+      "methods_checked": 11,
+      "metrics_sha256": "8a12ca68129b1ea207b868914910db129a6a661c3a7fe87860d0d8a952de43b1"
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 1,
+      "methods_checked": 11,
+      "metrics_sha256": "6ac949ef43070bb6624c8d46202499148d441347c12a1165425542b583920d63"
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 2,
+      "methods_checked": 11,
+      "metrics_sha256": "0dc3b8df9b620b52cf57631d82051e5a2215d90216e28885fe5676e0b689fd4e"
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 3,
+      "methods_checked": 11,
+      "metrics_sha256": "275e2a366ee8e5f2d144509f40c4a603f53d7144cd448da4fec23400684a0533"
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 4,
+      "methods_checked": 11,
+      "metrics_sha256": "e47d43edd3fb1f595a66a5703d8f5905a97a9d58c32b83321973a4915f90d4e6"
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 0,
+      "methods_checked": 11,
+      "metrics_sha256": "da2bc8bc9e60af39690f69c6de76f710dbaaa12d250a78f6e825cef9180512e0"
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 1,
+      "methods_checked": 11,
+      "metrics_sha256": "571c703c5411c972e1bfe5233197bb16d873cc8ce4dc4ac0b6b6f6d8ce6018c7"
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 2,
+      "methods_checked": 11,
+      "metrics_sha256": "f9392527466054182d513d38eff4b9b1aad6f36c4adbe797c131ef9f0d2fa92c"
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 3,
+      "methods_checked": 11,
+      "metrics_sha256": "bce019210d8345f6418dbfd4245307a83142ffc4978fff4799da77ab4fdcfd23"
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 4,
+      "methods_checked": 11,
+      "metrics_sha256": "4180d35b14f0c488d18b641083714b3fbb9d79611b20fb13a1ed6249b00c6ac4"
+    }
+  ],
+  "guarantees": [
+    "fixed split IDs",
+    "identical labels across methods",
+    "six validation trials",
+    "validation-only threshold",
+    "all saved AP/AUROC/PR AUC/FPR/recall independently recomputed",
+    "ten epochs per trained stage"
+  ],
+  "limitation": "Verifies artifact consistency, not the correctness of real manipulation labels or scientific superiority"
+}

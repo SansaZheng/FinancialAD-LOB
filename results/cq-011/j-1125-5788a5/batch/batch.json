@@ -1,0 +1,231 @@
+{
+  "status": "complete",
+  "tasks": [
+    {
+      "regime": "stock",
+      "fold": "stock-KGHM",
+      "seed": 0,
+      "returncode": 0,
+      "seconds": 574.283979636,
+      "folder": "stock-KGHM-s0",
+      "gpu_id": 0
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-KGHM",
+      "seed": 1,
+      "returncode": 0,
+      "seconds": 574.3813868259999,
+      "folder": "stock-KGHM-s1",
+      "gpu_id": 1
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-KGHM",
+      "seed": 3,
+      "returncode": 0,
+      "seconds": 529.417019746,
+      "folder": "stock-KGHM-s3",
+      "gpu_id": 1
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-KGHM",
+      "seed": 2,
+      "returncode": 0,
+      "seconds": 531.5466758929999,
+      "folder": "stock-KGHM-s2",
+      "gpu_id": 0
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-KGHM",
+      "seed": 4,
+      "returncode": 0,
+      "seconds": 538.8670511610001,
+      "folder": "stock-KGHM-s4",
+      "gpu_id": 1
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PEKAO",
+      "seed": 0,
+      "returncode": 0,
+      "seconds": 887.49001991,
+      "folder": "stock-PEKAO-s0",
+      "gpu_id": 0
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PEKAO",
+      "seed": 1,
+      "returncode": 0,
+      "seconds": 897.245287384,
+      "folder": "stock-PEKAO-s1",
+      "gpu_id": 1
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PEKAO",
+      "seed": 2,
+      "returncode": 0,
+      "seconds": 912.112505516,
+      "folder": "stock-PEKAO-s2",
+      "gpu_id": 0
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PEKAO",
+      "seed": 3,
+      "returncode": 0,
+      "seconds": 929.1967861320004,
+      "folder": "stock-PEKAO-s3",
+      "gpu_id": 1
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PEKAO",
+      "seed": 4,
+      "returncode": 0,
+      "seconds": 933.4838725180002,
+      "folder": "stock-PEKAO-s4",
+      "gpu_id": 0
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PKNORLEN",
+      "seed": 0,
+      "returncode": 0,
+      "seconds": 557.9377662249995,
+      "folder": "stock-PKNORLEN-s0",
+      "gpu_id": 1
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PKNORLEN",
+      "seed": 1,
+      "returncode": 0,
+      "seconds": 555.933539953,
+      "folder": "stock-PKNORLEN-s1",
+      "gpu_id": 0
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PKNORLEN",
+      "seed": 2,
+      "returncode": 0,
+      "seconds": 557.0435233480002,
+      "folder": "stock-PKNORLEN-s2",
+      "gpu_id": 1
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PKNORLEN",
+      "seed": 3,
+      "returncode": 0,
+      "seconds": 555.0437199759999,
+      "folder": "stock-PKNORLEN-s3",
+      "gpu_id": 0
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PKNORLEN",
+      "seed": 4,
+      "returncode": 0,
+      "seconds": 548.629587726,
+      "folder": "stock-PKNORLEN-s4",
+      "gpu_id": 1
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PKOBP",
+      "seed": 0,
+      "returncode": 0,
+      "seconds": 1549.714687019,
+      "folder": "stock-PKOBP-s0",
+      "gpu_id": 0
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PKOBP",
+      "seed": 1,
+      "returncode": 0,
+      "seconds": 1551.6274311819998,
+      "folder": "stock-PKOBP-s1",
+      "gpu_id": 1
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PKOBP",
+      "seed": 2,
+      "returncode": 0,
+      "seconds": 1550.1280414419998,
+      "folder": "stock-PKOBP-s2",
+      "gpu_id": 0
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PKOBP",
+      "seed": 3,
+      "returncode": 0,
+      "seconds": 1547.7633486059995,
+      "folder": "stock-PKOBP-s3",
+      "gpu_id": 1
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PZU",
+      "seed": 0,
+      "returncode": 0,
+      "seconds": 570.2818087100004,
+      "folder": "stock-PZU-s0",
+      "gpu_id": 1
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PZU",
+      "seed": 1,
+      "returncode": 0,
+      "seconds": 572.5612058070001,
+      "folder": "stock-PZU-s1",
+      "gpu_id": 1
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PKOBP",
+      "seed": 4,
+      "returncode": 0,
+      "seconds": 1552.8743712059986,
+      "folder": "stock-PKOBP-s4",
+      "gpu_id": 0
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PZU",
+      "seed": 2,
+      "returncode": 0,
+      "seconds": 572.1483455720008,
+      "folder": "stock-PZU-s2",
+      "gpu_id": 1
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PZU",
+      "seed": 3,
+      "returncode": 0,
+      "seconds": 573.2356128969986,
+      "folder": "stock-PZU-s3",
+      "gpu_id": 0
+    },
+    {
+      "regime": "stock",
+      "fold": "stock-PZU",
+      "seed": 4,
+      "returncode": 0,
+      "seconds": 564.6886299479993,
+      "folder": "stock-PZU-s4",
+      "gpu_id": 1
+    }
+  ],
+  "total": 25
+}

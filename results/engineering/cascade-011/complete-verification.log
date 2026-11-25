@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "complete_suite": true,
+  "fold_seed_runs": 60,
+  "selected_method_evaluations": 660,
+  "missing_fold_seeds": [],
+  "protocol_sha256": "821a8dc6450119c672bb61d9ada704b5cb95fd89220d6ed4125b3701f8705ac1",
+  "dataset_sha256": "edf460e5a3fc84140528f35765ac21b94b966090d8f73e0e6740a2bba5d5c082",
+  "excluded_jobs": [],
+  "guarantees": [
+    "fixed split IDs",
+    "identical labels across methods",
+    "six validation trials",
+    "validation-only threshold",
+    "all saved AP/AUROC/PR AUC/FPR/recall independently recomputed",
+    "ten epochs per trained stage"
+  ],
+  "limitation": "Verifies artifact consistency, not the correctness of real manipulation labels or scientific superiority"
+}
