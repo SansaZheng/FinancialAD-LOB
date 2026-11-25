@@ -16,6 +16,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import average_precision_score,roc_auc_score,precision_recall_curve,auc
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import OneClassSVM
+from sklearn.metrics.pairwise import rbf_kernel
 from lobbench.cascade import jfds_autoencoder,encode,reconstruct,Fusion,paper_contrastive
 
 METHODS=('raw_ocsvm','dynamics_ocsvm','cascade_ocsvm','cascade_if','price_cascade_ocsvm','rank_cascade_ocsvm','price_no_scl','price_no_lob','supervised_logistic','supervised_hgb')
@@ -68,6 +69,7 @@ def fusion_embeddings(model,x,device):
 
 def train_representation(train,allx,seed,epochs,device,output):
     torch.manual_seed(seed)
+    started=time.monotonic()
     model=jfds_autoencoder().to(device)
     optim=torch.optim.Adam(model.parameters(),lr=1e-4)
     rng=np.random.default_rng(seed)
@@ -83,7 +85,7 @@ def train_representation(train,allx,seed,epochs,device,output):
     model.to(device)
     for p in model.parameters():p.requires_grad_(False)
     encoded=embeddings(model,allx,device)
-    info=dict(loss=losses,parameters=sum(p.numel() for p in model.parameters()))
+    info=dict(loss=losses,parameters=sum(p.numel() for p in model.parameters()),seconds=time.monotonic()-started)
     del model
     return encoded,info
 
@@ -114,6 +116,14 @@ def train_fusion(xtrain,ytrain,allx,seed,epochs,device,alpha,output):
     return z,info
 
 
+class CachedRBFDetector:
+    """Same RBF OC-SVM, with kernels reused across nu trials (CPU speed only)."""
+    def __init__(self,model,normal,gamma):
+        self.model,self.normal,self.gamma=model,normal,gamma
+    def score_samples(self,x):
+        return self.model.score_samples(rbf_kernel(np.asarray(x,dtype=np.float64),self.normal,gamma=self.gamma))
+
+
 def detector_fit(ztrain,ytrain,zval,yval,kind,seed):
     normal=ztrain[ytrain==0]
     scaler=StandardScaler().fit(normal)
@@ -122,21 +132,26 @@ def detector_fit(ztrain,ytrain,zval,yval,kind,seed):
     if len(normal)>5000:normal=normal[np.random.default_rng(seed).choice(len(normal),5000,replace=False)]
     grid=([dict(nu=nu,gamma_factor=g) for nu in (.01,.05,.1) for g in (.1,1.)] if kind=='ocsvm'
           else [dict(max_samples=n,max_features=f) for n in (128,256,512) for f in (.5,1.)])
-    best=None;trials=[]
+    best=None;trials=[];kernels={}
+    normal=np.asarray(normal,dtype=np.float64);v=np.asarray(v,dtype=np.float64)
     for trial,cfg in enumerate(grid):
         if kind=='ocsvm':
-            model=OneClassSVM(nu=cfg['nu'],gamma=cfg['gamma_factor']/normal.shape[1],cache_size=256)
+            gamma=cfg['gamma_factor']/normal.shape[1]
+            if gamma not in kernels:kernels[gamma]=(rbf_kernel(normal,gamma=gamma),rbf_kernel(v,normal,gamma=gamma))
+            base=OneClassSVM(nu=cfg['nu'],kernel='precomputed',cache_size=256).fit(kernels[gamma][0])
+            model=CachedRBFDetector(base,normal,gamma)
+            score=-base.score_samples(kernels[gamma][1])
         else:
             model=IsolationForest(n_estimators=100,random_state=seed,n_jobs=1,**cfg)
-        model.fit(normal)
-        score=-model.score_samples(v)
+            model.fit(normal)
+            score=-model.score_samples(v)
         ap=float(average_precision_score(yval,score));trials.append(dict(trial=trial,validation_ap=ap,**cfg))
         if best is None or ap>best[0]:best=(ap,model,score,cfg)
     ap,model,score,cfg=best
     negative=np.sort(score[yval==0])
     # Strict score > threshold; conservative upper order statistic (<= target empirical FPR).
     threshold=float(negative[min(len(negative)-1,int(np.ceil(.99*len(negative))))])
-    return model,scaler,dict(selected=cfg,validation_ap=ap,threshold=threshold,trials=trials),score
+    return model,scaler,dict(selected=cfg,validation_ap=ap,threshold=threshold,trials=trials,backend='cached_float64_rbf' if kind=='ocsvm' else 'sklearn_if'),score
 
 
 def supervised_fit(xtrain,ytrain,xval,yval,method,seed):
@@ -210,6 +225,7 @@ def run(dataset,output,regimes,seeds,epochs=10,device='cpu',engineering=False,fo
                              evidence_class='engineering_only' if engineering else 'semisynthetic_external_dataset_adaptation')
                 cached={}
                 for method in METHODS:
+                    method_started=time.monotonic()
                     israw=method=='raw_ocsvm';isdyn=method=='dynamics_ocsvm';issuper=method.startswith('supervised_')
                     if issuper:features=np.concatenate([rx.reshape(len(rx),-1),manual[index],dynamics['aligned'][index]],axis=1)
                     elif israw:features=rx.reshape(len(rx),-1)
@@ -246,7 +262,7 @@ def run(dataset,output,regimes,seeds,epochs=10,device='cpu',engineering=False,fo
                     np.savez_compressed(dest/(method+'-normalizers.npz'),feature_mean=sc.mean_,feature_scale=sc.scale_,
                                         detector_mean=detscaler.mean_ if detscaler else np.zeros(z.shape[1]),
                                         detector_scale=detscaler.scale_ if detscaler else np.ones(z.shape[1]))
-                    runinfo['methods'][method]=dict(metrics=metrics,selection=selection,fusion=modelinfo)
+                    runinfo['methods'][method]=dict(metrics=metrics,selection=selection,fusion=modelinfo,seconds=time.monotonic()-method_started)
                     (dest/'metrics.json').write_text(json.dumps(runinfo,indent=2)+'\n')
                     print(f'{fold} seed={seed} {method} AP={metrics["ap"]:.6f}',flush=True)
                 runinfo['seconds']=time.monotonic()-started

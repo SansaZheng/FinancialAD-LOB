@@ -125,5 +125,7 @@
     3,
     12
   ],
-  "missing_manual_handling": "Eight unavailable fields remain zero in archived data but are omitted identically from every model input to avoid counting inactive parameters"
+  "missing_manual_handling": "Eight unavailable fields remain zero in archived data but are omitted identically from every model input to avoid counting inactive parameters",
+  "numerical_backend": "Cached float64 RBF kernels reused across identical nu/gamma trials; mathematical objective unchanged",
+  "native_pilot_policy": "j-1125-810108 is retained as native-kernel resource/parity pilot; final suite reruns date seed0 with the same cached implementation as all other folds. Defined before reading any pilot test result."
 }

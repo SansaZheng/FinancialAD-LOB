@@ -27,3 +27,7 @@ All splits are source-stock/date based. Every background segment is used once; n
 Pre-training amendment v1.2: review found that counting weights connected to eight always-zero channels overstates effective capacity. All methods now use only the five available manual channels. This was fixed before any scientific run began; queued pre-amendment pilot j-1125-e79ab8 was cancelled without starting. No test metrics informed the change.
 
 中文结论：在正式训练前统一剔除不可观测的手工特征，使参数量比较更可靠；原始缺失标记仍完整保留。
+
+Numerical implementation note (before reading native pilot results): repeated RBF kernels are cached across the same six nu/gamma trials. A six-setting solver comparison on an engineering fixture agrees within1e-8. The mathematical OC-SVM objective, hyperparameters, validation selection, labels and model budgets are unchanged. Native pilot j-1125-810108 is retained for resource and prediction-parity auditing; the final suite reruns date/seed0 with the cached implementation rather than mixing backends. This is a computational optimization, not a method adjustment based on test results.
+
+中文结论：通过复用核矩阵减少重复计算，正式对照仍使用相同的模型、数据、标签和调参预算；原始计算版本结果保留供核对。

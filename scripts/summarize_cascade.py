@@ -7,11 +7,12 @@ import numpy as np
 from sklearn.metrics import average_precision_score
 
 
-def summarize(root,output,replicates=2000):
+def summarize(root,output,replicates=2000,exclude_jobs=()):
     output.mkdir(parents=True,exist_ok=True)
     records=[];seen=set()
     config=json.loads(Path("configs/010-preregistered.json").read_text())
     for path in sorted(root.glob('**/metrics.json')):
+        if any(job in path.parts for job in exclude_jobs):continue
         report=json.loads(path.read_text())
         if report.get('evidence_class')!='semisynthetic_external_dataset_adaptation':continue
         key=(report['fold'],report['seed'])
@@ -74,7 +75,7 @@ def summarize(root,output,replicates=2000):
                                   dates=len(dates),stock_days=len(means),bootstrap_replicates=replicates,
                                   limitation='Conditional on observed date' if len(dates)==1 else 'Only three observed dates; not a strong population-level guarantee'))
     expected={(fold,seed) for seed in config['seeds'] for fold in ['date','style']+[r+'-'+s for r in ('stock','combined') for s in config['stocks']]}
-    report=dict(status='complete' if seen==expected else 'partial',completed_fold_seeds=len(seen),expected_fold_seeds=len(expected),missing_fold_seeds=sorted(expected-seen),summary=summary,paired_stock_day_intervals=intervals,records=records,
+    report=dict(excluded_jobs=list(exclude_jobs),status='complete' if seen==expected else 'partial',completed_fold_seeds=len(seen),expected_fold_seeds=len(expected),missing_fold_seeds=sorted(expected-seen),summary=summary,paired_stock_day_intervals=intervals,records=records,
                 paper_comparison='WSE adaptation only; not a direct reproduction or numerical comparison to paper 0.675',
                 inference='Intervals exploratory, no multiple-comparison correction; five seeds are not five independent market samples')
     (output/'report.json').write_text(json.dumps(report,indent=2)+'\n')
@@ -90,4 +91,5 @@ def summarize(root,output,replicates=2000):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
-    a=p.parse_args();summarize(a.root,a.output)
+    p.add_argument('--exclude-jobs',nargs='*',default=[])
+    a=p.parse_args();summarize(a.root,a.output,exclude_jobs=a.exclude_jobs)

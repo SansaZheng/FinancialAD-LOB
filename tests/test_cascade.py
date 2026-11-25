@@ -5,7 +5,9 @@ import unittest
 import numpy as np
 import torch
 from lobbench.cascade import Fusion,paper_contrastive,jfds_autoencoder,reconstruct
-from lobbench.cascade_run import splits
+from lobbench.cascade_run import splits,CachedRBFDetector
+from sklearn.svm import OneClassSVM
+from sklearn.metrics.pairwise import rbf_kernel
 from lobbench.semisynthetic import overlay,inputs
 
 
@@ -60,6 +62,14 @@ class CascadeTests(unittest.TestCase):
         torch.set_num_threads(1);m=jfds_autoencoder();x=torch.randn(2,25,20)
         loss=(reconstruct(m,x)-x).square().mean();loss.backward()
         self.assertTrue(torch.isfinite(loss))
+    def test_cached_rbf_matches_native_solver(self):
+        rng=np.random.default_rng(42);x=rng.normal(size=(128,20));v=rng.normal(size=(32,20))
+        for gamma in (.005,.05):
+            for nu in (.01,.05,.1):
+                native=OneClassSVM(nu=nu,gamma=gamma).fit(x)
+                base=OneClassSVM(nu=nu,kernel='precomputed').fit(rbf_kernel(x,gamma=gamma))
+                cached=CachedRBFDetector(base,x,gamma)
+                np.testing.assert_allclose(native.score_samples(v),cached.score_samples(v),atol=1e-8,rtol=1e-8)
     def test_fusion_parameter_budgets(self):
         counts=[sum(p.numel() for p in Fusion(d).parameters()) for d in (189,489,425)]
         self.assertLess(max(counts)/min(counts),1.01)
