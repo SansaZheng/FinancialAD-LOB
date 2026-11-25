@@ -1,0 +1,55 @@
+{
+  "name": "FinancialAD complete 15 WSE stock-days and full event book replay 010",
+  "work": "FinancialAD-LOB",
+  "code": {
+    "github": "SansaZheng/FinancialAD-LOB",
+    "commit": "47175c4f71395e91cfa4cbc52cb39feecc1e21e3"
+  },
+  "command": [
+    "bash",
+    "-lc",
+    "set -euo pipefail\npython3 -m scripts.full_wse_sessions --output \"$CQ_OUTPUT_DIR/full-sessions\"\nprintf \"1/1 complete\\n\" > \"$CQ_OUTPUT_DIR/progress.txt\""
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "resources": {
+    "gpus": 0,
+    "cpus": 1,
+    "ram_gb": 4,
+    "disk_gb": 1
+  },
+  "limits": {
+    "max_hours": 1.5,
+    "max_attempts": 1,
+    "max_usd": 0
+  },
+  "placement": {
+    "target": "kaggle",
+    "allow_rent": false
+  },
+  "outputs": {
+    "dest": "/Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/010-full-sessions",
+    "expect": [
+      {
+        "path": "full-sessions/audit.json",
+        "contains": "\"status\": \"complete\""
+      },
+      {
+        "path": "progress.txt",
+        "contains": "1/1"
+      }
+    ],
+    "progress": {
+      "path": "progress.txt",
+      "stall_min": 70
+    }
+  },
+  "idempotent": true,
+  "depends_on": [
+    "j-1125-951eab"
+  ]
+}

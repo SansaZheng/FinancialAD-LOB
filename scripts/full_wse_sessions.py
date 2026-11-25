@@ -13,7 +13,6 @@ import json
 import os
 from pathlib import Path
 from zoneinfo import ZoneInfo
-import h5py
 import numpy as np
 from lobbench.http_range import HTTPRangeFile
 from lobbench.wselob import WSEBook
@@ -63,6 +62,7 @@ def collect(manifest, output, stocks, days, stride=1):
     if not os.environ.get('CQ_JOB_ID'):
         raise RuntimeError('Full-day acquisition requires CQ; no bulk data on local Mac')
     output.mkdir(parents=True, exist_ok=True)
+    import h5py
     source = json.loads(manifest.read_text())
     audit = dict(status='partial', evidence_class='complete_public_daily_partitions_unlabeled',
                  cq_job=os.environ['CQ_JOB_ID'], license=source['license'],
