@@ -25,3 +25,5 @@ WSE file locators were initially found through the public
 [microstructure-lab source manifest](https://github.com/DeepCogNeural/microstructure-lab/blob/main/configs/wselob_sources_v1.json)
 and then independently matched to Mendeley's primary API. No results from that
 project are used as results of FinancialAD-LOB.
+
+Stage010 also converts complete selected HDF daily partitions to lossless numeric NPZ files, replays event-level top-five snapshots, and constructs explicitly semi-synthetic volume-overlay windows. These are derivatives, not publisher-provided manipulation labels. The full original archive hash is not verified when using HTTP ranges; each retained daily partition and derivative has a separate SHA-256 receipt.

@@ -1,0 +1,56 @@
+{
+  "name": "FinancialAD cascade CUDA environment and eight-method smoke 010",
+  "work": "FinancialAD-LOB",
+  "code": {
+    "github": "SansaZheng/FinancialAD-LOB",
+    "commit": "276908e8f1b2c2cf066b5cbd0a9b5d7473d78dfd"
+  },
+  "command": [
+    "bash",
+    "-lc",
+    "set -euo pipefail\npython3 -m scripts.qualify_cascade --device cuda"
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "resources": {
+    "gpus": 1,
+    "cpus": 1,
+    "ram_gb": 4,
+    "disk_gb": 0.1
+  },
+  "limits": {
+    "max_hours": 0.25,
+    "max_attempts": 1,
+    "max_usd": 0
+  },
+  "placement": {
+    "target": "kaggle",
+    "allow_rent": false
+  },
+  "outputs": {
+    "dest": "/Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/010-cuda-smoke",
+    "expect": [
+      {
+        "path": "cascade-qualification.json",
+        "contains": "\"passed\": true"
+      },
+      {
+        "path": "progress.txt",
+        "contains": "1/1"
+      }
+    ],
+    "progress": {
+      "path": "progress.txt",
+      "stall_min": 10
+    }
+  },
+  "idempotent": true,
+  "depends_on": [
+    "j-1125-951eab"
+  ]
+}
