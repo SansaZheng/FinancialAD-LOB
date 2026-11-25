@@ -9,10 +9,16 @@ from sklearn.metrics import average_precision_score
 
 def summarize(root,output,replicates=2000):
     output.mkdir(parents=True,exist_ok=True)
-    records=[]
+    records=[];seen=set()
+    config=json.loads(Path("configs/010-preregistered.json").read_text())
     for path in sorted(root.glob('**/metrics.json')):
         report=json.loads(path.read_text())
         if report.get('evidence_class')!='semisynthetic_external_dataset_adaptation':continue
+        key=(report['fold'],report['seed'])
+        if key in seen:raise ValueError('Duplicate fold-seed result; resolve provenance before aggregation')
+        if set(report['methods'])!=set(config['methods']) or 'seconds' not in report:
+            raise ValueError('Incomplete fold-seed result; do not silently aggregate partial methods')
+        seen.add(key)
         regime=report['fold'].split('-')[0]
         for method,item in report['methods'].items():
             pred=np.load(path.parent/(method+'-predictions.npz'),allow_pickle=False)
@@ -67,11 +73,12 @@ def summarize(root,output,replicates=2000):
                                   exploratory_95pct_interval=np.quantile(boot,[.025,.975]).tolist(),
                                   dates=len(dates),stock_days=len(means),bootstrap_replicates=replicates,
                                   limitation='Conditional on observed date' if len(dates)==1 else 'Only three observed dates; not a strong population-level guarantee'))
-    report=dict(status='complete',summary=summary,paired_stock_day_intervals=intervals,records=records,
+    expected={(fold,seed) for seed in config['seeds'] for fold in ['date','style']+[r+'-'+s for r in ('stock','combined') for s in config['stocks']]}
+    report=dict(status='complete' if seen==expected else 'partial',completed_fold_seeds=len(seen),expected_fold_seeds=len(expected),missing_fold_seeds=sorted(expected-seen),summary=summary,paired_stock_day_intervals=intervals,records=records,
                 paper_comparison='WSE adaptation only; not a direct reproduction or numerical comparison to paper 0.675',
                 inference='Intervals exploratory, no multiple-comparison correction; five seeds are not five independent market samples')
     (output/'report.json').write_text(json.dumps(report,indent=2)+'\n')
-    lines=['# Frozen WSE semi-synthetic experiment results','',
+    lines=['# Frozen WSE semi-synthetic experiment results','',f"Suite status: {report['status']}; {len(seen)}/{len(expected)} fold-seed runs.",'',
            '| Regime | Method | Mean fold AP | Seed SD | Test FPR | Benign FPR |','|---|---|---:|---:|---:|---:|']
     for r in summary:
         sd='n/a' if r['seed_sd'] is None else f"{r['seed_sd']:.4f}"

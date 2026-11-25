@@ -1,0 +1,64 @@
+{
+  "name": "FinancialAD frozen v1.2 date seed0 ten-method CPU pilot",
+  "work": "FinancialAD-LOB",
+  "code": {
+    "github": "SansaZheng/FinancialAD-LOB",
+    "commit": "2922a586db4765bab66ffabf5928087ccba3ff80"
+  },
+  "command": [
+    "bash",
+    "-lc",
+    "set -euo pipefail\nCQ_OUTPUT_DIR=\"$CQ_OUTPUT_DIR/qualification\" python3 -m scripts.qualify_cascade --device cpu\npython3 -m scripts.run_cascade_batch --dataset results/cq-010/j-1125-344a3f/benchmark/benchmark.npz --output \"$CQ_OUTPUT_DIR/batch\" --regimes date --seeds 0 --workers 1 --device cpu\ncp \"$CQ_OUTPUT_DIR/batch/progress.txt\" \"$CQ_OUTPUT_DIR/progress.txt\""
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "resources": {
+    "gpus": 0,
+    "cpus": 1,
+    "ram_gb": 4,
+    "disk_gb": 0.25
+  },
+  "limits": {
+    "max_hours": 1,
+    "max_attempts": 1,
+    "max_usd": 0
+  },
+  "placement": {
+    "target": "kaggle",
+    "allow_rent": false
+  },
+  "outputs": {
+    "dest": "/Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/010-pilot-v12",
+    "expect": [
+      {
+        "path": "qualification/cascade-qualification.json",
+        "contains": "\"passed\": true"
+      },
+      {
+        "path": "batch/batch.json",
+        "contains": "\"status\": \"complete\""
+      },
+      {
+        "path": "progress.txt",
+        "contains": "1/1"
+      }
+    ],
+    "progress": {
+      "path": "progress.txt",
+      "stall_min": 55
+    }
+  },
+  "idempotent": true,
+  "depends_on": [
+    "j-1125-344a3f",
+    "j-1125-951eab"
+  ],
+  "replaces": [
+    "j-1125-e79ab8",
+    "j-1125-27a0a5"
+  ]
+}
