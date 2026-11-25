@@ -13,10 +13,12 @@ matching or exceeding the source paper's 0.675 AUC-PR.
   held-out generators, metrics and falsification criteria.
 * [Candidate mechanism](docs/method.md): causal price-aligned liquidity dynamics.
 * [Baseline status](docs/baselines.md) and [data contract](docs/data-contract.md).
-* [Public data qualification](docs/public-data.md): actual two-stock, three-date WSE event replay.
+* [Public data qualification](docs/public-data.md): prefix provenance and public-source licensing.
+* [Complete-day cascade protocol](paper/010-reproduction-fidelity.md): 15 complete stock-days, explicitly semi-synthetic labels, original-described cascade and one-class controls.
+* [Registered stage010 suite](configs/010-preregistered.json): 10 methods, 5 seeds, date/stock/combined/style tests; planned runs are not completed results.
 * [Observation-aware improvements](docs/improvement-009.md): matched causal sequence controls.
 * [CQ access resolution](docs/cq-access.md): free Kaggle environment and smoke jobs completed.
-* [Current state](paper/workflow/current.md) and [execution prompt](paper/workflow/prompts/009-observation-aware-baselines.md).
+* [Current state](paper/workflow/current.md) and [execution prompt](paper/workflow/prompts/010-full-session-semisynthetic.md).
 * [Legacy inventory](migration/legacy-inventory.json): metadata **not backup**.
 * [Engineering checks](results/engineering/): no financial benchmark conclusions.
 
@@ -24,8 +26,7 @@ matching or exceeding the source paper's 0.675 AUC-PR.
 
 Use the dependencies in `requirements.txt`; Python 3.11 is the target CQ runtime.
 The recorded local checks use the exact versions in
-`results/engineering/local-versions.json`; remote compatibility is still to be
-qualified. No environment should be installed into another user's interpreter.
+`results/engineering/local-versions.json`; CQ CPU compatibility has been qualified (Python3.13.18 / PyTorch2.11.0+cpu); CUDA qualification is tracked separately. No environment should be installed into another user's interpreter.
 
 ```bash
 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m unittest discover -s tests -v
@@ -53,7 +54,7 @@ dependency versions and provenance. Use a fresh output directory per run.
 
 ## Archiving and Mac storage
 
-New code, docs, small permitted outputs and provenance are committed here.
+New code, docs, permitted selected daily partitions and provenance are committed here. Stage010 daily compressed files are individually at most4.1MB (38.6MB total), not whole annual archives. Full archive verification is not claimed; selected artifacts have SHA256 receipts.
 Large permitted artifacts require GitHub Releases/LFS and checksum receipts.
 Raw LOBSTER redistribution rights are not assumed. The older Mac LOB data were
 iCloud placeholders at inventory time (zero allocated data blocks); deleting
