@@ -1,9 +1,9 @@
-011-passive-lifecycle-fresh-dates | Codex | running | configuration6
+011b-frozen-matrix | Codex | prepared | configuration 6 | 2026-11-25T12:01:24.809367+00:00
 
-Task:prompts/011-passive-lifecycle-fresh-dates.md.
+Completed: fresh 15 stock-days collected (j-1125-8c5bef), all daily messages independently replayed and 1,500 snapshots matched (j-1125-41384c); 18,282 windows / 928 positive / 896 benign. Dataset and generator hashes verified. 35 marketability cases censored; 7 observational control collisions retained. Full-batch CUDA and eleven-method fixture qualification passed on two T4 GPUs (j-1125-f2ce0f), 7.57 seconds, 210,393,600 peak CUDA allocated bytes, 1,598,952 KiB RSS. Fixture scores are not scientific results.
 
-Concurrent diagnostic:010 date/style j-1125-58f211 still running; old queued stock j-1125-433216 and combined j-1125-75a358 cancelled before launch after generator audit. GPU smoke cancellation remains provider-unconfirmed. All old data and results retained.
+Stage010 date/style diagnostic j-1125-58f211 completed and 100 metrics independently verified; old GPU cancellation j-1125-c8115a confirmed. Queued obsolete stock/combined tasks remain cancelled.
 
-Next:acquire untouched Jan16/17/18 full days; implement persistent-passive overlay and depth-resolved inputs, then revalidate fixed comparisons.
+Next: submit frozen fresh-date matrix in three bounded batches, one child per GPU. Main preserves all archives; execution-only commits trim unrelated historical results with identical retained blobs.
 
-中文结论：发现具体生成机制缺陷后转入修复与新日期评测；旧分数仅作诊断，不能用于超越论文的声明。
+中文结论：数据及 GPU 验证已完成，正式新日期矩阵待提交；旧结果仅供诊断，尚无超过原论文的证据。

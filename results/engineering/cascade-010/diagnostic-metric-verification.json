@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "complete_suite": false,
+  "fold_seed_runs": 10,
+  "selected_method_evaluations": 100,
+  "dataset_sha256": "3c1b76a7a82acff1c689f397b359b2a96b3620918e8d515a1c0be6cd47018009",
+  "excluded_jobs": [],
+  "checks": [
+    {
+      "fold": "date",
+      "seed": 0,
+      "methods_checked": 10,
+      "metrics_sha256": "1e443eb046ec37efde787a6757b9e677ec1802fac8e9bf0d4a4f4c0a57ca0df0"
+    },
+    {
+      "fold": "date",
+      "seed": 1,
+      "methods_checked": 10,
+      "metrics_sha256": "ef3140f72b33b07e7d80f209c60f48982074733331fd83f3e8d3dca202691816"
+    },
+    {
+      "fold": "date",
+      "seed": 2,
+      "methods_checked": 10,
+      "metrics_sha256": "753fd903274630f49a3a749a411299c3e5f85d708ae71ab0a91e81d2df94837f"
+    },
+    {
+      "fold": "date",
+      "seed": 3,
+      "methods_checked": 10,
+      "metrics_sha256": "e700bdb497c7a0bbcb22ed58602a12fa29db3c62f93bf9d023b3f14bc1397e8f"
+    },
+    {
+      "fold": "date",
+      "seed": 4,
+      "methods_checked": 10,
+      "metrics_sha256": "c6952687f509877d65c55e535d9011c9184f5e8d3f587dbb909ba3468891a86d"
+    },
+    {
+      "fold": "style",
+      "seed": 0,
+      "methods_checked": 10,
+      "metrics_sha256": "0cd867e1ce30202c3bf87fe64b2e22fe7e713dd2dd429bde1d27761c7724da2f"
+    },
+    {
+      "fold": "style",
+      "seed": 1,
+      "methods_checked": 10,
+      "metrics_sha256": "9ffaab4ee96ac7545b396ea2e17bf8a184691ec1cee2292193177b1bcfa52559"
+    },
+    {
+      "fold": "style",
+      "seed": 2,
+      "methods_checked": 10,
+      "metrics_sha256": "eb6d1dbf1e5037569719d359fc868f84b13b884d1820d59cc35012ccea1f426a"
+    },
+    {
+      "fold": "style",
+      "seed": 3,
+      "methods_checked": 10,
+      "metrics_sha256": "ce9a60a18bf4d731daa7cd360ca1bc59bec4b3704eb7f39c68a99f5f75b53f1f"
+    },
+    {
+      "fold": "style",
+      "seed": 4,
+      "methods_checked": 10,
+      "metrics_sha256": "bde243f1490d6c0e3e6127fa67c8685fb6c2207720c36bb547723f74563fd0d3"
+    }
+  ],
+  "guarantees": [
+    "fixed split IDs",
+    "identical labels across methods",
+    "six validation trials",
+    "validation-only threshold",
+    "all saved AP/AUROC/PR AUC/FPR/recall independently recomputed",
+    "ten epochs per trained stage"
+  ],
+  "limitation": "Verifies artifact consistency, not the correctness of real manipulation labels or scientific superiority"
+}

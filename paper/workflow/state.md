@@ -1,45 +1,9 @@
-# Stage 009 complete — 2026-11-25
-Executor: Codex. Configuration revision 5. CCF A quality aspiration; venue undecided.
-Prompt: prompts/009-observation-aware-baselines.md.
-Canonical: https://github.com/SansaZheng/FinancialAD-LOB
+011b-frozen-matrix | Codex | prepared | configuration 6 | 2026-11-25T12:01:24.809367+00:00
 
-CQ access restored through the officially supported free Kaggle CPU backend.
-Canonical source commit 7023f84a036c91703a3ca54130af6d07aea7198e executed successfully.
-- j-1125-32c77e: environment qualification done; outputs verified/fetched.
-- j-1125-951eab: 31 tests and real-feature audit done; outputs verified/fetched.
-- j-1125-e0f1ad: three-stock expansion/replay done; outputs verified/fetched.
-No open project jobs remain. No paid resources, GPU quota, unrelated jobs or
-shared server environments were changed. Lab owner policy is unchanged but no
-longer blocks current CPU work. No fork is needed for this route.
+Completed: fresh 15 stock-days collected (j-1125-8c5bef), all daily messages independently replayed and 1,500 snapshots matched (j-1125-41384c); 18,282 windows / 928 positive / 896 benign. Dataset and generator hashes verified. 35 marketability cases censored; 7 observational control collisions retained. Full-batch CUDA and eleven-method fixture qualification passed on two T4 GPUs (j-1125-f2ce0f), 7.57 seconds, 210,393,600 peak CUDA allocated bytes, 1,598,952 KiB RSS. Fixture scores are not scientific results.
 
-Implemented: ten-channel missingness-aware liquidity features; explicit event
-coverage; zero-imputation gates; causal TCN/Transformer/candidate adapters;
-shared six-trial supervised trainer, labeled IDs/batches/normalization budgets.
-Parameter counts: 31,187 / 31,915 / 30,561. CPU-qualified locally and remotely;
-CUDA option not yet qualified. 31 tests pass, including actual tiny optimizer
-steps and future/missing-value perturbation invariance. These are engineering
-fixtures, not scientific detector performance experiments.
+Stage010 date/style diagnostic j-1125-58f211 completed and 100 metrics independently verified; old GPU cancellation j-1125-c8115a confirmed. Queued obsolete stock/combined tasks remain cancelled.
 
-Real public data: five WSE stocks x three dates = 15 stock-day prefixes,
-61,440 messages, 480 five-level snapshots, 61 crossed/locked flagged; 387 valid
-adjacent feature pairs and 7,740 explicitly unknown event-channel values.
-Full-day/session qualification, actual tick scales and intent labels are pending.
-Local/CQ overlapping features differ at most 8.88e-16; identities and masks match
-exactly and source-code hashes match. Full-source-file hashes remain unverified.
+Next: submit frozen fresh-date matrix in three bounded batches, one child per GPU. Main preserves all archives; execution-only commits trim unrelated historical results with identical retained blobs.
 
-JFDS predecessor source recovered via bounded ranges from its CC BY Zenodo
-archive; original source files preserved with hashes. It was statically inspected,
-not executed or relabeled as the complete 2025 cascaded/contrastive framework.
-
-All execution specs, small raw permitted samples, derived artifacts, receipts,
-code and steps were pushed to canonical GitHub at bc0e9bd086348e1f0bae8a571fc95533e463ab9d.
-An independent clone verified all 163 files / 7,755,223 bytes by SHA256.
-Receipt: migration/github-verification-009.json. Legacy iCloud files
-remain preserved; no old-data migration or disk-space-reclamation claim.
-
-Next scientific stage: qualify full-day sessions/attribution and genuine or
-explicitly semi-synthetic labels; add exact cascade/OC-SVM/IF regimes; freeze
-stock/date/generator splits; run matched-budget multi-seed experiments and
-ablations. No claim of exceeding 0.675 or achieving CCF A acceptance is supported.
-
-中文结论：已解除当前 CQ 接入阻塞并完成三个远端任务，方法与公平对照可运行，真实样本扩展至五股票；检测性能提升仍待合格标签和正式留出集实验验证。
+中文结论：数据及 GPU 验证已完成，正式新日期矩阵待提交；旧结果仅供诊断，尚无超过原论文的证据。

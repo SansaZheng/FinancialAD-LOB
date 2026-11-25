@@ -1,0 +1,63 @@
+{
+  "name": "FinancialAD 011 full-batch CUDA and eleven-method qualification",
+  "work": "FinancialAD-LOB",
+  "code": {
+    "github": "SansaZheng/FinancialAD-LOB",
+    "commit": "b75eeb48d1050564695fca13aecaad81551e1048"
+  },
+  "command": [
+    "python3",
+    "-c",
+    "import runpy,torch;torch.use_deterministic_algorithms(True);runpy.run_module('scripts.qualify_cascade',run_name='__main__')",
+    "--device",
+    "cuda",
+    "--protocol",
+    "configs/011-preregistered.json"
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "resources": {
+    "gpus": 1,
+    "cpus": 1,
+    "ram_gb": 4,
+    "disk_gb": 0.2
+  },
+  "limits": {
+    "max_hours": 0.25,
+    "max_attempts": 1,
+    "max_usd": 0
+  },
+  "placement": {
+    "target": "kaggle",
+    "allow_rent": false
+  },
+  "outputs": {
+    "dest": "/Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/011-cuda-qualification",
+    "expect": [
+      {
+        "path": "cascade-qualification.json",
+        "contains": "\"passed\": true"
+      },
+      {
+        "path": "progress.txt",
+        "contains": "1/1"
+      }
+    ],
+    "progress": {
+      "path": "progress.txt",
+      "stall_min": 10
+    }
+  },
+  "idempotent": true,
+  "depends_on": [
+    "j-1125-810108"
+  ],
+  "replaces": [
+    "j-1125-c8115a"
+  ]
+}

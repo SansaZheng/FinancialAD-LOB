@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "dataset_sha256": "edf460e5a3fc84140528f35765ac21b94b966090d8f73e0e6740a2bba5d5c082",
+  "totals": {
+    "windows": 18282,
+    "positive": 928,
+    "benign_controls": 896,
+    "invalid_source_windows": 268,
+    "marketability_censored": 35
+  },
+  "cq_independent_replay": "j-1125-41384c",
+  "source_rows": 1224907,
+  "checked_snapshots": 1500,
+  "feature_shape": [
+    18282,
+    25,
+    40
+  ]
+}

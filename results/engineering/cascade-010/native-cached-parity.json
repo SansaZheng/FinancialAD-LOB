@@ -1,0 +1,84 @@
+{
+  "native_job": "j-1125-810108",
+  "cached_job": "j-1125-58f211",
+  "comparisons": [
+    {
+      "method": "raw_ocsvm",
+      "max_score_difference": 4.263256414560601e-14,
+      "max_validation_score_difference": 5.684341886080802e-14,
+      "AP_difference": 0.0,
+      "same_selected_params": true
+    },
+    {
+      "method": "dynamics_ocsvm",
+      "max_score_difference": 2.220446049250313e-15,
+      "max_validation_score_difference": 1.9984014443252818e-15,
+      "AP_difference": 0.0,
+      "same_selected_params": true
+    },
+    {
+      "method": "cascade_ocsvm",
+      "max_score_difference": 8.881784197001252e-16,
+      "max_validation_score_difference": 8.881784197001252e-16,
+      "AP_difference": 0.0,
+      "same_selected_params": true
+    },
+    {
+      "method": "cascade_if",
+      "max_score_difference": 0.0,
+      "max_validation_score_difference": 0.0,
+      "AP_difference": 0.0,
+      "same_selected_params": true
+    },
+    {
+      "method": "price_cascade_ocsvm",
+      "max_score_difference": 1.7053025658242404e-13,
+      "max_validation_score_difference": 1.1368683772161603e-13,
+      "AP_difference": 0.0,
+      "same_selected_params": true
+    },
+    {
+      "method": "rank_cascade_ocsvm",
+      "max_score_difference": 1.0658141036401503e-14,
+      "max_validation_score_difference": 1.0658141036401503e-14,
+      "AP_difference": 0.0,
+      "same_selected_params": true
+    },
+    {
+      "method": "price_no_scl",
+      "max_score_difference": 1.1368683772161603e-13,
+      "max_validation_score_difference": 1.7053025658242404e-13,
+      "AP_difference": 0.0,
+      "same_selected_params": true
+    },
+    {
+      "method": "price_no_lob",
+      "max_score_difference": 8.526512829121202e-14,
+      "max_validation_score_difference": 5.684341886080802e-14,
+      "AP_difference": 0.0,
+      "same_selected_params": true
+    },
+    {
+      "method": "supervised_logistic",
+      "max_score_difference": 0.0,
+      "max_validation_score_difference": 0.0,
+      "AP_difference": 0.0,
+      "same_selected_params": true
+    },
+    {
+      "method": "supervised_hgb",
+      "max_score_difference": 0.0,
+      "max_validation_score_difference": 0.0,
+      "AP_difference": 0.0,
+      "same_selected_params": true
+    }
+  ],
+  "checkpoint_byte_matches": {
+    "price_cascade_ocsvm.pt": true,
+    "lob-ae.pt": true,
+    "price_no_lob.pt": true,
+    "cascade.pt": true,
+    "price_no_scl.pt": true,
+    "rank_cascade_ocsvm.pt": true
+  }
+}

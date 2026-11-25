@@ -3,13 +3,14 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor,as_completed
 import json
 import os
+from queue import Queue
 from pathlib import Path
 import subprocess
 import sys
 import time
 
 
-def execute(task,dataset,output,device,epochs,engineering=False,protocol=Path('configs/010-preregistered.json')):
+def execute(task,dataset,output,device,epochs,engineering=False,protocol=Path('configs/010-preregistered.json'),gpu_id=None):
     regime,fold,seed=task
     dest=output/f'{fold}-s{seed}'
     dest.mkdir(parents=True,exist_ok=True)
@@ -17,21 +18,40 @@ def execute(task,dataset,output,device,epochs,engineering=False,protocol=Path('c
              '--regimes',regime,'--folds',fold,'--seeds',str(seed),'--epochs',str(epochs),'--device',device,'--protocol',str(protocol)]
     if engineering:command.append('--engineering')
     start=time.monotonic()
+    env={**os.environ,'OMP_NUM_THREADS':'1','MKL_NUM_THREADS':'1','OPENBLAS_NUM_THREADS':'1'}
+    if gpu_id is not None:env['CUDA_VISIBLE_DEVICES']=str(gpu_id)
     with (dest/'run.log').open('w') as log:
-        result=subprocess.run(command,stdout=log,stderr=subprocess.STDOUT,env={**os.environ,'OMP_NUM_THREADS':'1','MKL_NUM_THREADS':'1','OPENBLAS_NUM_THREADS':'1'})
-    return dict(regime=regime,fold=fold,seed=seed,returncode=result.returncode,seconds=time.monotonic()-start,folder=str(dest.name))
+        result=subprocess.run(command,stdout=log,stderr=subprocess.STDOUT,env=env)
+    return dict(regime=regime,fold=fold,seed=seed,returncode=result.returncode,seconds=time.monotonic()-start,folder=str(dest.name),gpu_id=gpu_id)
+
+
+def leased_execute(devices,*args):
+    """Hold one device until the whole child exits, including its CPU stages."""
+    gpu_id=devices.get()
+    try:return execute(*args,gpu_id=gpu_id)
+    finally:devices.put(gpu_id)
 
 
 def main(dataset,output,regimes,seeds,workers,device,epochs,engineering=False,protocol=Path('configs/010-preregistered.json')):
     if not os.environ.get('CQ_JOB_ID') and not engineering:raise RuntimeError('CQ required')
-    if workers>4 or workers<1 or (device=='cuda' and workers!=1):raise ValueError('Unqualified worker/device allocation')
+    if workers>4 or workers<1:raise ValueError('Unqualified worker allocation')
+    devices=None
+    if device=='cuda':
+        import torch
+        count=torch.cuda.device_count()
+        if workers>min(2,count):raise ValueError('At most two qualified GPUs, one worker per device')
+        visible=os.environ.get('CUDA_VISIBLE_DEVICES')
+        ids=visible.split(',') if visible else list(range(count))
+        devices=Queue()
+        for gpu_id in ids[:workers]:devices.put(gpu_id)
     output.mkdir(parents=True,exist_ok=True)
     stocks=['KGHM','PEKAO','PKNORLEN','PKOBP','PZU']
     tasks=[(regime,fold,seed) for regime in regimes for fold in ([regime] if regime in ('date','style') else [regime+'-'+s for s in stocks]) for seed in seeds]
     reports=[]
     (output/'progress.txt').write_text(f'0/{len(tasks)} started\n')
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures=[pool.submit(execute,t,dataset,output,device,epochs,engineering,protocol) for t in tasks]
+        futures=[pool.submit(leased_execute,devices,t,dataset,output,device,epochs,engineering,protocol) if devices is not None
+                 else pool.submit(execute,t,dataset,output,device,epochs,engineering,protocol) for t in tasks]
         for future in as_completed(futures):
             report=future.result();reports.append(report)
             print(json.dumps(report),flush=True)
