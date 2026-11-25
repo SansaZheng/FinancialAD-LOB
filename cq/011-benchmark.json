@@ -1,0 +1,59 @@
+{
+  "name": "FinancialAD fresh-date passive-lifecycle benchmark and replay qualification 011",
+  "work": "FinancialAD-LOB",
+  "code": {
+    "github": "SansaZheng/FinancialAD-LOB",
+    "commit": "8e7cb7f70efd55ecd1a61aaa62570f36bc57f45e"
+  },
+  "command": [
+    "bash",
+    "-lc",
+    "set -euo pipefail\npython3 -m unittest tests.test_passive_overlay -q\npython3 -m scripts.prepare_full_benchmark --generator passive --source results/cq-011/j-1125-8c5bef/full-sessions --output \"$CQ_OUTPUT_DIR/benchmark\"\ncp \"$CQ_OUTPUT_DIR/benchmark/progress.txt\" \"$CQ_OUTPUT_DIR/progress.txt\""
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "resources": {
+    "gpus": 0,
+    "cpus": 1,
+    "ram_gb": 4,
+    "disk_gb": 1
+  },
+  "limits": {
+    "max_hours": 0.75,
+    "max_attempts": 1,
+    "max_usd": 0
+  },
+  "placement": {
+    "target": "kaggle",
+    "allow_rent": false
+  },
+  "outputs": {
+    "dest": "/Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/011-benchmark",
+    "expect": [
+      {
+        "path": "benchmark/full-day-validation.json",
+        "contains": "\"passed\": true"
+      },
+      {
+        "path": "benchmark/manifest.json",
+        "contains": "\"status\": \"complete\""
+      },
+      {
+        "path": "progress.txt",
+        "contains": "1/1"
+      }
+    ],
+    "progress": {
+      "path": "progress.txt",
+      "stall_min": 40
+    }
+  },
+  "idempotent": true,
+  "depends_on": [
+    "j-1125-8c5bef"
+  ]
+}
