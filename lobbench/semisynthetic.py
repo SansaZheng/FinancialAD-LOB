@@ -26,6 +26,8 @@ def overlay(book, rng, kind):
     # Scale from only the prefix available when placing the synthetic orders.
     total=float(np.median(book[:start,:, :,1].sum(axis=2)))*scale
     prices=book[start,side,:,0].copy()
+    amounts=np.maximum(1,np.rint(total*weights)).astype(np.int64)
+    visible=set()
     starts=np.minimum(start+np.arange(5)[::-1],stop-1)
     if kind=='layered':
         stops=np.repeat(stop,5)
@@ -41,9 +43,10 @@ def overlay(book, rng, kind):
         for t in range(int(starts[k]),int(stops[k])):
             level=np.flatnonzero(x[t,side,:,0]==p)
             if len(level):
-                x[t,side,level[0],1]+=total*weights[k]
+                x[t,side,level[0],1]+=amounts[k]
+                visible.add(k)
     return x,dict(side=side,start=start,stop=stop,scale=scale,prices=prices.tolist(),
-                  placement_steps=starts.tolist(),withdrawal_steps=stops.tolist(),added_volume=(total*weights).tolist())
+                  placement_steps=starts.tolist(),withdrawal_steps=stops.tolist(),added_volume=amounts.tolist(),visible_levels=len(visible))
 
 
 def inputs(x,time_ns,aligned=True):
@@ -108,6 +111,8 @@ def build(folder,output,stride=64,seed=17086):
             identifier=f'{key}-{int(rows[start])}'
             if kind!='background':
                 window,details=overlay(window,rng,kind)
+                if details['visible_levels']<2:
+                    excluded+=1;continue
                 ledger.append(dict(id=identifier,style=kind,label=y,**details))
             raw,manual,dyn=inputs(window,ts[sl],True)
             rank=inputs(window,ts[sl],False)[2]
