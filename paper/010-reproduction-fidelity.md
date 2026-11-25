@@ -2,7 +2,7 @@
 
 Primary target: [Lin & Yang arXiv 2508.17086v2](https://arxiv.org/html/2508.17086v2), Appendix A. The paper reports best AUC-PR 0.675 on its LOBSTER-based semi-synthetic benchmark. That value is context, not a valid numerical superiority threshold for WSE.
 
-We implement the described cascade: MSE-pretrained multilevel LOB Transformer, frozen representation, concatenated manual features, fusion autoencoder trained with reconstruction plus the paper's log-positive-sum contrastive loss, then a normal-training-embeddings-only OC-SVM or Isolation Forest. Original JFDS predecessor code is preserved under `vendor/jfds_reference`, with its independent source receipt. The 2025 paper's complete author implementation and original labeled dataset have not been acquired.
+We implement the described cascade: MSE-pretrained multilevel LOB Transformer, frozen representation, concatenated manual features, fusion autoencoder trained with reconstruction plus the paper's log-positive-sum contrastive loss, then a normal-training-embeddings-only OC-SVM or Isolation Forest. Original JFDS predecessor code is preserved under `vendor/jfds_reference`, with its independent source receipt. The 2025 paper's complete author implementation and original labeled dataset have not been acquired. A bounded ZIP-directory/readme audit confirms that the predecessor archive contains L1 samples for five stocks on2012-06-21, not the target multilevel2015-01-02 dataset; see results/engineering/jfds-data-provenance-010.json.
 
 | Item | Current implementation and deviation |
 |---|---|

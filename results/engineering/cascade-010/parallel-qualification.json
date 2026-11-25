@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "tasks": [
+    {
+      "regime": "date",
+      "fold": "date",
+      "seed": 0,
+      "returncode": 0,
+      "seconds": 9.773475583,
+      "folder": "date-s0"
+    },
+    {
+      "regime": "style",
+      "fold": "style",
+      "seed": 0,
+      "returncode": 0,
+      "seconds": 9.771889458,
+      "folder": "style-s0"
+    }
+  ],
+  "total": 2,
+  "evidence_class": "engineering_only_generated_fixture",
+  "workers": 2
+}

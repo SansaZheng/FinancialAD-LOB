@@ -1,0 +1,278 @@
+{
+  "source": "https://zenodo.org/api/records/11048480/files/JFDS%20Repo.zip/content",
+  "members": [
+    {
+      "path": "01_data_formatting.py",
+      "bytes": 38627,
+      "compressed_bytes": 5205
+    },
+    {
+      "path": "02_data_preprocessing.py",
+      "bytes": 9124,
+      "compressed_bytes": 2227
+    },
+    {
+      "path": "03_model_training.py",
+      "bytes": 4877,
+      "compressed_bytes": 1010
+    },
+    {
+      "path": "04_model_scoring.py",
+      "bytes": 20407,
+      "compressed_bytes": 3025
+    },
+    {
+      "path": "data/AAPL_2012-06-21_34200000_57600000_message_1.csv",
+      "bytes": 4834577,
+      "compressed_bytes": 1259594
+    },
+    {
+      "path": "data/AAPL_2012-06-21_34200000_57600000_orderbook_1.csv",
+      "bytes": 2765448,
+      "compressed_bytes": 268885
+    },
+    {
+      "path": "data/AMZN_2012-06-21_34200000_57600000_message_1.csv",
+      "bytes": 2371403,
+      "compressed_bytes": 626517
+    },
+    {
+      "path": "data/AMZN_2012-06-21_34200000_57600000_orderbook_1.csv",
+      "bytes": 1342260,
+      "compressed_bytes": 134919
+    },
+    {
+      "path": "data/formatted_lobster/",
+      "bytes": 0,
+      "compressed_bytes": 0
+    },
+    {
+      "path": "data/formatted_lobster/AAPL.csv",
+      "bytes": 15860547,
+      "compressed_bytes": 1894015
+    },
+    {
+      "path": "data/formatted_lobster/AAPL_Anomalies.csv",
+      "bytes": 1285980,
+      "compressed_bytes": 71162
+    },
+    {
+      "path": "data/formatted_lobster/AMZN.csv",
+      "bytes": 8810361,
+      "compressed_bytes": 1036093
+    },
+    {
+      "path": "data/formatted_lobster/AMZN_Anomalies.csv",
+      "bytes": 1330392,
+      "compressed_bytes": 75094
+    },
+    {
+      "path": "data/formatted_lobster/Anomalies_formatted.csv",
+      "bytes": 2413113,
+      "compressed_bytes": 183187
+    },
+    {
+      "path": "data/formatted_lobster/GOOG.csv",
+      "bytes": 7517097,
+      "compressed_bytes": 860528
+    },
+    {
+      "path": "data/formatted_lobster/GOOG_Anomalies.csv",
+      "bytes": 1334153,
+      "compressed_bytes": 73433
+    },
+    {
+      "path": "data/formatted_lobster/INTC.csv",
+      "bytes": 57116803,
+      "compressed_bytes": 5614694
+    },
+    {
+      "path": "data/formatted_lobster/INTC_Anomalies.csv",
+      "bytes": 1388192,
+      "compressed_bytes": 73765
+    },
+    {
+      "path": "data/formatted_lobster/MarketDepth_20120621.csv",
+      "bytes": 147387325,
+      "compressed_bytes": 15500351
+    },
+    {
+      "path": "data/formatted_lobster/MSFT.csv",
+      "bytes": 58037164,
+      "compressed_bytes": 5577747
+    },
+    {
+      "path": "data/formatted_lobster/MSFT_Anomalies.csv",
+      "bytes": 1374759,
+      "compressed_bytes": 73525
+    },
+    {
+      "path": "data/GOOG_2012-06-21_34200000_57600000_message_1.csv",
+      "bytes": 2024312,
+      "compressed_bytes": 530303
+    },
+    {
+      "path": "data/GOOG_2012-06-21_34200000_57600000_orderbook_1.csv",
+      "bytes": 1154169,
+      "compressed_bytes": 106307
+    },
+    {
+      "path": "data/INTC_2012-06-21_34200000_57600000_message_1.csv",
+      "bytes": 16651305,
+      "compressed_bytes": 3721508
+    },
+    {
+      "path": "data/INTC_2012-06-21_34200000_57600000_orderbook_1.csv",
+      "bytes": 10224026,
+      "compressed_bytes": 775561
+    },
+    {
+      "path": "data/intermediate_lobster/",
+      "bytes": 0,
+      "compressed_bytes": 0
+    },
+    {
+      "path": "data/intermediate_lobster/Features_AAP_20120621.csv",
+      "bytes": 15959893,
+      "compressed_bytes": 3032667
+    },
+    {
+      "path": "data/intermediate_lobster/Features_AMZ_20120621.csv",
+      "bytes": 8702489,
+      "compressed_bytes": 1584160
+    },
+    {
+      "path": "data/intermediate_lobster/Features_GOO_20120621.csv",
+      "bytes": 7467644,
+      "compressed_bytes": 1307401
+    },
+    {
+      "path": "data/intermediate_lobster/Features_INT_20120621.csv",
+      "bytes": 48305849,
+      "compressed_bytes": 6287920
+    },
+    {
+      "path": "data/intermediate_lobster/Features_MSF_20120621.csv",
+      "bytes": 49011256,
+      "compressed_bytes": 6284728
+    },
+    {
+      "path": "data/intermediate_lobster/Features_Total.csv",
+      "bytes": 128736803,
+      "compressed_bytes": 18884741
+    },
+    {
+      "path": "data/intermediate_lobster/NormalizedFeatures_AAP_20120621.parquet",
+      "bytes": 4209121,
+      "compressed_bytes": 2984925
+    },
+    {
+      "path": "data/intermediate_lobster/NormalizedFeatures_AMZ_20120621.parquet",
+      "bytes": 2266408,
+      "compressed_bytes": 1584156
+    },
+    {
+      "path": "data/intermediate_lobster/NormalizedFeatures_GOO_20120621.parquet",
+      "bytes": 1863424,
+      "compressed_bytes": 1300227
+    },
+    {
+      "path": "data/intermediate_lobster/NormalizedFeatures_INT_20120621.parquet",
+      "bytes": 12964895,
+      "compressed_bytes": 8023687
+    },
+    {
+      "path": "data/intermediate_lobster/NormalizedFeatures_MSF_20120621.parquet",
+      "bytes": 13086782,
+      "compressed_bytes": 8179305
+    },
+    {
+      "path": "data/intermediate_lobster/NormalizedFeatures_Total.parquet",
+      "bytes": 39671750,
+      "compressed_bytes": 27474039
+    },
+    {
+      "path": "data/LOBSTER_SampleFiles_ReadMe.txt",
+      "bytes": 4790,
+      "compressed_bytes": 1802
+    },
+    {
+      "path": "data/MSFT_2012-06-21_34200000_57600000_message_1.csv",
+      "bytes": 16970797,
+      "compressed_bytes": 3725192
+    },
+    {
+      "path": "data/MSFT_2012-06-21_34200000_57600000_orderbook_1.csv",
+      "bytes": 10410611,
+      "compressed_bytes": 825605
+    },
+    {
+      "path": "data/preprocessed_lobster/",
+      "bytes": 0,
+      "compressed_bytes": 0
+    },
+    {
+      "path": "data/preprocessed_lobster/test_data.parquet",
+      "bytes": 9369319,
+      "compressed_bytes": 5197651
+    },
+    {
+      "path": "data/preprocessed_lobster/train_data.parquet",
+      "bytes": 43738992,
+      "compressed_bytes": 25783337
+    },
+    {
+      "path": "data/preprocessed_lobster/valid_data.parquet",
+      "bytes": 18635477,
+      "compressed_bytes": 9063383
+    },
+    {
+      "path": "models/best_MLPAutoencoder.pt",
+      "bytes": 2757569,
+      "compressed_bytes": 2577663
+    },
+    {
+      "path": "models/best_StackedLSTMAutoencoder.pt",
+      "bytes": 6123295,
+      "compressed_bytes": 5696302
+    },
+    {
+      "path": "models/best_TransformerAutoencoder.pt",
+      "bytes": 15194891,
+      "compressed_bytes": 14032072
+    },
+    {
+      "path": "models/models.py",
+      "bytes": 10726,
+      "compressed_bytes": 1998
+    },
+    {
+      "path": "preprocessing/utilities.py",
+      "bytes": 15805,
+      "compressed_bytes": 3001
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 68,
+      "compressed_bytes": 63
+    },
+    {
+      "path": "scoring/utilities.py",
+      "bytes": 7895,
+      "compressed_bytes": 1274
+    },
+    {
+      "path": "train/utilities.py",
+      "bytes": 11552,
+      "compressed_bytes": 2883
+    },
+    {
+      "path": "README.md",
+      "bytes": 1934,
+      "compressed_bytes": 793
+    }
+  ],
+  "source_readme": "=========================================================================\r\n\r\nLOBSTER | academic data.\r\n\r\nLimit Order Book System - The Efficient Reconstructor\r\n\r\nhttp://LOBSTER.wiwi.hu-berlin.de\r\n\r\n\t\t\t\t\tThis Version: \t01 Sept 2013\r\n=========================================================================\r\n\r\nSample Files Readme\r\n\r\n=========================================================================\r\n\t\t\t\t\t\t\t\t\t\t\r\n\r\nOutput Structure:\r\n---------------\r\n\r\nLOBSTER generates a 'message' and an 'orderbook' file for each active \r\ntrading day of a selected ticker. The 'orderbook' file contains the \r\nevolution of the limit order book up to the requested number of levels. \r\nThe 'message' file contains indicators for the type of event causing \r\nan update of the limit order book in the requested price range. All \r\nevents are timestamped to seconds after midnight, with decimal \r\nprecision of at least milliseconds and up to nanoseconds depending \r\non the requested period. \r\n\r\n\r\n\tMessage File:\t\t(Matrix of size: (Nx6))\r\n\t-------------\t\r\n\t\t\t\r\n\tName: \tTICKER_Year-Month-Day_StartTime_EndTime_message_LEVEL.csv \t\r\n\t\t\r\n\t\tStartTime and EndTime give the theoretical beginning \r\n\t\tand end time of the output file in milliseconds after \t\t\r\n\t\tmid night. LEVEL refers to the number of levels of the \r\n\t\trequested limit order book.\r\n\r\n\r\n\tColumns:\r\n\t\r\n\t    1.) Time: \t\t\r\n\t\t\t\tSeconds after midnight with decimal \r\n\t\t\t\tprecision of at least milliseconds \r\n\t\t\t\tand up to nanoseconds depending on \r\n\t\t\t\tthe requested period\r\n\t    2.) Type:\r\n\t\t\t\t1: Submission of a new limit order\r\n\t\t\t\t2: Cancellation (Partial deletion \r\n\t\t\t\t   of a limit order)\r\n\t\t\t\t3: Deletion (Total deletion of a limit order)\r\n\t\t\t\t4: Execution of a visible limit order\t\t\t   \t \r\n\t\t\t\t5: Execution of a hidden limit order\r\n\t\t\t\t7: Trading halt indicator \t\t\t\t   \r\n\t\t\t\t   (Detailed information below)\r\n\t    3.) Order ID: \t\r\n\t\t\t\tUnique order reference number \r\n\t\t\t\t(Assigned in order flow)\r\n\t    4.) Size: \t\t\r\n\t\t\t\tNumber of shares\r\n\t    5.) Price: \t\t\r\n\t\t\t\tDollar price times 10000 \r\n\t\t\t\t(i.e., A stock price of $91.14 is given \r\n\t\t\t\tby 911400)\r\n\t    6.) Direction:\r\n\t\t\t\t-1: Sell limit order\r\n\t\t\t\t1: Buy limit order\r\n\t\t\t\t\r\n\t\t\t\tNote: \r\n\t\t\t\tExecution of a sell (buy) limit\r\n\t\t\t\torder corresponds to a buyer (seller) \r\n\t\t\t\tinitiated trade, i.e. Buy (Sell) trade.\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\tOrderbook File:\t\t(Matrix of size: (Nx(4xNumberOfLevels)))\r\n\t---------------\r\n\t\r\n\tName: \tTICKER_Year-Month-Day_StartTime_EndTime_orderbook_LEVEL.csv\r\n\t\r\n\tColumns:\r\n\t\r\n \t    1.) Ask Price 1: \tLevel 1 Ask Price \t(Best Ask)\r\n\t    2.) Ask Size 1: \tLevel 1 Ask Volume \t(Best Ask Volume)\r\n\t    3.) Bid Price 1: \tLevel 1 Bid Price \t(Best Bid)\r\n\t    4.) Bid Size 1: \tLevel 1 Bid Volume \t(Best Bid Volume)\r\n\t    5.) Ask Price 2: \tLevel 2 Ask Price \t(2nd Best Ask)\r\n\t    ...\r\n\t\r\n\tNotes: \t \r\n\t------\r\n\t\r\n\t\t- Levels:\r\n\t\t\r\n\t\tThe term level refers to occupied price levels. This implies \r\n\t\tthat the difference between two levels in the LOBSTER output \r\n\t\tis not necessarily the minimum ticks size.\r\n\r\n\t\t- Unoccupied Price Levels:\r\n\t\r\n\t\tWhen the selected number of levels exceeds the number of levels \r\n\t\tavailable the empty order book positions are filled with dummy \r\n\t\tinformation to guarantee a symmetric output. The extra bid \r\n\t\tand/or ask prices are set to -9999999999 and 9999999999, \r\n\t\trespectively. The Corresponding volumes are set to 0. \r\n\t\t\r\n\t\t- Trading Halts:\r\n\t\t\r\n\t\tWhen trading halts, a message of type '7' is written into the \r\n\t\t'message' file. The corresponding price and trade direction \r\n\t\tare set to '-1' and all other properties are set to '0'. \r\n\t\tShould the resume of quoting be indicated by an additional \r\n\t\tmessage in NASDAQ's Historical TotalView-ITCH files, another \r\n\t\tmessage of type '7' with price '0' is added to the 'message' \r\n\t\tfile. Again, the trade direction is set to '-1' and all other \r\n\t\tfields are set to '0'. \r\n\t\tWhen trading resumes a message of type '7' and \r\n\t\tprice '1' (Trade direction '-1' and all other \r\n\t\tentries '0') is written to the 'message' file. For messages \r\n\t\tof type '7', the corresponding order book rows contain a \r\n\t\tduplication of the preceding order book state. The reason \r\n\t\tfor the trading halt is not included in the output.\r\n\t\t\t\t\t\t\r\n\t\t\tExample: Stylized trading halt messages in 'message' file.\t\t\t\t\r\n\t\t\r\n\t\t\tHalt: \t\t\t\t36023\t| 7 | 0 | 0 | -1 | -1\r\n\t\t\t\t\t\t\t\t\t\t\t...\r\n\t\t\tQuoting: \t\t\t36323 \t| 7 | 0 | 0 | 0  | -1\r\n\t\t\t\t\t\t\t\t\t\t\t...\r\n\t\t\tResume Trading:\t\t36723   | 7 | 0 | 0 | 1  | -1\r\n\t\t\t\t\t\t\t\t\t\t\t...\r\n\r\n\t\t\tThe vertical bars indicate the different columns in the  \r\n\t\t\tmessage file.\r\n\t\t\t\r\n=========================================================================\r\n\r\nAny questions? Just contact us at http://LOBSTER.wiwi.hu-berlin.de\r\n\r\n=========================================================================\r\n",
+  "range_bytes": 101064,
+  "archive_verified": false
+}

@@ -164,7 +164,7 @@ def evaluate(y,score,threshold):
                 test_fpr=float(np.mean(score[y==0]>threshold)))
 
 
-def run(dataset,output,regimes,seeds,epochs=10,device='cpu',engineering=False):
+def run(dataset,output,regimes,seeds,epochs=10,device='cpu',engineering=False,folds=None):
     if not engineering and not os.environ.get('CQ_JOB_ID'):
         raise RuntimeError('Scientific runs require CQ')
     if engineering and (epochs>1 or dataset.stat().st_size>10*1024**2):
@@ -180,6 +180,7 @@ def run(dataset,output,regimes,seeds,epochs=10,device='cpu',engineering=False):
     reports=[]
     for regime in regimes:
         for fold,tr,va,te in splits(data,regime):
+            if folds is not None and fold not in folds:continue
             if engineering:
                 # Take a bounded balanced prefix per split; no scientific interpretation.
                 def small(ix):
@@ -263,4 +264,5 @@ if __name__=='__main__':
     p.add_argument('--regimes',nargs='+',choices=['date','stock','combined','style'],default=['date','stock','combined'])
     p.add_argument('--seeds',nargs='+',type=int,default=[0,1,2,3,4]);p.add_argument('--epochs',type=int,default=10)
     p.add_argument('--device',choices=['cpu','cuda'],default='cpu');p.add_argument('--engineering',action='store_true')
-    args=p.parse_args();run(args.dataset,args.output,args.regimes,args.seeds,args.epochs,args.device,args.engineering)
+    p.add_argument('--folds',nargs='+')
+    args=p.parse_args();run(args.dataset,args.output,args.regimes,args.seeds,args.epochs,args.device,args.engineering,args.folds)
