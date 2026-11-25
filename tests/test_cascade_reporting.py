@@ -23,5 +23,7 @@ class ReportingTests(unittest.TestCase):
             self.assertEqual(result['status'],'partial');self.assertEqual(result['expected_fold_seeds'],60)
             contrast=next(x for x in result['paired_stock_day_intervals'] if x['method']=='price_cascade_ocsvm')
             self.assertEqual(contrast['exploratory_95pct_interval'],[.5,.5])
+            strong=next(x for x in result['paired_stock_day_intervals'] if x['method']=='price_cascade_ocsvm' and x['reference']=='supervised_hgb')
+            self.assertEqual(strong['exploratory_95pct_interval'],[0.,0.])
 
 if __name__=='__main__':unittest.main()

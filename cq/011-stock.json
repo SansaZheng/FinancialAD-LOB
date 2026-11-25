@@ -1,0 +1,57 @@
+{
+  "name": "FinancialAD 011 frozen stock five held-out stocks five seeds eleven methods two T4",
+  "work": "FinancialAD-LOB",
+  "code": {
+    "github": "SansaZheng/FinancialAD-LOB",
+    "commit": "c34097d44f10ab42db7cd35b6d787ce4b055b8b8"
+  },
+  "command": [
+    "bash",
+    "-lc",
+    "set -euo pipefail\npython3 -m unittest tests.test_cascade_batch -v\npython3 -m scripts.run_cascade_batch --dataset results/cq-011/j-1125-41384c/benchmark/benchmark.npz --output \"$CQ_OUTPUT_DIR/batch\" --regimes stock --seeds 0 1 2 3 4 --workers 2 --device cuda --protocol configs/011-preregistered.json\ncp \"$CQ_OUTPUT_DIR/batch/progress.txt\" \"$CQ_OUTPUT_DIR/progress.txt\""
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "resources": {
+    "gpus": 1,
+    "gpu_mem_gb": 1,
+    "cpus": 4,
+    "ram_gb": 10,
+    "disk_gb": 1
+  },
+  "limits": {
+    "max_hours": 3,
+    "max_attempts": 1,
+    "max_usd": 0
+  },
+  "placement": {
+    "target": "kaggle",
+    "allow_rent": false
+  },
+  "outputs": {
+    "dest": "/Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/011-stock",
+    "expect": [
+      {
+        "path": "batch/batch.json",
+        "contains": "\"status\": \"complete\""
+      },
+      {
+        "path": "progress.txt",
+        "contains": "25/25"
+      }
+    ],
+    "progress": {
+      "path": "progress.txt",
+      "stall_min": 170
+    }
+  },
+  "idempotent": true,
+  "depends_on": [
+    "j-1125-161f04"
+  ]
+}

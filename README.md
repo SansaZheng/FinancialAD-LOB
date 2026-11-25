@@ -9,17 +9,19 @@ matching or exceeding the source paper's 0.675 AUC-PR.
 
 ## Start here
 
+* [Current fresh-date protocol](paper/011-protocol.md), [dataset card](docs/dataset-011.md), and [registered eleven-method matrix](configs/011-preregistered.json).
+* [Partial verified results](results/reports/011-partial/report.md): 110 selected evaluations; remaining stock/combined batches tracked in current state.
 * [Evaluation protocol](docs/protocol.md): supervision budgets, stock/date splits,
   held-out generators, metrics and falsification criteria.
 * [Candidate mechanism](docs/method.md): causal price-aligned liquidity dynamics.
 * [Baseline status](docs/baselines.md) and [data contract](docs/data-contract.md).
 * [Public data qualification](docs/public-data.md): prefix provenance and public-source licensing.
-* [Stage010 dataset card](docs/dataset-010.md): complete-day coverage,22,206 windows, labels and source hashes.
+* [Diagnostic stage010 dataset card](docs/dataset-010.md): complete-day coverage,22,206 windows, labels and source hashes.
 * [Complete-day cascade protocol](paper/010-reproduction-fidelity.md): 15 complete stock-days, explicitly semi-synthetic labels, original-described cascade and one-class controls.
 * [Registered stage010 suite](configs/010-preregistered.json): 10 methods, 5 seeds, date/stock/combined/style tests; planned runs are not completed results.
 * [Observation-aware improvements](docs/improvement-009.md): matched causal sequence controls.
 * [CQ access resolution](docs/cq-access.md): free Kaggle environment and smoke jobs completed.
-* [Current state](paper/workflow/current.md) and [execution prompt](paper/workflow/prompts/010-full-session-semisynthetic.md).
+* [Current state](paper/workflow/current.md) and [execution prompt](paper/workflow/prompts/011b-frozen-matrix.md).
 * [Legacy inventory](migration/legacy-inventory.json): metadata **not backup**.
 * [Engineering checks](results/engineering/): no financial benchmark conclusions.
 

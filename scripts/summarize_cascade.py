@@ -51,8 +51,12 @@ def summarize(root,output,replicates=2000,exclude_jobs=(),protocol=Path('configs
                                 mean_recall_at_validation_1pct_fpr=float(np.mean([r['metrics']['recall_at_validation_1pct_fpr'] for r in rr])),
                                 mean_benign_fpr=float(np.mean([r['benign_fpr'] for r in rr if r['benign_fpr'] is not None]))))
         methods=['price_cascade_ocsvm','rank_cascade_ocsvm','price_no_scl','price_no_lob','dynamics_ocsvm','raw_ocsvm','l1_cascade_ocsvm','supervised_logistic','supervised_hgb']
-        base={(r['fold'],r['seed']):r for r in records if r['regime']==regime and r['method']=='cascade_ocsvm'}
-        for method in methods:
+        comparisons=[(method,'cascade_ocsvm') for method in methods]
+        comparisons += [('price_cascade_ocsvm',reference) for reference in
+                        ['l1_cascade_ocsvm','supervised_logistic','supervised_hgb','rank_cascade_ocsvm','price_no_scl','price_no_lob']]
+        for method,reference in comparisons:
+            base={(r['fold'],r['seed']):r for r in records if r['regime']==regime and r['method']==reference}
+            if not base:continue
             delta={}
             for r in records:
                 if r['regime']!=regime or r['method']!=method:continue
@@ -69,7 +73,7 @@ def summarize(root,output,replicates=2000,exclude_jobs=(),protocol=Path('configs
                     keys=[k for k in means if k.endswith('|'+date)]
                     values.extend(means[k] for k in rng.choice(keys,len(keys),replace=True))
                 boot.append(np.mean(values))
-            intervals.append(dict(regime=regime,method=method,reference='cascade_ocsvm',
+            intervals.append(dict(regime=regime,method=method,reference=reference,
                                   mean_stock_day_ap_delta=float(np.mean(list(means.values()))),
                                   exploratory_95pct_interval=np.quantile(boot,[.025,.975]).tolist(),
                                   dates=len(dates),stock_days=len(means),bootstrap_replicates=replicates,

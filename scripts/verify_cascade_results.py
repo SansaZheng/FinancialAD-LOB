@@ -13,17 +13,21 @@ def verify(root,dataset,output,exclude_jobs=(),protocol=Path('configs/010-prereg
     data={k:source[k] for k in ('id','y','stock','date','kind','start_ns','end_ns')}
     expected={fold:(tr,va,te) for regime in ('date','stock','combined','style') for fold,tr,va,te in splits(data,regime)}
     source_hash=hashlib.sha256(dataset.read_bytes()).hexdigest()
-    methods=json.loads(protocol.read_text())['methods']
+    config=json.loads(protocol.read_text());methods=config['methods']
+    expected_keys={(fold,seed) for fold in expected for seed in config['seeds']}
+    protocol_hash=hashlib.sha256(protocol.read_bytes()).hexdigest()
     seen=set();checks=[]
     for path in sorted(root.glob('**/metrics.json')):
         if any(job in path.parts for job in exclude_jobs):continue
         record=json.loads(path.read_text())
         if record.get('evidence_class')!='semisynthetic_external_dataset_adaptation':continue
         key=(record['fold'],record['seed'])
+        if key not in expected_keys:raise ValueError('Unregistered fold or seed')
         if key in seen:raise ValueError('Duplicate final fold-seed')
         seen.add(key)
         if record['dataset_sha256']!=source_hash or set(record['methods'])!=set(methods) or 'seconds' not in record:
             raise ValueError('Input hash mismatch or incomplete run')
+        if record['code_sha256'][str(protocol)]!=protocol_hash:raise ValueError('Protocol hash mismatch')
         tr,va,te=expected[record['fold']]
         ids=np.load(path.parent/'split.npz',allow_pickle=False)
         for name,index in [('train',tr),('validation',va),('test',te)]:
@@ -53,7 +57,8 @@ def verify(root,dataset,output,exclude_jobs=(),protocol=Path('configs/010-prereg
             for name,value in recomputed.items():np.testing.assert_allclose(value,entry['metrics'][name],rtol=0,atol=1e-10)
             if entry['fusion'] and len(entry['fusion']['loss'])!=10:raise ValueError('Incorrect fusion budget')
         checks.append(dict(fold=record['fold'],seed=record['seed'],methods_checked=len(methods),metrics_sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
-    receipt=dict(passed=True,complete_suite=len(seen)==60,fold_seed_runs=len(seen),selected_method_evaluations=sum(x['methods_checked'] for x in checks),
+    receipt=dict(passed=True,complete_suite=seen==expected_keys,fold_seed_runs=len(seen),selected_method_evaluations=sum(x['methods_checked'] for x in checks),
+                 missing_fold_seeds=sorted(expected_keys-seen),protocol_sha256=protocol_hash,
                  dataset_sha256=source_hash,excluded_jobs=list(exclude_jobs),checks=checks,
                  guarantees=['fixed split IDs','identical labels across methods','six validation trials','validation-only threshold',
                              'all saved AP/AUROC/PR AUC/FPR/recall independently recomputed','ten epochs per trained stage'],

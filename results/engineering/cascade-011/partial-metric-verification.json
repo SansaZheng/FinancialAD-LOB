@@ -1,0 +1,282 @@
+{
+  "passed": true,
+  "complete_suite": false,
+  "fold_seed_runs": 10,
+  "selected_method_evaluations": 110,
+  "missing_fold_seeds": [
+    [
+      "combined-KGHM",
+      0
+    ],
+    [
+      "combined-KGHM",
+      1
+    ],
+    [
+      "combined-KGHM",
+      2
+    ],
+    [
+      "combined-KGHM",
+      3
+    ],
+    [
+      "combined-KGHM",
+      4
+    ],
+    [
+      "combined-PEKAO",
+      0
+    ],
+    [
+      "combined-PEKAO",
+      1
+    ],
+    [
+      "combined-PEKAO",
+      2
+    ],
+    [
+      "combined-PEKAO",
+      3
+    ],
+    [
+      "combined-PEKAO",
+      4
+    ],
+    [
+      "combined-PKNORLEN",
+      0
+    ],
+    [
+      "combined-PKNORLEN",
+      1
+    ],
+    [
+      "combined-PKNORLEN",
+      2
+    ],
+    [
+      "combined-PKNORLEN",
+      3
+    ],
+    [
+      "combined-PKNORLEN",
+      4
+    ],
+    [
+      "combined-PKOBP",
+      0
+    ],
+    [
+      "combined-PKOBP",
+      1
+    ],
+    [
+      "combined-PKOBP",
+      2
+    ],
+    [
+      "combined-PKOBP",
+      3
+    ],
+    [
+      "combined-PKOBP",
+      4
+    ],
+    [
+      "combined-PZU",
+      0
+    ],
+    [
+      "combined-PZU",
+      1
+    ],
+    [
+      "combined-PZU",
+      2
+    ],
+    [
+      "combined-PZU",
+      3
+    ],
+    [
+      "combined-PZU",
+      4
+    ],
+    [
+      "stock-KGHM",
+      0
+    ],
+    [
+      "stock-KGHM",
+      1
+    ],
+    [
+      "stock-KGHM",
+      2
+    ],
+    [
+      "stock-KGHM",
+      3
+    ],
+    [
+      "stock-KGHM",
+      4
+    ],
+    [
+      "stock-PEKAO",
+      0
+    ],
+    [
+      "stock-PEKAO",
+      1
+    ],
+    [
+      "stock-PEKAO",
+      2
+    ],
+    [
+      "stock-PEKAO",
+      3
+    ],
+    [
+      "stock-PEKAO",
+      4
+    ],
+    [
+      "stock-PKNORLEN",
+      0
+    ],
+    [
+      "stock-PKNORLEN",
+      1
+    ],
+    [
+      "stock-PKNORLEN",
+      2
+    ],
+    [
+      "stock-PKNORLEN",
+      3
+    ],
+    [
+      "stock-PKNORLEN",
+      4
+    ],
+    [
+      "stock-PKOBP",
+      0
+    ],
+    [
+      "stock-PKOBP",
+      1
+    ],
+    [
+      "stock-PKOBP",
+      2
+    ],
+    [
+      "stock-PKOBP",
+      3
+    ],
+    [
+      "stock-PKOBP",
+      4
+    ],
+    [
+      "stock-PZU",
+      0
+    ],
+    [
+      "stock-PZU",
+      1
+    ],
+    [
+      "stock-PZU",
+      2
+    ],
+    [
+      "stock-PZU",
+      3
+    ],
+    [
+      "stock-PZU",
+      4
+    ]
+  ],
+  "protocol_sha256": "821a8dc6450119c672bb61d9ada704b5cb95fd89220d6ed4125b3701f8705ac1",
+  "dataset_sha256": "edf460e5a3fc84140528f35765ac21b94b966090d8f73e0e6740a2bba5d5c082",
+  "excluded_jobs": [],
+  "checks": [
+    {
+      "fold": "date",
+      "seed": 0,
+      "methods_checked": 11,
+      "metrics_sha256": "6a98cfb040c6f1fecc31799996cfda3c29c5395d1efbabcf95b8a9588fa0df31"
+    },
+    {
+      "fold": "date",
+      "seed": 1,
+      "methods_checked": 11,
+      "metrics_sha256": "7c787230ead970cae346a75fae6a62923c810e052823ee4d21b5585a6892b851"
+    },
+    {
+      "fold": "date",
+      "seed": 2,
+      "methods_checked": 11,
+      "metrics_sha256": "14137b9cb01120f46c466b39a363af29dbafe0a1534322e8130f0f6df3af2b28"
+    },
+    {
+      "fold": "date",
+      "seed": 3,
+      "methods_checked": 11,
+      "metrics_sha256": "72ab47fccf85b4b20efc81ce85296fe729c4ff9376cde603549a979643414c02"
+    },
+    {
+      "fold": "date",
+      "seed": 4,
+      "methods_checked": 11,
+      "metrics_sha256": "178c48438577f4e1b0d675de674b14447df6e5d48018584e117492d8ebd9a803"
+    },
+    {
+      "fold": "style",
+      "seed": 0,
+      "methods_checked": 11,
+      "metrics_sha256": "be3708c1362b3928d15f09d0f59084e859038e2e4bb0c36fbf3b5c591b04876c"
+    },
+    {
+      "fold": "style",
+      "seed": 1,
+      "methods_checked": 11,
+      "metrics_sha256": "18ec02756169cca5a0d47047060c66c640ea495a415b6da7dbf415073230f679"
+    },
+    {
+      "fold": "style",
+      "seed": 2,
+      "methods_checked": 11,
+      "metrics_sha256": "36b7c4a25d8c159977ce5419f2cee5e0bcfbd01b142facd8599bba4f8ac9db57"
+    },
+    {
+      "fold": "style",
+      "seed": 3,
+      "methods_checked": 11,
+      "metrics_sha256": "72edc2e3a6bb5c7f7e5cb459d2b08d45d9dabe558c24df4faa528b184bc3fff8"
+    },
+    {
+      "fold": "style",
+      "seed": 4,
+      "methods_checked": 11,
+      "metrics_sha256": "cf2d4e8b1d782f0bc4c0ea54ef21f0dcff2945fe37a0c66edb2bb772f25acb01"
+    }
+  ],
+  "guarantees": [
+    "fixed split IDs",
+    "identical labels across methods",
+    "six validation trials",
+    "validation-only threshold",
+    "all saved AP/AUROC/PR AUC/FPR/recall independently recomputed",
+    "ten epochs per trained stage"
+  ],
+  "limitation": "Verifies artifact consistency, not the correctness of real manipulation labels or scientific superiority"
+}

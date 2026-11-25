@@ -1,9 +1,15 @@
-011b-frozen-matrix | Codex | prepared | configuration 6 | 2026-11-25T12:01:24.809367+00:00
+011b-frozen-matrix | Codex | running | configuration 6 | 2026-11-25T15:12:06.413704+00:00
 
-Completed: fresh 15 stock-days collected (j-1125-8c5bef), all daily messages independently replayed and 1,500 snapshots matched (j-1125-41384c); 18,282 windows / 928 positive / 896 benign. Dataset and generator hashes verified. 35 marketability cases censored; 7 observational control collisions retained. Full-batch CUDA and eleven-method fixture qualification passed on two T4 GPUs (j-1125-f2ce0f), 7.57 seconds, 210,393,600 peak CUDA allocated bytes, 1,598,952 KiB RSS. Fixture scores are not scientific results.
+Prompt: [011b](prompts/011b-frozen-matrix.md). Canonical GitHub: https://github.com/SansaZheng/FinancialAD-LOB.
 
-Stage010 date/style diagnostic j-1125-58f211 completed and 100 metrics independently verified; old GPU cancellation j-1125-c8115a confirmed. Queued obsolete stock/combined tasks remain cancelled.
+Completed: fresh 15 stock-days collected (j-1125-8c5bef); 1,224,907 daily messages independently replayed and 1,500 snapshots matched (j-1125-41384c); 18,282 windows / 928 positive / 896 benign. Dataset SHA256 edf460e5a3fc84140528f35765ac21b94b966090d8f73e0e6740a2bba5d5c082. Full-batch CUDA and eleven-method fixture qualification passed on two T4 GPUs (j-1125-f2ce0f).
 
-Next: submit frozen fresh-date matrix in three bounded batches, one child per GPU. Main preserves all archives; execution-only commits trim unrelated historical results with identical retained blobs.
+Fresh-date/style j-1125-161f04 completed: 10 fold-seed runs / 110 selected evaluations independently verified. Date mean AP: adapted cascade .0640; L1 .2065; price-aligned candidate .4369; no contrastive loss .4717; HGB .5161. These are partial-suite results, not a direct paper reproduction or superiority claim. Peak measured worker RSS 3,077,320 KiB in date seed0; two workers reserved 10GB RAM, including >30% margin. Peak allocated CUDA 213,105,664 bytes in that run; 1GB declared GPU allowance, provider supplies two isolated T4s.
 
-中文结论：数据及 GPU 验证已完成，正式新日期矩阵待提交；旧结果仅供诊断，尚无超过原论文的证据。
+Submitted remaining batches: stock j-1125-5788a5 and combined j-1125-58fc68, 25 fold-seed runs each. Same execution commit c34097d44f10ab42db7cd35b6d787ce4b055b8b8, unchanged frozen protocol. CQ handles shared placement. No paid rental or changes to unrelated jobs.
+
+Stage010 date/style diagnostic j-1125-58f211 preserved; obsolete stock/combined never launched. GPU cancellation j-1125-c8115a confirmed.
+
+Next: verify all remaining runs and paired strong-baseline contrasts, archive results, then clean only remotely verified owned working copies.
+
+中文结论：首批新日期结果显示逐档信息有效，但当前候选模型仍落后于梯度提升；继续完成跨股票验证，不根据测试结果调整本轮方法。

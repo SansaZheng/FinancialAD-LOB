@@ -1,0 +1,141 @@
+test_paired_constant_gain_and_incomplete_suite (tests.test_cascade_reporting.ReportingTests) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.081s
+
+OK
+{
+  "runs": 1,
+  "summary": [
+    {
+      "regime": "date",
+      "method": "cascade_if",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "cascade_ocsvm",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 0.5,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 1.0
+    },
+    {
+      "regime": "date",
+      "method": "dynamics_ocsvm",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "price_cascade_ocsvm",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "price_no_lob",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "price_no_scl",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "rank_cascade_ocsvm",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "raw_ocsvm",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "supervised_hgb",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "supervised_logistic",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    }
+  ]
+}
