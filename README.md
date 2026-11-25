@@ -10,6 +10,7 @@ matching or exceeding the source paper's 0.675 AUC-PR.
 ## Start here
 
 * [Current fresh-date protocol](paper/011-protocol.md), [dataset card](docs/dataset-011.md), and [registered eleven-method matrix](configs/011-preregistered.json).
+* [Exact execution and verification steps](docs/reproduce-011.md).
 * [Complete verified results](paper/011-results.md): 60 fold-seed runs / 660 evaluations, including negative findings against strong baselines.
 * [Evaluation protocol](docs/protocol.md): supervision budgets, stock/date splits,
   held-out generators, metrics and falsification criteria.
