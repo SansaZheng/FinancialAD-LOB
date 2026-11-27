@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "windows": 69642,
+  "dataset_sha256": "332688a9b1778efd4256b9963792dc056d6d9dfe040930baeb42b3ef7f1c2142",
+  "feature_hashes": {
+    "base": "568379456043dadf0b6c512220044e7ed9ac146a3e61a2db7199e34d50840b91",
+    "interaction": "ce938b9c610853aeea971608ff0aa1be9952cc7708f3f6c7052cd2cd9899d40c"
+  },
+  "portable_source_sha256": "4a7e9f27980510d85a913800c9fe17257bed5799eb96bfdaa2eea737e1ff7b0e",
+  "versions": {
+    "python": "3.9.6",
+    "numpy": "2.0.2"
+  },
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "scope": "All unlabelled source-window features; no statistics fitted or labels read",
+  "reference_sha256": "0cb6d2b01436ea0b242693f69164a974a804696f63183012e73636afbbf18515"
+}

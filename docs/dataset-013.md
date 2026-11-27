@@ -11,3 +11,7 @@ Stage013 adds12new source dates to the prior15, reaching27source dates overall. 
 The generator has no market response to injected orders, no authoritative intent labels, and no guarantee that every legitimate burst resembles its benign controls. Original-paper private LOBSTER data are absent. This cohort cannot establish a direct improvement over the original0.675. AP and trapezoidal PR AUC are separately retained, never substituted.
 
 中文结论：新日期将完整源数据覆盖扩展到27天，但本轮测试证据仍只有六个不同日期、五只股票和一个市场；半合成标签不能替代真实操纵标签。
+
+Completed benchmark j-1128-e7a9cf:4,712,637rows replayed and6,000reference snapshots matched. Dataset SHA256 332688a9b1778efd4256b9963792dc056d6d9dfe040930baeb42b3ef7f1c2142. Retained window counts: {"windows": 69642, "positive": 3405, "benign_controls": 3519, "invalid_source_windows": 1335, "marketability_censored": 88}. Observational collisions:36. Whole-cohort base/interaction hashes match exactly between CQCPU and Mac; receipts live in results/engineering/components-013.
+
+中文结论：完整数据重放、标签与清单一致性以及全量输入跨环境哈希检查均已通过，后续训练仍需独立模型核验。

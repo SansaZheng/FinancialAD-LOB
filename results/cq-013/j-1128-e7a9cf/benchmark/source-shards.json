@@ -1,0 +1,29 @@
+{
+  "shards": [
+    {
+      "folder": "results/cq-013/j-1128-a02e9d/full-sessions",
+      "audit_sha256": "b98bc3622d58f53e64c5e5613464a6d37a6a1263b60dc791d82fcb909a38af0a",
+      "cq_job": "j-1128-a02e9d",
+      "partitions": 15
+    },
+    {
+      "folder": "results/cq-013/j-1128-a5de09/full-sessions",
+      "audit_sha256": "08ef7ef3709bf8bf27d41b38d52944932276ca18eb46f561cb2cc481654e6a2c",
+      "cq_job": "j-1128-a5de09",
+      "partitions": 15
+    },
+    {
+      "folder": "results/cq-013/j-1128-dcd9a2/full-sessions",
+      "audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54",
+      "cq_job": "j-1128-dcd9a2",
+      "partitions": 15
+    },
+    {
+      "folder": "results/cq-013/j-1128-3545ea/full-sessions",
+      "audit_sha256": "15d6890c49615d7a98cf8ff01f8abf7b245319bbad524d537de871dfbcc93b20",
+      "cq_job": "j-1128-3545ea",
+      "partitions": 15
+    }
+  ],
+  "scope": "Merged audit creator is this benchmark job; original source job IDs and audit hashes retained separately"
+}

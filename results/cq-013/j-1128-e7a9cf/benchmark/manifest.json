@@ -1,0 +1,1303 @@
+{
+  "status": "complete",
+  "generator": "persistent-passive-depth-v2",
+  "seed": 17090,
+  "sequence_length": 25,
+  "stride_events": 64,
+  "source_audit_sha256": "139db06665d514168d5658312f0e6f237f1046f730d27235e3cac9bd3d6d8d76",
+  "dataset_sha256": "332688a9b1778efd4256b9963792dc056d6d9dfe040930baeb42b3ef7f1c2142",
+  "partitions": [
+    {
+      "stock": "KGHM",
+      "date": "2017-02-01",
+      "attempted_by_style": {
+        "layered": 47,
+        "staggered": 32,
+        "benign_burst": 34,
+        "benign_wave": 38
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 1,
+        "benign_wave": 2
+      },
+      "windows": 1606,
+      "positive": 79,
+      "benign_controls": 69,
+      "invalid_source_windows": 4,
+      "marketability_censored": 3
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-02-02",
+      "attempted_by_style": {
+        "layered": 28,
+        "staggered": 35,
+        "benign_burst": 44,
+        "benign_wave": 32
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 1,
+        "benign_burst": 1,
+        "benign_wave": 0
+      },
+      "windows": 1456,
+      "positive": 62,
+      "benign_controls": 75,
+      "invalid_source_windows": 4,
+      "marketability_censored": 2
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-02-03",
+      "attempted_by_style": {
+        "layered": 39,
+        "staggered": 32,
+        "benign_burst": 48,
+        "benign_wave": 44
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 1,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 1548,
+      "positive": 70,
+      "benign_controls": 92,
+      "invalid_source_windows": 3,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-02-06",
+      "attempted_by_style": {
+        "layered": 29,
+        "staggered": 30,
+        "benign_burst": 30,
+        "benign_wave": 34
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 1099,
+      "positive": 59,
+      "benign_controls": 64,
+      "invalid_source_windows": 5,
+      "marketability_censored": 0
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-02-07",
+      "attempted_by_style": {
+        "layered": 25,
+        "staggered": 31,
+        "benign_burst": 28,
+        "benign_wave": 21
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 1066,
+      "positive": 56,
+      "benign_controls": 49,
+      "invalid_source_windows": 2,
+      "marketability_censored": 0
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-02-08",
+      "attempted_by_style": {
+        "layered": 24,
+        "staggered": 37,
+        "benign_burst": 27,
+        "benign_wave": 26
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 2,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 1211,
+      "positive": 59,
+      "benign_controls": 53,
+      "invalid_source_windows": 6,
+      "marketability_censored": 2
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-02-09",
+      "attempted_by_style": {
+        "layered": 35,
+        "staggered": 45,
+        "benign_burst": 44,
+        "benign_wave": 45
+      },
+      "censored_by_style": {
+        "layered": 4,
+        "staggered": 1,
+        "benign_burst": 1,
+        "benign_wave": 2
+      },
+      "windows": 1573,
+      "positive": 75,
+      "benign_controls": 86,
+      "invalid_source_windows": 2,
+      "marketability_censored": 8
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-02-10",
+      "attempted_by_style": {
+        "layered": 29,
+        "staggered": 35,
+        "benign_burst": 46,
+        "benign_wave": 42
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 1,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 1529,
+      "positive": 63,
+      "benign_controls": 88,
+      "invalid_source_windows": 3,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-02-13",
+      "attempted_by_style": {
+        "layered": 25,
+        "staggered": 38,
+        "benign_burst": 28,
+        "benign_wave": 31
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 1
+      },
+      "windows": 1143,
+      "positive": 63,
+      "benign_controls": 58,
+      "invalid_source_windows": 24,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-02-14",
+      "attempted_by_style": {
+        "layered": 47,
+        "staggered": 44,
+        "benign_burst": 33,
+        "benign_wave": 32
+      },
+      "censored_by_style": {
+        "layered": 1,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 1434,
+      "positive": 90,
+      "benign_controls": 65,
+      "invalid_source_windows": 5,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-02-15",
+      "attempted_by_style": {
+        "layered": 50,
+        "staggered": 40,
+        "benign_burst": 29,
+        "benign_wave": 45
+      },
+      "censored_by_style": {
+        "layered": 2,
+        "staggered": 1,
+        "benign_burst": 1,
+        "benign_wave": 1
+      },
+      "windows": 1849,
+      "positive": 87,
+      "benign_controls": 72,
+      "invalid_source_windows": 8,
+      "marketability_censored": 5
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-02-16",
+      "attempted_by_style": {
+        "layered": 27,
+        "staggered": 24,
+        "benign_burst": 32,
+        "benign_wave": 22
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 1,
+        "benign_burst": 0,
+        "benign_wave": 1
+      },
+      "windows": 1309,
+      "positive": 50,
+      "benign_controls": 53,
+      "invalid_source_windows": 2,
+      "marketability_censored": 2
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-02-01",
+      "attempted_by_style": {
+        "layered": 17,
+        "staggered": 21,
+        "benign_burst": 20,
+        "benign_wave": 14
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 1,
+        "benign_wave": 0
+      },
+      "windows": 649,
+      "positive": 38,
+      "benign_controls": 33,
+      "invalid_source_windows": 11,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-02-02",
+      "attempted_by_style": {
+        "layered": 10,
+        "staggered": 8,
+        "benign_burst": 12,
+        "benign_wave": 12
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 1
+      },
+      "windows": 378,
+      "positive": 18,
+      "benign_controls": 23,
+      "invalid_source_windows": 11,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-02-03",
+      "attempted_by_style": {
+        "layered": 12,
+        "staggered": 19,
+        "benign_burst": 17,
+        "benign_wave": 24
+      },
+      "censored_by_style": {
+        "layered": 1,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 749,
+      "positive": 30,
+      "benign_controls": 41,
+      "invalid_source_windows": 14,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-02-06",
+      "attempted_by_style": {
+        "layered": 29,
+        "staggered": 18,
+        "benign_burst": 23,
+        "benign_wave": 14
+      },
+      "censored_by_style": {
+        "layered": 1,
+        "staggered": 2,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 768,
+      "positive": 44,
+      "benign_controls": 37,
+      "invalid_source_windows": 9,
+      "marketability_censored": 3
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-02-07",
+      "attempted_by_style": {
+        "layered": 21,
+        "staggered": 17,
+        "benign_burst": 19,
+        "benign_wave": 28
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 1,
+        "benign_burst": 0,
+        "benign_wave": 1
+      },
+      "windows": 691,
+      "positive": 37,
+      "benign_controls": 46,
+      "invalid_source_windows": 15,
+      "marketability_censored": 2
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-02-08",
+      "attempted_by_style": {
+        "layered": 16,
+        "staggered": 16,
+        "benign_burst": 27,
+        "benign_wave": 19
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 610,
+      "positive": 32,
+      "benign_controls": 46,
+      "invalid_source_windows": 6,
+      "marketability_censored": 0
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-02-09",
+      "attempted_by_style": {
+        "layered": 18,
+        "staggered": 20,
+        "benign_burst": 18,
+        "benign_wave": 29
+      },
+      "censored_by_style": {
+        "layered": 1,
+        "staggered": 1,
+        "benign_burst": 0,
+        "benign_wave": 4
+      },
+      "windows": 977,
+      "positive": 36,
+      "benign_controls": 43,
+      "invalid_source_windows": 8,
+      "marketability_censored": 6
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-02-10",
+      "attempted_by_style": {
+        "layered": 13,
+        "staggered": 18,
+        "benign_burst": 22,
+        "benign_wave": 29
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 2,
+        "benign_wave": 1
+      },
+      "windows": 852,
+      "positive": 31,
+      "benign_controls": 48,
+      "invalid_source_windows": 2,
+      "marketability_censored": 3
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-02-13",
+      "attempted_by_style": {
+        "layered": 17,
+        "staggered": 16,
+        "benign_burst": 17,
+        "benign_wave": 22
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 619,
+      "positive": 33,
+      "benign_controls": 39,
+      "invalid_source_windows": 4,
+      "marketability_censored": 0
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-02-14",
+      "attempted_by_style": {
+        "layered": 16,
+        "staggered": 17,
+        "benign_burst": 19,
+        "benign_wave": 14
+      },
+      "censored_by_style": {
+        "layered": 1,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 614,
+      "positive": 32,
+      "benign_controls": 33,
+      "invalid_source_windows": 9,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-02-15",
+      "attempted_by_style": {
+        "layered": 16,
+        "staggered": 22,
+        "benign_burst": 19,
+        "benign_wave": 21
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 722,
+      "positive": 38,
+      "benign_controls": 40,
+      "invalid_source_windows": 11,
+      "marketability_censored": 0
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-02-16",
+      "attempted_by_style": {
+        "layered": 16,
+        "staggered": 15,
+        "benign_burst": 11,
+        "benign_wave": 24
+      },
+      "censored_by_style": {
+        "layered": 1,
+        "staggered": 1,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 692,
+      "positive": 29,
+      "benign_controls": 35,
+      "invalid_source_windows": 5,
+      "marketability_censored": 2
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-02-01",
+      "attempted_by_style": {
+        "layered": 30,
+        "staggered": 28,
+        "benign_burst": 45,
+        "benign_wave": 33
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 1,
+        "benign_burst": 1,
+        "benign_wave": 0
+      },
+      "windows": 1362,
+      "positive": 57,
+      "benign_controls": 77,
+      "invalid_source_windows": 13,
+      "marketability_censored": 2
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-02-02",
+      "attempted_by_style": {
+        "layered": 22,
+        "staggered": 20,
+        "benign_burst": 31,
+        "benign_wave": 23
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 1,
+        "benign_wave": 2
+      },
+      "windows": 974,
+      "positive": 42,
+      "benign_controls": 51,
+      "invalid_source_windows": 25,
+      "marketability_censored": 3
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-02-03",
+      "attempted_by_style": {
+        "layered": 26,
+        "staggered": 24,
+        "benign_burst": 20,
+        "benign_wave": 23
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 1
+      },
+      "windows": 1084,
+      "positive": 50,
+      "benign_controls": 42,
+      "invalid_source_windows": 7,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-02-06",
+      "attempted_by_style": {
+        "layered": 33,
+        "staggered": 31,
+        "benign_burst": 43,
+        "benign_wave": 22
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 1524,
+      "positive": 64,
+      "benign_controls": 65,
+      "invalid_source_windows": 3,
+      "marketability_censored": 0
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-02-07",
+      "attempted_by_style": {
+        "layered": 28,
+        "staggered": 28,
+        "benign_burst": 29,
+        "benign_wave": 28
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 1313,
+      "positive": 56,
+      "benign_controls": 57,
+      "invalid_source_windows": 2,
+      "marketability_censored": 0
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-02-08",
+      "attempted_by_style": {
+        "layered": 10,
+        "staggered": 23,
+        "benign_burst": 21,
+        "benign_wave": 19
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 902,
+      "positive": 33,
+      "benign_controls": 40,
+      "invalid_source_windows": 3,
+      "marketability_censored": 0
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-02-09",
+      "attempted_by_style": {
+        "layered": 48,
+        "staggered": 55,
+        "benign_burst": 53,
+        "benign_wave": 56
+      },
+      "censored_by_style": {
+        "layered": 1,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 1
+      },
+      "windows": 2132,
+      "positive": 102,
+      "benign_controls": 108,
+      "invalid_source_windows": 2,
+      "marketability_censored": 2
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-02-10",
+      "attempted_by_style": {
+        "layered": 50,
+        "staggered": 42,
+        "benign_burst": 36,
+        "benign_wave": 50
+      },
+      "censored_by_style": {
+        "layered": 2,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 1868,
+      "positive": 90,
+      "benign_controls": 86,
+      "invalid_source_windows": 3,
+      "marketability_censored": 2
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-02-13",
+      "attempted_by_style": {
+        "layered": 37,
+        "staggered": 34,
+        "benign_burst": 39,
+        "benign_wave": 34
+      },
+      "censored_by_style": {
+        "layered": 1,
+        "staggered": 2,
+        "benign_burst": 1,
+        "benign_wave": 0
+      },
+      "windows": 1318,
+      "positive": 68,
+      "benign_controls": 72,
+      "invalid_source_windows": 5,
+      "marketability_censored": 4
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-02-14",
+      "attempted_by_style": {
+        "layered": 57,
+        "staggered": 69,
+        "benign_burst": 49,
+        "benign_wave": 58
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 1,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 2287,
+      "positive": 125,
+      "benign_controls": 107,
+      "invalid_source_windows": 2,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-02-15",
+      "attempted_by_style": {
+        "layered": 62,
+        "staggered": 72,
+        "benign_burst": 63,
+        "benign_wave": 68
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 1,
+        "benign_wave": 0
+      },
+      "windows": 2605,
+      "positive": 134,
+      "benign_controls": 130,
+      "invalid_source_windows": 3,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-02-16",
+      "attempted_by_style": {
+        "layered": 99,
+        "staggered": 97,
+        "benign_burst": 97,
+        "benign_wave": 86
+      },
+      "censored_by_style": {
+        "layered": 1,
+        "staggered": 1,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 3736,
+      "positive": 194,
+      "benign_controls": 183,
+      "invalid_source_windows": 1,
+      "marketability_censored": 2
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-02-01",
+      "attempted_by_style": {
+        "layered": 27,
+        "staggered": 29,
+        "benign_burst": 33,
+        "benign_wave": 25
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 1,
+        "benign_wave": 0
+      },
+      "windows": 920,
+      "positive": 56,
+      "benign_controls": 57,
+      "invalid_source_windows": 4,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-02-02",
+      "attempted_by_style": {
+        "layered": 21,
+        "staggered": 26,
+        "benign_burst": 17,
+        "benign_wave": 20
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 1
+      },
+      "windows": 824,
+      "positive": 47,
+      "benign_controls": 36,
+      "invalid_source_windows": 5,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-02-03",
+      "attempted_by_style": {
+        "layered": 18,
+        "staggered": 30,
+        "benign_burst": 22,
+        "benign_wave": 13
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 882,
+      "positive": 48,
+      "benign_controls": 35,
+      "invalid_source_windows": 6,
+      "marketability_censored": 0
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-02-06",
+      "attempted_by_style": {
+        "layered": 51,
+        "staggered": 40,
+        "benign_burst": 34,
+        "benign_wave": 42
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 1
+      },
+      "windows": 1537,
+      "positive": 91,
+      "benign_controls": 75,
+      "invalid_source_windows": 3,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-02-07",
+      "attempted_by_style": {
+        "layered": 25,
+        "staggered": 17,
+        "benign_burst": 20,
+        "benign_wave": 20
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 1,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 764,
+      "positive": 41,
+      "benign_controls": 40,
+      "invalid_source_windows": 8,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-02-08",
+      "attempted_by_style": {
+        "layered": 21,
+        "staggered": 22,
+        "benign_burst": 25,
+        "benign_wave": 25
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 926,
+      "positive": 43,
+      "benign_controls": 50,
+      "invalid_source_windows": 9,
+      "marketability_censored": 0
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-02-09",
+      "attempted_by_style": {
+        "layered": 26,
+        "staggered": 28,
+        "benign_burst": 30,
+        "benign_wave": 33
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 1
+      },
+      "windows": 1061,
+      "positive": 54,
+      "benign_controls": 62,
+      "invalid_source_windows": 18,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-02-10",
+      "attempted_by_style": {
+        "layered": 30,
+        "staggered": 28,
+        "benign_burst": 35,
+        "benign_wave": 29
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 2,
+        "benign_wave": 0
+      },
+      "windows": 1161,
+      "positive": 58,
+      "benign_controls": 62,
+      "invalid_source_windows": 116,
+      "marketability_censored": 2
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-02-13",
+      "attempted_by_style": {
+        "layered": 34,
+        "staggered": 37,
+        "benign_burst": 48,
+        "benign_wave": 39
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 1,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 1440,
+      "positive": 70,
+      "benign_controls": 87,
+      "invalid_source_windows": 67,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-02-14",
+      "attempted_by_style": {
+        "layered": 34,
+        "staggered": 17,
+        "benign_burst": 30,
+        "benign_wave": 22
+      },
+      "censored_by_style": {
+        "layered": 1,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 1050,
+      "positive": 50,
+      "benign_controls": 52,
+      "invalid_source_windows": 80,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-02-15",
+      "attempted_by_style": {
+        "layered": 36,
+        "staggered": 43,
+        "benign_burst": 48,
+        "benign_wave": 44
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 2,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 1814,
+      "positive": 77,
+      "benign_controls": 92,
+      "invalid_source_windows": 102,
+      "marketability_censored": 2
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-02-16",
+      "attempted_by_style": {
+        "layered": 43,
+        "staggered": 40,
+        "benign_burst": 39,
+        "benign_wave": 39
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 2,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 1784,
+      "positive": 81,
+      "benign_controls": 78,
+      "invalid_source_windows": 69,
+      "marketability_censored": 2
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-02-01",
+      "attempted_by_style": {
+        "layered": 22,
+        "staggered": 18,
+        "benign_burst": 23,
+        "benign_wave": 14
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 701,
+      "positive": 40,
+      "benign_controls": 37,
+      "invalid_source_windows": 45,
+      "marketability_censored": 0
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-02-02",
+      "attempted_by_style": {
+        "layered": 17,
+        "staggered": 6,
+        "benign_burst": 11,
+        "benign_wave": 14
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 554,
+      "positive": 23,
+      "benign_controls": 25,
+      "invalid_source_windows": 39,
+      "marketability_censored": 0
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-02-03",
+      "attempted_by_style": {
+        "layered": 19,
+        "staggered": 16,
+        "benign_burst": 28,
+        "benign_wave": 19
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 762,
+      "positive": 35,
+      "benign_controls": 47,
+      "invalid_source_windows": 51,
+      "marketability_censored": 0
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-02-06",
+      "attempted_by_style": {
+        "layered": 7,
+        "staggered": 13,
+        "benign_burst": 12,
+        "benign_wave": 11
+      },
+      "censored_by_style": {
+        "layered": 1,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 544,
+      "positive": 19,
+      "benign_controls": 23,
+      "invalid_source_windows": 28,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-02-07",
+      "attempted_by_style": {
+        "layered": 20,
+        "staggered": 9,
+        "benign_burst": 8,
+        "benign_wave": 9
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 499,
+      "positive": 29,
+      "benign_controls": 17,
+      "invalid_source_windows": 65,
+      "marketability_censored": 0
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-02-08",
+      "attempted_by_style": {
+        "layered": 18,
+        "staggered": 15,
+        "benign_burst": 13,
+        "benign_wave": 28
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 1
+      },
+      "windows": 703,
+      "positive": 33,
+      "benign_controls": 40,
+      "invalid_source_windows": 37,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-02-09",
+      "attempted_by_style": {
+        "layered": 18,
+        "staggered": 19,
+        "benign_burst": 11,
+        "benign_wave": 21
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 1,
+        "benign_wave": 0
+      },
+      "windows": 659,
+      "positive": 37,
+      "benign_controls": 31,
+      "invalid_source_windows": 26,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-02-10",
+      "attempted_by_style": {
+        "layered": 30,
+        "staggered": 15,
+        "benign_burst": 28,
+        "benign_wave": 30
+      },
+      "censored_by_style": {
+        "layered": 2,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 907,
+      "positive": 43,
+      "benign_controls": 58,
+      "invalid_source_windows": 82,
+      "marketability_censored": 2
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-02-13",
+      "attempted_by_style": {
+        "layered": 25,
+        "staggered": 23,
+        "benign_burst": 20,
+        "benign_wave": 27
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 1,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 798,
+      "positive": 47,
+      "benign_controls": 47,
+      "invalid_source_windows": 31,
+      "marketability_censored": 1
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-02-14",
+      "attempted_by_style": {
+        "layered": 17,
+        "staggered": 20,
+        "benign_burst": 20,
+        "benign_wave": 20
+      },
+      "censored_by_style": {
+        "layered": 0,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 674,
+      "positive": 37,
+      "benign_controls": 40,
+      "invalid_source_windows": 65,
+      "marketability_censored": 0
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-02-15",
+      "attempted_by_style": {
+        "layered": 48,
+        "staggered": 31,
+        "benign_burst": 35,
+        "benign_wave": 38
+      },
+      "censored_by_style": {
+        "layered": 1,
+        "staggered": 1,
+        "benign_burst": 1,
+        "benign_wave": 0
+      },
+      "windows": 1471,
+      "positive": 77,
+      "benign_controls": 72,
+      "invalid_source_windows": 97,
+      "marketability_censored": 3
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-02-16",
+      "attempted_by_style": {
+        "layered": 19,
+        "staggered": 26,
+        "benign_burst": 26,
+        "benign_wave": 24
+      },
+      "censored_by_style": {
+        "layered": 2,
+        "staggered": 0,
+        "benign_burst": 0,
+        "benign_wave": 0
+      },
+      "windows": 958,
+      "positive": 43,
+      "benign_controls": 50,
+      "invalid_source_windows": 40,
+      "marketability_censored": 2
+    }
+  ],
+  "generator_code_sha256": "dcd346c02e87d0bac1f70b61d8da410550e2c8e1c1bc63573827625f6dc98ac3",
+  "numpy_version": "2.1.3",
+  "cq_job": "j-1128-e7a9cf",
+  "license": "CC BY 4.0",
+  "source_url": "https://data.mendeley.com/datasets/3g4mhdp899/1",
+  "evidence_class": "persistent_passive_semisynthetic_risk_patterns",
+  "feature_schema": "depth-resolved-v2",
+  "feature_channels": [
+    "added_at_current_level",
+    "removed_at_previous_level",
+    "addition_observed",
+    "removal_observed"
+  ],
+  "retained_absent_base_level_steps": 6471,
+  "benign_observational_collisions": 36,
+  "limitations": [
+    "No endogenous response or matching engine",
+    "Marketable interventions censored for both classes",
+    "Not real manipulation intent labels",
+    "Event-time interventions, not paper millisecond injection",
+    "Only 12 registered evaluation dates",
+    "Burst per-order lifetimes matched; wave lifetime multiset matched; level/time dependence intentionally differs",
+    "Eight trade/cancel manual fields unavailable; five observed fields used"
+  ],
+  "metadata_not_predictors": [
+    "id",
+    "y",
+    "stock",
+    "date",
+    "kind",
+    "injection-ledger"
+  ]
+}
