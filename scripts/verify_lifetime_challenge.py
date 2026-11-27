@@ -71,6 +71,9 @@ def verify(primary_root, challenge, scores, protocol, output, engineering=False)
     assert checked, 'No challenge results'
     report = json.loads((scores / 'report.json').read_text())
     assert report['fold_seeds'] == len(checked)
+    summary_keys = [(row['regime'], row['method']) for row in report['summary']]
+    expected_summary = {(key[0].split('-')[0], method) for key in checked for method in cfg['methods']}
+    assert len(summary_keys) == len(set(summary_keys)) and set(summary_keys) == expected_summary
     for row in report['summary']:
         rr = [r['methods'][row['method']] for key, r in checked.items() if key[0].split('-')[0] == row['regime']]
         assert row['fold_seeds'] == len(rr)

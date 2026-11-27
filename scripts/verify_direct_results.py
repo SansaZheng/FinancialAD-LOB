@@ -18,6 +18,8 @@ def verify(root,dataset,protocol,output):
   if key in seen or key not in keys:raise ValueError('Duplicate/unregistered run')
   seen.add(key)
   if r['dataset_sha256']!=dh or r['protocol_sha256']!=ph or set(r['methods'])!=set(cfg['methods']):raise ValueError('Input/protocol/method mismatch')
+  for source in ['lobbench/direct.py','lobbench/direct_run.py']:
+   if r['source_sha256'][source]!=hashlib.sha256(Path(source).read_bytes()).hexdigest():raise ValueError('Frozen training source mismatch: '+source)
   eligible,va,te=expected[r['fold']];tr=subset(eligible,r['seed'],cfg['training_cap']);saved=np.load(p.parent/'split.npz')
   for name,ix in [('train',tr),('validation',va),('test',te),('eligible_train',eligible)]:np.testing.assert_array_equal(saved[name+'_ids'],d['id'][ix])
   train_data={k:d[k][tr] for k in ['raw','manual','aligned']};base=base_features(train_data);extra=interaction_features(train_data['aligned'])

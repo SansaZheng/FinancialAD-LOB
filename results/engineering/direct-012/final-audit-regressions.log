@@ -1,0 +1,25 @@
+....{
+  "passed": true,
+  "complete_suite": false,
+  "fold_seed_runs": 1,
+  "selected_evaluations": 1,
+  "dataset_sha256": "5caf401e10b4d4de5230d918eb5875583a7cc5f26cf8d377d7b828391ef51d22",
+  "protocol_sha256": "465ac8f0873fdeb40d848468c9dd498c1e210513f754ee198d09b4845482b24d",
+  "scope": "Artifact consistency, exact train cap and group-disjoint OOF mining, weights, labels/splits/selection/metrics; not real intent or scientific superiority"
+}
+{"method": "logistic", "seconds": 0.0223046250000003}
+{"method": "logistic_hard", "seconds": 0.022601250000000128}
+{"method": "hgb", "seconds": 0.27442566700000004}
+{"method": "hgb_hard", "seconds": 0.2742835000000001}
+{"method": "mlp", "seconds": 1.2969254160000006}
+{"method": "mlp_hard", "seconds": 0.037178708999999976}
+{"method": "interaction_hgb", "seconds": 0.4414865419999998}
+{"method": "interaction_hgb_hard", "seconds": 0.3880696660000007}
+{"method": "interaction_mlp", "seconds": 0.032479874999999936}
+{"method": "interaction_mlp_hard", "seconds": 0.029955916999999666}
+date 0 complete
+.
+----------------------------------------------------------------------
+Ran 5 tests in 5.581s
+
+OK

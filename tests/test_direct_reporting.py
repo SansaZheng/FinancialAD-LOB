@@ -41,6 +41,7 @@ class DirectVerifierTests(unittest.TestCase):
    prediction=dict(id=d['id'][te],y=d['y'][te],score=d['y'][te].astype(float),stock=d['stock'][te],date=d['date'][te],kind=d['kind'][te],validation_id=d['id'][va],validation_y=d['y'][va],validation_score=d['y'][va].astype(float))
    np.savez_compressed(folder/'hgb-predictions.npz',**prediction);(folder/'hgb.joblib').write_bytes(b'unit-test-presence-marker')
    record=dict(fold='date',seed=0,evidence_class='stage012_frozen_semisynthetic',dataset_sha256=hashlib.sha256(dataset.read_bytes()).hexdigest(),protocol_sha256=hashlib.sha256(protocol.read_bytes()).hexdigest(),methods={'hgb':dict(metrics=evaluate(d['y'][te],prediction['score'],0.),selection=dict(trial=0,selected={},validation_ap=1.,threshold=0.,trials=[dict(trial=i,configuration={},validation_ap=1.) for i in range(6)]))})
+   record['source_sha256']={s:hashlib.sha256(Path(s).read_bytes()).hexdigest() for s in ['lobbench/direct.py','lobbench/direct_run.py']}
    (folder/'metrics.json').write_text(json.dumps(record));r=verify(root,dataset,protocol,root/'receipt.json');self.assertTrue(r['passed']);self.assertFalse(r['complete_suite'])
    normpath=folder/'interaction-normalizer.npz';norm=dict(np.load(normpath));original=norm['mean'].copy();norm['mean'][-1]+=.01;np.savez_compressed(normpath,**norm)
    with self.assertRaises(AssertionError):verify(root,dataset,protocol,root/'tampered-norm.json')
