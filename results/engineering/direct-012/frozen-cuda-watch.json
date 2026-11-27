@@ -1,6 +1,6 @@
 {
   "id": "j-1128-0866b5",
-  "state": "queued",
-  "reason": "waiting for the first placement pass",
+  "state": "done",
+  "reason": "outputs verified (Kaggle, 0.04 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1128-0866b5/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/012-frozen-cuda",
   "progress_lines": null
 }

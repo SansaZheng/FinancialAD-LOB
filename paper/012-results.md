@@ -1,6 +1,6 @@
 # Direct scores and hard benign controls
 
-Status: all 30 primary fold-seeds / 300 selected evaluations complete and independently verified. First CPU challenge attempt j-1128-1a111a failed unchanged-input reload parity; no accepted challenge metrics. Matching-CUDA retry j-1128-0866b5 is pending. Complete primary evidence: results/reports/012-complete; receipt results/engineering/direct-012/complete-verification.json. Primary data and every selected model are archived on GitHub main7972935.
+Status: complete and independently verified:30primary fold-seeds/300selected evaluations plus30frozen secondary fold-seeds/300paired evaluations. Primary report: results/reports/012-complete; secondary artifacts: results/cq-012/j-1128-0866b5/challenge-scores. Independent receipts: results/engineering/direct-012/complete-verification.json and challenge-score-verification.json. The failed CPU reload attempt is retained and excluded.
 
 The previous complete experiment did not establish superiority over strong tabular baselines. Stage011's candidate mean fold-pooled AP was0.4369 on held-out dates and0.3732 on held-out dates plus stocks, compared with HGB0.5161 and0.4429. Its negative results remain archived. Stage012 tests a new, frozen hypothesis on nine additional source dates rather than relabeling the earlier outcomes.
 
@@ -10,11 +10,11 @@ The fixed primary comparison comprises30fold-seed runs and300selected method eva
 
 Hard-negative weights are computed from group-disjoint out-of-fold training scores. The highest-scoring10%of training negatives receive fivefold relative weight before class totals are renormalized. Neither generator-kind metadata nor validation/test outcomes enters mining. The saved OOF group assignments and weights are independently checked. Post-fit benign enrichment is a diagnostic rather than a mining input.
 
-The secondary challenge was fixed before any new detector score was observed. It changes only test benign-wave withdrawal coordination, using independently selected forward/reverse offsets at each level. The construction matches positive-wave per-level lifetime marginals in the generator distribution before censoring; it does not guarantee equal empirical marginals after censoring. The completed challenge contains15,852windows,384modified controls and55retained positive-pattern collisions. One newly marketable control was excluded; all15,468other inputs are exactly unchanged. Frozen selected models and existing validation thresholds are being evaluated on common IDs, without retraining or recalibration.
+The secondary challenge was fixed before any new detector score was observed. It changes only test benign-wave withdrawal coordination, using independently selected forward/reverse offsets at each level. The construction matches positive-wave per-level lifetime marginals in the generator distribution before censoring; it does not guarantee equal empirical marginals after censoring. The completed challenge contains15,852windows,384modified controls and55retained positive-pattern collisions. One newly marketable control was excluded; all15,468other inputs are exactly unchanged. Frozen selected models and existing validation thresholds were evaluated on common IDs, without retraining or recalibration.
 
 All scientific fitting ran through CQ on its free Kaggle backend. All 30 runs used the same frozen scoring commit45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4 and passed independent split, normalization, OOF mining, selection, threshold and metric checks. All 63 engineering tests passed before the later audit-only changes, followed by five focused audit regressions; no claim is made that every historical test was rerun after every reporting edit. No training warnings were recorded. Sum of worker runtimes was27,404.0s; maximum worker RSS3,219,624KiB and allocated CUDA tensor memory78,524,928bytes. These are not provider walltime or total GPU memory.
 
-Primary outcomes report macro stock-day AP, pooled fold AP, seed variability, validation-calibrated recall, and benign/background false-positive rates. Paired date/stock bootstrap intervals are exploratory: only three independent test dates are available and multiplicity is not controlled. The challenge comparison must use the common-ID primary score as its reference. CPU reload parity and unchanged-row threshold flips will be reported explicitly.
+Primary outcomes report macro stock-day AP, pooled fold AP, seed variability, validation-calibrated recall, and benign/background false-positive rates. Paired date/stock bootstrap intervals are exploratory: only three independent test dates are available and multiplicity is not controlled. The challenge comparison must use the common-ID primary score as its reference. Reload parity and unchanged-row threshold flips are reported explicitly below.
 
 The488-coordinate enhancement bundles cross-level/lagged co-occurrence with per-level mass, timing moments and breadth. The registered feature ablation tests this bundle, not the necessity of its individual components. A gain cannot yet be attributed specifically to cross-level Gram features rather than temporal moments or their combination. The matched-lifetime challenge probes one shortcut but does not replace component ablations.
 
@@ -43,8 +43,37 @@ The hard-weighting increment over feature-assisted HGB without hard weights is o
 
 Combined-fold HGB seed SD is exactly zero: all7,118–10,682eligible training samples are below the12,000cap, and deterministic boosting repeats identical scores. These are five registered executions, not five independent market samples. Chronological training samples12,000of14,902eligible windows and varies across seeds. Neural initialization still varies. The bootstrap averages seeds before resampling three dates and stocks; intervals remain exploratory, not a broad population guarantee.
 
-A reload portability issue is explicit: ordinary HGB/logistic scores reproduce, but the first CPU challenge attempt failed enhanced-feature HGB unchanged-input parity. The local diagnostic also reproduces enhanced-HGB discrepancies. The exact numerical source is not established; nonzero feature variance does not rule out tree split sensitivity to small floating-point changes. No tolerance is loosened and no failed challenge result is accepted. Matching the original training environment is being tested; models, feature formulas and thresholds stay frozen.
+A reload portability issue is explicit: ordinary HGB/logistic scores reproduce, but the first CPU challenge attempt failed unchanged-input parity. The local diagnostic also reproduces enhanced-HGB discrepancies. The exact numerical source is not established; nonzero feature variance does not rule out tree split sensitivity to small floating-point changes. No tolerance is loosened and no failed challenge result is accepted. Matching the original CUDA environment resolved all300reload comparisons, with maximum unchanged-score error1.11e-16 and zero threshold flips. This establishes reproducibility in the matched environment, not portability across arbitrary numerical libraries or CPU implementations. Models, feature formulas and thresholds stayed frozen.
 
-中文说明：新增九个日期、五只股票的完整日数据已取得并验证，直接监督和难负例矩阵已全部完成。收益主要来自增强特征配合梯度提升；难负例加权增益有限，神经候选仍落后。下一项已登记的良性对照保持模型、参数、阈值不变，只改变对照生成方式。
+The predeclared lifetime-matched secondary evaluation completed in76.25s of evaluator runtime (CQ allocation0.04h), peakRSS1,912,544KiB. It used Python3.13.16, NumPy2.1.3, PyTorch2.11.0+cu130, sklearn1.6.1. All300unchanged-input comparisons pass; no thresholds were recalibrated and no estimator was refitted. The primary reference below excludes the same one censored control, so it differs slightly from the full primary table.
 
-中文结论：完整主实验已经超过同协议普通梯度提升，但尚未证明神经方法优于增强强基线；良性挑战结果仍待完成，不能据此声称超过原论文或达到CCF A水平。
+| Regime | Method | Matched primary AP | Challenge AP | Primary benign FPR | Challenge benign FPR |
+|---|---|---:|---:|---:|---:|
+| date | logistic | 0.5230 | 0.5204 | 19.43% | 20.26% |
+| date | logistic_hard | 0.4890 | 0.4824 | 18.67% | 20.00% |
+| date | hgb | 0.5523 | 0.5478 | 20.39% | 20.60% |
+| date | hgb_hard | 0.5229 | 0.5207 | 20.83% | 21.28% |
+| date | mlp | 0.5244 | 0.5121 | 18.20% | 19.32% |
+| date | mlp_hard | 0.5015 | 0.4912 | 17.94% | 19.61% |
+| date | interaction_hgb | 0.8607 | 0.8961 | 18.67% | 10.42% |
+| date | interaction_hgb_hard | 0.8611 | 0.9014 | 18.05% | 9.64% |
+| date | interaction_mlp | 0.7644 | 0.7498 | 18.78% | 23.10% |
+| date | interaction_mlp_hard | 0.7614 | 0.7466 | 19.48% | 24.04% |
+| combined | logistic | 0.5180 | 0.5173 | 17.54% | 17.97% |
+| combined | logistic_hard | 0.4521 | 0.4535 | 18.19% | 18.78% |
+| combined | hgb | 0.5292 | 0.5251 | 17.87% | 17.73% |
+| combined | hgb_hard | 0.5147 | 0.5096 | 16.91% | 17.14% |
+| combined | mlp | 0.4949 | 0.4842 | 19.60% | 21.12% |
+| combined | mlp_hard | 0.4558 | 0.4488 | 18.33% | 20.29% |
+| combined | interaction_hgb | 0.8523 | 0.8833 | 15.10% | 9.28% |
+| combined | interaction_hgb_hard | 0.8586 | 0.8929 | 14.39% | 8.14% |
+| combined | interaction_mlp | 0.7075 | 0.6859 | 16.69% | 21.86% |
+| combined | interaction_mlp_hard | 0.7159 | 0.6976 | 16.81% | 22.40% |
+
+The secondary controls are not uniformly harder. Enhanced HGB with hard weighting improves from matched-primary0.8611/0.8586 to0.9014/0.8929 AP, while its benign FPR falls from18.05%/14.39%to9.64%/8.14%. The registered neural candidate drops from0.7614/0.7159 to0.7466/0.6976 AP and its benign FPR rises from19.48%/16.81%to24.04%/22.40%. This is model-dependent sensitivity to one predeclared intervention, not proof of robustness to every realistic benign pattern. The challenge neither adds independent dates nor permits choosing a new primary winner after seeing results. Both primary and challenge results, including all weaker methods, remain visible.
+
+The hypothesis is only partially supported: the feature bundle improves matched strong tabular baselines, but hard-negative weighting does not show consistent primary gains and the registered neural candidate fails the feature-matched boosting countercheck. The next discriminating work requires feature-component ablations (moments versus cross-level terms), portable numerical feature construction qualified before training, a common-cohort comparison with the previous cascade, and new independent market/date evidence. Those are proposals, not completed experiments; do not retune on the current test or challenge set.
+
+中文说明：本轮新增九日、五股票完整数据，完成30组主实验及30组冻结模型良性对照评估，合计600项已选方法评估。增强梯度提升在主测试和寿命匹配对照上均优于普通HGB；神经候选依然落后。难负例加权的主测试增益有限，不能将特征收益误写成该组件或神经网络的贡献。第一次CPU重载核验失败已保留，匹配原训练环境后300项核验通过且阈值翻转为零；跨环境可移植性仍是限制。
+
+中文结论：已经获得同协议下超越普通梯度提升的可复核结果，但最强的是增强树模型；寿命匹配对照并非对所有模型更难，不能据此声称超过原论文0.675或达到CCF A论文水平。

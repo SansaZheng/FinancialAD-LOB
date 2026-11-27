@@ -1,0 +1,251 @@
+{
+  "fold": "combined-PZU",
+  "seed": 4,
+  "methods": {
+    "logistic": {
+      "primary_matched_ap": 0.4887493907164013,
+      "challenge_ap": 0.47930444966417096,
+      "primary_benign_fpr": 0.17307692307692307,
+      "challenge_benign_fpr": 0.21153846153846154,
+      "validation_threshold": 0.9891165239298522,
+      "groups": {
+        "PZU|2017-01-27": {
+          "primary_ap": 0.4533130162101357,
+          "challenge_ap": 0.43026626768487636
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.5358281089496988,
+          "challenge_ap": 0.5354556494188553
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.5742449712625245,
+          "challenge_ap": 0.5699032556333917
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "d61f99f39bf423887480c4afbfa02204fbdb38ca4324238a7e35f0992ef77c5d"
+    },
+    "logistic_hard": {
+      "primary_matched_ap": 0.43608433485015313,
+      "challenge_ap": 0.41925763802897725,
+      "primary_benign_fpr": 0.14423076923076922,
+      "challenge_benign_fpr": 0.16346153846153846,
+      "validation_threshold": 0.9362853737629016,
+      "groups": {
+        "PZU|2017-01-27": {
+          "primary_ap": 0.39700609498195627,
+          "challenge_ap": 0.3713737145029868
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.4107630507022746,
+          "challenge_ap": 0.41873560454789305
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.6050484339628188,
+          "challenge_ap": 0.5934957625050853
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "d77dbbe7ca64934de024e22bfc8325c22c8b24d132189ab286d21c5cb2989e7f"
+    },
+    "hgb": {
+      "primary_matched_ap": 0.4768898481366891,
+      "challenge_ap": 0.4665016802928691,
+      "primary_benign_fpr": 0.1346153846153846,
+      "challenge_benign_fpr": 0.14423076923076922,
+      "validation_threshold": 0.8814955084887349,
+      "groups": {
+        "PZU|2017-01-27": {
+          "primary_ap": 0.554495571855379,
+          "challenge_ap": 0.5058596558214835
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.4129963219800191,
+          "challenge_ap": 0.4174267966762868
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.5524078647210235,
+          "challenge_ap": 0.5370765947654543
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "93f4c4c2a066f0a37429d75e34190713e3489290e32097863a997dd63f1a2d41"
+    },
+    "hgb_hard": {
+      "primary_matched_ap": 0.5060697616389962,
+      "challenge_ap": 0.49061645863111797,
+      "primary_benign_fpr": 0.125,
+      "challenge_benign_fpr": 0.14423076923076922,
+      "validation_threshold": 0.8112994218038337,
+      "groups": {
+        "PZU|2017-01-27": {
+          "primary_ap": 0.5565158519272474,
+          "challenge_ap": 0.5406159039065882
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.3951134064211068,
+          "challenge_ap": 0.3894621472957498
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.673051195272595,
+          "challenge_ap": 0.621238016842832
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "4f11c47423cacbc777f1d8c7a3710e726b72de852351ec2c25996c3b4736151b"
+    },
+    "mlp": {
+      "primary_matched_ap": 0.4433227492042835,
+      "challenge_ap": 0.422015156029634,
+      "primary_benign_fpr": 0.21153846153846154,
+      "challenge_benign_fpr": 0.27884615384615385,
+      "validation_threshold": 4.805848598480225,
+      "groups": {
+        "PZU|2017-01-27": {
+          "primary_ap": 0.40528117875493386,
+          "challenge_ap": 0.379220187197347
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.4278116998558478,
+          "challenge_ap": 0.4175052260184259
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.6293433674108899,
+          "challenge_ap": 0.5918604934725056
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "68f71820f3937e0e74cab2538a1f8853657a9daa0d3c49b7a1a622e40a22e331"
+    },
+    "mlp_hard": {
+      "primary_matched_ap": 0.44127888773725454,
+      "challenge_ap": 0.41462320792894164,
+      "primary_benign_fpr": 0.20192307692307693,
+      "challenge_benign_fpr": 0.27884615384615385,
+      "validation_threshold": 5.123302936553955,
+      "groups": {
+        "PZU|2017-01-27": {
+          "primary_ap": 0.409267986201658,
+          "challenge_ap": 0.3818612167202006
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.43369097345467456,
+          "challenge_ap": 0.421703583463191
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.585463340286672,
+          "challenge_ap": 0.5572657849585901
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "1c784765a1b50de0d8cf55cdf19a707272b347db080e1f2b5065ced93e02c96c"
+    },
+    "interaction_hgb": {
+      "primary_matched_ap": 0.8553950558635214,
+      "challenge_ap": 0.8923331991898636,
+      "primary_benign_fpr": 0.07692307692307693,
+      "challenge_benign_fpr": 0.057692307692307696,
+      "validation_threshold": 0.7973921227814954,
+      "groups": {
+        "PZU|2017-01-27": {
+          "primary_ap": 0.8432118155043422,
+          "challenge_ap": 0.8835324529227625
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.8262981882663483,
+          "challenge_ap": 0.872204727893078
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.9049979550937858,
+          "challenge_ap": 0.924969793524489
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "d251bbec4cd0d97dd6776e7000f134df0f681f45b00ffe1b481d1abc21c0afb4"
+    },
+    "interaction_hgb_hard": {
+      "primary_matched_ap": 0.8723199441901256,
+      "challenge_ap": 0.9166129354282179,
+      "primary_benign_fpr": 0.14423076923076922,
+      "challenge_benign_fpr": 0.0673076923076923,
+      "validation_threshold": 0.7600195061627011,
+      "groups": {
+        "PZU|2017-01-27": {
+          "primary_ap": 0.853358652194521,
+          "challenge_ap": 0.9005856257917598
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.8603816797526589,
+          "challenge_ap": 0.9128072018958449
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.9088947537127516,
+          "challenge_ap": 0.9423182359357353
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "36bbef8df5d5b3a658e2d5d609eee6145c5f8b8bc5307f19b1e02b2479a562ef"
+    },
+    "interaction_mlp": {
+      "primary_matched_ap": 0.6568389642340855,
+      "challenge_ap": 0.6115237503479611,
+      "primary_benign_fpr": 0.08653846153846154,
+      "challenge_benign_fpr": 0.15384615384615385,
+      "validation_threshold": 6.243449687957764,
+      "groups": {
+        "PZU|2017-01-27": {
+          "primary_ap": 0.6263479372251349,
+          "challenge_ap": 0.56723821255832
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.614318589185415,
+          "challenge_ap": 0.6060449725679458
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.7623492869986171,
+          "challenge_ap": 0.6867129582899548
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "eb6ff63a135e9bf080b6e5e12d129b1e6ad63961acf36df74e1ac8ab5f0765ed"
+    },
+    "interaction_mlp_hard": {
+      "primary_matched_ap": 0.7166746093119478,
+      "challenge_ap": 0.6839626368547347,
+      "primary_benign_fpr": 0.20192307692307693,
+      "challenge_benign_fpr": 0.25,
+      "validation_threshold": 6.067788600921631,
+      "groups": {
+        "PZU|2017-01-27": {
+          "primary_ap": 0.7123872991587483,
+          "challenge_ap": 0.6651573356311781
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.7232523391325607,
+          "challenge_ap": 0.7299915226734497
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.7428846738841063,
+          "challenge_ap": 0.7107249690655326
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "3af79ca17d217904f5a689d03ab8c7a4f9ca127f4cb440e23b2be6448e8625b9"
+    }
+  },
+  "primary_metrics_sha256": "49e458ae406ca809ef0b249288f5f01b78a389a4738f030c167b2291f3145c39",
+  "challenge_sha256": "053af4c6530bb41ebaca935a5b653cda372cdba25ba691468f753bb5f7fb3260",
+  "evidence_class": "stage012_lifetime_challenge",
+  "device": "cuda",
+  "no_refitting": true
+}

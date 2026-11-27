@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "complete_suite": true,
+  "fold_seeds": 30,
+  "selected_evaluations": 300,
+  "challenge_sha256": "053af4c6530bb41ebaca935a5b653cda372cdba25ba691468f753bb5f7fb3260",
+  "unchanged_threshold_flips": 0,
+  "scope": "Independent artifact and metric consistency; model execution parity is checked on unchanged rows, not a proof of real manipulation intent"
+}

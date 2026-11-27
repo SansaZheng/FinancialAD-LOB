@@ -1,0 +1,731 @@
+{
+  "fold": "date",
+  "seed": 4,
+  "methods": {
+    "logistic": {
+      "primary_matched_ap": 0.4937954667972055,
+      "challenge_ap": 0.489642821410132,
+      "primary_benign_fpr": 0.19791666666666666,
+      "challenge_benign_fpr": 0.20442708333333334,
+      "validation_threshold": 0.9891859371898567,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.5132700962255634,
+          "challenge_ap": 0.5072200687103916
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.456207764878412,
+          "challenge_ap": 0.4607354822274119
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.4876995872334566,
+          "challenge_ap": 0.4846717556168627
+        },
+        "PEKAO|2017-01-27": {
+          "primary_ap": 0.6212596724285419,
+          "challenge_ap": 0.6201573326465735
+        },
+        "PEKAO|2017-01-30": {
+          "primary_ap": 0.40524087531275776,
+          "challenge_ap": 0.38615601556567
+        },
+        "PEKAO|2017-01-31": {
+          "primary_ap": 0.661728307979337,
+          "challenge_ap": 0.6457221278746634
+        },
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.5233737335520051,
+          "challenge_ap": 0.5270785096595166
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.6103890161164918,
+          "challenge_ap": 0.6164178696590144
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.5860253693135684,
+          "challenge_ap": 0.5894744173857208
+        },
+        "PKOBP|2017-01-27": {
+          "primary_ap": 0.43058157451064394,
+          "challenge_ap": 0.4302427518105463
+        },
+        "PKOBP|2017-01-30": {
+          "primary_ap": 0.49515970841662277,
+          "challenge_ap": 0.5007046867143998
+        },
+        "PKOBP|2017-01-31": {
+          "primary_ap": 0.5314941704069773,
+          "challenge_ap": 0.5254135691516991
+        },
+        "PZU|2017-01-27": {
+          "primary_ap": 0.42849133170037534,
+          "challenge_ap": 0.42011363512111943
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.530045763957928,
+          "challenge_ap": 0.5419409457042161
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.5293573376876144,
+          "challenge_ap": 0.5268465089216949
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 2.7755575615628914e-17,
+      "model_sha256": "d0deda3a98ebe017d0ad8a08228e6175dc7382c9e28e7e2648d89c313e5bf3c9"
+    },
+    "logistic_hard": {
+      "primary_matched_ap": 0.46097280084819614,
+      "challenge_ap": 0.45295028274568644,
+      "primary_benign_fpr": 0.19401041666666666,
+      "challenge_benign_fpr": 0.20572916666666666,
+      "validation_threshold": 0.9220736342672209,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.498971388606836,
+          "challenge_ap": 0.48422363513243205
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.4222742334002478,
+          "challenge_ap": 0.43384325771968774
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.43130947827337884,
+          "challenge_ap": 0.4242294636008341
+        },
+        "PEKAO|2017-01-27": {
+          "primary_ap": 0.55252671002384,
+          "challenge_ap": 0.554725951264409
+        },
+        "PEKAO|2017-01-30": {
+          "primary_ap": 0.4026131454851604,
+          "challenge_ap": 0.3653636580455061
+        },
+        "PEKAO|2017-01-31": {
+          "primary_ap": 0.6180878842746608,
+          "challenge_ap": 0.5914378250474751
+        },
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.440471294463604,
+          "challenge_ap": 0.42728708187951536
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.5521630814562127,
+          "challenge_ap": 0.551812793768223
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.5432804559615821,
+          "challenge_ap": 0.5328629292783266
+        },
+        "PKOBP|2017-01-27": {
+          "primary_ap": 0.42474280491216315,
+          "challenge_ap": 0.42338626046845607
+        },
+        "PKOBP|2017-01-30": {
+          "primary_ap": 0.5240802989058201,
+          "challenge_ap": 0.523413446982804
+        },
+        "PKOBP|2017-01-31": {
+          "primary_ap": 0.5024564298260922,
+          "challenge_ap": 0.5008495611333363
+        },
+        "PZU|2017-01-27": {
+          "primary_ap": 0.37362609523023105,
+          "challenge_ap": 0.3580033267075913
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.4634151877272835,
+          "challenge_ap": 0.4912864554211578
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.5615387977630799,
+          "challenge_ap": 0.5686946331562337
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "418813a67d4859dc0b44aad977b099e14b37c02d68be3d4cdf67d48961ab2603"
+    },
+    "hgb": {
+      "primary_matched_ap": 0.5342924457019881,
+      "challenge_ap": 0.5258907346227637,
+      "primary_benign_fpr": 0.20182291666666666,
+      "challenge_benign_fpr": 0.21223958333333334,
+      "validation_threshold": 0.8781047566720961,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.5030060049057683,
+          "challenge_ap": 0.5002657410691191
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.5128749310726309,
+          "challenge_ap": 0.5070338912276712
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.5122735466416378,
+          "challenge_ap": 0.4983999569720228
+        },
+        "PEKAO|2017-01-27": {
+          "primary_ap": 0.6435482985069506,
+          "challenge_ap": 0.6525586670640949
+        },
+        "PEKAO|2017-01-30": {
+          "primary_ap": 0.4339060639037471,
+          "challenge_ap": 0.4392356087476461
+        },
+        "PEKAO|2017-01-31": {
+          "primary_ap": 0.6463643369829759,
+          "challenge_ap": 0.6504275559686834
+        },
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.6879181176017398,
+          "challenge_ap": 0.6913906072698514
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.6174638317704307,
+          "challenge_ap": 0.6067948072821006
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.6106628466164379,
+          "challenge_ap": 0.6081702524693848
+        },
+        "PKOBP|2017-01-27": {
+          "primary_ap": 0.5278984438484405,
+          "challenge_ap": 0.5241778830812887
+        },
+        "PKOBP|2017-01-30": {
+          "primary_ap": 0.5786306229012551,
+          "challenge_ap": 0.5335801349692944
+        },
+        "PKOBP|2017-01-31": {
+          "primary_ap": 0.5948301846480198,
+          "challenge_ap": 0.5718257138074119
+        },
+        "PZU|2017-01-27": {
+          "primary_ap": 0.5766962673219752,
+          "challenge_ap": 0.5765011896854564
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.5074491018707955,
+          "challenge_ap": 0.5073406290063324
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.538431933751311,
+          "challenge_ap": 0.5234638505882988
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "53b4adb555bd137d9f6173033695acf741e28403e6a0780e898d999a01f615c0"
+    },
+    "hgb_hard": {
+      "primary_matched_ap": 0.49855666411804617,
+      "challenge_ap": 0.49920932446887795,
+      "primary_benign_fpr": 0.21614583333333334,
+      "challenge_benign_fpr": 0.22395833333333334,
+      "validation_threshold": 0.8192704456346406,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.5342817870951134,
+          "challenge_ap": 0.539299797633845
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.465459681211719,
+          "challenge_ap": 0.45955527510125016
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.5075276337208368,
+          "challenge_ap": 0.5006848683244973
+        },
+        "PEKAO|2017-01-27": {
+          "primary_ap": 0.5564664214812511,
+          "challenge_ap": 0.5622660398575428
+        },
+        "PEKAO|2017-01-30": {
+          "primary_ap": 0.39930482980859106,
+          "challenge_ap": 0.4051535458426424
+        },
+        "PEKAO|2017-01-31": {
+          "primary_ap": 0.5150548990666781,
+          "challenge_ap": 0.5236876466783481
+        },
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.6115714948900657,
+          "challenge_ap": 0.6186021906647899
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.6590651561465002,
+          "challenge_ap": 0.6484909356261261
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.5068435656777234,
+          "challenge_ap": 0.5112142489599459
+        },
+        "PKOBP|2017-01-27": {
+          "primary_ap": 0.5113004244400411,
+          "challenge_ap": 0.5157018512580408
+        },
+        "PKOBP|2017-01-30": {
+          "primary_ap": 0.46961334093297025,
+          "challenge_ap": 0.45205497464946887
+        },
+        "PKOBP|2017-01-31": {
+          "primary_ap": 0.5319778244815085,
+          "challenge_ap": 0.5174215182703525
+        },
+        "PZU|2017-01-27": {
+          "primary_ap": 0.5168976820439976,
+          "challenge_ap": 0.5063685500229915
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.4651721360592975,
+          "challenge_ap": 0.45440423356469517
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.48518936171525884,
+          "challenge_ap": 0.4606879765444027
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "e700296533e500a0e265181f01b7232c9072137da8425f3deeed075f27f46d7f"
+    },
+    "mlp": {
+      "primary_matched_ap": 0.4948662917312627,
+      "challenge_ap": 0.4877808761120811,
+      "primary_benign_fpr": 0.17708333333333334,
+      "challenge_benign_fpr": 0.19401041666666666,
+      "validation_threshold": 7.367625713348389,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.4902522445589349,
+          "challenge_ap": 0.47797877992903187
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.5079129158257323,
+          "challenge_ap": 0.5270379724748161
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.4557692990391549,
+          "challenge_ap": 0.46073429466601373
+        },
+        "PEKAO|2017-01-27": {
+          "primary_ap": 0.6563169984093161,
+          "challenge_ap": 0.6378886379181564
+        },
+        "PEKAO|2017-01-30": {
+          "primary_ap": 0.4932596681558701,
+          "challenge_ap": 0.4215043086050639
+        },
+        "PEKAO|2017-01-31": {
+          "primary_ap": 0.551899953059146,
+          "challenge_ap": 0.5486517678946891
+        },
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.4801256987572993,
+          "challenge_ap": 0.4975514214677687
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.5339629845193551,
+          "challenge_ap": 0.5345618795141898
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.6325263244201944,
+          "challenge_ap": 0.6057842805207884
+        },
+        "PKOBP|2017-01-27": {
+          "primary_ap": 0.5026376169252956,
+          "challenge_ap": 0.4922014697878648
+        },
+        "PKOBP|2017-01-30": {
+          "primary_ap": 0.5353602194232263,
+          "challenge_ap": 0.5353570616664534
+        },
+        "PKOBP|2017-01-31": {
+          "primary_ap": 0.47905321624837205,
+          "challenge_ap": 0.436693692849088
+        },
+        "PZU|2017-01-27": {
+          "primary_ap": 0.46779716575487185,
+          "challenge_ap": 0.47033429076382494
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.5585654919270296,
+          "challenge_ap": 0.5863874254255712
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.6383819601302844,
+          "challenge_ap": 0.5687630354275295
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "ce3bbd13dfcb5a6e2c47978231afc20244f231b13b87f753e3d436064ce4b7f2"
+    },
+    "mlp_hard": {
+      "primary_matched_ap": 0.48002128387541104,
+      "challenge_ap": 0.4748294127887145,
+      "primary_benign_fpr": 0.1953125,
+      "challenge_benign_fpr": 0.20703125,
+      "validation_threshold": 7.0491557121276855,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.4983096305416852,
+          "challenge_ap": 0.47827665042695783
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.4960568775914065,
+          "challenge_ap": 0.5056287667053168
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.43620413946029635,
+          "challenge_ap": 0.4403795644148113
+        },
+        "PEKAO|2017-01-27": {
+          "primary_ap": 0.6373975613686711,
+          "challenge_ap": 0.6341220224260289
+        },
+        "PEKAO|2017-01-30": {
+          "primary_ap": 0.5010876632255412,
+          "challenge_ap": 0.4482570476959039
+        },
+        "PEKAO|2017-01-31": {
+          "primary_ap": 0.5994523142218562,
+          "challenge_ap": 0.5824758846650316
+        },
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.48843085602041897,
+          "challenge_ap": 0.49482311714502025
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.6028407963282157,
+          "challenge_ap": 0.5855979030775396
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.5694320939391733,
+          "challenge_ap": 0.5594241846962704
+        },
+        "PKOBP|2017-01-27": {
+          "primary_ap": 0.41952999808344993,
+          "challenge_ap": 0.4208469869812953
+        },
+        "PKOBP|2017-01-30": {
+          "primary_ap": 0.5252456517625478,
+          "challenge_ap": 0.5307417007052939
+        },
+        "PKOBP|2017-01-31": {
+          "primary_ap": 0.42158948898937487,
+          "challenge_ap": 0.38649432961461383
+        },
+        "PZU|2017-01-27": {
+          "primary_ap": 0.4182496414701064,
+          "challenge_ap": 0.40539017744246886
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.5122179510174245,
+          "challenge_ap": 0.5471771652442311
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.4511778785773883,
+          "challenge_ap": 0.43634567704854293
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "777a8dffd298f2f878db307d6a3c5f607f1bd131690d8d7f1c72ab9a76c54034"
+    },
+    "interaction_hgb": {
+      "primary_matched_ap": 0.8542954199334265,
+      "challenge_ap": 0.8976066359841023,
+      "primary_benign_fpr": 0.18880208333333334,
+      "challenge_benign_fpr": 0.09895833333333333,
+      "validation_threshold": 0.7990782595168122,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.8359270180448839,
+          "challenge_ap": 0.8994638738474594
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.8359012754542882,
+          "challenge_ap": 0.9049005254920242
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.8972523485856431,
+          "challenge_ap": 0.9337429807223235
+        },
+        "PEKAO|2017-01-27": {
+          "primary_ap": 0.8799890794675336,
+          "challenge_ap": 0.9293139188485549
+        },
+        "PEKAO|2017-01-30": {
+          "primary_ap": 0.771050430487323,
+          "challenge_ap": 0.8399583717405591
+        },
+        "PEKAO|2017-01-31": {
+          "primary_ap": 0.8986068410972075,
+          "challenge_ap": 0.9323467194441
+        },
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.8211260584137245,
+          "challenge_ap": 0.8376395419700154
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.8976687520264377,
+          "challenge_ap": 0.9145699238040997
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.8999775775724617,
+          "challenge_ap": 0.9224100590573944
+        },
+        "PKOBP|2017-01-27": {
+          "primary_ap": 0.8409834436798247,
+          "challenge_ap": 0.8651065481299348
+        },
+        "PKOBP|2017-01-30": {
+          "primary_ap": 0.8677831266620752,
+          "challenge_ap": 0.9086219341259262
+        },
+        "PKOBP|2017-01-31": {
+          "primary_ap": 0.7801118487768965,
+          "challenge_ap": 0.8394369437381801
+        },
+        "PZU|2017-01-27": {
+          "primary_ap": 0.839116285316623,
+          "challenge_ap": 0.9003644354556624
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.8765438773060724,
+          "challenge_ap": 0.9079226499389357
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.8699004553272237,
+          "challenge_ap": 0.9093379499475625
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "c921525c8340f397babd2d11a2cbc48e7ac504d5a2c307b212cdf7a82b364b0e"
+    },
+    "interaction_hgb_hard": {
+      "primary_matched_ap": 0.8568828671260511,
+      "challenge_ap": 0.9032224345392087,
+      "primary_benign_fpr": 0.18098958333333334,
+      "challenge_benign_fpr": 0.09765625,
+      "validation_threshold": 0.7404328632414957,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.8419907203073729,
+          "challenge_ap": 0.9175213644546631
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.8433211406747442,
+          "challenge_ap": 0.8999741472699228
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.8937077729425115,
+          "challenge_ap": 0.9406583394333651
+        },
+        "PEKAO|2017-01-27": {
+          "primary_ap": 0.872271762103348,
+          "challenge_ap": 0.9093588375818829
+        },
+        "PEKAO|2017-01-30": {
+          "primary_ap": 0.7790793661949271,
+          "challenge_ap": 0.8516468641890902
+        },
+        "PEKAO|2017-01-31": {
+          "primary_ap": 0.897149010412668,
+          "challenge_ap": 0.9367498529306086
+        },
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.8301717292850659,
+          "challenge_ap": 0.8484408177635928
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.9034861404720037,
+          "challenge_ap": 0.9187822320905495
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.9177994285500346,
+          "challenge_ap": 0.9387422960290434
+        },
+        "PKOBP|2017-01-27": {
+          "primary_ap": 0.8353610885150652,
+          "challenge_ap": 0.8613447778710595
+        },
+        "PKOBP|2017-01-30": {
+          "primary_ap": 0.8639126847503702,
+          "challenge_ap": 0.906363534144967
+        },
+        "PKOBP|2017-01-31": {
+          "primary_ap": 0.7839141938984986,
+          "challenge_ap": 0.8633231421443066
+        },
+        "PZU|2017-01-27": {
+          "primary_ap": 0.8297835586735496,
+          "challenge_ap": 0.898699650901928
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.8625091672487505,
+          "challenge_ap": 0.9234704232153698
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.8895915766928015,
+          "challenge_ap": 0.9166941086903106
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "dc8247706ae2800dae4c33ca53a6ef8b629f7aee2f46ba354839e75d43c6cc08"
+    },
+    "interaction_mlp": {
+      "primary_matched_ap": 0.7692234634115329,
+      "challenge_ap": 0.7639906759915384,
+      "primary_benign_fpr": 0.203125,
+      "challenge_benign_fpr": 0.21484375,
+      "validation_threshold": 5.433413982391357,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.7954898956636821,
+          "challenge_ap": 0.7843649629287817
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.7445912509799141,
+          "challenge_ap": 0.7486449079291193
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.813398110738161,
+          "challenge_ap": 0.7886067040053825
+        },
+        "PEKAO|2017-01-27": {
+          "primary_ap": 0.7738185582246774,
+          "challenge_ap": 0.7557026634589706
+        },
+        "PEKAO|2017-01-30": {
+          "primary_ap": 0.7221367601723255,
+          "challenge_ap": 0.7280336322231242
+        },
+        "PEKAO|2017-01-31": {
+          "primary_ap": 0.8237707512356951,
+          "challenge_ap": 0.7777059307361909
+        },
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.7265500327420108,
+          "challenge_ap": 0.7591778485983564
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.7928959549296178,
+          "challenge_ap": 0.7769178166914062
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.8570700917823908,
+          "challenge_ap": 0.8491117987318986
+        },
+        "PKOBP|2017-01-27": {
+          "primary_ap": 0.6743530018648584,
+          "challenge_ap": 0.6575364318309724
+        },
+        "PKOBP|2017-01-30": {
+          "primary_ap": 0.8486447233215031,
+          "challenge_ap": 0.8506435886117807
+        },
+        "PKOBP|2017-01-31": {
+          "primary_ap": 0.6922578188908419,
+          "challenge_ap": 0.6837298218132191
+        },
+        "PZU|2017-01-27": {
+          "primary_ap": 0.7779585307616528,
+          "challenge_ap": 0.7915687115130572
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.7319378176800838,
+          "challenge_ap": 0.7481087273475449
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.809901364585318,
+          "challenge_ap": 0.8132561646754431
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "7c1ab28f30acc4d47daaa66576a9d9f076bc3671d31890eb2733b26e504e7bf8"
+    },
+    "interaction_mlp_hard": {
+      "primary_matched_ap": 0.7469739920171016,
+      "challenge_ap": 0.7353843699100179,
+      "primary_benign_fpr": 0.19140625,
+      "challenge_benign_fpr": 0.2421875,
+      "validation_threshold": 4.787124156951904,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.7515790376047796,
+          "challenge_ap": 0.7354189456253177
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.7060878114453784,
+          "challenge_ap": 0.7026522433465977
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.739814119588839,
+          "challenge_ap": 0.7280248060150701
+        },
+        "PEKAO|2017-01-27": {
+          "primary_ap": 0.7383316365612437,
+          "challenge_ap": 0.7195740932066867
+        },
+        "PEKAO|2017-01-30": {
+          "primary_ap": 0.7013785461945354,
+          "challenge_ap": 0.6964245673241509
+        },
+        "PEKAO|2017-01-31": {
+          "primary_ap": 0.8029058637233621,
+          "challenge_ap": 0.7729401360825229
+        },
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.6997243073902571,
+          "challenge_ap": 0.6967840698507637
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.7916049205775015,
+          "challenge_ap": 0.7821948621332219
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.8500092828538115,
+          "challenge_ap": 0.8354787792243397
+        },
+        "PKOBP|2017-01-27": {
+          "primary_ap": 0.7323970628157536,
+          "challenge_ap": 0.7125841051474067
+        },
+        "PKOBP|2017-01-30": {
+          "primary_ap": 0.8526673295151586,
+          "challenge_ap": 0.8547098593830379
+        },
+        "PKOBP|2017-01-31": {
+          "primary_ap": 0.6822553488666017,
+          "challenge_ap": 0.6793007435476841
+        },
+        "PZU|2017-01-27": {
+          "primary_ap": 0.8039196561719296,
+          "challenge_ap": 0.8101193912742579
+        },
+        "PZU|2017-01-30": {
+          "primary_ap": 0.7134452315524571,
+          "challenge_ap": 0.7128850640745684
+        },
+        "PZU|2017-01-31": {
+          "primary_ap": 0.804574197877128,
+          "challenge_ap": 0.7874474717906882
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "a6dea45dbbf094b0d0d3665841948d2d47d214dbcc1bf1d8035286b371f8d2c3"
+    }
+  },
+  "primary_metrics_sha256": "268de2e4e467de6f2ba57e3ef98c43b16989578108a8b5e281aa1ad05ec92530",
+  "challenge_sha256": "053af4c6530bb41ebaca935a5b653cda372cdba25ba691468f753bb5f7fb3260",
+  "evidence_class": "stage012_lifetime_challenge",
+  "device": "cuda",
+  "no_refitting": true
+}

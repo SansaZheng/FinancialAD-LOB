@@ -1,0 +1,251 @@
+{
+  "fold": "combined-PKNORLEN",
+  "seed": 4,
+  "methods": {
+    "logistic": {
+      "primary_matched_ap": 0.543346622189115,
+      "challenge_ap": 0.5517064906067726,
+      "primary_benign_fpr": 0.14074074074074075,
+      "challenge_benign_fpr": 0.13333333333333333,
+      "validation_threshold": 0.9903627597918266,
+      "groups": {
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.49772822847963516,
+          "challenge_ap": 0.5032866733333018
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.5874678451962101,
+          "challenge_ap": 0.5982371973282308
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.5551695474938386,
+          "challenge_ap": 0.5695447595007248
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "e20ce7764a15fd0a23ba1346085beccdd49697aad98704c47ef6a9c1a02fb7de"
+    },
+    "logistic_hard": {
+      "primary_matched_ap": 0.43945493340184394,
+      "challenge_ap": 0.4425272747853074,
+      "primary_benign_fpr": 0.15555555555555556,
+      "challenge_benign_fpr": 0.17037037037037037,
+      "validation_threshold": 0.9306072828870651,
+      "groups": {
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.3935163701984466,
+          "challenge_ap": 0.38939359717926914
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.48462876527581633,
+          "challenge_ap": 0.49746587092455946
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.4493329886038595,
+          "challenge_ap": 0.44920939540395977
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "a499a783a9eea9f01bfaeb92c88ce29651048a16bdbe45175d7add02ad6ea2c7"
+    },
+    "hgb": {
+      "primary_matched_ap": 0.5289929377557355,
+      "challenge_ap": 0.5291418936405506,
+      "primary_benign_fpr": 0.16296296296296298,
+      "challenge_benign_fpr": 0.15555555555555556,
+      "validation_threshold": 0.8625462377969195,
+      "groups": {
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.5341526546447413,
+          "challenge_ap": 0.5245566780871921
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.5803378803256051,
+          "challenge_ap": 0.5879756235562633
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.48562310771504413,
+          "challenge_ap": 0.4861120856298143
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "fbb7ed3076c10b6c206b809aebb13ed6fc28b0dbd893ac045e272f0bea61a817"
+    },
+    "hgb_hard": {
+      "primary_matched_ap": 0.4837195782413541,
+      "challenge_ap": 0.4810665978351794,
+      "primary_benign_fpr": 0.14074074074074075,
+      "challenge_benign_fpr": 0.14074074074074075,
+      "validation_threshold": 0.7363278174840137,
+      "groups": {
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.4701388918118319,
+          "challenge_ap": 0.45703945213807934
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.5391362640764209,
+          "challenge_ap": 0.5460094791270259
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.47581813381365623,
+          "challenge_ap": 0.4717687999366223
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "eaea5b1e77f3042d2937ab97517d4342e085711ef631fdb857645ca1ec0c48fa"
+    },
+    "mlp": {
+      "primary_matched_ap": 0.46850731736665047,
+      "challenge_ap": 0.4627848848411735,
+      "primary_benign_fpr": 0.2,
+      "challenge_benign_fpr": 0.2074074074074074,
+      "validation_threshold": 6.821282386779785,
+      "groups": {
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.4229311765207374,
+          "challenge_ap": 0.39879939040550033
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.5193531171557814,
+          "challenge_ap": 0.5258609666797944
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.4547235527605486,
+          "challenge_ap": 0.4554643224891829
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "5e6cc4f7e374b34d62a88801d4d605c49c53567d093a37f4d33abab5fb06d072"
+    },
+    "mlp_hard": {
+      "primary_matched_ap": 0.444763277386328,
+      "challenge_ap": 0.44490898109974975,
+      "primary_benign_fpr": 0.17037037037037037,
+      "challenge_benign_fpr": 0.16296296296296298,
+      "validation_threshold": 2.9170596599578857,
+      "groups": {
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.3889549395630683,
+          "challenge_ap": 0.37220179930712366
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.4954172609943763,
+          "challenge_ap": 0.507033259388202
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.4457988931507743,
+          "challenge_ap": 0.44538990539418183
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "3972d2c7a247355f364bb1abc1403a0bc9ada029dd4ff66fd9dd5ee04f515b5d"
+    },
+    "interaction_hgb": {
+      "primary_matched_ap": 0.8639543163389422,
+      "challenge_ap": 0.8786960797660636,
+      "primary_benign_fpr": 0.14814814814814814,
+      "challenge_benign_fpr": 0.11851851851851852,
+      "validation_threshold": 0.5852540935433308,
+      "groups": {
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.8334561612521909,
+          "challenge_ap": 0.8422065618792653
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.8776398983985199,
+          "challenge_ap": 0.8902469560019757
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.8706623811879908,
+          "challenge_ap": 0.898384581132182
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "c7e2065147894942774ca4cd81ca2b03df5a7fd7b119d70ffce47c280077b70c"
+    },
+    "interaction_hgb_hard": {
+      "primary_matched_ap": 0.8728586213654536,
+      "challenge_ap": 0.8834745730407867,
+      "primary_benign_fpr": 0.05925925925925926,
+      "challenge_benign_fpr": 0.05925925925925926,
+      "validation_threshold": 0.7650891875609503,
+      "groups": {
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.8338168007107241,
+          "challenge_ap": 0.8405034570207215
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.8988579215123551,
+          "challenge_ap": 0.9090955749963262
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.8848316684948969,
+          "challenge_ap": 0.9024942736893761
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "99742e2382b69194d8f2ac656eee21f8f09ad3628da19a715fc401ef0e877d7b"
+    },
+    "interaction_mlp": {
+      "primary_matched_ap": 0.7174385642920837,
+      "challenge_ap": 0.7271767315766623,
+      "primary_benign_fpr": 0.13333333333333333,
+      "challenge_benign_fpr": 0.14074074074074075,
+      "validation_threshold": 5.975128650665283,
+      "groups": {
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.7458535409012242,
+          "challenge_ap": 0.7266153770145117
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.7014537860885951,
+          "challenge_ap": 0.6942986446221089
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.7305206446728013,
+          "challenge_ap": 0.7904632856730908
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "48abbf3b609695b13d60423cc1a058fb6a52d674484a4f29e2e2ad8fe1af8900"
+    },
+    "interaction_mlp_hard": {
+      "primary_matched_ap": 0.7247645448020699,
+      "challenge_ap": 0.7405896276666529,
+      "primary_benign_fpr": 0.16296296296296298,
+      "challenge_benign_fpr": 0.17777777777777778,
+      "validation_threshold": 4.880270481109619,
+      "groups": {
+        "PKNORLEN|2017-01-27": {
+          "primary_ap": 0.7454565213493503,
+          "challenge_ap": 0.7306564754154812
+        },
+        "PKNORLEN|2017-01-30": {
+          "primary_ap": 0.7286162589852695,
+          "challenge_ap": 0.7241982217286937
+        },
+        "PKNORLEN|2017-01-31": {
+          "primary_ap": 0.7485621420959694,
+          "challenge_ap": 0.8124111581406964
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "a1ec918cee5e6a870491a0dabda1d68527326740ab78dcdf62bce868593d9961"
+    }
+  },
+  "primary_metrics_sha256": "37e0e8f96e751a4f10731122d3ee174f6327044f1c8dc5f661447f07d0468947",
+  "challenge_sha256": "053af4c6530bb41ebaca935a5b653cda372cdba25ba691468f753bb5f7fb3260",
+  "evidence_class": "stage012_lifetime_challenge",
+  "device": "cuda",
+  "no_refitting": true
+}

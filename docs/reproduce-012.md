@@ -22,3 +22,30 @@ Audit portability note: NumPy2.0.2 on the Mac and2.1.3 on CQ regenerate float32 
 Reload audit incident: the first secondary CPU job j-1128-1a111a failed unchanged-input prediction parity (46/15,468 rows at the first failing method; max discrepancy0.05362534). No challenge result from that attempt is accepted. CQ could not fetch its failed output path; both scheduler receipt and full available stderr are retained under results/engineering/direct-012/frozen-first-attempt.*. A local artifact-only reload diagnosis reproduces differences in enhanced HGB, while ordinary HGB/logistic match. This does not identify the exact floating-point source. The retry uses the primary CUDA runtime and inference device, keeps all original estimators, features, normalization, thresholds and tolerance, and records per-method parity. The output-preserving wrapper deliberately distinguishes CQ collector completion from scientific success: execution-status.json must say success=true, report.json must be complete, and independent verification must pass. Failed diagnostics must never be treated as results.
 
 中文结论：首次重载核验失败已保存，重试只对齐运行环境并增加诊断，不改模型或放宽验收标准。
+
+The completed primary report is rebuilt from archived artifacts with:
+
+```sh
+python -m scripts.verify_direct_results --root results/cq-012 --dataset results/cq-012/j-1127-1d410b/benchmark/benchmark.npz --output results/engineering/direct-012/complete-verification.json
+python -m scripts.summarize_direct --root results/cq-012 --output results/reports/012-complete
+python -m scripts.audit_hard_negatives --root results/cq-012 --dataset results/cq-012/j-1127-1d410b/benchmark/benchmark.npz --output results/reports/012-complete/mining-audit.json
+python -m scripts.audit_direct_resources --root results/cq-012 --output results/reports/012-complete/resources.json
+python -m scripts.diagnose_direct_groups --report results/reports/012-complete/report.json --output results/reports/012-complete/group-diagnosis.json
+python -m scripts.export_direct_results --root results/cq-012 --summary results/reports/012-complete/report.json --verification results/engineering/direct-012/complete-verification.json --output results/reports/012-complete/methods.csv --ledger paper/workflow/results.csv
+python -m scripts.plot_direct_results --report results/reports/012-complete/report.json --output results/reports/012-complete/direct-scores
+```
+
+The exporter rejects partial suites and preserves the5,280previous-cohort ledger rows. Its complete export adds300selected-method rows to methods.csv and3,300metric rows to the cumulative ledger. Report plotting was visually inspected. Group diagnosis averages seeds per stock-day; it does not multiply independent sample counts. Combined HGB's zero seed SD follows identical below-cap samples and effectively deterministic fitting; it is not evidence of zero population uncertainty.
+
+中文结论：主实验汇总、资源审计、表格和图均有可重执行步骤；历史负结果不会被新结果覆盖。
+
+Successful frozen evaluation: CQ j-1128-0866b5, execution commit420329687fd442278304ad43b9bc58524365a67d, spec cq/012-frozen-cuda.json. This matches the original training CUDA runtime. It finished all30fold-seeds in76.25s of evaluator runtime;0.04hCQallocation. All300unchanged-score comparisons pass, maximum error1.11e-16 and zero unchanged-threshold flips. The original CPU attempt remains failed; portability across arbitrary CPU/library environments is not established.
+
+```sh
+python -m scripts.verify_lifetime_challenge --primary-root results/cq-012 --challenge results/cq-012/j-1127-d406c2/challenge/challenge.npz --scores results/cq-012/j-1128-0866b5/challenge-scores --output results/engineering/direct-012/challenge-score-verification.json
+python -m scripts.export_lifetime_challenge --root results/cq-012/j-1128-0866b5/challenge-scores --verification results/engineering/direct-012/challenge-score-verification.json --output results/reports/012-complete/challenge-methods.csv --ledger paper/workflow/results.csv
+```
+
+The secondary exporter accepts only successful, complete, independently verified output. It keeps challenge metrics in a separate evidence class and preserves all primary/prior rows. The complete cumulative ledger has5,280prior +3,300primary +2,400secondary rows. Do not rerun the scientific evaluator locally; submit the recorded CQ specification after checking existing job state. All selected model files are inputs to the frozen job, never refitted there.
+
+中文结论：主实验和冻结模型对照已完整执行、复算并导出；增强HGB的对照表现改善，而神经候选变差，报告保留这一差异及首次CPU失败。

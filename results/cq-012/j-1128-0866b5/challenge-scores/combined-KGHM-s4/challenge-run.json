@@ -1,0 +1,251 @@
+{
+  "fold": "combined-KGHM",
+  "seed": 4,
+  "methods": {
+    "logistic": {
+      "primary_matched_ap": 0.47520508454717075,
+      "challenge_ap": 0.4693612983099661,
+      "primary_benign_fpr": 0.2536764705882353,
+      "challenge_benign_fpr": 0.2610294117647059,
+      "validation_threshold": 0.9881620690588466,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.505225592981199,
+          "challenge_ap": 0.49625297331778667
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.4604514330409438,
+          "challenge_ap": 0.45904983637854824
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.46560098753707013,
+          "challenge_ap": 0.46112671272667344
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "46fbb9876ed1cc0a00b1d729645238d324f170c591ab6d331de34b15cd044766"
+    },
+    "logistic_hard": {
+      "primary_matched_ap": 0.4374661671505412,
+      "challenge_ap": 0.4339205116581072,
+      "primary_benign_fpr": 0.29411764705882354,
+      "challenge_benign_fpr": 0.3161764705882353,
+      "validation_threshold": 0.8721475771530618,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.4693452313789583,
+          "challenge_ap": 0.4655702221352611
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.4176044229479655,
+          "challenge_ap": 0.41755677941127706
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.4299567702739305,
+          "challenge_ap": 0.4224739846977206
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "12aaf9f20e3d34ecd549d7c5296feff4442052e638d559bcb583598210b79717"
+    },
+    "hgb": {
+      "primary_matched_ap": 0.514223016022379,
+      "challenge_ap": 0.5120356448159084,
+      "primary_benign_fpr": 0.27205882352941174,
+      "challenge_benign_fpr": 0.27205882352941174,
+      "validation_threshold": 0.7825646114594047,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.5513049503508801,
+          "challenge_ap": 0.5573055676212506
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.4903371316509721,
+          "challenge_ap": 0.4918332822768805
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.5054319100950676,
+          "challenge_ap": 0.4904186676509493
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "fc1d1c58cce40b0363cce9ac042e12169619171588963dd253b545af3b93568b"
+    },
+    "hgb_hard": {
+      "primary_matched_ap": 0.5323297953532466,
+      "challenge_ap": 0.5343200003307065,
+      "primary_benign_fpr": 0.2610294117647059,
+      "challenge_benign_fpr": 0.27941176470588236,
+      "validation_threshold": 0.6953814461220704,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.5813861814099939,
+          "challenge_ap": 0.5897638513765855
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.4984626689571682,
+          "challenge_ap": 0.5141308582154702
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.5227853348289717,
+          "challenge_ap": 0.49887235620242165
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "661dcc6f334019582d563804cd164f0059798711485f6a7a5a02e2e74ddf3cd6"
+    },
+    "mlp": {
+      "primary_matched_ap": 0.44081351565692783,
+      "challenge_ap": 0.44478224387071846,
+      "primary_benign_fpr": 0.33455882352941174,
+      "challenge_benign_fpr": 0.3088235294117647,
+      "validation_threshold": 5.103309154510498,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.47274167448731186,
+          "challenge_ap": 0.46325967456765027
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.43680953831614117,
+          "challenge_ap": 0.44228303804521923
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.4222581655132956,
+          "challenge_ap": 0.4394927995026146
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "2bf9edc679f72202f54e8b6ac23bd294634420b73a72cf8626514b83b701e435"
+    },
+    "mlp_hard": {
+      "primary_matched_ap": 0.39498071442971194,
+      "challenge_ap": 0.3991364869101973,
+      "primary_benign_fpr": 0.20220588235294118,
+      "challenge_benign_fpr": 0.19117647058823528,
+      "validation_threshold": 6.68829870223999,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.42491247639421076,
+          "challenge_ap": 0.42187867641618676
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.39333268304363533,
+          "challenge_ap": 0.39129242711653334
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.37895091898754435,
+          "challenge_ap": 0.3965233964673155
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "6663df47de23e2383401550234f0aa44e8bca09b4ca8e820bfcbf48902cce637"
+    },
+    "interaction_hgb": {
+      "primary_matched_ap": 0.8554075889798066,
+      "challenge_ap": 0.8964705226191837,
+      "primary_benign_fpr": 0.1875,
+      "challenge_benign_fpr": 0.09191176470588236,
+      "validation_threshold": 0.9021146554728152,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.8596111032800445,
+          "challenge_ap": 0.9003568113782168
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.8533684971405147,
+          "challenge_ap": 0.8954374828003661
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.8628058205262112,
+          "challenge_ap": 0.8982027312578381
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "0e7f8d09041adb5e7ca795c25a30fd6cb5df62324248a6d9aa1cbd2aa7565dab"
+    },
+    "interaction_hgb_hard": {
+      "primary_matched_ap": 0.8675429618158739,
+      "challenge_ap": 0.912961745474242,
+      "primary_benign_fpr": 0.20955882352941177,
+      "challenge_benign_fpr": 0.11397058823529412,
+      "validation_threshold": 0.5710114764635246,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.8695470785399599,
+          "challenge_ap": 0.9258333898239797
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.8480697380133845,
+          "challenge_ap": 0.8882814929503892
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.8863904013207506,
+          "challenge_ap": 0.9239710934555232
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "d925bd4f46262134f83c073f93a011997063f9589bd2dcad8c0bde85de5f07a7"
+    },
+    "interaction_mlp": {
+      "primary_matched_ap": 0.6959371256816932,
+      "challenge_ap": 0.6779144811386659,
+      "primary_benign_fpr": 0.17279411764705882,
+      "challenge_benign_fpr": 0.23897058823529413,
+      "validation_threshold": 5.129373550415039,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.6869650365195923,
+          "challenge_ap": 0.6592012550542162
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.6770156979591402,
+          "challenge_ap": 0.6699133285931222
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.727695500410524,
+          "challenge_ap": 0.7134300105040065
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "fc852097410efab690e65f96e8cc56e4b65e884f5e73ff2ecbc4f62b84719933"
+    },
+    "interaction_mlp_hard": {
+      "primary_matched_ap": 0.7126296041835353,
+      "challenge_ap": 0.6953029816762877,
+      "primary_benign_fpr": 0.22426470588235295,
+      "challenge_benign_fpr": 0.30514705882352944,
+      "validation_threshold": 4.786121368408203,
+      "groups": {
+        "KGHM|2017-01-27": {
+          "primary_ap": 0.6911622161990006,
+          "challenge_ap": 0.6688149737640307
+        },
+        "KGHM|2017-01-30": {
+          "primary_ap": 0.6987635544357743,
+          "challenge_ap": 0.6730030814625714
+        },
+        "KGHM|2017-01-31": {
+          "primary_ap": 0.7684284793764959,
+          "challenge_ap": 0.7589029389299672
+        }
+      },
+      "unchanged_threshold_flips": 0,
+      "max_unchanged_score_error": 0.0,
+      "model_sha256": "86f0b532a0001206c8087b7f772cedd2d8e9adc99465aa41c5341868d882c1a2"
+    }
+  },
+  "primary_metrics_sha256": "9452b47fe48208a797734bcd9913324dbd20d167162cba2806c86de235e30401",
+  "challenge_sha256": "053af4c6530bb41ebaca935a5b653cda372cdba25ba691468f753bb5f7fb3260",
+  "evidence_class": "stage012_lifetime_challenge",
+  "device": "cuda",
+  "no_refitting": true
+}

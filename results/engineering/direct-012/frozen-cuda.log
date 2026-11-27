@@ -1,0 +1,86 @@
+==> stdout (reported 02:14:26) <==
+mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 2, "method": "interaction_hgb_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 2, "method": "interaction_mlp", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 2, "method": "interaction_mlp_hard", "max_error": 0.0, "mismatch_count": 0}
+combined-PKOBP 2 complete
+{"fold": "combined-PKOBP", "seed": 3, "method": "logistic", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 3, "method": "logistic_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 3, "method": "hgb", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 3, "method": "hgb_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 3, "method": "mlp", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 3, "method": "mlp_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 3, "method": "interaction_hgb", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 3, "method": "interaction_hgb_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 3, "method": "interaction_mlp", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 3, "method": "interaction_mlp_hard", "max_error": 0.0, "mismatch_count": 0}
+combined-PKOBP 3 complete
+{"fold": "combined-PKOBP", "seed": 4, "method": "logistic", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 4, "method": "logistic_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 4, "method": "hgb", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 4, "method": "hgb_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 4, "method": "mlp", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 4, "method": "mlp_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 4, "method": "interaction_hgb", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 4, "method": "interaction_hgb_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 4, "method": "interaction_mlp", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKOBP", "seed": 4, "method": "interaction_mlp_hard", "max_error": 0.0, "mismatch_count": 0}
+combined-PKOBP 4 complete
+{"fold": "combined-PKNORLEN", "seed": 0, "method": "logistic", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 0, "method": "logistic_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 0, "method": "hgb", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 0, "method": "hgb_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 0, "method": "mlp", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 0, "method": "mlp_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 0, "method": "interaction_hgb", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 0, "method": "interaction_hgb_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 0, "method": "interaction_mlp", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 0, "method": "interaction_mlp_hard", "max_error": 0.0, "mismatch_count": 0}
+combined-PKNORLEN 0 complete
+{"fold": "combined-PKNORLEN", "seed": 1, "method": "logistic", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 1, "method": "logistic_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 1, "method": "hgb", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 1, "method": "hgb_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 1, "method": "mlp", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 1, "method": "mlp_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 1, "method": "interaction_hgb", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 1, "method": "interaction_hgb_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 1, "method": "interaction_mlp", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 1, "method": "interaction_mlp_hard", "max_error": 0.0, "mismatch_count": 0}
+combined-PKNORLEN 1 complete
+{"fold": "combined-PKNORLEN", "seed": 2, "method": "logistic", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 2, "method": "logistic_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 2, "method": "hgb", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 2, "method": "hgb_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 2, "method": "mlp", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 2, "method": "mlp_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 2, "method": "interaction_hgb", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 2, "method": "interaction_hgb_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 2, "method": "interaction_mlp", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 2, "method": "interaction_mlp_hard", "max_error": 0.0, "mismatch_count": 0}
+combined-PKNORLEN 2 complete
+{"fold": "combined-PKNORLEN", "seed": 3, "method": "logistic", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 3, "method": "logistic_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 3, "method": "hgb", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 3, "method": "hgb_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 3, "method": "mlp", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 3, "method": "mlp_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 3, "method": "interaction_hgb", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 3, "method": "interaction_hgb_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 3, "method": "interaction_mlp", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 3, "method": "interaction_mlp_hard", "max_error": 0.0, "mismatch_count": 0}
+combined-PKNORLEN 3 complete
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "logistic", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "logistic_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "hgb", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "hgb_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "mlp", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "mlp_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "interaction_hgb", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "interaction_hgb_hard", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "interaction_mlp", "max_error": 0.0, "mismatch_count": 0}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "interaction_mlp_hard", "max_error": 0.0, "mismatch_count": 0}
+combined-PKNORLEN 4 complete
+{"finished": true, "success": true, "scientific_status": "complete", "timestamp": "2026-11-27T18:13:50.903151+00:00"}
+==> stderr (reported 02:14:26) <==
+

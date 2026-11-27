@@ -1,23 +1,20 @@
 # Current claim-to-evidence map
 
-Historical engineering claims remain in Git history. Completed detector-performance claims below use the stage011 cohort. Stage012 adds independently verified source/benchmark evidence; its full-matrix and challenge performance are pending, with21primary fold-seeds already checked.
+Stage011 negative results remain in paper/011-results.md and workflow/archive; never pooled with stage012.
 
-| Claim | Evidence | Status and limit |
+| Claim | Artifact | Status and bound |
 |---|---|---|
-| Full daily partitions, five stocks across three fresh dates | results/cq-011/j-1125-8c5bef/full-sessions/audit.json; j-1125-41384c/benchmark/full-day-validation.json | Verified selected artifacts and independent replay; not whole annual archive |
-| All fixed comparisons executed | results/engineering/cascade-011/complete-metric-verification.json | 60 fold-seeds, 660 method evaluations; semi-synthetic |
-| Depth-resolved aligned candidate improves over L1 and rank control | results/reports/011-complete/report.json | Positive mean AP and exploratory paired deltas in four regimes; few dates |
-| Current contrastive objective improves performance | Same report, price_no_scl ablation | Unsupported; no-SCL has higher mean AP in every regime |
-| Raw-book autoencoder is necessary | Same report, price_no_lob ablation | Unsupported; small mixed changes |
-| Candidate beats strong supervised controls | Same report, supervised_hgb/logistic comparisons | Unsupported; HGB has higher mean AP in every regime |
-| Real manipulation intent detected | No adjudicated labels | Unsupported; generated policy labels only |
-| Original 0.675 reproduced or exceeded | Different market, input availability and protocol | Unsupported; direct numerical comparison invalid |
-| CCF A-level evidence complete | Only three fresh dates and one generator seed; no realistic response | Not achieved |
-| New full result archive synchronized | paper/workflow/current.md | Verified: canonical main094b7dd pushed and independently checked; subsequent stage012 data/code archives pushed through124e361 |
+| Nine new dates and45full stock-days independently replayed | results/cq-012/j-1127-1d410b/benchmark; results/engineering/direct-012/dataset-verification.json | Supported:3,439,144rows/4,500snapshots; selected partitions, not full annualarchive |
+| All registered direct comparisons executed | results/engineering/direct-012/complete-verification.json |30/30runs,300/300evaluations; artifact consistency |
+| Feature-assisted boosting improves ordinary HGB | results/reports/012-complete/report.json; group-diagnosis.json | AP+.3097/+.3308,15/15stock-days; semi-synthetic cohort only |
+| Neural candidate beats the enhanced strong baseline | Same report | Unsupported: AP−.0998/−.1426 |
+| Hard-negative weighting consistently improves AP | Same report/contrasts | Unsupported: enhancedHGB increments.0006/.0062 with intervals crossing0; other families mixed/negative |
+| Cross-level Gram terms are individually necessary | Feature bundle ablation | Pending component ablations; timing/mass moments bundled |
+| Direct supervision causes improvement over old cascade | Differentstage011/012cohorts | Unsupported until matched-cohort objective comparison |
+| Frozen-model lifetime intervention is evaluated | results/cq-012/j-1128-0866b5/challenge-scores; challenge-score-verification.json |30/30runs,300/300paired evaluations, no refitting; easier for enhancedHGB, harder forMLP |
+| Reload is portable across numerical environments | frozen-first-attempt.log; local-reload-diagnosis.json | Unsupported; firstCPUfailure preserved; matchedCUDApasses, max1.11e-16/0flips |
+| Challenge is an independent dataset or uniformly harder | configs/012-robustness.json and challenge report | Unsupported; same source IDs, model-dependent difficulty |
+| Real manipulation intent or original0.675is surpassed | No comparable adjudicated/privateoriginaldata | Unsupported |
+| CCF A evidence targets complete | workflow/config.json and literature.md | Not achieved: one market, three testdates,15source datesoverall, no reproduced2026methods |
 
-| Nine additional dates,45stock-days acquired and independently replayed | results/engineering/direct-012/dataset-verification.json; results/cq-012/j-1127-1d410b/benchmark | Verified3,439,144rows and4,500reference snapshots; not real labels |
-| New direct/hard-negative candidate beats boosting | cq/012-pilot-submission.txt; configs/012-preregistered.json | Partial evidence: enhanced HGB improves AP in completed runs; the registered neural candidate still loses to feature-matched HGB.21/30runs checked; no final broad superiority claim. |
-| Per-level lifetime challenge retains unchanged non-wave inputs | results/engineering/direct-012/challenge-data-verification.json | Verified15,468unchanged windows,384modified controls,1censored; theoretical marginal match before censoring |
-| Robustness to more difficult benign controls | configs/012-robustness.json | Pending frozen-model evaluation; collisions deliberately retained |
-
-中文结论：已支持逐档价格对齐的局部贡献，但不支持当前完整模型优越性、真实意图识别、原论文超越或 CCF A 达标声明。
+中文结论：支持增强特征配合梯度提升的局部提升，不支持神经优越性、跨平台完全可复现、真实操纵识别或CCF A达标声明。

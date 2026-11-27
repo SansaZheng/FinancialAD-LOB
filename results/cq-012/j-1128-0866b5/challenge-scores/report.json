@@ -1,0 +1,196 @@
+{
+  "status": "complete",
+  "fold_seeds": 30,
+  "summary": [
+    {
+      "regime": "date",
+      "method": "logistic",
+      "fold_seeds": 5,
+      "primary_macro_ap": 0.5230180567705682,
+      "challenge_macro_ap": 0.5203877360772211,
+      "primary_benign_fpr": 0.19427083333333334,
+      "challenge_benign_fpr": 0.20260416666666664
+    },
+    {
+      "regime": "date",
+      "method": "logistic_hard",
+      "fold_seeds": 5,
+      "primary_macro_ap": 0.4890085443567914,
+      "challenge_macro_ap": 0.48237444263883783,
+      "primary_benign_fpr": 0.18671875,
+      "challenge_benign_fpr": 0.2
+    },
+    {
+      "regime": "date",
+      "method": "hgb",
+      "fold_seeds": 5,
+      "primary_macro_ap": 0.5522896031199159,
+      "challenge_macro_ap": 0.5478169595205387,
+      "primary_benign_fpr": 0.20390625,
+      "challenge_benign_fpr": 0.20598958333333334
+    },
+    {
+      "regime": "date",
+      "method": "hgb_hard",
+      "fold_seeds": 5,
+      "primary_macro_ap": 0.5229114806500658,
+      "challenge_macro_ap": 0.5206870184249794,
+      "primary_benign_fpr": 0.20833333333333331,
+      "challenge_benign_fpr": 0.21276041666666665
+    },
+    {
+      "regime": "date",
+      "method": "mlp",
+      "fold_seeds": 5,
+      "primary_macro_ap": 0.5244471609763673,
+      "challenge_macro_ap": 0.5120740266364177,
+      "primary_benign_fpr": 0.18203125000000003,
+      "challenge_benign_fpr": 0.19322916666666665
+    },
+    {
+      "regime": "date",
+      "method": "mlp_hard",
+      "fold_seeds": 5,
+      "primary_macro_ap": 0.5014764652832857,
+      "challenge_macro_ap": 0.4912223811170298,
+      "primary_benign_fpr": 0.17942708333333332,
+      "challenge_benign_fpr": 0.19609374999999998
+    },
+    {
+      "regime": "date",
+      "method": "interaction_hgb",
+      "fold_seeds": 5,
+      "primary_macro_ap": 0.8606544921730656,
+      "challenge_macro_ap": 0.8960987330629401,
+      "primary_benign_fpr": 0.18671875,
+      "challenge_benign_fpr": 0.10416666666666667
+    },
+    {
+      "regime": "date",
+      "method": "interaction_hgb_hard",
+      "fold_seeds": 5,
+      "primary_macro_ap": 0.8611420062383452,
+      "challenge_macro_ap": 0.9014462208590398,
+      "primary_benign_fpr": 0.18046875,
+      "challenge_benign_fpr": 0.09635416666666666
+    },
+    {
+      "regime": "date",
+      "method": "interaction_mlp",
+      "fold_seeds": 5,
+      "primary_macro_ap": 0.7643713900351761,
+      "challenge_macro_ap": 0.7498347814702716,
+      "primary_benign_fpr": 0.18776041666666665,
+      "challenge_benign_fpr": 0.23098958333333336
+    },
+    {
+      "regime": "date",
+      "method": "interaction_mlp_hard",
+      "fold_seeds": 5,
+      "primary_macro_ap": 0.7614353605871511,
+      "challenge_macro_ap": 0.746592741090627,
+      "primary_benign_fpr": 0.19479166666666667,
+      "challenge_benign_fpr": 0.2403645833333333
+    },
+    {
+      "regime": "combined",
+      "method": "logistic",
+      "fold_seeds": 25,
+      "primary_macro_ap": 0.5179525989768468,
+      "challenge_macro_ap": 0.5172757888024957,
+      "primary_benign_fpr": 0.1753673214229417,
+      "challenge_benign_fpr": 0.17967224437375864
+    },
+    {
+      "regime": "combined",
+      "method": "logistic_hard",
+      "fold_seeds": 25,
+      "primary_macro_ap": 0.4521148974022259,
+      "challenge_macro_ap": 0.4534739393266707,
+      "primary_benign_fpr": 0.18193134019284282,
+      "challenge_benign_fpr": 0.1877955321927366
+    },
+    {
+      "regime": "combined",
+      "method": "hgb",
+      "fold_seeds": 25,
+      "primary_macro_ap": 0.5291665686342786,
+      "challenge_macro_ap": 0.5250767772293973,
+      "primary_benign_fpr": 0.17870275790776666,
+      "challenge_benign_fpr": 0.17727839752301022
+    },
+    {
+      "regime": "combined",
+      "method": "hgb_hard",
+      "fold_seeds": 25,
+      "primary_macro_ap": 0.5146640372908338,
+      "challenge_macro_ap": 0.5096338668812134,
+      "primary_benign_fpr": 0.16908848086920308,
+      "challenge_benign_fpr": 0.17136865798193696
+    },
+    {
+      "regime": "combined",
+      "method": "mlp",
+      "fold_seeds": 25,
+      "primary_macro_ap": 0.49487273730388653,
+      "challenge_macro_ap": 0.4842108829673062,
+      "primary_benign_fpr": 0.19595877076395424,
+      "challenge_benign_fpr": 0.21121699960342943
+    },
+    {
+      "regime": "combined",
+      "method": "mlp_hard",
+      "fold_seeds": 25,
+      "primary_macro_ap": 0.4558454158050902,
+      "challenge_macro_ap": 0.44876449131833346,
+      "primary_benign_fpr": 0.18333341132001582,
+      "challenge_benign_fpr": 0.20285992264384808
+    },
+    {
+      "regime": "combined",
+      "method": "interaction_hgb",
+      "fold_seeds": 25,
+      "primary_macro_ap": 0.8522520437263873,
+      "challenge_macro_ap": 0.8832530242640786,
+      "primary_benign_fpr": 0.1510214803531635,
+      "challenge_benign_fpr": 0.09277150980558087
+    },
+    {
+      "regime": "combined",
+      "method": "interaction_hgb_hard",
+      "fold_seeds": 25,
+      "primary_macro_ap": 0.8586160642918679,
+      "challenge_macro_ap": 0.8928782747133986,
+      "primary_benign_fpr": 0.1438943604013493,
+      "challenge_benign_fpr": 0.08142814771673246
+    },
+    {
+      "regime": "combined",
+      "method": "interaction_mlp",
+      "fold_seeds": 25,
+      "primary_macro_ap": 0.7075425081909595,
+      "challenge_macro_ap": 0.6859456553661574,
+      "primary_benign_fpr": 0.16694125860549858,
+      "challenge_benign_fpr": 0.21863832265579497
+    },
+    {
+      "regime": "combined",
+      "method": "interaction_mlp_hard",
+      "fold_seeds": 25,
+      "primary_macro_ap": 0.7158910904812968,
+      "challenge_macro_ap": 0.6976186810475608,
+      "primary_benign_fpr": 0.1680736260654723,
+      "challenge_benign_fpr": 0.2240440010818578
+    }
+  ],
+  "seconds": 76.25100846999999,
+  "peak_rss_native": 1912544,
+  "versions": {
+    "python": "3.13.16",
+    "numpy": "2.1.3",
+    "torch": "2.11.0+cu130",
+    "sklearn": "1.6.1"
+  },
+  "source_sha256": "3fbb9d04e6ae3fc535cc5e03ec2d6afec276e49913ae136207b1f6bd4641b2fd",
+  "scope": "Predeclared secondary controls on matched IDs, no re-fitting or threshold calibration; only3test dates and synthetic labels"
+}

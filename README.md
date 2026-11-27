@@ -3,13 +3,11 @@
 Reproducible research toward robust multilevel limit-order-book manipulation
 detection. Canonical archive: https://github.com/SansaZheng/FinancialAD-LOB.
 
-**Status:** the fresh-date 11-method, 5-seed, 4-regime semi-synthetic matrix is complete and independently checked. The candidate improves over L1/rank/paper-structure adapters but loses to histogram boosting; original
-paper reproduction and CCF A-level evidence are not complete. No claim of
-matching or exceeding the source paper's 0.675 AUC-PR.
+**Status:** stage012 is complete:30primary fold-seeds/300selected evaluations and30frozen benign-control evaluations/300paired scores, all independently checked. Observable feature enhancement improves ordinary histogram boosting; the registered neural candidate loses to feature-matched boosting. The first CPU reload failure is retained; matched-CUDA reload passes. No claim of real manipulation intent, direct superiority to the original0.675AUC-PR, or CCF A readiness.
 
 ## Start here
 
-* [Stage012 direct supervision protocol](paper/012-protocol.md), [frozen configuration](configs/012-preregistered.json), [execution steps](docs/reproduce-012.md), and [live report](paper/012-results.md): nine new dates/45stock-days acquired and replayed,51,118labeled windows, training-only hard negatives and strong controls; formal detector results pending. The predeclared matched-lifetime benign challenge is also generated and verified.
+* [Stage012 direct supervision protocol](paper/012-protocol.md), [frozen configuration](configs/012-preregistered.json), [execution steps](docs/reproduce-012.md), and [live report](paper/012-results.md): nine new dates/45stock-days acquired and replayed,51,118labeled windows, training-only hard negatives and strong controls; complete primary and predeclared lifetime-challenge results are independently verified; [data card](docs/dataset-012.md) and [bilingual report](paper/workflow/experiment-report.md).
 
 * [Current fresh-date protocol](paper/011-protocol.md), [dataset card](docs/dataset-011.md), and [registered eleven-method matrix](configs/011-preregistered.json).
 * [Exact execution and verification steps](docs/reproduce-011.md).
