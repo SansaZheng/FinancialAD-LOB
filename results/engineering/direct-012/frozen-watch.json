@@ -1,6 +1,6 @@
 {
   "id": "j-1128-1a111a",
-  "state": "assigned",
-  "reason": "Kaggle code staging; GPU time reserved",
+  "state": "failed",
+  "reason": "Kaggle: exit 1: lements: 46 / 15468 (0.297%)\nMax absolute difference among violations: 0.05362534\nMax relative difference among violations: 0.94485742\n ACTUAL: array([0.000652, 0.001161, 0.000647, ..., 0.0019  , 0.001019, 0.001423])\n DESIRED: array([0.000652, 0.001161, 0.000647, ..., 0.0019  , 0.001019, 0.001423])\n",
   "progress_lines": null
 }

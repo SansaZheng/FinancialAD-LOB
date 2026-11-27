@@ -1,0 +1,31 @@
+==> stdout (reported 01:56:40) <==
+
+==> stderr (reported 01:56:40) <==
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/tmp/cq-src/scripts/evaluate_lifetime_challenge.py", line 57, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--challenge',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--protocol',type=Path,default=Path('configs/012-preregistered.json'));a=p.parse_args();evaluate(a.root,a.challenge,a.output,a.protocol)
+                                                                                                                                                                                                                                                                                                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/cq-src/scripts/evaluate_lifetime_challenge.py", line 38, in evaluate
+    np.testing.assert_allclose(score[unchanged],primary[unchanged],rtol=1e-4,atol=1e-4)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/numpy/testing/_private/utils.py", line 1691, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         verbose=verbose, header=header, equal_nan=equal_nan,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         strict=strict)
+                         ^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/numpy/testing/_private/utils.py", line 889, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=0.0001, atol=0.0001
+
+Mismatched elements: 46 / 15468 (0.297%)
+Max absolute difference among violations: 0.05362534
+Max relative difference among violations: 0.94485742
+ ACTUAL: array([0.000652, 0.001161, 0.000647, ..., 0.0019  , 0.001019, 0.001423])
+ DESIRED: array([0.000652, 0.001161, 0.000647, ..., 0.0019  , 0.001019, 0.001423])

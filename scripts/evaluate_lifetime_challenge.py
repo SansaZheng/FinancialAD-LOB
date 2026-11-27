@@ -10,8 +10,10 @@ from lobbench.direct import base_features,interaction_features,DirectMLP
 from lobbench.direct_run import predict
 
 
-def evaluate(root,challenge,output,protocol,engineering=False):
+def evaluate(root,challenge,output,protocol,engineering=False,device='cpu'):
+ if device=='cuda' and not torch.cuda.is_available():raise RuntimeError('CUDA unavailable')
  started=time.monotonic()
+ print(json.dumps(dict(device=device,python=platform.python_version(),numpy=np.__version__,torch=torch.__version__,sklearn=sklearn.__version__)),flush=True)
  if not os.environ.get('CQ_JOB_ID') and not engineering:raise RuntimeError('CQ required')
  if engineering and challenge.stat().st_size>10*1024**2:raise ValueError('Engineering budget exceeded')
  cfg=json.loads(protocol.read_text());d=dict(np.load(challenge,allow_pickle=False));torch.set_num_threads(1);torch.use_deterministic_algorithms(True)
@@ -31,10 +33,13 @@ def evaluate(root,challenge,output,protocol,engineering=False):
   for method,item in r['methods'].items():
    x=normalized[method.startswith('interaction_')];model_path=path.parent/(method+('.pt' if 'mlp' in method else '.joblib'))
    if 'mlp' in method:
-    model=DirectMLP(x.shape[1]);model.load_state_dict(torch.load(model_path,map_location='cpu',weights_only=True));score=predict(model,x,'cpu')
+    model=DirectMLP(x.shape[1]);model.load_state_dict(torch.load(model_path,map_location='cpu',weights_only=True));model=model.to(device);score=predict(model,x,device)
    else:model=joblib.load(model_path);score=model.predict_proba(x)[:,1]
    p=np.load(path.parent/(method+'-predictions.npz'));lookup={z:k for k,z in enumerate(p['id'])};j=np.array([lookup[z] for z in d['id'][ix]])
    np.testing.assert_array_equal(p['y'][j],d['y'][ix]);primary=p['score'][j];unchanged=d['kind'][ix]!='benign_wave'
+   parity=dict(fold=r['fold'],seed=r['seed'],method=method,max_error=float(np.abs(score[unchanged]-primary[unchanged]).max()),mismatch_count=int(np.sum(~np.isclose(score[unchanged],primary[unchanged],rtol=1e-4,atol=1e-4))))
+   print(json.dumps(parity),flush=True)
+   with (output/'reload-parity.jsonl').open('a') as f:f.write(json.dumps(parity)+'\n')
    np.testing.assert_allclose(score[unchanged],primary[unchanged],rtol=1e-4,atol=1e-4)
    threshold=item['selection']['threshold'];benign=np.char.startswith(d['kind'][ix],'benign_');groups={}
    for stock,date in sorted(set(zip(d['stock'][ix],d['date'][ix]))):
@@ -42,7 +47,7 @@ def evaluate(root,challenge,output,protocol,engineering=False):
     groups[stock+'|'+date]=dict(primary_ap=float(average_precision_score(d['y'][ix][m],primary[m])),challenge_ap=float(average_precision_score(d['y'][ix][m],score[m])))
    np.savez_compressed(dest/(method+'-predictions.npz'),id=d['id'][ix],y=d['y'][ix],score=score,primary_score=primary,stock=d['stock'][ix],date=d['date'][ix],kind=d['kind'][ix])
    methods[method]=dict(primary_matched_ap=float(average_precision_score(d['y'][ix],primary)),challenge_ap=float(average_precision_score(d['y'][ix],score)),primary_benign_fpr=float(np.mean(primary[benign]>threshold)),challenge_benign_fpr=float(np.mean(score[benign]>threshold)),validation_threshold=threshold,groups=groups,unchanged_threshold_flips=int(np.sum((score[unchanged]>threshold)!=(primary[unchanged]>threshold))),max_unchanged_score_error=float(np.abs(score[unchanged]-primary[unchanged]).max()),model_sha256=hashlib.sha256(model_path.read_bytes()).hexdigest())
-  record=dict(fold=r['fold'],seed=r['seed'],methods=methods,primary_metrics_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),challenge_sha256=hashlib.sha256(challenge.read_bytes()).hexdigest(),evidence_class='engineering_only' if engineering else 'stage012_lifetime_challenge',device='cpu',no_refitting=True)
+  record=dict(fold=r['fold'],seed=r['seed'],methods=methods,primary_metrics_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),challenge_sha256=hashlib.sha256(challenge.read_bytes()).hexdigest(),evidence_class='engineering_only' if engineering else 'stage012_lifetime_challenge',device=device,no_refitting=True)
   (dest/'challenge-run.json').write_text(json.dumps(record,indent=2)+'\n');records.append(record);print(r['fold'],r['seed'],'complete',flush=True)
  expected={(f,s) for f in ['date']+['combined-'+s for s in cfg['stocks']] for s in cfg['seeds']}
  summary=[]
@@ -54,4 +59,4 @@ def evaluate(root,challenge,output,protocol,engineering=False):
  report=dict(status='engineering_only' if engineering else ('complete' if seen==expected else 'partial'),fold_seeds=len(seen),summary=summary,seconds=time.monotonic()-started,peak_rss_native=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,versions=dict(python=platform.python_version(),numpy=np.__version__,torch=torch.__version__,sklearn=sklearn.__version__),source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),scope='Predeclared secondary controls on matched IDs, no re-fitting or threshold calibration; only3test dates and synthetic labels')
  (output/'report.json').write_text(json.dumps(report,indent=2)+'\n');(output/'progress.txt').write_text(f'{len(seen)}/30 complete\n');return report
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--challenge',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--protocol',type=Path,default=Path('configs/012-preregistered.json'));a=p.parse_args();evaluate(a.root,a.challenge,a.output,a.protocol)
+ p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--challenge',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--protocol',type=Path,default=Path('configs/012-preregistered.json'));p.add_argument('--device',choices=['cpu','cuda'],default='cpu');a=p.parse_args();evaluate(a.root,a.challenge,a.output,a.protocol,device=a.device)

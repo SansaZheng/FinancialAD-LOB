@@ -1,0 +1,140 @@
+{
+ "id": "j-1128-1a111a",
+ "name": "FinancialAD 012 frozen lifetime-matched benign evaluation all30",
+ "work": "FinancialAD-LOB",
+ "spec": {
+  "workdir": ".",
+  "env": {
+   "OMP_NUM_THREADS": "1",
+   "MKL_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": "1",
+   "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "resources": {
+   "gpus": 0,
+   "gpu_mem_gb": 0,
+   "exclusive_gpu": false,
+   "cpus": 2,
+   "ram_gb": 6,
+   "disk_gb": 1,
+   "gpu_models": [],
+   "requires": []
+  },
+  "data": [],
+  "limits": {
+   "max_hours": 1,
+   "max_usd": 0,
+   "max_attempts": 1,
+   "max_wait_hours": 24
+  },
+  "placement": {
+   "prefer": [],
+   "avoid": [],
+   "never": [],
+   "allow_rent": false,
+   "target": "kaggle"
+  },
+  "idempotent": true,
+  "depends_on": [
+   "j-1127-02f40d",
+   "j-1127-0d03c9",
+   "j-1127-bd6422",
+   "j-1127-d6ea5e",
+   "j-1127-f8100c",
+   "j-1127-d720d4",
+   "j-1127-30d90c",
+   "j-1127-d406c2"
+  ],
+  "priority": 0,
+  "name": "FinancialAD 012 frozen lifetime-matched benign evaluation all30",
+  "work": "FinancialAD-LOB",
+  "code": {
+   "github": "SansaZheng/FinancialAD-LOB",
+   "commit": "bb3e283feb833862b302069a5f5b669b3184f0ff"
+  },
+  "command": [
+   "bash",
+   "-lc",
+   "set -euo pipefail\npython3 -m scripts.evaluate_lifetime_challenge --root results/cq-012 --challenge results/cq-012/j-1127-d406c2/challenge/challenge.npz --output \"$CQ_OUTPUT_DIR/challenge-scores\" --protocol configs/012-preregistered.json\ncp \"$CQ_OUTPUT_DIR/challenge-scores/progress.txt\" \"$CQ_OUTPUT_DIR/progress.txt\""
+  ],
+  "outputs": {
+   "dest": "/Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/012-frozen-lifetime",
+   "expect": [
+    {
+     "path": "challenge-scores/report.json",
+     "contains": "\"status\": \"complete\""
+    },
+    {
+     "path": "progress.txt",
+     "contains": "30/30 complete"
+    }
+   ],
+   "progress": {
+    "path": "progress.txt",
+    "stall_min": 55
+   },
+   "direct": false
+  }
+ },
+ "spec_sha": "ef1c219de67a1fe08c6b436ed5bea8b001b91d47efba83427895da3aae826284",
+ "agent_id": "codex-01a0f935-e6de-7040-9b12-1bde4c3ffa9c",
+ "state": "failed",
+ "reason": "Kaggle: exit 1: lements: 46 / 15468 (0.297%)\nMax absolute difference among violations: 0.05362534\nMax relative difference among violations: 0.94485742\n ACTUAL: array([0.000652, 0.001161, 0.000647, ..., 0.0019  , 0.001019, 0.001423])\n DESIRED: array([0.000652, 0.001161, 0.000647, ..., 0.0019  , 0.001019, 0.001423])\n",
+ "host": "kaggle",
+ "gpu": null,
+ "priority": 0,
+ "attempts": 1,
+ "lease_id": "kaggle",
+ "lease_until": 1795888554.688847,
+ "created": 1795802020.5934982,
+ "updated": 1795802200.91583,
+ "started": 1795802154.688847,
+ "finished": 1795802191.10699,
+ "exit_code": null,
+ "detail": null,
+ "avoid": {},
+ "attempt_dir": "/Users/sudingli/.local/share/cq/kaggle/results/j-1128-1a111a",
+ "last_hb": 1795802154.688847,
+ "progress": null,
+ "progress_at": null,
+ "gpu_mem_mib": null,
+ "gpu_pids": null,
+ "limit_rev": null,
+ "mem_peak_mib": null,
+ "shared_max": null,
+ "shared_sum": null,
+ "hb_n": null,
+ "brief": {
+  "id": "j-1128-1a111a",
+  "name": "FinancialAD 012 frozen lifetime-matched benign evaluation all30",
+  "work": "FinancialAD-LOB",
+  "state": "failed",
+  "host": "kaggle",
+  "agent_id": "codex-01a0f935-e6de-7040-9b12-1bde4c3ffa9c",
+  "attempt_dir": "/Users/sudingli/.local/share/cq/kaggle/results/j-1128-1a111a",
+  "last_heartbeat_s": 714,
+  "progress_lines": null,
+  "avoiding": [],
+  "gpu": null,
+  "agent": "repo",
+  "reason": "Kaggle: exit 1: lements: 46 / 15468 (0.297%)\nMax absolute difference among violations: 0.05362534\nMax relative difference among violations: 0.94485742\n ACTUAL: array([0.000652, 0.001161, 0.000647, ..., 0.0019  , 0.001019, 0.001423])\n DESIRED: array([0.000652, 0.001161, 0.000647, ..., 0.0019  , 0.001019, 0.001423])\n",
+  "attempts": 1,
+  "submitted": "2026-11-27T17:53:40Z",
+  "started": "2026-11-27T17:55:54Z",
+  "phase": "done",
+  "provider_status": "COMPLETE",
+  "provider_error": null,
+  "colab_metering": null,
+  "execution": null,
+  "transport_errors": null,
+  "first_transport_error": null,
+  "collection": null,
+  "progress": {
+   "log_age_seconds": null,
+   "stage_age_seconds": null
+  }
+ },
+ "staging": null,
+ "dispatch": null,
+ "ram": null
+}
