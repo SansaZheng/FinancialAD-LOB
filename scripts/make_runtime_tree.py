@@ -39,8 +39,19 @@ def make(source,keep,receipt,code_only=False):
         commit=git('-c','user.name=Codex','-c','user.email=codex@openai.com','commit-tree',tree,'-p',source,
                    '-m','Execution-only tree: unchanged code plus registered benchmark input',local_env=isolated)
     if git('write-tree')!=before:raise RuntimeError('Main index unexpectedly changed')
-    canonical={p:git('rev-parse',source+':'+p) for p in paths if p not in removed}
-    execution={p:git('rev-parse',commit+':'+p) for p in canonical}
+    # Compare tree metadata in two bounded reads. Resolving every blob in a
+    # separate Git process is unnecessarily slow on a memory-constrained Mac.
+    # Deliberately omit -l: requesting blob sizes hydrates a partial clone.
+    def blobs(ref):
+        result={}
+        for entry in git('ls-tree','-r','-z',ref).split('\0'):
+            if not entry:continue
+            metadata,path=entry.split('\t',1)
+            result[path]=metadata.split()[2]
+        return result
+    excluded=set(removed)
+    canonical={p:h for p,h in blobs(source).items() if p not in excluded}
+    execution=blobs(commit)
     if canonical!=execution:raise RuntimeError('Execution-tree content differs')
     report=dict(source_commit=source,runtime_commit=commit,runtime_tree=tree,keep_results=keep,
                 unchanged_retained_paths=len(canonical),removed_result_paths=removed,

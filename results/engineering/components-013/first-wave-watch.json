@@ -23,18 +23,21 @@
     },
     {
       "id": "j-1128-ddeeec",
-      "state": "running",
-      "reason": null,
+      "state": "done",
+      "reason": "outputs verified (Kaggle, 0.70 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1128-ddeeec/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/013-combined-PEKAO",
       "started": 1795815895.594657,
-      "finished": null
+      "finished": 1795818367.110141
     },
     {
       "id": "j-1128-b9362a",
-      "state": "running",
-      "reason": null,
+      "state": "done",
+      "reason": "outputs verified (Kaggle, 0.72 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1128-b9362a/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/013-combined-PKNORLEN",
       "started": 1795815895.594657,
-      "finished": null
+      "finished": 1795818464.071776
     }
   ],
-  "fetched": []
+  "fetched": [
+    "j-1128-b9362a",
+    "j-1128-ddeeec"
+  ]
 }

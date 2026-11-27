@@ -19,3 +19,7 @@ Prior012completed findings remain in paper/012-results.md and workflow/archive/0
 2026-11-28T05:45:13.894171+08:00: Pilot completes1/30runs,14/420evaluations. Independent audit passes; Mac frozen reload has exactfeature/embeddinghashes, maxscoreerror1.0000000827e-8 onlycascade_ocsvm,0thresholdflips, withinpredeclared1e-7tolerance. CQCPUactualreload j-1128-c6a269 queued. Allremaining29fold-seeds are now submitted in6batches; IDs in cq/013-primary-jobs.json. CQ only reserves budget on placement, so queued requests can exceed simultaneous reservations; scheduler must enforce remaining budget before starting them. Provider concurrency2notebooks. Preliminarydate-seed0macroAP:baseHGB.49735,perlevel80.50402,moments88.82748,all488.83088,MLPall.68438,cascade.47177,sharedBCE.47265. Do not change scientific configuration from these scores.
 
 中文结论：真实模型首组重载和独立审计已通过；初步收益主要来自含跨档汇总的统计特征，完整组件是否稳定增加收益仍待全部实验。
+
+2026-11-28T06:37:37.402384+08:00: PEKAO/PKNORLEN primary batches j-1128-ddeeec,j-1128-b9362a complete and archived at a622930. Both five-seed batches pass Mac frozen reload and independent audits. Totalcompleted11/30,154/420; actualCQCPUreload groupA j-1128-f6f63a queued with10frozenfold-seeds. NextPKOBP/PZU GPUbatchesrunning; date/KGHMqueued.
+
+中文结论：已完成并核验11组正式训练，剩余矩阵和CQCPU全覆盖重载继续进行。
