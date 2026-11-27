@@ -23,8 +23,9 @@ class LifetimeChallengeTests(unittest.TestCase):
   from lobbench.direct_run import run
   from scripts.evaluate_lifetime_challenge import evaluate
   with tempfile.TemporaryDirectory() as tmp:
-   root=Path(tmp);data=fixture();dataset=root/'fixture.npz';np.savez_compressed(dataset,**data)
+   root=Path(tmp);data=fixture();data['kind']=np.where(data['y']==0,'benign_burst','layered');dataset=root/'fixture.npz';np.savez_compressed(dataset,**data)
    protocol=Path('configs/012-preregistered.json');run(dataset,root/'models'/'date-s0','date','date',0,protocol,engineering=True)
    pred=np.load(root/'models/date-s0/hgb-predictions.npz');lookup={v:i for i,v in enumerate(data['id'])};ix=np.array([lookup[v] for v in pred['id']]);challenge=root/'challenge.npz';np.savez_compressed(challenge,**{k:v[ix] for k,v in data.items()})
    r=evaluate(root/'models',challenge,root/'scores',protocol,engineering=True);self.assertEqual(r['status'],'engineering_only')
-   for s in r['summary']:self.assertAlmostEqual(s['primary_macro_ap'],s['challenge_macro_ap'])
+   for s in r['summary']:
+    self.assertAlmostEqual(s['primary_macro_ap'],s['challenge_macro_ap']);self.assertAlmostEqual(s['primary_benign_fpr'],s['challenge_benign_fpr'])

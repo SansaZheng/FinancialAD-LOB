@@ -1,0 +1,20 @@
+{
+  "shards": [
+    {
+      "cq_job": "j-1127-d4d017",
+      "audit_path": "results/cq-012/j-1127-d4d017/full-sessions/audit.json",
+      "audit_sha256": "1bf5b7a96cdf22e74c7319c960c28addbfaddf98aff53408a8fc77b5b6d0633d"
+    },
+    {
+      "cq_job": "j-1127-636ebd",
+      "audit_path": "results/cq-012/j-1127-636ebd/full-sessions/audit.json",
+      "audit_sha256": "24ca6be78b0616712fc577e4f90a9315c07b2afde35ac6f2b74c9483f7d9eea3"
+    },
+    {
+      "cq_job": "j-1127-d531e0",
+      "audit_path": "results/cq-012/j-1127-d531e0/full-sessions/audit.json",
+      "audit_sha256": "40d274400647bc3969c5e6ec1ad3ef1f8edcb503f567a8a4ee023000077d5ad4"
+    }
+  ],
+  "note": "Supplementary provenance: source-audit.json merges all three shards; its inherited cq_job field names the first shard, not the sole source. Original audited files are preserved unchanged."
+}

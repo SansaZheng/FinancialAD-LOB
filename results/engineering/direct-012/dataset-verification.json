@@ -1,0 +1,329 @@
+{
+  "passed": true,
+  "dataset_sha256": "01213ddbaf0ffc19d31d43ce4793839031c283b3ef241abc6a21b31472cc8d2d",
+  "totals": {
+    "windows": 51118,
+    "positive": 2539,
+    "benign_controls": 2459,
+    "invalid_source_windows": 796,
+    "marketability_censored": 73
+  },
+  "shape": {
+    "raw": [
+      51118,
+      25,
+      20
+    ],
+    "manual": [
+      51118,
+      25,
+      13
+    ],
+    "aligned": [
+      51118,
+      25,
+      40
+    ],
+    "rank": [
+      51118,
+      25,
+      40
+    ],
+    "y": [
+      51118
+    ],
+    "stock": [
+      51118
+    ],
+    "date": [
+      51118
+    ],
+    "id": [
+      51118
+    ],
+    "kind": [
+      51118
+    ],
+    "start_ns": [
+      51118
+    ],
+    "end_ns": [
+      51118
+    ]
+  },
+  "independent_replay": {
+    "passed": true,
+    "partitions": [
+      {
+        "stock": "KGHM",
+        "date": "2017-01-19",
+        "all_daily_rows_replayed": 146624,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "KGHM",
+        "date": "2017-01-20",
+        "all_daily_rows_replayed": 76759,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "KGHM",
+        "date": "2017-01-23",
+        "all_daily_rows_replayed": 62981,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "KGHM",
+        "date": "2017-01-24",
+        "all_daily_rows_replayed": 119771,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "KGHM",
+        "date": "2017-01-25",
+        "all_daily_rows_replayed": 139723,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "KGHM",
+        "date": "2017-01-26",
+        "all_daily_rows_replayed": 167726,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "KGHM",
+        "date": "2017-01-27",
+        "all_daily_rows_replayed": 151902,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "KGHM",
+        "date": "2017-01-30",
+        "all_daily_rows_replayed": 132606,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "KGHM",
+        "date": "2017-01-31",
+        "all_daily_rows_replayed": 112705,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PEKAO",
+        "date": "2017-01-19",
+        "all_daily_rows_replayed": 29967,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PEKAO",
+        "date": "2017-01-20",
+        "all_daily_rows_replayed": 29653,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PEKAO",
+        "date": "2017-01-23",
+        "all_daily_rows_replayed": 21372,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PEKAO",
+        "date": "2017-01-24",
+        "all_daily_rows_replayed": 29598,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PEKAO",
+        "date": "2017-01-25",
+        "all_daily_rows_replayed": 63994,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PEKAO",
+        "date": "2017-01-26",
+        "all_daily_rows_replayed": 57855,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PEKAO",
+        "date": "2017-01-27",
+        "all_daily_rows_replayed": 44226,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PEKAO",
+        "date": "2017-01-30",
+        "all_daily_rows_replayed": 50527,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PEKAO",
+        "date": "2017-01-31",
+        "all_daily_rows_replayed": 41967,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKNORLEN",
+        "date": "2017-01-19",
+        "all_daily_rows_replayed": 46683,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKNORLEN",
+        "date": "2017-01-20",
+        "all_daily_rows_replayed": 209130,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKNORLEN",
+        "date": "2017-01-23",
+        "all_daily_rows_replayed": 85990,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKNORLEN",
+        "date": "2017-01-24",
+        "all_daily_rows_replayed": 103103,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKNORLEN",
+        "date": "2017-01-25",
+        "all_daily_rows_replayed": 109808,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKNORLEN",
+        "date": "2017-01-26",
+        "all_daily_rows_replayed": 119636,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKNORLEN",
+        "date": "2017-01-27",
+        "all_daily_rows_replayed": 72390,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKNORLEN",
+        "date": "2017-01-30",
+        "all_daily_rows_replayed": 82736,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKNORLEN",
+        "date": "2017-01-31",
+        "all_daily_rows_replayed": 55958,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKOBP",
+        "date": "2017-01-19",
+        "all_daily_rows_replayed": 67361,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKOBP",
+        "date": "2017-01-20",
+        "all_daily_rows_replayed": 59488,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKOBP",
+        "date": "2017-01-23",
+        "all_daily_rows_replayed": 46937,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKOBP",
+        "date": "2017-01-24",
+        "all_daily_rows_replayed": 72848,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKOBP",
+        "date": "2017-01-25",
+        "all_daily_rows_replayed": 95816,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKOBP",
+        "date": "2017-01-26",
+        "all_daily_rows_replayed": 96948,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKOBP",
+        "date": "2017-01-27",
+        "all_daily_rows_replayed": 71132,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKOBP",
+        "date": "2017-01-30",
+        "all_daily_rows_replayed": 57327,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PKOBP",
+        "date": "2017-01-31",
+        "all_daily_rows_replayed": 63597,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PZU",
+        "date": "2017-01-19",
+        "all_daily_rows_replayed": 46123,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PZU",
+        "date": "2017-01-20",
+        "all_daily_rows_replayed": 48489,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PZU",
+        "date": "2017-01-23",
+        "all_daily_rows_replayed": 26856,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PZU",
+        "date": "2017-01-24",
+        "all_daily_rows_replayed": 46627,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PZU",
+        "date": "2017-01-25",
+        "all_daily_rows_replayed": 75362,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PZU",
+        "date": "2017-01-26",
+        "all_daily_rows_replayed": 64577,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PZU",
+        "date": "2017-01-27",
+        "all_daily_rows_replayed": 50423,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PZU",
+        "date": "2017-01-30",
+        "all_daily_rows_replayed": 38239,
+        "independent_snapshots_verified": 100
+      },
+      {
+        "stock": "PZU",
+        "date": "2017-01-31",
+        "all_daily_rows_replayed": 45604,
+        "independent_snapshots_verified": 100
+      }
+    ]
+  }
+}
