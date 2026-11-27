@@ -15,3 +15,5 @@ Pre-fit component audit: moments88 includes8pooled coordinates; added hgb_perlev
 2026-11-28T04:47:29.717640+08:00: All four sources complete:60stock-days,12freshdates,4,712,637rows; all hashes/counts pass source-check-60.json. IndependentCQCPUqualification j-1128-86e8b4 passes14numeric exports; Mac reload also passes after bitwise-equivalent bounded-memory batching. These are synthetic qualifications, not full-data scientific results. Before any scientific fit, normalize/interactions now process bounded512-row batches and unused rank arrays are omitted; bounded-memory-parity-tests.log verifies unchanged arithmetic. Next: CQ full replay+benchmark, whole-cohort input hash gate, then frozen14method pilot.
 
 中文结论：源数据齐备，三环境合成模型重载通过；完整数据重放和正式实验尚待执行。
+
+CQ full replay and benchmark submitted as j-1128-e7a9cf, using runtime dbc90e900e8c927cdaeeb1a43819c7957c317715 and source794dc278d6fe1ae628fa7470558ff7f7e1d2f886. Canonical main archive6f0f5dc includes all sources and qualification models. Compute check:6.51freeGPUhours, no paid resources.
