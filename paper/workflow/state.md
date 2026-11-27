@@ -7,3 +7,11 @@ Macro stock-day AP (date / combined): HGB .5513/.5275, interaction HGB .8605/.85
 Active prompt prompts/012-direct-hard-negative.md; route lob-direct-hard-negative-v3; CCF A aspiration, venue unset. All seven primary scoring jobs done and fetched. Primary archive independently verified on remote main7972935c83d8ae3c079f4ed1e0d15eb4ed96d40d. Next: await frozen CQ evaluation, independently verify, finish bilingual report. No paid rental; others' jobs untouched. Historical data retained on GitHub/CQ; Mac sparse partial clone reclaimed 707,383,296 allocated bytes.
 
 中文结论：完整主实验支持增强特征提升梯度提升基线，但不支持神经模型优越性；继续完成更难良性对照评估。
+
+Reload incident 2026-11-27T18:09:36.458159+00:00: CPU challenge job j-1128-1a111a failed unchanged-row score parity; no accepted challenge metrics. Full available stderr and scheduler state archived. Local diagnostic finds ordinary HGB/logistic parity but enhanced-HGB differences. Exact numerical cause remains unresolved. Matching-CUDA retry prepared, retaining all frozen estimators, input features, thresholds and tolerance; three reload/marginal/tamper tests passed after diagnostics changes. Primary code hashes remain unchanged.
+
+中文结论：重载一致性问题尚待匹配环境确认，不能将失败尝试计为挑战完成。
+
+Matching-runtime retry submitted: j-1128-0866b5, runtime420329687fd442278304ad43b9bc58524365a67d, free Kaggle GPU, max1h. Collector completion alone is insufficient; require success=true and complete independent verification.
+
+中文结论：匹配环境重试已提交，原评分、失败记录和验收阈值全部保留。

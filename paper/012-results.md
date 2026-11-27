@@ -1,6 +1,6 @@
 # Direct scores and hard benign controls
 
-Status: all 30 primary fold-seeds / 300 selected evaluations complete and independently verified. Frozen-model matched-lifetime challenge CQ j-1128-1a111a is pending. Complete primary evidence: results/reports/012-complete; receipt results/engineering/direct-012/complete-verification.json. Primary data and every selected model are archived on GitHub main7972935.
+Status: all 30 primary fold-seeds / 300 selected evaluations complete and independently verified. First CPU challenge attempt j-1128-1a111a failed unchanged-input reload parity; no accepted challenge metrics. Matching-CUDA retry j-1128-0866b5 is pending. Complete primary evidence: results/reports/012-complete; receipt results/engineering/direct-012/complete-verification.json. Primary data and every selected model are archived on GitHub main7972935.
 
 The previous complete experiment did not establish superiority over strong tabular baselines. Stage011's candidate mean fold-pooled AP was0.4369 on held-out dates and0.3732 on held-out dates plus stocks, compared with HGB0.5161 and0.4429. Its negative results remain archived. Stage012 tests a new, frozen hypothesis on nine additional source dates rather than relabeling the earlier outcomes.
 
@@ -42,6 +42,8 @@ Feature-assisted HGB with hard weights exceeds ordinary HGB by0.3097 AP on held-
 The hard-weighting increment over feature-assisted HGB without hard weights is only0.0006/0.0062; exploratory paired95%intervals include zero in both regimes. The preregistered neural candidate loses0.0998/0.1426AP to feature-assisted HGB with hard weights, with negative deltas in all15stock-days. Mining captures97.49–98.96%of training benign controls, but successful mining composition does not establish improved generalization. Metadata joins for that diagnostic occur only after fitting.
 
 Combined-fold HGB seed SD is exactly zero: all7,118–10,682eligible training samples are below the12,000cap, and deterministic boosting repeats identical scores. These are five registered executions, not five independent market samples. Chronological training samples12,000of14,902eligible windows and varies across seeds. Neural initialization still varies. The bootstrap averages seeds before resampling three dates and stocks; intervals remain exploratory, not a broad population guarantee.
+
+A reload portability issue is explicit: ordinary HGB/logistic scores reproduce, but the first CPU challenge attempt failed enhanced-feature HGB unchanged-input parity. The local diagnostic also reproduces enhanced-HGB discrepancies. The exact numerical source is not established; nonzero feature variance does not rule out tree split sensitivity to small floating-point changes. No tolerance is loosened and no failed challenge result is accepted. Matching the original training environment is being tested; models, feature formulas and thresholds stay frozen.
 
 中文说明：新增九个日期、五只股票的完整日数据已取得并验证，直接监督和难负例矩阵已全部完成。收益主要来自增强特征配合梯度提升；难负例加权增益有限，神经候选仍落后。下一项已登记的良性对照保持模型、参数、阈值不变，只改变对照生成方式。
 
