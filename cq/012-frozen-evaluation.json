@@ -1,0 +1,62 @@
+{
+  "name": "FinancialAD 012 frozen lifetime-matched benign evaluation all30",
+  "work": "FinancialAD-LOB",
+  "code": {
+    "github": "SansaZheng/FinancialAD-LOB",
+    "commit": "bb3e283feb833862b302069a5f5b669b3184f0ff"
+  },
+  "command": [
+    "bash",
+    "-lc",
+    "set -euo pipefail\npython3 -m scripts.evaluate_lifetime_challenge --root results/cq-012 --challenge results/cq-012/j-1127-d406c2/challenge/challenge.npz --output \"$CQ_OUTPUT_DIR/challenge-scores\" --protocol configs/012-preregistered.json\ncp \"$CQ_OUTPUT_DIR/challenge-scores/progress.txt\" \"$CQ_OUTPUT_DIR/progress.txt\""
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "resources": {
+    "gpus": 0,
+    "cpus": 2,
+    "ram_gb": 6,
+    "disk_gb": 1
+  },
+  "limits": {
+    "max_hours": 1,
+    "max_attempts": 1,
+    "max_usd": 0
+  },
+  "placement": {
+    "target": "kaggle",
+    "allow_rent": false
+  },
+  "outputs": {
+    "dest": "/Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/012-frozen-lifetime",
+    "expect": [
+      {
+        "path": "challenge-scores/report.json",
+        "contains": "\"status\": \"complete\""
+      },
+      {
+        "path": "progress.txt",
+        "contains": "30/30 complete"
+      }
+    ],
+    "progress": {
+      "path": "progress.txt",
+      "stall_min": 55
+    }
+  },
+  "idempotent": true,
+  "depends_on": [
+    "j-1127-02f40d",
+    "j-1127-0d03c9",
+    "j-1127-bd6422",
+    "j-1127-d6ea5e",
+    "j-1127-f8100c",
+    "j-1127-d720d4",
+    "j-1127-30d90c",
+    "j-1127-d406c2"
+  ]
+}
