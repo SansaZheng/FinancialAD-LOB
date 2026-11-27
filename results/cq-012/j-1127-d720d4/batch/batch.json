@@ -1,0 +1,51 @@
+{
+  "status": "complete",
+  "tasks": [
+    {
+      "regime": "combined",
+      "fold": "combined-PKOBP",
+      "seed": 1,
+      "returncode": 0,
+      "seconds": 979.4519906809999,
+      "folder": "combined-PKOBP-s1",
+      "gpu_id": 1
+    },
+    {
+      "regime": "combined",
+      "fold": "combined-PKOBP",
+      "seed": 0,
+      "returncode": 0,
+      "seconds": 979.546720255,
+      "folder": "combined-PKOBP-s0",
+      "gpu_id": 0
+    },
+    {
+      "regime": "combined",
+      "fold": "combined-PKOBP",
+      "seed": 3,
+      "returncode": 0,
+      "seconds": 961.6495931239997,
+      "folder": "combined-PKOBP-s3",
+      "gpu_id": 0
+    },
+    {
+      "regime": "combined",
+      "fold": "combined-PKOBP",
+      "seed": 2,
+      "returncode": 0,
+      "seconds": 964.7178959469998,
+      "folder": "combined-PKOBP-s2",
+      "gpu_id": 1
+    },
+    {
+      "regime": "combined",
+      "fold": "combined-PKOBP",
+      "seed": 4,
+      "returncode": 0,
+      "seconds": 950.4308408289999,
+      "folder": "combined-PKOBP-s4",
+      "gpu_id": 0
+    }
+  ],
+  "total": 5
+}

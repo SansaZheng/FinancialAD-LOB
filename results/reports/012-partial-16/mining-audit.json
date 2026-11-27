@@ -1,0 +1,331 @@
+{
+  "rows": [
+    {
+      "fold": "date",
+      "seed": 0,
+      "training_normals": 11430,
+      "hard_normals": 1143,
+      "normal_benign_fraction": 0.048731408573928256,
+      "hard_benign_fraction": 0.48031496062992124,
+      "benign_capture_fraction": 0.9856373429084381,
+      "hard_source_groups": {
+        "KGHM|2017-01-19": 178,
+        "KGHM|2017-01-20": 112,
+        "KGHM|2017-01-23": 45,
+        "PEKAO|2017-01-19": 17,
+        "PEKAO|2017-01-20": 24,
+        "PEKAO|2017-01-23": 20,
+        "PKNORLEN|2017-01-19": 78,
+        "PKNORLEN|2017-01-20": 235,
+        "PKNORLEN|2017-01-23": 151,
+        "PKOBP|2017-01-19": 54,
+        "PKOBP|2017-01-20": 57,
+        "PKOBP|2017-01-23": 42,
+        "PZU|2017-01-19": 60,
+        "PZU|2017-01-20": 47,
+        "PZU|2017-01-23": 23
+      }
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 0,
+      "training_normals": 8529,
+      "hard_normals": 853,
+      "normal_benign_fraction": 0.04971274475319498,
+      "hard_benign_fraction": 0.4900351699882767,
+      "benign_capture_fraction": 0.9858490566037735,
+      "hard_source_groups": {
+        "PEKAO|2017-01-19": 20,
+        "PEKAO|2017-01-20": 32,
+        "PEKAO|2017-01-23": 23,
+        "PKNORLEN|2017-01-19": 125,
+        "PKNORLEN|2017-01-20": 281,
+        "PKNORLEN|2017-01-23": 169,
+        "PKOBP|2017-01-19": 82,
+        "PKOBP|2017-01-20": 75,
+        "PKOBP|2017-01-23": 46
+      }
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 1,
+      "training_normals": 8529,
+      "hard_normals": 853,
+      "normal_benign_fraction": 0.04971274475319498,
+      "hard_benign_fraction": 0.4900351699882767,
+      "benign_capture_fraction": 0.9858490566037735,
+      "hard_source_groups": {
+        "PEKAO|2017-01-19": 20,
+        "PEKAO|2017-01-20": 32,
+        "PEKAO|2017-01-23": 23,
+        "PKNORLEN|2017-01-19": 125,
+        "PKNORLEN|2017-01-20": 281,
+        "PKNORLEN|2017-01-23": 169,
+        "PKOBP|2017-01-19": 82,
+        "PKOBP|2017-01-20": 75,
+        "PKOBP|2017-01-23": 46
+      }
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 2,
+      "training_normals": 8529,
+      "hard_normals": 853,
+      "normal_benign_fraction": 0.04971274475319498,
+      "hard_benign_fraction": 0.4900351699882767,
+      "benign_capture_fraction": 0.9858490566037735,
+      "hard_source_groups": {
+        "PEKAO|2017-01-19": 20,
+        "PEKAO|2017-01-20": 32,
+        "PEKAO|2017-01-23": 23,
+        "PKNORLEN|2017-01-19": 125,
+        "PKNORLEN|2017-01-20": 281,
+        "PKNORLEN|2017-01-23": 169,
+        "PKOBP|2017-01-19": 82,
+        "PKOBP|2017-01-20": 75,
+        "PKOBP|2017-01-23": 46
+      }
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 3,
+      "training_normals": 8529,
+      "hard_normals": 853,
+      "normal_benign_fraction": 0.04971274475319498,
+      "hard_benign_fraction": 0.4900351699882767,
+      "benign_capture_fraction": 0.9858490566037735,
+      "hard_source_groups": {
+        "PEKAO|2017-01-19": 20,
+        "PEKAO|2017-01-20": 32,
+        "PEKAO|2017-01-23": 23,
+        "PKNORLEN|2017-01-19": 125,
+        "PKNORLEN|2017-01-20": 281,
+        "PKNORLEN|2017-01-23": 169,
+        "PKOBP|2017-01-19": 82,
+        "PKOBP|2017-01-20": 75,
+        "PKOBP|2017-01-23": 46
+      }
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 4,
+      "training_normals": 8529,
+      "hard_normals": 853,
+      "normal_benign_fraction": 0.04971274475319498,
+      "hard_benign_fraction": 0.4900351699882767,
+      "benign_capture_fraction": 0.9858490566037735,
+      "hard_source_groups": {
+        "PEKAO|2017-01-19": 20,
+        "PEKAO|2017-01-20": 32,
+        "PEKAO|2017-01-23": 23,
+        "PKNORLEN|2017-01-19": 125,
+        "PKNORLEN|2017-01-20": 281,
+        "PKNORLEN|2017-01-23": 169,
+        "PKOBP|2017-01-19": 82,
+        "PKOBP|2017-01-20": 75,
+        "PKOBP|2017-01-23": 46
+      }
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 0,
+      "training_normals": 10198,
+      "hard_normals": 1020,
+      "normal_benign_fraction": 0.045499117474014514,
+      "hard_benign_fraction": 0.44803921568627453,
+      "benign_capture_fraction": 0.9849137931034483,
+      "hard_source_groups": {
+        "KGHM|2017-01-19": 216,
+        "KGHM|2017-01-20": 130,
+        "KGHM|2017-01-23": 45,
+        "PEKAO|2017-01-19": 25,
+        "PEKAO|2017-01-20": 32,
+        "PEKAO|2017-01-23": 22,
+        "PKNORLEN|2017-01-19": 100,
+        "PKNORLEN|2017-01-20": 267,
+        "PKNORLEN|2017-01-23": 183
+      }
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 1,
+      "training_normals": 10198,
+      "hard_normals": 1020,
+      "normal_benign_fraction": 0.045499117474014514,
+      "hard_benign_fraction": 0.44803921568627453,
+      "benign_capture_fraction": 0.9849137931034483,
+      "hard_source_groups": {
+        "KGHM|2017-01-19": 216,
+        "KGHM|2017-01-20": 130,
+        "KGHM|2017-01-23": 45,
+        "PEKAO|2017-01-19": 25,
+        "PEKAO|2017-01-20": 32,
+        "PEKAO|2017-01-23": 22,
+        "PKNORLEN|2017-01-19": 100,
+        "PKNORLEN|2017-01-20": 267,
+        "PKNORLEN|2017-01-23": 183
+      }
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 2,
+      "training_normals": 10198,
+      "hard_normals": 1020,
+      "normal_benign_fraction": 0.045499117474014514,
+      "hard_benign_fraction": 0.44803921568627453,
+      "benign_capture_fraction": 0.9849137931034483,
+      "hard_source_groups": {
+        "KGHM|2017-01-19": 216,
+        "KGHM|2017-01-20": 130,
+        "KGHM|2017-01-23": 45,
+        "PEKAO|2017-01-19": 25,
+        "PEKAO|2017-01-20": 32,
+        "PEKAO|2017-01-23": 22,
+        "PKNORLEN|2017-01-19": 100,
+        "PKNORLEN|2017-01-20": 267,
+        "PKNORLEN|2017-01-23": 183
+      }
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 3,
+      "training_normals": 10198,
+      "hard_normals": 1020,
+      "normal_benign_fraction": 0.045499117474014514,
+      "hard_benign_fraction": 0.44803921568627453,
+      "benign_capture_fraction": 0.9849137931034483,
+      "hard_source_groups": {
+        "KGHM|2017-01-19": 216,
+        "KGHM|2017-01-20": 130,
+        "KGHM|2017-01-23": 45,
+        "PEKAO|2017-01-19": 25,
+        "PEKAO|2017-01-20": 32,
+        "PEKAO|2017-01-23": 22,
+        "PKNORLEN|2017-01-19": 100,
+        "PKNORLEN|2017-01-20": 267,
+        "PKNORLEN|2017-01-23": 183
+      }
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 4,
+      "training_normals": 10198,
+      "hard_normals": 1020,
+      "normal_benign_fraction": 0.045499117474014514,
+      "hard_benign_fraction": 0.44803921568627453,
+      "benign_capture_fraction": 0.9849137931034483,
+      "hard_source_groups": {
+        "KGHM|2017-01-19": 216,
+        "KGHM|2017-01-20": 130,
+        "KGHM|2017-01-23": 45,
+        "PEKAO|2017-01-19": 25,
+        "PEKAO|2017-01-20": 32,
+        "PEKAO|2017-01-23": 22,
+        "PKNORLEN|2017-01-19": 100,
+        "PKNORLEN|2017-01-20": 267,
+        "PKNORLEN|2017-01-23": 183
+      }
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 0,
+      "training_normals": 6779,
+      "hard_normals": 678,
+      "normal_benign_fraction": 0.047057088066086446,
+      "hard_benign_fraction": 0.45870206489675514,
+      "benign_capture_fraction": 0.9749216300940439,
+      "hard_source_groups": {
+        "KGHM|2017-01-19": 236,
+        "KGHM|2017-01-20": 131,
+        "KGHM|2017-01-23": 43,
+        "PEKAO|2017-01-19": 32,
+        "PEKAO|2017-01-20": 41,
+        "PEKAO|2017-01-23": 23,
+        "PZU|2017-01-19": 77,
+        "PZU|2017-01-20": 66,
+        "PZU|2017-01-23": 29
+      }
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 1,
+      "training_normals": 6779,
+      "hard_normals": 678,
+      "normal_benign_fraction": 0.047057088066086446,
+      "hard_benign_fraction": 0.45870206489675514,
+      "benign_capture_fraction": 0.9749216300940439,
+      "hard_source_groups": {
+        "KGHM|2017-01-19": 236,
+        "KGHM|2017-01-20": 131,
+        "KGHM|2017-01-23": 43,
+        "PEKAO|2017-01-19": 32,
+        "PEKAO|2017-01-20": 41,
+        "PEKAO|2017-01-23": 23,
+        "PZU|2017-01-19": 77,
+        "PZU|2017-01-20": 66,
+        "PZU|2017-01-23": 29
+      }
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 2,
+      "training_normals": 6779,
+      "hard_normals": 678,
+      "normal_benign_fraction": 0.047057088066086446,
+      "hard_benign_fraction": 0.45870206489675514,
+      "benign_capture_fraction": 0.9749216300940439,
+      "hard_source_groups": {
+        "KGHM|2017-01-19": 236,
+        "KGHM|2017-01-20": 131,
+        "KGHM|2017-01-23": 43,
+        "PEKAO|2017-01-19": 32,
+        "PEKAO|2017-01-20": 41,
+        "PEKAO|2017-01-23": 23,
+        "PZU|2017-01-19": 77,
+        "PZU|2017-01-20": 66,
+        "PZU|2017-01-23": 29
+      }
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 3,
+      "training_normals": 6779,
+      "hard_normals": 678,
+      "normal_benign_fraction": 0.047057088066086446,
+      "hard_benign_fraction": 0.45870206489675514,
+      "benign_capture_fraction": 0.9749216300940439,
+      "hard_source_groups": {
+        "KGHM|2017-01-19": 236,
+        "KGHM|2017-01-20": 131,
+        "KGHM|2017-01-23": 43,
+        "PEKAO|2017-01-19": 32,
+        "PEKAO|2017-01-20": 41,
+        "PEKAO|2017-01-23": 23,
+        "PZU|2017-01-19": 77,
+        "PZU|2017-01-20": 66,
+        "PZU|2017-01-23": 29
+      }
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 4,
+      "training_normals": 6779,
+      "hard_normals": 678,
+      "normal_benign_fraction": 0.047057088066086446,
+      "hard_benign_fraction": 0.45870206489675514,
+      "benign_capture_fraction": 0.9749216300940439,
+      "hard_source_groups": {
+        "KGHM|2017-01-19": 236,
+        "KGHM|2017-01-20": 131,
+        "KGHM|2017-01-23": 43,
+        "PEKAO|2017-01-19": 32,
+        "PEKAO|2017-01-20": 41,
+        "PEKAO|2017-01-23": 23,
+        "PZU|2017-01-19": 77,
+        "PZU|2017-01-20": 66,
+        "PZU|2017-01-23": 29
+      }
+    }
+  ],
+  "evidence": "Post-fit composition only; metadata excluded from training, OOF scoring, weighting and hyperparameter selection"
+}

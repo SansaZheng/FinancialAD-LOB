@@ -62,7 +62,7 @@ dependency versions and provenance. Use a fresh output directory per run.
 
 New code, docs, permitted selected daily partitions and provenance are committed here. Stage010 daily compressed files are individually at most4.1MB (38.6MB total), not whole annual archives. Full archive verification is not claimed; selected artifacts have SHA256 receipts.
 Large permitted artifacts require GitHub Releases/LFS and checksum receipts.
-Verified full-day working copies on the Mac have been removed using per-file Git skip-worktree flags; the Git objects and GitHub data remain. See migration/mac-working-copy-cleanup-010.json for paths, hashes and restoration commands. Raw LOBSTER redistribution rights are not assumed. The older Mac LOB data were
+Earlier verified working-copy cleanup used per-file Git skip-worktree flags. On2026-11-28 Asia/Singapore, the Mac checkout was replaced with a verified partial clone and sparse checkout: historical binary blobs remain on GitHub/CQ and are now fetched on demand. Code, documentation, audit records and current required stage012 inputs/models were checked byte-for-byte before replacement. See [migration verification](migration/slim-checkout-012.md) and its JSON receipt. Restore omitted archived folders with `git sparse-checkout add results/cq-XXX/JOB`; avoid globally hydrating the archive on a nearly full disk. Raw LOBSTER redistribution rights are not assumed. The older Mac LOB data were
 iCloud placeholders at inventory time (zero allocated data blocks); deleting
 them would not reclaim their apparent logical size and could remove cloud copies.
 Never delete sole or unverified copies, and never clean another project.
