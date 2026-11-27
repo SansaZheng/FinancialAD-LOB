@@ -33,6 +33,19 @@ def plot(report, output):
     for ext in ['png', 'pdf', 'svg']:
         fig.savefig(output.with_suffix('.' + ext), dpi=220)
     plt.close(fig)
+    chosen = ['gram factorial marginal','lag factorial marginal','moments factorial marginal','hgb_all minus hgb_moments','hgb_moments minus hgb_perlevel','shared_bce minus cascade_ocsvm','cascade_ocsvm minus cascade_no_scl']
+    labels = ['Gram family marginal','Lag family marginal','Moments family marginal','Full vs Moments88','Moments88 vs Per-level80','Shared BCE vs Cascade','SCL vs no SCL']
+    fig, axes = plt.subplots(1, 2, figsize=(12, 4.8), sharey=True, layout='constrained')
+    for ax, regime, title in zip(axes, ['date','combined'], ['Held-out dates','Held-out dates and stocks']):
+        rr = {r['contrast']:r for r in data['contrasts'] if r['regime']==regime}
+        for i, key in enumerate(chosen):
+            r=rr[key];v=r['mean_stock_day_ap_delta'];lo,hi=r['exploratory_95pct_interval']
+            ax.plot([lo,hi],[i,i],color='#526d9c',lw=2);ax.scatter(v,i,color='#187c80',s=30,zorder=3)
+        ax.axvline(0,color='#718096',ls='--',lw=1);ax.set_yticks(range(len(labels)),labels);ax.set_title(title);ax.set_xlabel('Paired macro AP difference');ax.grid(axis='x',alpha=.2)
+    axes[0].invert_yaxis()
+    fig.suptitle('Family ablations and matched-input contrasts\nSeed-averaged; six-date/stock bootstrap intervals are exploratory',fontsize=12)
+    for ext in ['png','pdf','svg']:fig.savefig(output.with_name(output.name+'-effects').with_suffix('.'+ext),dpi=220)
+    plt.close(fig)
 
 
 if __name__ == '__main__':
