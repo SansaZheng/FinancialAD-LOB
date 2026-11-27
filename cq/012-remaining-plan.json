@@ -1,0 +1,182 @@
+{
+  "status": "prepared_not_submitted",
+  "pilot": "j-1127-02f40d",
+  "pilot_retained": true,
+  "policy": "Select resource reservation and batch timeout only from measured pilot; do not alter algorithms or select based on test scores",
+  "remaining_fold_seeds": [
+    {
+      "fold": "date",
+      "seed": 1,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "date",
+      "seed": 2,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "date",
+      "seed": 3,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "date",
+      "seed": 4,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-KGHM",
+      "seed": 0,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-KGHM",
+      "seed": 1,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-KGHM",
+      "seed": 2,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-KGHM",
+      "seed": 3,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-KGHM",
+      "seed": 4,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seed": 0,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seed": 1,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seed": 2,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seed": 3,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seed": 4,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 0,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 1,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 2,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 3,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 4,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 0,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 1,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 2,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 3,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 4,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 0,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 1,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 2,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 3,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 4,
+      "status": "prepared_not_submitted",
+      "code_commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+    }
+  ]
+}

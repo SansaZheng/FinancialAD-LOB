@@ -1,0 +1,641 @@
+{
+  "remote_commit": "091c5c2adc11b053bf77a246b31827f6dac14864",
+  "verification": "SSH push and independent ls-remote equality confirmed; each local Git blob equals archived tree before unlink",
+  "timestamp": "2026-11-27T11:52:34.796702+00:00",
+  "files": [
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PKNORLEN-2017-01-23-orders.npz",
+      "git_blob": "f6cb515e52b9c1153f100bcbcadf0379a77792a1",
+      "sha256": "ac0604efee1832282b3f4823de26fdb3e5de638beb6a7ccbbd6e75419b139da2",
+      "bytes": 1616191,
+      "allocated": 1617920
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PZU-2017-01-19-book.npz",
+      "git_blob": "cc53cafbbf7a0c504911bc5e085c98b60f778748",
+      "sha256": "5cefbe30e395f6305d29dde66c43e14a423a44b29c916fcb90d6bcd5ac809250",
+      "bytes": 327273,
+      "allocated": 327680
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PEKAO-2017-01-19-orders.npz",
+      "git_blob": "787d0900a74251563b10f884a933325772f0431f",
+      "sha256": "c92d82b094ae0e682afba5125a0cd55b50f81c94efaa65ef77a938786a9072af",
+      "bytes": 570753,
+      "allocated": 573440
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PKNORLEN-2017-01-19-orders.npz",
+      "git_blob": "4548fad043727625bb284af79d66a0da98bd9025",
+      "sha256": "d6e5013fcdc75d34abde87f40392916792c15002a8ce756e4e3efc47e4ebc8d1",
+      "bytes": 865608,
+      "allocated": 868352
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/KGHM-2017-01-19-book.npz",
+      "git_blob": "34eb000bd433f145ba904e5ca17c2bd57c3a2de1",
+      "sha256": "fb5420db7c343fa825acf30a9a559c0c0a113218560e8310b0920f74e2607ff6",
+      "bytes": 1095194,
+      "allocated": 1097728
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PKOBP-2017-01-19-book.npz",
+      "git_blob": "73f47baea070f07ee37edcbe000efb151916c511",
+      "sha256": "2de60d6b46b8bab888f12930cafc250bd7e34d8d5804179811b61e02b7b0a41e",
+      "bytes": 487932,
+      "allocated": 491520
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PEKAO-2017-01-23-orders.npz",
+      "git_blob": "1d2c6ef756fba77d51ff1fa7356fdabc08a0824a",
+      "sha256": "0269c18ad6a7f4e4ac804d3145ac37c57217f8d875e807550048fab75dd0215d",
+      "bytes": 414481,
+      "allocated": 417792
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PZU-2017-01-23-orders.npz",
+      "git_blob": "1b543170cab60a33eb945542adef3deac77f96d6",
+      "sha256": "49fbead3a08a4341d1e69a45d626e7c143aaab4e04327404754a270b46e5b24a",
+      "bytes": 522739,
+      "allocated": 524288
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PKNORLEN-2017-01-23-book.npz",
+      "git_blob": "b5b7466e164872a189691c8a727c21c14e61a821",
+      "sha256": "adf07f5c0bd07e4cee74c0030220b90d29809f87a92234a5cc367a431d1c703a",
+      "bytes": 647941,
+      "allocated": 651264
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PEKAO-2017-01-23-book.npz",
+      "git_blob": "51839a6f75291a86c04d6c45ca9b9a402100b88d",
+      "sha256": "c92102dd102ffd86becbc4361b4351ebf2346bf6922a044d8dc67f5fb49ecf8d",
+      "bytes": 155714,
+      "allocated": 159744
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PZU-2017-01-19-orders.npz",
+      "git_blob": "d26fded582ee7c6cb272804aae3e51290377ce0e",
+      "sha256": "000288509b06ebc3bb5475de3a97a95097fda77527a2ef75c411993ec160da84",
+      "bytes": 874139,
+      "allocated": 876544
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/KGHM-2017-01-20-orders.npz",
+      "git_blob": "d1f81fe4f9b88d7222bdbca2a5ef48f70035cdd2",
+      "sha256": "df5857d9673f26ab9952eb0db3c76c9e95469d0d9ab13cba76b37596b0d17090",
+      "bytes": 1497016,
+      "allocated": 1499136
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PKOBP-2017-01-20-orders.npz",
+      "git_blob": "a394c6b2564542bc4e4845e7ca169cddaff05df6",
+      "sha256": "1234f1229b482f339b14f2b20f9b1b14977dee060f074059844af22fa445ac71",
+      "bytes": 1146284,
+      "allocated": 1146880
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PZU-2017-01-20-book.npz",
+      "git_blob": "24fa8e0dda3d80bbbc8e65e3b09d4ae0ad77d084",
+      "sha256": "69aa31e6e6ba7b0a5c84f36b03d93fd333cd6b9599f0e2e2e0203b9e4293432d",
+      "bytes": 352003,
+      "allocated": 352256
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PKOBP-2017-01-20-book.npz",
+      "git_blob": "45495f9526f4aeb014df56c46e9d1af2b43cc62a",
+      "sha256": "dff15def0c546926074809401ece70a3df9ce81c89bce912b0844799ad9f26e2",
+      "bytes": 420454,
+      "allocated": 421888
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/KGHM-2017-01-20-book.npz",
+      "git_blob": "f1100f53c354cbe8a3733756a0b69e5eccac402a",
+      "sha256": "4a0c514bf590853359849dc254c6dea143f232520b2ca39c7e5f0cf9bcd9d990",
+      "bytes": 570573,
+      "allocated": 573440
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PKNORLEN-2017-01-20-book.npz",
+      "git_blob": "53d6e8caba1ee760795462ac6e05ce844ec0a1e3",
+      "sha256": "d7c01ca8d25e4f2b51078935637669c5241b23c6bc2d5b08c1e1587667324a38",
+      "bytes": 1542867,
+      "allocated": 1544192
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PEKAO-2017-01-20-book.npz",
+      "git_blob": "af89c68bdc5b6c430f52925d93434fc27d24ddbc",
+      "sha256": "82437500684a52214a2a6d3b7bcfde2fc34cb15e15b0bf5b200b1cc286d74fc1",
+      "bytes": 227613,
+      "allocated": 229376
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PKOBP-2017-01-23-orders.npz",
+      "git_blob": "462c56b8d2b562b4c15a67adbcb5199c54b72c79",
+      "sha256": "f1cef924b7abfc0dee12b366b2151561fe1a3a9b544583ac62c5854afc65d871",
+      "bytes": 904434,
+      "allocated": 905216
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PKOBP-2017-01-19-orders.npz",
+      "git_blob": "add71a1148e6afd387af9d2bc2e72ad608b31486",
+      "sha256": "5fc5b32fb89d7949ff48240f48d521345d87f45c271876c339f6be4521165da8",
+      "bytes": 1297607,
+      "allocated": 1298432
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/KGHM-2017-01-19-orders.npz",
+      "git_blob": "de228a7e18f8c15c4fb79a7787dbd0d3fcda7000",
+      "sha256": "17c70672feb14f89dc92977b59133579c6d45984136e279c320aaa338633890c",
+      "bytes": 2832532,
+      "allocated": 2834432
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/KGHM-2017-01-23-book.npz",
+      "git_blob": "44250205bba427fff65d453750a2190ea642840e",
+      "sha256": "f6c2880f2ee9247a8f27a0d16dae9a72473d8f94647a7cc0b436ff1824d596f0",
+      "bytes": 442514,
+      "allocated": 446464
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PZU-2017-01-20-orders.npz",
+      "git_blob": "87e9e75a48b722d168db9320e7283fe1e1ea83f5",
+      "sha256": "ae29b75f0e885e95daca2383b42856727a39f1343992cd3835d7131a94f7d77c",
+      "bytes": 921263,
+      "allocated": 921600
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PKOBP-2017-01-23-book.npz",
+      "git_blob": "5e1ae8ba639feff32f7dd2fd4022e9f84967abdd",
+      "sha256": "71d4c04b0d78356c85971e42391db5eb99911963aa77634fb01373d51a806031",
+      "bytes": 317392,
+      "allocated": 319488
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/KGHM-2017-01-23-orders.npz",
+      "git_blob": "2586a78f8c4c3322176aeac9f8c25dd3e34afae3",
+      "sha256": "465191bdbabc1361582da2d78a8d9f14932a2369022012ac912dfba41d718ca6",
+      "bytes": 1240522,
+      "allocated": 1241088
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PZU-2017-01-23-book.npz",
+      "git_blob": "223f487b1f6e1b68ce3bf7ca47b85b3557a959ad",
+      "sha256": "47bcc957638a0632713b883ba84477b0b6edc935e5bb4cb725023864d2cc30a5",
+      "bytes": 187285,
+      "allocated": 188416
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PKNORLEN-2017-01-20-orders.npz",
+      "git_blob": "821fd69989c3e152c0579fc57292d9881734f7e2",
+      "sha256": "2924879370aa191d51c4d7ebf28e33e0380bca5df7b1451b8d071cab5de359b2",
+      "bytes": 3770509,
+      "allocated": 3772416
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PEKAO-2017-01-19-book.npz",
+      "git_blob": "9b2840fd7a09ab2e84a79350bc437c106c15e5c4",
+      "sha256": "e7fdf28c855c1e21749f0641d10128fe31518c1f864799e18562e412436c7c91",
+      "bytes": 225624,
+      "allocated": 229376
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PKNORLEN-2017-01-19-book.npz",
+      "git_blob": "2bd027ced53c0efeb0fb8116f40e24b4c072f0e7",
+      "sha256": "1d88a04c42ac4d48ba0b9015330d77ed49d55bbde78c180b8b6476c986ab737e",
+      "bytes": 359898,
+      "allocated": 360448
+    },
+    {
+      "path": "results/cq-012/j-1127-d4d017/full-sessions/PEKAO-2017-01-20-orders.npz",
+      "git_blob": "91b839bcf039418c5f6d635b956fc694d9046804",
+      "sha256": "ab95118231d2b06908105ee30edddadad2c74d009c95e7bdc195ef125e03adff",
+      "bytes": 574125,
+      "allocated": 577536
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/KGHM-2017-01-25-orders.npz",
+      "git_blob": "4ffdf64b8c0f9db1a1e96b64fe228ed2346482f4",
+      "sha256": "5d0d29f1b3a66d3dfb78db6d08477e8e701d0de547c26994f84f1b70bca7946c",
+      "bytes": 2744818,
+      "allocated": 2748416
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PZU-2017-01-26-book.npz",
+      "git_blob": "e2b36ec61c72367466d4b71a8bd907357f6aca18",
+      "sha256": "7fc2322c3b9e76f8e18a1bfc98a986a208e98c533e17b94a81678d40d7393031",
+      "bytes": 475096,
+      "allocated": 475136
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PZU-2017-01-26-orders.npz",
+      "git_blob": "fa5cfd2da946ffd71b4d8be66bf8da998ca27c2b",
+      "sha256": "cddbc240a4130d02154eb6e83a28d9f127a6b9e6462339f7eabd5984c42843da",
+      "bytes": 1236057,
+      "allocated": 1236992
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PKOBP-2017-01-26-book.npz",
+      "git_blob": "1bc1746b1513cf729b8bdf67bfef4980701fcc0c",
+      "sha256": "b3356777af2cfc240f8ec88890c30fdd6c1d595a79d39df10b79c8dddd914ff9",
+      "bytes": 702890,
+      "allocated": 704512
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/KGHM-2017-01-26-book.npz",
+      "git_blob": "2618b8445ad875c6b20b914ec5b6f430023d566b",
+      "sha256": "b78cde0b43d5bc1d4b1dcc7cf03eb450744db36d3cf8ceeccce1bddc6a72f71e",
+      "bytes": 1190244,
+      "allocated": 1191936
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PEKAO-2017-01-26-orders.npz",
+      "git_blob": "1e51b73a9540e4b83389be32d9d7d3b75268434e",
+      "sha256": "c8105a48ab5810c2eaccf546436b274f538ec6e4e268934de8ff53d1b0f85545",
+      "bytes": 1088631,
+      "allocated": 1089536
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PKNORLEN-2017-01-26-orders.npz",
+      "git_blob": "aae0dd2199964b80af4561b15fcaeb7afcc16f0d",
+      "sha256": "32630a57a3a1e5c07d6c9e2727b9f95e1f33d35df8680a6d7069b91e6f097a44",
+      "bytes": 2239295,
+      "allocated": 2240512
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PKNORLEN-2017-01-24-book.npz",
+      "git_blob": "b99c869a901a52c82b8a2485366f8d72f977b4f9",
+      "sha256": "db90191cc325890e691999d63fa578c78b523c8a67f69df8d431eb9bd4207553",
+      "bytes": 802385,
+      "allocated": 802816
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PKNORLEN-2017-01-25-book.npz",
+      "git_blob": "b6134f878758518e51de50a67de24092e11433b6",
+      "sha256": "cddc4958482cf32a4a0c7d05f0c693f9aaa29f0b57978de8eac62d2711165ae6",
+      "bytes": 820009,
+      "allocated": 823296
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PEKAO-2017-01-24-book.npz",
+      "git_blob": "8b06df8034cf33349c627db400d6dada6f31318a",
+      "sha256": "a6d6ceb8b8b92b755abb2f50ce3aff5223401fb08a5440b700e369b221349c45",
+      "bytes": 224207,
+      "allocated": 225280
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PEKAO-2017-01-25-book.npz",
+      "git_blob": "d4357572bc497458b670ce8e502a093b4429cbd3",
+      "sha256": "a9b46bfc820444c4d409543aeeab57e153f3d9109a077e17a994da8363851822",
+      "bytes": 477795,
+      "allocated": 479232
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PZU-2017-01-24-orders.npz",
+      "git_blob": "7d6b01e7f83c51d1abb58be96d092048b39a5f53",
+      "sha256": "572d620693a516ce0fe1304692697f7fd4b93ac018ba3eb08c19621bd5b3471c",
+      "bytes": 896669,
+      "allocated": 897024
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PEKAO-2017-01-24-orders.npz",
+      "git_blob": "bfe83700c0f21ab94375562e2007bac60f176734",
+      "sha256": "5a276085507f0426028fa6a7ac89bd8c504be2c666f1ef18c6794c41c5a8ded0",
+      "bytes": 574995,
+      "allocated": 577536
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PKNORLEN-2017-01-24-orders.npz",
+      "git_blob": "60ccca427c5a521444e9472cff570621d3f84640",
+      "sha256": "87df4f6ee6900112d87e1a1c57d8b1d2af48ad4a6585ed8cfb58d5f258c93edf",
+      "bytes": 1923599,
+      "allocated": 1925120
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PKOBP-2017-01-25-orders.npz",
+      "git_blob": "f0fed31291c9a9fcf07df3e15260a6a377b4d405",
+      "sha256": "e1081898f0560fdfd60d77485f3c6c02158f49a2ded8970a347d8a61e78a6b9a",
+      "bytes": 1850710,
+      "allocated": 1851392
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PKOBP-2017-01-26-orders.npz",
+      "git_blob": "28cec0f61bb10f30619a50daf40f42631fac8d12",
+      "sha256": "8b75afbf5d817c4b4e78359c8f84c49975466e7690501c200c08b15a977c044f",
+      "bytes": 1881561,
+      "allocated": 1884160
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/KGHM-2017-01-24-orders.npz",
+      "git_blob": "4f9e77b66a0b53865f6750f169e5297398f1c03b",
+      "sha256": "82bb3c0239aa966073e19ef90057349fb7324994ec24dc5e21a44b2b0fefcf13",
+      "bytes": 2347031,
+      "allocated": 2351104
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/KGHM-2017-01-24-book.npz",
+      "git_blob": "c52f1720d22fdb62cb7cde275f4904c795aea4de",
+      "sha256": "a2b6ded6924e1a76e426a8d31e83d5ec41aef4059a5943bbcd46dc788016b6e5",
+      "bytes": 880835,
+      "allocated": 884736
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/KGHM-2017-01-25-book.npz",
+      "git_blob": "ccc09bd9773a4768a26d8a8728006935cb56f0c7",
+      "sha256": "f2acbda6872bc74e9e473f18d3906771b710d707a28d6d790fd244d30465dcf6",
+      "bytes": 1024506,
+      "allocated": 1028096
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PKOBP-2017-01-24-book.npz",
+      "git_blob": "e966cd93f95cb9f6135c247f7412f1ac4d8f4e30",
+      "sha256": "017f5959bfa7743e51d35a9e6c3c048bef042e30a84b3d0a5384ab12491db078",
+      "bytes": 508446,
+      "allocated": 512000
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PKOBP-2017-01-25-book.npz",
+      "git_blob": "8cc502b2ed5fec95db2f0f2046bd8a6b7a57a675",
+      "sha256": "5e868278bee86325d9546dc6d92068cf215baf24cef979911e53cfe88352f071",
+      "bytes": 679236,
+      "allocated": 679936
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PZU-2017-01-24-book.npz",
+      "git_blob": "bef9ddc4a0eca98d688e64f0d330895afa8dc9e0",
+      "sha256": "39ed74273b5c9a793faeca0ab004104dc02ac68cf81ad8d0ece38248e7a8f491",
+      "bytes": 339453,
+      "allocated": 339968
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PZU-2017-01-25-book.npz",
+      "git_blob": "cbfb02a87d90e28e9b0077358de34597fb259169",
+      "sha256": "a540f76ab6f10d081f7e096d1f61ea1a95c3627670bb8a7137381a155cf4bac9",
+      "bytes": 539872,
+      "allocated": 540672
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PEKAO-2017-01-25-orders.npz",
+      "git_blob": "45919ef75122c275535f0ec0ee0ecd5996852672",
+      "sha256": "f6056730fb89f1eb731f17923cd9ea02983ae1f38d7490eef54e690ac9475f34",
+      "bytes": 1204084,
+      "allocated": 1204224
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PKOBP-2017-01-24-orders.npz",
+      "git_blob": "a644507874ffe1d7cb3d9c97421cbe6b230d9168",
+      "sha256": "9659deacf128c7f85f52e6a291a63bf98fdc8f3327a0164653934b72095b36e2",
+      "bytes": 1401739,
+      "allocated": 1404928
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PKNORLEN-2017-01-25-orders.npz",
+      "git_blob": "a4ed61408f6c2ec410935cb5578675715899ef11",
+      "sha256": "582d3927a82b4a5bd38e0e29ea68dbb66b301f666325b160b691e44afff477f4",
+      "bytes": 2070120,
+      "allocated": 2072576
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/KGHM-2017-01-26-orders.npz",
+      "git_blob": "3d80bb9f76c5e10a7f00c07a3da5e362351e9744",
+      "sha256": "033bff75809501cd2a12498d7e08f58ab531e9b9d2a85e35d91b2314a92a4f10",
+      "bytes": 3208747,
+      "allocated": 3211264
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PKNORLEN-2017-01-26-book.npz",
+      "git_blob": "139403064746570e86fb11256094af94ae59d3b5",
+      "sha256": "0adcb1cf00b76bc1356afa66e5c25415884000f1f8af5492db23b99a74397486",
+      "bytes": 905131,
+      "allocated": 905216
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PZU-2017-01-25-orders.npz",
+      "git_blob": "bdabe89e136a397156cfb1b4983a5d25c08cd883",
+      "sha256": "30e3abeee886aa7f52ec96b6e1c9164aa985395c0108b9ced815194c41ed1504",
+      "bytes": 1441494,
+      "allocated": 1441792
+    },
+    {
+      "path": "results/cq-012/j-1127-636ebd/full-sessions/PEKAO-2017-01-26-book.npz",
+      "git_blob": "db10e83dca1d0f4031f3ea68cd12cc5c19511f4e",
+      "sha256": "22ef5b2177a506b2fc5f590262239b9b9abbc5bf39de7746f8c3299d2771a370",
+      "bytes": 429104,
+      "allocated": 430080
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PZU-2017-01-27-book.npz",
+      "git_blob": "3f5e4a66122f3b9594f60a96e4390e9678ee40d3",
+      "sha256": "0f8a40109db1e3d2bcfada197fb03bbf46fa06b681ad48c3d56b39279833350c",
+      "bytes": 353486,
+      "allocated": 356352
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PKOBP-2017-01-27-book.npz",
+      "git_blob": "38cf31bc4f67374fdaca281077b9746274c8859a",
+      "sha256": "6da72a39f63bbf2d16dc82a654ba1316b3c03a26610f272fa96b29fd7f8e90ce",
+      "bytes": 490710,
+      "allocated": 491520
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/KGHM-2017-01-27-book.npz",
+      "git_blob": "7cdcf4684580456a19f01c2a22cc2894c3ab5781",
+      "sha256": "eda29a68edcc6917d20f32e1f16e60b77227a23cbced072168d657e83fff06b6",
+      "bytes": 1093718,
+      "allocated": 1097728
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/KGHM-2017-01-31-orders.npz",
+      "git_blob": "a75e272cd8a10cdf7173233c9834dcc7e570c733",
+      "sha256": "ff0d4a09d2ddc8ec04423a4ac4f1f8a116e6abb24226a9d3263a76983df70e22",
+      "bytes": 2186694,
+      "allocated": 2187264
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PZU-2017-01-30-book.npz",
+      "git_blob": "96108fdff1c674b5da93226402bedaab9af6346a",
+      "sha256": "4c5ed5043763ead0745c9752cf2b5520ab88438cc8b5bf11d0223067b286349f",
+      "bytes": 276015,
+      "allocated": 278528
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PZU-2017-01-31-book.npz",
+      "git_blob": "612ab4a553642d7d0eabf6774c90f91fd7475863",
+      "sha256": "947ea7056e670b49c54644a218725983df3855f10b4a96d790a829f5098b1994",
+      "bytes": 323377,
+      "allocated": 323584
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PKOBP-2017-01-27-orders.npz",
+      "git_blob": "02fa9a48dee5f9794c62f8b97949d5de36bf8751",
+      "sha256": "10abe6b5d4e212f325b72e8ab26ecc511ed237a8b169ca73e76bedce480e81b7",
+      "bytes": 1357870,
+      "allocated": 1359872
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PKOBP-2017-01-30-book.npz",
+      "git_blob": "4e171a6fdf7beea3badd0307b83fee41a6209ee0",
+      "sha256": "b148b0b3eb006756fd57894824d44d137728aab10c7231652e937d2d1b77b871",
+      "bytes": 393867,
+      "allocated": 397312
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PKOBP-2017-01-31-book.npz",
+      "git_blob": "8a867ec4bceb74666f03d2010829d7565a2c8cce",
+      "sha256": "45cfa430850c10e67b66ce71ca2bbea0f2bfdb0cab2d23fb7e5489b0972507c3",
+      "bytes": 429151,
+      "allocated": 430080
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/KGHM-2017-01-30-book.npz",
+      "git_blob": "da1b2285c672eeb017fff2127baf5bf50b1867d6",
+      "sha256": "620cd9a27cf88495d111cf054ced9e60d871ba5619ce24c80cc6b3d12c47cb06",
+      "bytes": 942721,
+      "allocated": 946176
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/KGHM-2017-01-31-book.npz",
+      "git_blob": "6595260fad58ca5f7400a26c43060a29ed3aebda",
+      "sha256": "81597d296758a0833f0bc46b50e78efa444357142d6511cfea8c43823ffc0790",
+      "bytes": 785262,
+      "allocated": 786432
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/KGHM-2017-01-27-orders.npz",
+      "git_blob": "ea414a81f9bcfeb4112831281635d5ecb1e6dc53",
+      "sha256": "5d0c57e5229a24dc8c0db399c924845fed65fd14f863a2cf06e67937e4d79735",
+      "bytes": 2919677,
+      "allocated": 2920448
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PEKAO-2017-01-30-orders.npz",
+      "git_blob": "0bdc0cf9332ecfaca37ff6603fd46abbb400e0a5",
+      "sha256": "cd92743aa89208f434be9a93df474c4cbc0ed09d771c7948d961c47aed4a3087",
+      "bytes": 941011,
+      "allocated": 942080
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PKNORLEN-2017-01-30-orders.npz",
+      "git_blob": "ae7449384852f1588b11d63b304bcd863fb57ceb",
+      "sha256": "6245461ae205f95e4138986cb54118164e62e0c6fdd30a518c7308b26b4679ed",
+      "bytes": 1541248,
+      "allocated": 1544192
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PKOBP-2017-01-31-orders.npz",
+      "git_blob": "1ba53d8221464fff0356f945cc3e0619e3441ec8",
+      "sha256": "a02d158d29c0e0c1c4807e25dca42c74be21e0b8a423a19c3672a2d042337753",
+      "bytes": 1219938,
+      "allocated": 1220608
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PZU-2017-01-30-orders.npz",
+      "git_blob": "d577e8986302121a6733de9692ecb829a172a448",
+      "sha256": "f52a57838352ebdad3922f096eb098a39ded8131cc20cb7ad280cfdcfdd9429a",
+      "bytes": 742761,
+      "allocated": 745472
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/KGHM-2017-01-30-orders.npz",
+      "git_blob": "7a789b041f81852d4492bb455081ba9af3df803d",
+      "sha256": "f8da850f222088113171d69d0f553e2b984edc8693bb4fdaca3f4068c884701d",
+      "bytes": 2567226,
+      "allocated": 2568192
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PEKAO-2017-01-27-orders.npz",
+      "git_blob": "57eedd1b3bada44894ec82106bbb61a7f3a1b2d0",
+      "sha256": "4558ba23856c7a96ac41d7a3e96176f33aeee06e5808e74dd8a0331a677bfe8a",
+      "bytes": 824720,
+      "allocated": 827392
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PKNORLEN-2017-01-27-orders.npz",
+      "git_blob": "4264e64d64f9c6d1bb815fa463be6f2d493cd8e6",
+      "sha256": "c5244feec04ec8bfa0187f289fcf31ac231d9ca006200d71f43ade4b4ac68e7b",
+      "bytes": 1352985,
+      "allocated": 1355776
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PZU-2017-01-27-orders.npz",
+      "git_blob": "1354b0264d5ee922a5a455b62ada13c809ad0a08",
+      "sha256": "702bd0b5a58bd13ade8e5f3246996f7bb2c2a0f071d19e00015b793e5e3d6fbe",
+      "bytes": 960749,
+      "allocated": 962560
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PZU-2017-01-31-orders.npz",
+      "git_blob": "f4a4c32c43f7775585ac6430d80ff4059c7a933e",
+      "sha256": "9ff5c2ae193b07b7f9f52fb4e02a8d28b52f710d3a8cc7e177b3437248ed1066",
+      "bytes": 875679,
+      "allocated": 876544
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PEKAO-2017-01-30-book.npz",
+      "git_blob": "20e14629cedddf42d2c604f56cee8f51761281a0",
+      "sha256": "c3fdc451bd5be64ea02e6a528147b2b337c9e2d826bf57f830d5278ad493d211",
+      "bytes": 369069,
+      "allocated": 372736
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PEKAO-2017-01-31-book.npz",
+      "git_blob": "b1d657c1fbbde3589d387f9ebf98a86e53ea5136",
+      "sha256": "d3606813060f78c066c7d68762916cb657dd608a79d827ad27c69de66b27ec0b",
+      "bytes": 300726,
+      "allocated": 303104
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PKNORLEN-2017-01-30-book.npz",
+      "git_blob": "0ada12667260cd0f8672120cfbdd878984c4bea7",
+      "sha256": "cd29344f1c6ee8252c76caa7b7771838803c686d2564ad82f2001018551a2ce9",
+      "bytes": 593366,
+      "allocated": 593920
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PKNORLEN-2017-01-31-book.npz",
+      "git_blob": "241c26d6ef2fd8d5d1c0f43fe26ab229839913d9",
+      "sha256": "6ada1e9aa67293a4a24e7da39fbb9041dc1fc27c0930dd3cb9f4d36b428726c0",
+      "bytes": 401288,
+      "allocated": 401408
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PEKAO-2017-01-31-orders.npz",
+      "git_blob": "0eb623888f82f6694941c13dd02a3b8488f40d1f",
+      "sha256": "9c288f5edecd3005dc0e51997d4beadfe955a8aeaa438556bb9ad25d038e04a5",
+      "bytes": 780586,
+      "allocated": 782336
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PKOBP-2017-01-30-orders.npz",
+      "git_blob": "23baa1519d67369bd938d8a6aaf0a35a998dcd44",
+      "sha256": "ecb1157fa788e72d244f6260c11b6ef8a5e80de5d21ef44d0f7359a27b34569b",
+      "bytes": 1111562,
+      "allocated": 1114112
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PKNORLEN-2017-01-31-orders.npz",
+      "git_blob": "f2bc54f07d7ae0084270e5f97065ad048ec95fe2",
+      "sha256": "f51c714253a4cede12d7fb1dad795089e435c931e2588288d3f205318810c7e4",
+      "bytes": 1052897,
+      "allocated": 1056768
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PKNORLEN-2017-01-27-book.npz",
+      "git_blob": "6c8e5dac7b173d370e014949fc7e46b93c1cc23c",
+      "sha256": "d69d832124415af88decebcafac87b94dc698148f0f54464fbd7c02607d0a852",
+      "bytes": 525725,
+      "allocated": 528384
+    },
+    {
+      "path": "results/cq-012/j-1127-d531e0/full-sessions/PEKAO-2017-01-27-book.npz",
+      "git_blob": "66a32fa4132f90016b6c608d67cd9e61dd8dcbca",
+      "sha256": "ceba623aa0fa65db77ca51632a31d468e97f19f8c00993805b64b57f1d7bd079",
+      "bytes": 322478,
+      "allocated": 323584
+    }
+  ],
+  "removed_bytes": 90553801,
+  "removed_allocated_bytes": 90722304,
+  "disposition": "Owned raw/book working copies only; Git objects, GitHub and CQ archives retained; active benchmark and challenge kept",
+  "recovery": "git update-index --no-skip-worktree -- PATH; git restore -- PATH"
+}
