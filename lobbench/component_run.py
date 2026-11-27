@@ -11,7 +11,7 @@ from lobbench.direct import base_features,weights
 from lobbench.direct_run import splits,subset,fit_mlp
 from lobbench.cascade import Fusion,jfds_autoencoder
 from lobbench.cascade_run import train_representation,train_fusion,evaluate
-from lobbench.portable import interactions,block_indices,normalize,array_hash,export_hgb,tree_score,export_dense,dense,export_ae,ae_encode,rbf,ocsvm_score
+from lobbench.portable import batched_interactions,interactions,block_indices,normalize,array_hash,export_hgb,tree_score,export_dense,dense,export_ae,ae_encode,rbf,ocsvm_score
 
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
@@ -58,7 +58,7 @@ def run(dataset,output,regime,fold,seed,protocol,device='cpu',engineering=False)
  if engineering and dataset.stat().st_size>10*1024**2:raise ValueError('Fixture too large')
  cfg=json.loads(protocol.read_text());started=time.monotonic();torch.set_num_threads(1);torch.use_deterministic_algorithms(True)
  if device=='cuda' and not torch.cuda.is_available():raise RuntimeError('CUDA unavailable')
- d=dict(np.load(dataset,allow_pickle=False));dates=sum([cfg[k] for k in ['train_dates','validation_dates','test_dates']],[])
+ archive=np.load(dataset,allow_pickle=False);d={k:archive[k] for k in ['raw','manual','aligned','y','stock','date','id','kind','start_ns','end_ns']};dates=sum([cfg[k] for k in ['train_dates','validation_dates','test_dates']],[])
  if set(d['date'])!=set(dates) or set(d['stock'])!=set(cfg['stocks']) or len(set(d['id']))!=len(d['y']):raise ValueError('Source group/identity mismatch')
  choices=[v for v in splits(d,cfg,regime) if v[0]==fold]
  if len(choices)!=1:raise ValueError('Unregistered fold')
@@ -69,7 +69,7 @@ def run(dataset,output,regime,fold,seed,protocol,device='cpu',engineering=False)
  if set(tr)&set(va) or set(tr)&set(te) or set(va)&set(te):raise ValueError('Split overlap')
  if d['end_ns'][tr].max()>=d['start_ns'][va].min() or d['end_ns'][va].max()>=d['start_ns'][te].min():raise ValueError('Nonchronological')
  if any(len(set(d['y'][ix]))!=2 for ix in [tr,va,te]):raise ValueError('One-class split')
- output.mkdir(parents=True,exist_ok=True);nt,nv=len(tr),len(va);index=np.concatenate([tr,va,te]);vv=slice(nt,nt+nv);tt=slice(nt+nv,None);y=d['y'][tr];w=weights(y);sub={k:d[k][index] for k in ['raw','manual','aligned']};base=base_features(sub);extra=interactions(sub['aligned'])
+ output.mkdir(parents=True,exist_ok=True);nt,nv=len(tr),len(va);index=np.concatenate([tr,va,te]);vv=slice(nt,nt+nv);tt=slice(nt+nv,None);y=d['y'][tr];w=weights(y);sub={k:d[k][index] for k in ['raw','manual','aligned']};base=base_features(sub);extra=batched_interactions(sub['aligned'])
  np.savez_compressed(output/'split.npz',train_ids=d['id'][tr],validation_ids=d['id'][va],test_ids=d['id'][te],eligible_train_ids=d['id'][eligible],training_weights=w,training_y=y)
  result=dict(fold=fold,seed=seed,cq_job=os.environ.get('CQ_JOB_ID'),evidence_class='engineering_only' if engineering else 'stage013_frozen_semisynthetic',device=device,inference='canonical_numpy_float64',dataset_sha256=sha(dataset),protocol_sha256=sha(protocol),source_sha256={str(p):sha(p) for p in ['lobbench/component_run.py','lobbench/portable.py','lobbench/direct.py','lobbench/direct_run.py','lobbench/cascade.py','lobbench/cascade_run.py']},versions=dict(python=platform.python_version(),numpy=np.__version__,torch=torch.__version__,sklearn=sklearn.__version__),sizes=dict(eligible_train=len(eligible),train=nt,validation=nv,test=len(te)),feature_hashes=dict(base=array_hash(base),interaction=array_hash(extra)),methods={})
  # All neural normalization is fitted to exactly the common training rows.

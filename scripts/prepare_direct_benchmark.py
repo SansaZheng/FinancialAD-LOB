@@ -27,5 +27,8 @@ def main(sources,output,protocol):
         prepare(merged,output,generator='passive',registered_dates=dates,seed=cfg['generator_seed'])
         (output/'source-audit.json').write_text((merged/'audit.json').read_text())
         (output/'source-shards.json').write_text(json.dumps(dict(shards=shards,scope='Merged audit creator is this benchmark job; original source job IDs and audit hashes retained separately'),indent=2)+'\n')
+        if cfg.get('version','').startswith('013-'):
+            from scripts.fingerprint_component_data import fingerprint
+            fingerprint(output/'benchmark.npz',output/'canonical-features.json')
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--sources',type=Path,nargs='+',required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--protocol',type=Path,default=Path('configs/012-preregistered.json'));a=p.parse_args();main(a.sources,a.output,a.protocol)

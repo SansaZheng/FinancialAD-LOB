@@ -44,8 +44,18 @@ def block_indices(name):
  return np.array([i for p in parts for i in range(BLOCKS[p].start,BLOCKS[p].stop)],dtype=int)
 
 def normalize(x,mean,scale,keep):
- # One explicit float64 subtraction/division followed by a single float32 cast.
- return np.ascontiguousarray(((np.asarray(x,dtype=np.float64)-mean)/scale)[:,keep],dtype=np.float32)
+ # Identical elementwise arithmetic in bounded batches, avoiding full-size
+ # float64 temporaries when two workers share provider RAM.
+ out=np.empty((len(x),int(np.sum(keep))),dtype=np.float32)
+ for begin in range(0,len(x),512):
+  value=np.array(x[begin:begin+512],dtype=np.float64,copy=True);value-=mean;value/=scale
+  out[begin:begin+len(value)]=value[:,keep]
+ return out
+
+def batched_interactions(aligned):
+ out=np.empty((len(aligned),488),dtype=np.float32)
+ for begin in range(0,len(aligned),512):out[begin:begin+512]=interactions(aligned[begin:begin+512])
+ return out
 
 def export_hgb(model,path):
  if len(model.classes_)!=2 or np.any(model.is_categorical_):raise ValueError('Binary numeric HGB only')

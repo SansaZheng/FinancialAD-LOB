@@ -36,3 +36,22 @@ class PortableTests(unittest.TestCase):
  def test_ocsvm_data_export_score_sign_and_offset(self):
   rng=np.random.default_rng(7);x=rng.normal(size=(45,6));query=rng.normal(size=(12,6));gamma=.1/6;m=OneClassSVM(kernel='precomputed',nu=.05).fit(rbf(x,x,gamma));values=dict(mean=np.zeros(6),scale=np.ones(6),support=x[m.support_],dual=m.dual_coef_.ravel(),gamma=gamma)
   np.testing.assert_allclose(ocsvm_score(values,query),-m.score_samples(rbf(query,x,gamma)),rtol=0,atol=5.1e-9)
+
+class StreamingFingerprintTests(unittest.TestCase):
+ def test_stream_hash_equals_materialized_and_rejects_wrong_reference(self):
+  from tests.test_components import fixture
+  from scripts.fingerprint_component_data import fingerprint
+  from lobbench.direct import base_features
+  from lobbench.portable import array_hash
+  with tempfile.TemporaryDirectory() as td:
+   root=Path(td);d=fixture();p=root/'fixture.npz';np.savez_compressed(p,**d);r=fingerprint(p,root/'reference.json')
+   self.assertEqual(r['feature_hashes']['base'],array_hash(base_features(d)));self.assertEqual(r['feature_hashes']['interaction'],array_hash(interactions(d['aligned'])))
+   fingerprint(p,root/'repeat.json',root/'reference.json');r['feature_hashes']['base']='wrong';(root/'reference.json').write_text(json.dumps(r))
+   with self.assertRaises(ValueError):fingerprint(p,root/'bad.json',root/'reference.json')
+
+class BoundedMemoryTests(unittest.TestCase):
+ def test_batch_normalizer_and_features_bitwise_match_full_arithmetic(self):
+  from lobbench.portable import normalize,batched_interactions
+  rng=np.random.default_rng(77);x=rng.normal(size=(1031,73)).astype('float32');mean=x[:300].mean(0,dtype=np.float64);scale=x[:300].std(0,dtype=np.float64);keep=np.arange(73)%3!=0
+  expected=np.ascontiguousarray(((x.astype('float64')-mean)/scale)[:,keep],dtype='float32');np.testing.assert_array_equal(normalize(x,mean,scale,keep),expected)
+  a=rng.random((1031,25,40)).astype('float32');np.testing.assert_array_equal(batched_interactions(a),interactions(a))

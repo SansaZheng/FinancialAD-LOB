@@ -1,14 +1,17 @@
 """Complete stage013 paired metrics and registered factorial contrasts."""
-import argparse,json
+import argparse,hashlib,json
 from pathlib import Path
 import numpy as np
 from sklearn.metrics import average_precision_score
 
 def summarize(root,protocol,output,replicates=2000):
- cfg=json.loads(protocol.read_text());records=[];seen=set()
+ cfg=json.loads(protocol.read_text());records=[];seen=set();datasets=set();ph=hashlib.sha256(protocol.read_bytes()).hexdigest()
  for p in sorted(root.glob('**/metrics.json')):
   r=json.loads(p.read_text())
   if r.get('evidence_class')!='stage013_frozen_semisynthetic':continue
+  if r['protocol_sha256']!=ph:raise ValueError('Different protocol in summary')
+  datasets.add(r['dataset_sha256'])
+  if len(datasets)>1:raise ValueError('Different cohorts in summary')
   key=(r['fold'],r['seed'])
   if key in seen or set(r['methods'])!=set(cfg['methods']):raise ValueError('Duplicate/incomplete runs')
   seen.add(key)

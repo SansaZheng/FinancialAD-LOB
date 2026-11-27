@@ -3,14 +3,14 @@ import argparse,hashlib,json,platform,time
 from pathlib import Path
 import numpy as np
 from lobbench.direct import base_features
-from lobbench.portable import interactions,normalize,block_indices,array_hash,tree_score,dense,ae_encode,ocsvm_score
+from lobbench.portable import batched_interactions,interactions,normalize,block_indices,array_hash,tree_score,dense,ae_encode,ocsvm_score
 
 def reload_run(dataset,folder):
- start=time.monotonic();r=json.loads((folder/'metrics.json').read_text());d=dict(np.load(dataset,allow_pickle=False))
+ start=time.monotonic();r=json.loads((folder/'metrics.json').read_text());archive=np.load(dataset,allow_pickle=False);d={k:archive[k] for k in ['raw','manual','aligned','id']}
  if hashlib.sha256(dataset.read_bytes()).hexdigest()!=r['dataset_sha256']:raise ValueError('Input dataset hash mismatch')
  for name,digest in r.get('artifact_sha256',{}).items():
   if hashlib.sha256((folder/name).read_bytes()).hexdigest()!=digest:raise ValueError('Saved artifact hash mismatch: '+name)
- split=np.load(folder/'split.npz');lookup={v:i for i,v in enumerate(d['id'])};index=np.array([lookup[v] for key in ['train_ids','validation_ids','test_ids'] for v in split[key]]);nt,nv=len(split['train_ids']),len(split['validation_ids']);sub={k:d[k][index] for k in ['raw','manual','aligned']};base=base_features(sub);extra=interactions(sub['aligned']);hashes=dict(base=array_hash(base),interaction=array_hash(extra));normalized={};shared=None;items=[]
+ split=np.load(folder/'split.npz');lookup={v:i for i,v in enumerate(d['id'])};index=np.array([lookup[v] for key in ['train_ids','validation_ids','test_ids'] for v in split[key]]);nt,nv=len(split['train_ids']),len(split['validation_ids']);sub={k:d[k][index] for k in ['raw','manual','aligned']};base=base_features(sub);extra=batched_interactions(sub['aligned']);hashes=dict(base=array_hash(base),interaction=array_hash(extra));normalized={};shared=None;items=[]
  for method,m in r['methods'].items():
   if method.startswith('hgb_'):
    inds=block_indices(method[4:]);x=np.concatenate([base,extra[:,inds]],axis=1) if len(inds) else base;scores=tree_score(json.loads((folder/(method+'.json')).read_text()),x[nt:]);tol=1e-12

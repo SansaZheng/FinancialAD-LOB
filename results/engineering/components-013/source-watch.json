@@ -2,13 +2,13 @@
   "jobs": [
     {
       "id": "j-1128-a02e9d",
-      "state": "queued",
-      "reason": "waiting: 2 Kaggle notebooks already running (limit 2)"
+      "state": "done",
+      "reason": "outputs verified (Kaggle, 0.10 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1128-a02e9d/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/013-train-sessions"
     },
     {
       "id": "j-1128-a5de09",
-      "state": "assigned",
-      "reason": "on Kaggle: code uploaded as a private dataset; the notebook starts when it is ready"
+      "state": "done",
+      "reason": "outputs verified (Kaggle, 0.13 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1128-a5de09/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/013-validation-sessions"
     },
     {
       "id": "j-1128-dcd9a2",
@@ -17,11 +17,14 @@
     },
     {
       "id": "j-1128-3545ea",
-      "state": "running",
-      "reason": null
+      "state": "done",
+      "reason": "outputs verified (Kaggle, 0.21 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1128-3545ea/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/013-test-b-sessions"
     }
   ],
   "fetched": [
-    "j-1128-dcd9a2"
+    "j-1128-dcd9a2",
+    "j-1128-3545ea",
+    "j-1128-a5de09",
+    "j-1128-a02e9d"
   ]
 }
