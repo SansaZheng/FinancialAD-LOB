@@ -9,7 +9,7 @@ from lobbench.direct_run import splits,subset
 from lobbench.portable import interactions,ae_encode,normalize,dense
 
 def verify(root,dataset,protocol,output,engineering=False):
- cfg=json.loads(protocol.read_text());dh=hashlib.sha256(dataset.read_bytes()).hexdigest();ph=hashlib.sha256(protocol.read_bytes()).hexdigest();d=dict(np.load(dataset));known={(f,s) for f in ['date']+['combined-'+s for s in cfg['stocks']] for s in cfg['seeds']};seen=set();checks=[]
+ cfg=json.loads(protocol.read_text());dh=hashlib.sha256(dataset.read_bytes()).hexdigest();ph=hashlib.sha256(protocol.read_bytes()).hexdigest();loaded=np.load(dataset);d={k:loaded[k] for k in ['raw','manual','aligned','y','stock','date','id','kind','start_ns','end_ns']};known={(f,s) for f in ['date']+['combined-'+s for s in cfg['stocks']] for s in cfg['seeds']};seen=set();checks=[]
  for path in sorted(root.glob('**/metrics.json')):
   r=json.loads(path.read_text())
   if r.get('evidence_class')!=('engineering_only' if engineering else 'stage013_frozen_semisynthetic') or 'feature_hashes' not in r:continue
