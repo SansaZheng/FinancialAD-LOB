@@ -1,6 +1,0 @@
-{
-  "returncode": 0,
-  "stdout": "queued j-1125-e0f1ad: FinancialAD LOB add three WSE stocks public-data replay 009 (waiting for the first placement pass)\n",
-  "stderr": "",
-  "spec": "cq/009-kaggle-expand.json"
-}
