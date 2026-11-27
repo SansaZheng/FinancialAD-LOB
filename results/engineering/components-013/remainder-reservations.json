@@ -1,6 +1,0 @@
-{
-  "free_gpu_hours": 3.72,
-  "next_spec": "cq/013-combined-PZU.json",
-  "required_reservation_hours": 1.25,
-  "decision": "submit"
-}
