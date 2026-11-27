@@ -1,0 +1,92 @@
+[
+  {
+    "fold": "date",
+    "eligible_train": 14449,
+    "train": 6000,
+    "validation": 14157,
+    "test": 41036,
+    "test_positive": 2014,
+    "train_positive_by_seed": {
+      "0": 298,
+      "1": 293,
+      "2": 281,
+      "3": 300,
+      "4": 284
+    }
+  },
+  {
+    "fold": "combined-KGHM",
+    "eligible_train": 8063,
+    "train": 6000,
+    "validation": 2069,
+    "test": 8837,
+    "test_positive": 428,
+    "train_positive_by_seed": {
+      "0": 303,
+      "1": 284,
+      "2": 292,
+      "3": 287,
+      "4": 283
+    }
+  },
+  {
+    "fold": "combined-PEKAO",
+    "eligible_train": 9253,
+    "train": 6000,
+    "validation": 3739,
+    "test": 4476,
+    "test_positive": 199,
+    "train_positive_by_seed": {
+      "0": 306,
+      "1": 293,
+      "2": 274,
+      "3": 299,
+      "4": 295
+    }
+  },
+  {
+    "fold": "combined-PKNORLEN",
+    "eligible_train": 8403,
+    "train": 6000,
+    "validation": 3227,
+    "test": 13946,
+    "test_positive": 713,
+    "train_positive_by_seed": {
+      "0": 281,
+      "1": 269,
+      "2": 286,
+      "3": 286,
+      "4": 282
+    }
+  },
+  {
+    "fold": "combined-PKOBP",
+    "eligible_train": 9806,
+    "train": 6000,
+    "validation": 1746,
+    "test": 8310,
+    "test_positive": 390,
+    "train_positive_by_seed": {
+      "0": 270,
+      "1": 272,
+      "2": 277,
+      "3": 268,
+      "4": 278
+    }
+  },
+  {
+    "fold": "combined-PZU",
+    "eligible_train": 7822,
+    "train": 6000,
+    "validation": 3376,
+    "test": 5467,
+    "test_positive": 284,
+    "train_positive_by_seed": {
+      "0": 304,
+      "1": 307,
+      "2": 300,
+      "3": 287,
+      "4": 304
+    }
+  }
+]
