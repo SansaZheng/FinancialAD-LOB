@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "complete_suite": false,
+  "fold_seed_runs": 1,
+  "selected_evaluations": 14,
+  "expected_evaluations": 420,
+  "dataset_sha256": "332688a9b1778efd4256b9963792dc056d6d9dfe040930baeb42b3ef7f1c2142",
+  "protocol_sha256": "b20f5170482743fa4381578f307550f6406ae36d79fb18f90a5f3fb526b22d04",
+  "scope": "Independent split/label/train-only-statistic/selection/grid/budget/metric audit; reload is separately checked; no real intent proof"
+}

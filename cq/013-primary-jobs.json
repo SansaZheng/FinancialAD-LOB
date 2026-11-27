@@ -1,0 +1,35 @@
+{
+  "pilot": "j-1128-f50b59",
+  "batches": [
+    {
+      "fold": "date",
+      "spec": "cq/013-date.json",
+      "job_id": "j-1128-d1d3b9"
+    },
+    {
+      "fold": "combined-KGHM",
+      "spec": "cq/013-combined-KGHM.json",
+      "job_id": "j-1128-fded06"
+    },
+    {
+      "fold": "combined-PEKAO",
+      "spec": "cq/013-combined-PEKAO.json",
+      "job_id": "j-1128-ddeeec"
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "spec": "cq/013-combined-PKNORLEN.json",
+      "job_id": "j-1128-b9362a"
+    },
+    {
+      "fold": "combined-PKOBP",
+      "spec": "cq/013-combined-PKOBP.json",
+      "job_id": "j-1128-4d3122"
+    },
+    {
+      "fold": "combined-PZU",
+      "spec": "cq/013-combined-PZU.json",
+      "job_id": "j-1128-5e8481"
+    }
+  ]
+}

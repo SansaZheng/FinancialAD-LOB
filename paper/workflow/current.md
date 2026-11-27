@@ -15,3 +15,7 @@ Storage: four verified source working copies omitted locally, reclaiming124,678,
 Prior012completed findings remain in paper/012-results.md and workflow/archive/012-*.md, never pooled with013. No new-performance, original0.675superiority, real-manipulation or CCF Areadiness claim yet.
 
 中文结论：完整新数据与全量输入数值核验已通过，正式14方法试跑已提交；剩余矩阵、真实模型重载和最终性能结论仍待完成。
+
+2026-11-28T05:45:13.894171+08:00: Pilot completes1/30runs,14/420evaluations. Independent audit passes; Mac frozen reload has exactfeature/embeddinghashes, maxscoreerror1.0000000827e-8 onlycascade_ocsvm,0thresholdflips, withinpredeclared1e-7tolerance. CQCPUactualreload j-1128-c6a269 queued. Allremaining29fold-seeds are now submitted in6batches; IDs in cq/013-primary-jobs.json. CQ only reserves budget on placement, so queued requests can exceed simultaneous reservations; scheduler must enforce remaining budget before starting them. Provider concurrency2notebooks. Preliminarydate-seed0macroAP:baseHGB.49735,perlevel80.50402,moments88.82748,all488.83088,MLPall.68438,cascade.47177,sharedBCE.47265. Do not change scientific configuration from these scores.
+
+中文结论：真实模型首组重载和独立审计已通过；初步收益主要来自含跨档汇总的统计特征，完整组件是否稳定增加收益仍待全部实验。
