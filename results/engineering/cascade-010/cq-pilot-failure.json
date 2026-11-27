@@ -1,8 +1,0 @@
-{
-  "job": "j-1125-27a0a5",
-  "phase": "pre-training engineering qualification",
-  "error": "ModuleNotFoundError: tests.test_cascade",
-  "cause": "third-party regular tests package shadows local namespace directory",
-  "fix": "add explicit tests/__init__.py",
-  "scientific_scores_produced": false
-}
