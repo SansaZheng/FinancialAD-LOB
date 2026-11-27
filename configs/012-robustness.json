@@ -1,0 +1,22 @@
+{
+  "version": "012-secondary-v1-before-any-new-performance",
+  "role": "Predeclared secondary evaluation only; no training or hyperparameter selection",
+  "challenge": "Per-level lifetime-matched benign wave controls",
+  "source": "Primary stage012 test windows and original observed base books",
+  "seed": 17089,
+  "transformation": "Only benign_wave test windows change. Preserve source window, side, placements, volume, absolute prices and withdrawal center. Independently choose each level's offset between k and4-k with probability1/2, matching each positive wave level's two-direction marginal distribution. Preserve all other window inputs and labels.",
+  "censoring": "Reject changed controls only if an active inserted order becomes marketable; retain/count exact observational collisions with positive patterns; compare primary and challenge on common IDs",
+  "frozen_models": "Use primary selected checkpoints/estimators and training-only normalizers; reuse the original validation threshold; no re-fitting/recalibration/selection",
+  "metrics": [
+    "AP on common IDs",
+    "benign-control FPR",
+    "paired primary-minus-challenge changes"
+  ],
+  "limits": [
+    "Only test dates Jan27/30/31",
+    "Synthetic conditional overlays, not real intent",
+    "Not an independent new market sample",
+    "Challenge is secondary and does not redefine primary outcome",
+    "Per-level marginals match by construction before marketability censoring; conditional and finite-sample marginals may still differ"
+  ]
+}
