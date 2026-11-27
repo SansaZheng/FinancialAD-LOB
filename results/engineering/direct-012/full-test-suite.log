@@ -1,0 +1,174 @@
+..........................{
+  "runs": 1,
+  "summary": [
+    {
+      "regime": "date",
+      "method": "cascade_if",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "cascade_ocsvm",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 0.5,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 1.0
+    },
+    {
+      "regime": "date",
+      "method": "dynamics_ocsvm",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "price_cascade_ocsvm",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "price_no_lob",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "price_no_scl",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "rank_cascade_ocsvm",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "raw_ocsvm",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "supervised_hgb",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    },
+    {
+      "regime": "date",
+      "method": "supervised_logistic",
+      "fold_seed_runs": 1,
+      "seeds": [
+        0
+      ],
+      "mean_fold_ap": 1.0,
+      "seed_sd": null,
+      "mean_test_fpr": 0.0,
+      "mean_recall_at_validation_1pct_fpr": 1.0,
+      "mean_benign_fpr": 0.0
+    }
+  ]
+}
+{"method": "logistic", "seconds": 0.023792708000000218}
+{"method": "logistic_hard", "seconds": 0.023112958999999655}
+{"method": "hgb", "seconds": 0.597548958}
+{"method": "hgb_hard", "seconds": 0.33383899999999933}
+{"method": "mlp", "seconds": 1.466670959}
+{"method": "mlp_hard", "seconds": 0.03333620900000067}
+{"method": "interaction_hgb", "seconds": 0.4238142079999996}
+{"method": "interaction_hgb_hard", "seconds": 0.4481968750000007}
+{"method": "interaction_mlp", "seconds": 0.07514566699999925}
+{"method": "interaction_mlp_hard", "seconds": 0.03843916699999994}
+............{
+  "passed": true,
+  "complete_suite": false,
+  "fold_seed_runs": 1,
+  "selected_evaluations": 1,
+  "dataset_sha256": "5caf401e10b4d4de5230d918eb5875583a7cc5f26cf8d377d7b828391ef51d22",
+  "protocol_sha256": "465ac8f0873fdeb40d848468c9dd498c1e210513f754ee198d09b4845482b24d",
+  "scope": "Artifact consistency, exact train cap and group-disjoint OOF mining, weights, labels/splits/selection/metrics; not real intent or scientific superiority"
+}
+{"method": "logistic", "seconds": 0.0283803330000012}
+{"method": "logistic_hard", "seconds": 0.02344395800000143}
+{"method": "hgb", "seconds": 0.3269685829999993}
+{"method": "hgb_hard", "seconds": 0.5716532920000006}
+{"method": "mlp", "seconds": 0.14434304099999906}
+{"method": "mlp_hard", "seconds": 0.04912904199999879}
+{"method": "interaction_hgb", "seconds": 0.5603961250000005}
+{"method": "interaction_hgb_hard", "seconds": 0.8646818750000005}
+{"method": "interaction_mlp", "seconds": 0.09223012499999861}
+{"method": "interaction_mlp_hard", "seconds": 0.06615466600000097}
+date 0 complete
+.........................
+----------------------------------------------------------------------
+Ran 63 tests in 20.141s
+
+OK
+{"method": "logistic", "seed": 0, "input_sha256": "41a1633df5c0247fa45e78186da766e28a97620e6616fd685482b5ff6cee4a04", "evidence_class": "synthetic_engineering", "code_commit": "engineering-test-not-paper-evidence", "split": {"mode": "combined", "train_end": "2026-01-01", "validation_end": "2026-01-02", "test_stocks": ["SYN_B"]}, "split_hash": "700f29a66bb43ecc8e714cc05f6681f99eda90ab6d1cc9914866c5583cf8be3b", "label_subset_hash": "b5e258c85d8163282c9f738b524dd5d0db724f4992c07c76a2e034ae73d1efcd", "positive_budget": 4, "negative_budget": 12, "selected_params": "1", "trial_count": 6, "validation_ap": 0.491859243697479, "test": {"average_precision": 0.6282679738562091, "prevalence": 0.25, "window_precision": 0.6666666666666666, "window_recall": 0.3333333333333333, "window_fpr": 0.05555555555555555, "window_covered_event_recall": 0.3333333333333333, "event_recall": null, "event_count": 6, "threshold": 0.6663062374041776, "note": "Window FPR is not alarms/hour. Covered-event recall is a proxy; timely event recall requires authoritative event intervals."}, "versions": {"python": "3.9.6", "numpy": "2.0.2", "sklearn": "1.6.1"}, "scope": "No direct comparability with paper AUC-PR 0.675; AP definition and dataset differ."}
+{"method": "linear_svm", "seed": 0, "input_sha256": "41a1633df5c0247fa45e78186da766e28a97620e6616fd685482b5ff6cee4a04", "evidence_class": "synthetic_engineering", "code_commit": "engineering-test-not-paper-evidence", "split": {"mode": "combined", "train_end": "2026-01-01", "validation_end": "2026-01-02", "test_stocks": ["SYN_B"]}, "split_hash": "700f29a66bb43ecc8e714cc05f6681f99eda90ab6d1cc9914866c5583cf8be3b", "label_subset_hash": "b5e258c85d8163282c9f738b524dd5d0db724f4992c07c76a2e034ae73d1efcd", "positive_budget": 4, "negative_budget": 12, "selected_params": "0.1", "trial_count": 6, "validation_ap": 0.491859243697479, "test": {"average_precision": 0.6282679738562091, "prevalence": 0.25, "window_precision": 0.6666666666666666, "window_recall": 0.3333333333333333, "window_fpr": 0.05555555555555555, "window_covered_event_recall": 0.3333333333333333, "event_recall": null, "event_count": 6, "threshold": 0.3233250365982687, "note": "Window FPR is not alarms/hour. Covered-event recall is a proxy; timely event recall requires authoritative event intervals."}, "versions": {"python": "3.9.6", "numpy": "2.0.2", "sklearn": "1.6.1"}, "scope": "No direct comparability with paper AUC-PR 0.675; AP definition and dataset differ."}
+{"method": "random_forest", "seed": 0, "input_sha256": "41a1633df5c0247fa45e78186da766e28a97620e6616fd685482b5ff6cee4a04", "evidence_class": "synthetic_engineering", "code_commit": "engineering-test-not-paper-evidence", "split": {"mode": "combined", "train_end": "2026-01-01", "validation_end": "2026-01-02", "test_stocks": ["SYN_B"]}, "split_hash": "700f29a66bb43ecc8e714cc05f6681f99eda90ab6d1cc9914866c5583cf8be3b", "label_subset_hash": "b5e258c85d8163282c9f738b524dd5d0db724f4992c07c76a2e034ae73d1efcd", "positive_budget": 4, "negative_budget": 12, "selected_params": "(4, 1)", "trial_count": 6, "validation_ap": 0.5139790764790765, "test": {"average_precision": 0.5974310776942355, "prevalence": 0.25, "window_precision": 0.0, "window_recall": 0.0, "window_fpr": 0.0, "window_covered_event_recall": 0.0, "event_recall": null, "event_count": 6, "threshold": 0.578980248917749, "note": "Window FPR is not alarms/hour. Covered-event recall is a proxy; timely event recall requires authoritative event intervals."}, "versions": {"python": "3.9.6", "numpy": "2.0.2", "sklearn": "1.6.1"}, "scope": "No direct comparability with paper AUC-PR 0.675; AP definition and dataset differ."}
+{"method": "hist_gradient_boosting", "seed": 0, "input_sha256": "41a1633df5c0247fa45e78186da766e28a97620e6616fd685482b5ff6cee4a04", "evidence_class": "synthetic_engineering", "code_commit": "engineering-test-not-paper-evidence", "split": {"mode": "combined", "train_end": "2026-01-01", "validation_end": "2026-01-02", "test_stocks": ["SYN_B"]}, "split_hash": "700f29a66bb43ecc8e714cc05f6681f99eda90ab6d1cc9914866c5583cf8be3b", "label_subset_hash": "b5e258c85d8163282c9f738b524dd5d0db724f4992c07c76a2e034ae73d1efcd", "positive_budget": 4, "negative_budget": 12, "selected_params": "(7, 0.03)", "trial_count": 6, "validation_ap": 0.25, "test": {"average_precision": 0.25, "prevalence": 0.25, "window_precision": 0.0, "window_recall": 0.0, "window_fpr": 0.0, "window_covered_event_recall": 0.0, "event_recall": null, "event_count": 6, "threshold": 0.25000000000000006, "note": "Window FPR is not alarms/hour. Covered-event recall is a proxy; timely event recall requires authoritative event intervals."}, "versions": {"python": "3.9.6", "numpy": "2.0.2", "sklearn": "1.6.1"}, "scope": "No direct comparability with paper AUC-PR 0.675; AP definition and dataset differ."}

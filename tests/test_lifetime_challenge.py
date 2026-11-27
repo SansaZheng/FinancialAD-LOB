@@ -29,3 +29,8 @@ class LifetimeChallengeTests(unittest.TestCase):
    r=evaluate(root/'models',challenge,root/'scores',protocol,engineering=True);self.assertEqual(r['status'],'engineering_only')
    for s in r['summary']:
     self.assertAlmostEqual(s['primary_macro_ap'],s['challenge_macro_ap']);self.assertAlmostEqual(s['primary_benign_fpr'],s['challenge_benign_fpr'])
+   from scripts.verify_lifetime_challenge import verify
+   audit=verify(root/'models',challenge,root/'scores',protocol,root/'verified.json',engineering=True)
+   self.assertTrue(audit['passed']);self.assertEqual(audit['selected_evaluations'],10)
+   bad=root/'scores/date-s0/hgb-predictions.npz';values=dict(np.load(bad));values['primary_score'][0]+=.01;np.savez_compressed(bad,**values)
+   with self.assertRaises(AssertionError):verify(root/'models',challenge,root/'scores',protocol,root/'tampered.json',engineering=True)

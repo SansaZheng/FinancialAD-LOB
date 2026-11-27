@@ -1,0 +1,16 @@
+..{"method": "logistic", "seconds": 0.025076666999999997}
+{"method": "logistic_hard", "seconds": 0.022839707999999792}
+{"method": "hgb", "seconds": 0.2761680410000005}
+{"method": "hgb_hard", "seconds": 0.3780624999999995}
+{"method": "mlp", "seconds": 1.4318287500000002}
+{"method": "mlp_hard", "seconds": 0.031438458000000225}
+{"method": "interaction_hgb", "seconds": 0.39517283300000017}
+{"method": "interaction_hgb_hard", "seconds": 0.3868627499999997}
+{"method": "interaction_mlp", "seconds": 0.029378790999999183}
+{"method": "interaction_mlp_hard", "seconds": 0.02763512500000065}
+date 0 complete
+.
+----------------------------------------------------------------------
+Ran 3 tests in 7.152s
+
+OK

@@ -1,0 +1,55 @@
+{
+  "name": "FinancialAD 012 preregistered per-level lifetime-matched benign test challenge",
+  "work": "FinancialAD-LOB",
+  "code": {
+    "github": "SansaZheng/FinancialAD-LOB",
+    "commit": "55bc00d26cc4cd8c39d5e71fdcfd631332d29dcf"
+  },
+  "command": [
+    "bash",
+    "-lc",
+    "set -euo pipefail\npython3 -m lobbench.lifetime_challenge --primary results/cq-012/j-1127-1d410b/benchmark --test-source results/cq-012/j-1127-d531e0/full-sessions --output \"$CQ_OUTPUT_DIR/challenge\"\ncp \"$CQ_OUTPUT_DIR/challenge/progress.txt\" \"$CQ_OUTPUT_DIR/progress.txt\""
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "resources": {
+    "gpus": 0,
+    "cpus": 1,
+    "ram_gb": 4,
+    "disk_gb": 1
+  },
+  "limits": {
+    "max_hours": 0.5,
+    "max_attempts": 1,
+    "max_usd": 0
+  },
+  "placement": {
+    "target": "kaggle",
+    "allow_rent": false
+  },
+  "outputs": {
+    "dest": "/Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/012-challenge",
+    "expect": [
+      {
+        "path": "challenge/manifest.json",
+        "contains": "\"status\": \"complete\""
+      },
+      {
+        "path": "progress.txt",
+        "contains": "1/1"
+      }
+    ],
+    "progress": {
+      "path": "progress.txt",
+      "stall_min": 40
+    }
+  },
+  "idempotent": true,
+  "depends_on": [
+    "j-1127-1d410b"
+  ]
+}

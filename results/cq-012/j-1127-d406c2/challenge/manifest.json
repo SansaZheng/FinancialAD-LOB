@@ -1,0 +1,6928 @@
+{
+  "status": "complete",
+  "primary_sha256": "01213ddbaf0ffc19d31d43ce4793839031c283b3ef241abc6a21b31472cc8d2d",
+  "dataset_sha256": "053af4c6530bb41ebaca935a5b653cda372cdba25ba691468f753bb5f7fb3260",
+  "challenge_protocol_sha256": "37a34da3e00dd2505e10c381ccf8dd8117feb4de245bff2e89806b01462b8dbc",
+  "windows": 15852,
+  "changed_controls": 384,
+  "censored_ids": [
+    "PEKAO-2017-01-30-37487"
+  ],
+  "positive_observational_collisions": 55,
+  "source_job": "j-1127-d406c2",
+  "changes": [
+    {
+      "id": "KGHM-2017-01-27-4174",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        19,
+        16
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-14094",
+      "withdrawal_steps": [
+        20,
+        17,
+        18,
+        19,
+        20
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-16846",
+      "withdrawal_steps": [
+        18,
+        21,
+        20,
+        21,
+        22
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-18318",
+      "withdrawal_steps": [
+        17,
+        18,
+        19,
+        18,
+        17
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-23438",
+      "withdrawal_steps": [
+        20,
+        19,
+        18,
+        19,
+        16
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-25870",
+      "withdrawal_steps": [
+        17,
+        20,
+        19,
+        20,
+        21
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-32590",
+      "withdrawal_steps": [
+        23,
+        22,
+        21,
+        22,
+        19
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-36046",
+      "withdrawal_steps": [
+        17,
+        18,
+        19,
+        18,
+        17
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-36814",
+      "withdrawal_steps": [
+        18,
+        21,
+        20,
+        19,
+        18
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-42638",
+      "withdrawal_steps": [
+        14,
+        11,
+        12,
+        13,
+        10
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-44238",
+      "withdrawal_steps": [
+        19,
+        22,
+        21,
+        20,
+        23
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-44494",
+      "withdrawal_steps": [
+        17,
+        14,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-44750",
+      "withdrawal_steps": [
+        20,
+        17,
+        18,
+        19,
+        16
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-52174",
+      "withdrawal_steps": [
+        8,
+        9,
+        10,
+        9,
+        8
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-62990",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        17,
+        16
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-65294",
+      "withdrawal_steps": [
+        20,
+        17,
+        18,
+        17,
+        20
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-68046",
+      "withdrawal_steps": [
+        10,
+        13,
+        12,
+        13,
+        14
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-68558",
+      "withdrawal_steps": [
+        11,
+        12,
+        13,
+        12,
+        15
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-76302",
+      "withdrawal_steps": [
+        15,
+        12,
+        13,
+        14,
+        15
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-77646",
+      "withdrawal_steps": [
+        18,
+        19,
+        20,
+        19,
+        18
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-78030",
+      "withdrawal_steps": [
+        12,
+        13,
+        14,
+        15,
+        12
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-80078",
+      "withdrawal_steps": [
+        11,
+        14,
+        13,
+        12,
+        15
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-82894",
+      "withdrawal_steps": [
+        23,
+        20,
+        21,
+        22,
+        23
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-83150",
+      "withdrawal_steps": [
+        14,
+        11,
+        12,
+        13,
+        10
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-84366",
+      "withdrawal_steps": [
+        15,
+        14,
+        13,
+        14,
+        15
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-94158",
+      "withdrawal_steps": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-27-99022",
+      "withdrawal_steps": [
+        12,
+        15,
+        14,
+        15,
+        16
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-102862",
+      "withdrawal_steps": [
+        17,
+        20,
+        19,
+        18,
+        17
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-109646",
+      "withdrawal_steps": [
+        15,
+        16,
+        17,
+        18,
+        15
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-113486",
+      "withdrawal_steps": [
+        12,
+        9,
+        10,
+        11,
+        12
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-115150",
+      "withdrawal_steps": [
+        17,
+        14,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-117774",
+      "withdrawal_steps": [
+        17,
+        18,
+        19,
+        18,
+        21
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-121486",
+      "withdrawal_steps": [
+        10,
+        13,
+        12,
+        13,
+        10
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-123790",
+      "withdrawal_steps": [
+        21,
+        20,
+        19,
+        20,
+        21
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-125454",
+      "withdrawal_steps": [
+        13,
+        12,
+        11,
+        10,
+        13
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-127758",
+      "withdrawal_steps": [
+        18,
+        21,
+        20,
+        19,
+        22
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-129422",
+      "withdrawal_steps": [
+        17,
+        14,
+        15,
+        16,
+        13
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-129870",
+      "withdrawal_steps": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-27-131406",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        17,
+        16
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-133198",
+      "withdrawal_steps": [
+        12,
+        15,
+        14,
+        15,
+        12
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-135950",
+      "withdrawal_steps": [
+        18,
+        17,
+        16,
+        15,
+        18
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-138254",
+      "withdrawal_steps": [
+        19,
+        18,
+        17,
+        16,
+        15
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-27-140686",
+      "withdrawal_steps": [
+        10,
+        13,
+        12,
+        13,
+        10
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-143694",
+      "withdrawal_steps": [
+        19,
+        18,
+        17,
+        16,
+        19
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-27-146574",
+      "withdrawal_steps": [
+        13,
+        14,
+        15,
+        16,
+        13
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-3948",
+      "withdrawal_steps": [
+        15,
+        16,
+        17,
+        16,
+        15
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-4140",
+      "withdrawal_steps": [
+        19,
+        22,
+        21,
+        20,
+        19
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-5804",
+      "withdrawal_steps": [
+        15,
+        18,
+        17,
+        16,
+        19
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-5868",
+      "withdrawal_steps": [
+        19,
+        18,
+        17,
+        18,
+        15
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-5932",
+      "withdrawal_steps": [
+        15,
+        12,
+        13,
+        12,
+        15
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-7340",
+      "withdrawal_steps": [
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-30-8364",
+      "withdrawal_steps": [
+        19,
+        22,
+        21,
+        20,
+        19
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-11308",
+      "withdrawal_steps": [
+        7,
+        10,
+        9,
+        8,
+        11
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-11372",
+      "withdrawal_steps": [
+        21,
+        20,
+        19,
+        20,
+        17
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-14956",
+      "withdrawal_steps": [
+        17,
+        16,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-30-17324",
+      "withdrawal_steps": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-30-21100",
+      "withdrawal_steps": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-30-22252",
+      "withdrawal_steps": [
+        14,
+        11,
+        12,
+        11,
+        10
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-22700",
+      "withdrawal_steps": [
+        18,
+        19,
+        20,
+        19,
+        22
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-23020",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        17,
+        20
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-25388",
+      "withdrawal_steps": [
+        18,
+        17,
+        16,
+        17,
+        14
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-28588",
+      "withdrawal_steps": [
+        22,
+        21,
+        20,
+        19,
+        22
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-29164",
+      "withdrawal_steps": [
+        16,
+        17,
+        18,
+        17,
+        20
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-31916",
+      "withdrawal_steps": [
+        18,
+        15,
+        16,
+        17,
+        18
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-35756",
+      "withdrawal_steps": [
+        21,
+        20,
+        19,
+        20,
+        21
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-37100",
+      "withdrawal_steps": [
+        18,
+        21,
+        20,
+        21,
+        18
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-39212",
+      "withdrawal_steps": [
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-30-41772",
+      "withdrawal_steps": [
+        17,
+        14,
+        15,
+        14,
+        17
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-44780",
+      "withdrawal_steps": [
+        13,
+        14,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-47276",
+      "withdrawal_steps": [
+        23,
+        20,
+        21,
+        22,
+        23
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-49836",
+      "withdrawal_steps": [
+        15,
+        18,
+        17,
+        18,
+        19
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-50092",
+      "withdrawal_steps": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-30-65900",
+      "withdrawal_steps": [
+        11,
+        14,
+        13,
+        14,
+        15
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-68332",
+      "withdrawal_steps": [
+        13,
+        16,
+        15,
+        14,
+        17
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-69356",
+      "withdrawal_steps": [
+        8,
+        9,
+        10,
+        9,
+        8
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-69548",
+      "withdrawal_steps": [
+        21,
+        18,
+        19,
+        20,
+        21
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-77036",
+      "withdrawal_steps": [
+        23,
+        20,
+        21,
+        20,
+        23
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-78636",
+      "withdrawal_steps": [
+        19,
+        16,
+        17,
+        16,
+        19
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-80748",
+      "withdrawal_steps": [
+        21,
+        18,
+        19,
+        20,
+        17
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-82732",
+      "withdrawal_steps": [
+        8,
+        9,
+        10,
+        11,
+        8
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-82924",
+      "withdrawal_steps": [
+        22,
+        21,
+        20,
+        21,
+        18
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-84332",
+      "withdrawal_steps": [
+        14,
+        11,
+        12,
+        13,
+        14
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-86764",
+      "withdrawal_steps": [
+        17,
+        14,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-87788",
+      "withdrawal_steps": [
+        15,
+        14,
+        13,
+        12,
+        11
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-30-90604",
+      "withdrawal_steps": [
+        17,
+        16,
+        15,
+        14,
+        17
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-94636",
+      "withdrawal_steps": [
+        16,
+        13,
+        14,
+        13,
+        16
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-95148",
+      "withdrawal_steps": [
+        17,
+        16,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-30-99820",
+      "withdrawal_steps": [
+        16,
+        13,
+        14,
+        13,
+        16
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-101996",
+      "withdrawal_steps": [
+        19,
+        22,
+        21,
+        20,
+        19
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-102316",
+      "withdrawal_steps": [
+        11,
+        10,
+        9,
+        10,
+        11
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-104876",
+      "withdrawal_steps": [
+        20,
+        19,
+        18,
+        17,
+        16
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-30-107564",
+      "withdrawal_steps": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-30-110956",
+      "withdrawal_steps": [
+        18,
+        15,
+        16,
+        15,
+        14
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-114540",
+      "withdrawal_steps": [
+        23,
+        22,
+        21,
+        20,
+        23
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-125740",
+      "withdrawal_steps": [
+        18,
+        21,
+        20,
+        19,
+        18
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-128300",
+      "withdrawal_steps": [
+        17,
+        20,
+        19,
+        20,
+        21
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-30-130924",
+      "withdrawal_steps": [
+        10,
+        13,
+        12,
+        13,
+        14
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-10893",
+      "withdrawal_steps": [
+        18,
+        15,
+        16,
+        17,
+        14
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-11725",
+      "withdrawal_steps": [
+        18,
+        15,
+        16,
+        17,
+        18
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-11853",
+      "withdrawal_steps": [
+        17,
+        14,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-12365",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        17,
+        16
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-13389",
+      "withdrawal_steps": [
+        12,
+        13,
+        14,
+        15,
+        12
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-17997",
+      "withdrawal_steps": [
+        19,
+        18,
+        17,
+        18,
+        15
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-18189",
+      "withdrawal_steps": [
+        14,
+        13,
+        12,
+        11,
+        14
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-22349",
+      "withdrawal_steps": [
+        12,
+        13,
+        14,
+        15,
+        12
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-22413",
+      "withdrawal_steps": [
+        20,
+        17,
+        18,
+        19,
+        20
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-25101",
+      "withdrawal_steps": [
+        16,
+        13,
+        14,
+        15,
+        16
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-32525",
+      "withdrawal_steps": [
+        11,
+        14,
+        13,
+        12,
+        11
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-36045",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        19,
+        16
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-36493",
+      "withdrawal_steps": [
+        19,
+        20,
+        21,
+        22,
+        19
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-36749",
+      "withdrawal_steps": [
+        13,
+        16,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-40653",
+      "withdrawal_steps": [
+        13,
+        16,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-41741",
+      "withdrawal_steps": [
+        19,
+        18,
+        17,
+        16,
+        15
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-31-42381",
+      "withdrawal_steps": [
+        18,
+        19,
+        20,
+        19,
+        22
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-42829",
+      "withdrawal_steps": [
+        12,
+        9,
+        10,
+        9,
+        12
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-43789",
+      "withdrawal_steps": [
+        12,
+        13,
+        14,
+        13,
+        16
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-44877",
+      "withdrawal_steps": [
+        16,
+        13,
+        14,
+        13,
+        12
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-46029",
+      "withdrawal_steps": [
+        18,
+        15,
+        16,
+        17,
+        18
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-48141",
+      "withdrawal_steps": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-31-48845",
+      "withdrawal_steps": [
+        20,
+        19,
+        18,
+        17,
+        16
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-31-49741",
+      "withdrawal_steps": [
+        13,
+        16,
+        15,
+        16,
+        17
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-51981",
+      "withdrawal_steps": [
+        17,
+        14,
+        15,
+        16,
+        13
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-52173",
+      "withdrawal_steps": [
+        20,
+        19,
+        18,
+        17,
+        16
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-31-52429",
+      "withdrawal_steps": [
+        10,
+        11,
+        12,
+        11,
+        10
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-54605",
+      "withdrawal_steps": [
+        16,
+        15,
+        14,
+        15,
+        16
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-57677",
+      "withdrawal_steps": [
+        15,
+        14,
+        13,
+        14,
+        11
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-60685",
+      "withdrawal_steps": [
+        19,
+        22,
+        21,
+        22,
+        23
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-63885",
+      "withdrawal_steps": [
+        22,
+        19,
+        20,
+        21,
+        22
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-65293",
+      "withdrawal_steps": [
+        9,
+        12,
+        11,
+        10,
+        13
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-65677",
+      "withdrawal_steps": [
+        11,
+        12,
+        13,
+        12,
+        15
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-70733",
+      "withdrawal_steps": [
+        18,
+        17,
+        16,
+        15,
+        18
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-74061",
+      "withdrawal_steps": [
+        21,
+        20,
+        19,
+        20,
+        21
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-74573",
+      "withdrawal_steps": [
+        18,
+        19,
+        20,
+        19,
+        18
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-80205",
+      "withdrawal_steps": [
+        14,
+        13,
+        12,
+        11,
+        10
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-31-80397",
+      "withdrawal_steps": [
+        16,
+        15,
+        14,
+        13,
+        16
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-85197",
+      "withdrawal_steps": [
+        13,
+        10,
+        11,
+        12,
+        13
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-88141",
+      "withdrawal_steps": [
+        15,
+        12,
+        13,
+        14,
+        11
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-89741",
+      "withdrawal_steps": [
+        18,
+        21,
+        20,
+        19,
+        22
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-90317",
+      "withdrawal_steps": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "KGHM-2017-01-31-100941",
+      "withdrawal_steps": [
+        10,
+        13,
+        12,
+        13,
+        14
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-103181",
+      "withdrawal_steps": [
+        16,
+        13,
+        14,
+        15,
+        16
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "KGHM-2017-01-31-111053",
+      "withdrawal_steps": [
+        15,
+        16,
+        17,
+        16,
+        15
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-27-3044",
+      "withdrawal_steps": [
+        13,
+        10,
+        11,
+        10,
+        9
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-27-11364",
+      "withdrawal_steps": [
+        19,
+        18,
+        17,
+        16,
+        19
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-27-11492",
+      "withdrawal_steps": [
+        21,
+        18,
+        19,
+        18,
+        21
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-27-15332",
+      "withdrawal_steps": [
+        18,
+        15,
+        16,
+        15,
+        18
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-27-20196",
+      "withdrawal_steps": [
+        21,
+        18,
+        19,
+        18,
+        21
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-27-20516",
+      "withdrawal_steps": [
+        19,
+        22,
+        21,
+        22,
+        19
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-27-20708",
+      "withdrawal_steps": [
+        17,
+        20,
+        19,
+        18,
+        21
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-27-23652",
+      "withdrawal_steps": [
+        16,
+        17,
+        18,
+        19,
+        16
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-27-26916",
+      "withdrawal_steps": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PEKAO-2017-01-27-27620",
+      "withdrawal_steps": [
+        19,
+        20,
+        21,
+        22,
+        19
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-27-29220",
+      "withdrawal_steps": [
+        14,
+        17,
+        16,
+        15,
+        14
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-27-31396",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        17,
+        16
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-27-32100",
+      "withdrawal_steps": [
+        12,
+        15,
+        14,
+        13,
+        12
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-27-42532",
+      "withdrawal_steps": [
+        9,
+        10,
+        11,
+        12,
+        9
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-27-42980",
+      "withdrawal_steps": [
+        16,
+        17,
+        18,
+        17,
+        20
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-2479",
+      "withdrawal_steps": [
+        13,
+        14,
+        15,
+        16,
+        13
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-3439",
+      "withdrawal_steps": [
+        17,
+        18,
+        19,
+        18,
+        21
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-7663",
+      "withdrawal_steps": [
+        11,
+        8,
+        9,
+        8,
+        11
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-8047",
+      "withdrawal_steps": [
+        19,
+        22,
+        21,
+        22,
+        23
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-10927",
+      "withdrawal_steps": [
+        18,
+        15,
+        16,
+        17,
+        18
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-19887",
+      "withdrawal_steps": [
+        15,
+        18,
+        17,
+        16,
+        15
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-22383",
+      "withdrawal_steps": [
+        17,
+        20,
+        19,
+        20,
+        21
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-25263",
+      "withdrawal_steps": [
+        16,
+        17,
+        18,
+        17,
+        20
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-25711",
+      "withdrawal_steps": [
+        10,
+        13,
+        12,
+        11,
+        10
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-28271",
+      "withdrawal_steps": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PEKAO-2017-01-30-28591",
+      "withdrawal_steps": [
+        17,
+        16,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PEKAO-2017-01-30-28911",
+      "withdrawal_steps": [
+        14,
+        11,
+        12,
+        13,
+        10
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-30191",
+      "withdrawal_steps": [
+        15,
+        12,
+        13,
+        14,
+        15
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-33263",
+      "withdrawal_steps": [
+        17,
+        16,
+        15,
+        16,
+        13
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-36079",
+      "withdrawal_steps": [
+        15,
+        12,
+        13,
+        12,
+        11
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-38255",
+      "withdrawal_steps": [
+        20,
+        17,
+        18,
+        19,
+        16
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-39407",
+      "withdrawal_steps": [
+        19,
+        16,
+        17,
+        16,
+        19
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-39727",
+      "withdrawal_steps": [
+        17,
+        18,
+        19,
+        18,
+        17
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-41007",
+      "withdrawal_steps": [
+        19,
+        20,
+        21,
+        22,
+        19
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-41519",
+      "withdrawal_steps": [
+        15,
+        14,
+        13,
+        14,
+        11
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-44527",
+      "withdrawal_steps": [
+        19,
+        16,
+        17,
+        18,
+        19
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-45551",
+      "withdrawal_steps": [
+        14,
+        11,
+        12,
+        11,
+        10
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-30-48367",
+      "withdrawal_steps": [
+        13,
+        14,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-31-2910",
+      "withdrawal_steps": [
+        10,
+        13,
+        12,
+        13,
+        14
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-31-3550",
+      "withdrawal_steps": [
+        11,
+        12,
+        13,
+        12,
+        11
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-31-3870",
+      "withdrawal_steps": [
+        8,
+        11,
+        10,
+        11,
+        12
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-31-7966",
+      "withdrawal_steps": [
+        12,
+        13,
+        14,
+        13,
+        16
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-31-8222",
+      "withdrawal_steps": [
+        19,
+        18,
+        17,
+        16,
+        15
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PEKAO-2017-01-31-9758",
+      "withdrawal_steps": [
+        20,
+        17,
+        18,
+        17,
+        20
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-31-16606",
+      "withdrawal_steps": [
+        18,
+        17,
+        16,
+        17,
+        18
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-31-21918",
+      "withdrawal_steps": [
+        22,
+        19,
+        20,
+        19,
+        22
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-31-23262",
+      "withdrawal_steps": [
+        19,
+        22,
+        21,
+        22,
+        23
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-31-28126",
+      "withdrawal_steps": [
+        16,
+        15,
+        14,
+        15,
+        12
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-31-30174",
+      "withdrawal_steps": [
+        21,
+        20,
+        19,
+        20,
+        21
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-31-32158",
+      "withdrawal_steps": [
+        16,
+        17,
+        18,
+        19,
+        16
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-31-33246",
+      "withdrawal_steps": [
+        19,
+        20,
+        21,
+        20,
+        19
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-31-34718",
+      "withdrawal_steps": [
+        7,
+        8,
+        9,
+        8,
+        7
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PEKAO-2017-01-31-38878",
+      "withdrawal_steps": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PEKAO-2017-01-31-39134",
+      "withdrawal_steps": [
+        15,
+        18,
+        17,
+        16,
+        19
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-4023",
+      "withdrawal_steps": [
+        6,
+        9,
+        8,
+        9,
+        6
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-5047",
+      "withdrawal_steps": [
+        21,
+        18,
+        19,
+        18,
+        21
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-16183",
+      "withdrawal_steps": [
+        8,
+        11,
+        10,
+        9,
+        12
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-19127",
+      "withdrawal_steps": [
+        12,
+        9,
+        10,
+        11,
+        8
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-19895",
+      "withdrawal_steps": [
+        12,
+        13,
+        14,
+        15,
+        12
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-21303",
+      "withdrawal_steps": [
+        14,
+        11,
+        12,
+        13,
+        10
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-24183",
+      "withdrawal_steps": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-24951",
+      "withdrawal_steps": [
+        12,
+        13,
+        14,
+        15,
+        12
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-27831",
+      "withdrawal_steps": [
+        15,
+        14,
+        13,
+        12,
+        11
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-28663",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        19,
+        20
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-31095",
+      "withdrawal_steps": [
+        22,
+        19,
+        20,
+        21,
+        22
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-33271",
+      "withdrawal_steps": [
+        17,
+        16,
+        15,
+        14,
+        17
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-35191",
+      "withdrawal_steps": [
+        8,
+        9,
+        10,
+        9,
+        8
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-36855",
+      "withdrawal_steps": [
+        14,
+        13,
+        12,
+        11,
+        10
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-39479",
+      "withdrawal_steps": [
+        18,
+        17,
+        16,
+        17,
+        14
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-45239",
+      "withdrawal_steps": [
+        17,
+        16,
+        15,
+        16,
+        17
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-45879",
+      "withdrawal_steps": [
+        21,
+        20,
+        19,
+        18,
+        21
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-46519",
+      "withdrawal_steps": [
+        23,
+        20,
+        21,
+        22,
+        19
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-47031",
+      "withdrawal_steps": [
+        11,
+        14,
+        13,
+        12,
+        15
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-49783",
+      "withdrawal_steps": [
+        22,
+        19,
+        20,
+        21,
+        18
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-57655",
+      "withdrawal_steps": [
+        19,
+        18,
+        17,
+        16,
+        15
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-66231",
+      "withdrawal_steps": [
+        23,
+        22,
+        21,
+        22,
+        23
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-27-68727",
+      "withdrawal_steps": [
+        15,
+        16,
+        17,
+        18,
+        15
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-1469",
+      "withdrawal_steps": [
+        16,
+        13,
+        14,
+        13,
+        12
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-4157",
+      "withdrawal_steps": [
+        19,
+        18,
+        17,
+        16,
+        19
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-4349",
+      "withdrawal_steps": [
+        17,
+        16,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-5373",
+      "withdrawal_steps": [
+        16,
+        13,
+        14,
+        13,
+        16
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-5629",
+      "withdrawal_steps": [
+        16,
+        15,
+        14,
+        13,
+        16
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-10557",
+      "withdrawal_steps": [
+        13,
+        14,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-19197",
+      "withdrawal_steps": [
+        8,
+        11,
+        10,
+        11,
+        12
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-19581",
+      "withdrawal_steps": [
+        15,
+        16,
+        17,
+        18,
+        15
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-19965",
+      "withdrawal_steps": [
+        18,
+        19,
+        20,
+        19,
+        22
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-25341",
+      "withdrawal_steps": [
+        19,
+        18,
+        17,
+        16,
+        19
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-31421",
+      "withdrawal_steps": [
+        12,
+        11,
+        10,
+        9,
+        8
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-35837",
+      "withdrawal_steps": [
+        19,
+        22,
+        21,
+        22,
+        19
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-42365",
+      "withdrawal_steps": [
+        12,
+        13,
+        14,
+        13,
+        16
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-42941",
+      "withdrawal_steps": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-52093",
+      "withdrawal_steps": [
+        17,
+        16,
+        15,
+        16,
+        17
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-59389",
+      "withdrawal_steps": [
+        15,
+        14,
+        13,
+        12,
+        11
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-66173",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        19,
+        16
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-30-71357",
+      "withdrawal_steps": [
+        11,
+        14,
+        13,
+        12,
+        15
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-31-2922",
+      "withdrawal_steps": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKNORLEN-2017-01-31-9642",
+      "withdrawal_steps": [
+        22,
+        21,
+        20,
+        19,
+        22
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-31-11178",
+      "withdrawal_steps": [
+        18,
+        17,
+        16,
+        17,
+        14
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-31-18730",
+      "withdrawal_steps": [
+        19,
+        16,
+        17,
+        18,
+        19
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-31-19178",
+      "withdrawal_steps": [
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKNORLEN-2017-01-31-21418",
+      "withdrawal_steps": [
+        18,
+        15,
+        16,
+        17,
+        18
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-31-25962",
+      "withdrawal_steps": [
+        17,
+        20,
+        19,
+        18,
+        17
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-31-26346",
+      "withdrawal_steps": [
+        18,
+        15,
+        16,
+        15,
+        18
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-31-26922",
+      "withdrawal_steps": [
+        20,
+        19,
+        18,
+        17,
+        20
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-31-28330",
+      "withdrawal_steps": [
+        10,
+        13,
+        12,
+        11,
+        14
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-31-35050",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        19,
+        20
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-31-35946",
+      "withdrawal_steps": [
+        20,
+        17,
+        18,
+        19,
+        20
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-31-45034",
+      "withdrawal_steps": [
+        11,
+        14,
+        13,
+        12,
+        15
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-31-47978",
+      "withdrawal_steps": [
+        21,
+        20,
+        19,
+        20,
+        17
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKNORLEN-2017-01-31-51562",
+      "withdrawal_steps": [
+        16,
+        15,
+        14,
+        13,
+        16
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-2758",
+      "withdrawal_steps": [
+        23,
+        22,
+        21,
+        20,
+        19
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKOBP-2017-01-27-4998",
+      "withdrawal_steps": [
+        14,
+        11,
+        12,
+        13,
+        10
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-5190",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        17,
+        20
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-5958",
+      "withdrawal_steps": [
+        18,
+        15,
+        16,
+        17,
+        14
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-8198",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        17,
+        16
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-9158",
+      "withdrawal_steps": [
+        20,
+        17,
+        18,
+        19,
+        20
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-9734",
+      "withdrawal_steps": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKOBP-2017-01-27-9990",
+      "withdrawal_steps": [
+        23,
+        20,
+        21,
+        22,
+        19
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-13062",
+      "withdrawal_steps": [
+        14,
+        17,
+        16,
+        15,
+        18
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-15750",
+      "withdrawal_steps": [
+        16,
+        15,
+        14,
+        15,
+        12
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-23174",
+      "withdrawal_steps": [
+        23,
+        20,
+        21,
+        20,
+        19
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-23238",
+      "withdrawal_steps": [
+        14,
+        11,
+        12,
+        13,
+        14
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-27910",
+      "withdrawal_steps": [
+        23,
+        20,
+        21,
+        22,
+        19
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-28422",
+      "withdrawal_steps": [
+        16,
+        15,
+        14,
+        15,
+        16
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-28678",
+      "withdrawal_steps": [
+        23,
+        20,
+        21,
+        22,
+        19
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-37062",
+      "withdrawal_steps": [
+        17,
+        20,
+        19,
+        18,
+        21
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-37702",
+      "withdrawal_steps": [
+        11,
+        8,
+        9,
+        8,
+        11
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-40070",
+      "withdrawal_steps": [
+        13,
+        14,
+        15,
+        14,
+        17
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-41478",
+      "withdrawal_steps": [
+        21,
+        18,
+        19,
+        20,
+        17
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-41990",
+      "withdrawal_steps": [
+        17,
+        20,
+        19,
+        20,
+        21
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-47046",
+      "withdrawal_steps": [
+        12,
+        15,
+        14,
+        13,
+        16
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-47302",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        17,
+        20
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-47494",
+      "withdrawal_steps": [
+        17,
+        16,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKOBP-2017-01-27-48710",
+      "withdrawal_steps": [
+        11,
+        14,
+        13,
+        12,
+        11
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-50246",
+      "withdrawal_steps": [
+        18,
+        21,
+        20,
+        19,
+        22
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-51142",
+      "withdrawal_steps": [
+        23,
+        22,
+        21,
+        20,
+        23
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-55238",
+      "withdrawal_steps": [
+        21,
+        20,
+        19,
+        18,
+        17
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKOBP-2017-01-27-56582",
+      "withdrawal_steps": [
+        19,
+        20,
+        21,
+        20,
+        19
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-59206",
+      "withdrawal_steps": [
+        13,
+        12,
+        11,
+        12,
+        13
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-27-60550",
+      "withdrawal_steps": [
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKOBP-2017-01-27-68230",
+      "withdrawal_steps": [
+        19,
+        22,
+        21,
+        20,
+        23
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-2308",
+      "withdrawal_steps": [
+        15,
+        14,
+        13,
+        12,
+        15
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-2500",
+      "withdrawal_steps": [
+        16,
+        15,
+        14,
+        13,
+        12
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKOBP-2017-01-30-3652",
+      "withdrawal_steps": [
+        11,
+        12,
+        13,
+        12,
+        15
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-5892",
+      "withdrawal_steps": [
+        17,
+        14,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-6980",
+      "withdrawal_steps": [
+        16,
+        13,
+        14,
+        15,
+        16
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-10500",
+      "withdrawal_steps": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKOBP-2017-01-30-10628",
+      "withdrawal_steps": [
+        7,
+        8,
+        9,
+        8,
+        7
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-13892",
+      "withdrawal_steps": [
+        17,
+        16,
+        15,
+        14,
+        17
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-14916",
+      "withdrawal_steps": [
+        18,
+        19,
+        20,
+        21,
+        18
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-15876",
+      "withdrawal_steps": [
+        14,
+        17,
+        16,
+        17,
+        14
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-18436",
+      "withdrawal_steps": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKOBP-2017-01-30-18628",
+      "withdrawal_steps": [
+        23,
+        20,
+        21,
+        22,
+        19
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-21444",
+      "withdrawal_steps": [
+        19,
+        16,
+        17,
+        16,
+        15
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-22020",
+      "withdrawal_steps": [
+        13,
+        16,
+        15,
+        16,
+        13
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-23300",
+      "withdrawal_steps": [
+        6,
+        7,
+        8,
+        7,
+        6
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-30340",
+      "withdrawal_steps": [
+        10,
+        9,
+        8,
+        7,
+        10
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-34052",
+      "withdrawal_steps": [
+        17,
+        14,
+        15,
+        16,
+        13
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-34244",
+      "withdrawal_steps": [
+        13,
+        16,
+        15,
+        14,
+        17
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-38916",
+      "withdrawal_steps": [
+        17,
+        20,
+        19,
+        18,
+        21
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-47172",
+      "withdrawal_steps": [
+        13,
+        14,
+        15,
+        16,
+        13
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-51780",
+      "withdrawal_steps": [
+        19,
+        20,
+        21,
+        22,
+        19
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-54980",
+      "withdrawal_steps": [
+        16,
+        17,
+        18,
+        19,
+        16
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-30-56196",
+      "withdrawal_steps": [
+        9,
+        10,
+        11,
+        10,
+        13
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-3614",
+      "withdrawal_steps": [
+        21,
+        20,
+        19,
+        20,
+        21
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-5534",
+      "withdrawal_steps": [
+        13,
+        10,
+        11,
+        12,
+        13
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-7006",
+      "withdrawal_steps": [
+        23,
+        20,
+        21,
+        22,
+        23
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-10398",
+      "withdrawal_steps": [
+        18,
+        17,
+        16,
+        15,
+        18
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-12062",
+      "withdrawal_steps": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKOBP-2017-01-31-13790",
+      "withdrawal_steps": [
+        14,
+        11,
+        12,
+        13,
+        10
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-14622",
+      "withdrawal_steps": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKOBP-2017-01-31-17182",
+      "withdrawal_steps": [
+        10,
+        7,
+        8,
+        7,
+        10
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-19294",
+      "withdrawal_steps": [
+        15,
+        16,
+        17,
+        16,
+        19
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-19934",
+      "withdrawal_steps": [
+        18,
+        17,
+        16,
+        17,
+        18
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-23902",
+      "withdrawal_steps": [
+        15,
+        16,
+        17,
+        18,
+        15
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-28830",
+      "withdrawal_steps": [
+        13,
+        16,
+        15,
+        16,
+        13
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-30110",
+      "withdrawal_steps": [
+        18,
+        15,
+        16,
+        17,
+        18
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-36318",
+      "withdrawal_steps": [
+        14,
+        17,
+        16,
+        15,
+        14
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-40222",
+      "withdrawal_steps": [
+        17,
+        16,
+        15,
+        16,
+        13
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-40478",
+      "withdrawal_steps": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKOBP-2017-01-31-41374",
+      "withdrawal_steps": [
+        23,
+        22,
+        21,
+        20,
+        19
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKOBP-2017-01-31-43998",
+      "withdrawal_steps": [
+        15,
+        12,
+        13,
+        14,
+        11
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-46750",
+      "withdrawal_steps": [
+        13,
+        12,
+        11,
+        12,
+        9
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-50142",
+      "withdrawal_steps": [
+        15,
+        12,
+        13,
+        12,
+        11
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-53470",
+      "withdrawal_steps": [
+        22,
+        19,
+        20,
+        19,
+        22
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-55262",
+      "withdrawal_steps": [
+        19,
+        22,
+        21,
+        20,
+        19
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-56926",
+      "withdrawal_steps": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PKOBP-2017-01-31-57246",
+      "withdrawal_steps": [
+        18,
+        17,
+        16,
+        17,
+        14
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PKOBP-2017-01-31-59230",
+      "withdrawal_steps": [
+        11,
+        14,
+        13,
+        14,
+        15
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-3571",
+      "withdrawal_steps": [
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PZU-2017-01-27-4019",
+      "withdrawal_steps": [
+        14,
+        17,
+        16,
+        15,
+        18
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-9907",
+      "withdrawal_steps": [
+        8,
+        9,
+        10,
+        11,
+        8
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-9971",
+      "withdrawal_steps": [
+        15,
+        16,
+        17,
+        16,
+        15
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-12339",
+      "withdrawal_steps": [
+        19,
+        22,
+        21,
+        20,
+        23
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-15219",
+      "withdrawal_steps": [
+        20,
+        19,
+        18,
+        19,
+        20
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-20403",
+      "withdrawal_steps": [
+        19,
+        16,
+        17,
+        16,
+        19
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-22707",
+      "withdrawal_steps": [
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PZU-2017-01-27-25587",
+      "withdrawal_steps": [
+        13,
+        12,
+        11,
+        10,
+        9
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PZU-2017-01-27-34099",
+      "withdrawal_steps": [
+        17,
+        16,
+        15,
+        14,
+        17
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-34483",
+      "withdrawal_steps": [
+        17,
+        18,
+        19,
+        20,
+        17
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-34995",
+      "withdrawal_steps": [
+        12,
+        15,
+        14,
+        13,
+        12
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-35443",
+      "withdrawal_steps": [
+        15,
+        12,
+        13,
+        14,
+        15
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-37427",
+      "withdrawal_steps": [
+        10,
+        7,
+        8,
+        9,
+        6
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-39347",
+      "withdrawal_steps": [
+        15,
+        14,
+        13,
+        12,
+        15
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-42483",
+      "withdrawal_steps": [
+        17,
+        18,
+        19,
+        18,
+        17
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-43699",
+      "withdrawal_steps": [
+        15,
+        14,
+        13,
+        14,
+        15
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-45939",
+      "withdrawal_steps": [
+        16,
+        17,
+        18,
+        17,
+        16
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-46515",
+      "withdrawal_steps": [
+        20,
+        17,
+        18,
+        19,
+        16
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-27-46963",
+      "withdrawal_steps": [
+        14,
+        13,
+        12,
+        11,
+        10
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PZU-2017-01-30-4130",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        17,
+        20
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-30-4194",
+      "withdrawal_steps": [
+        23,
+        22,
+        21,
+        20,
+        19
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PZU-2017-01-30-7074",
+      "withdrawal_steps": [
+        13,
+        14,
+        15,
+        14,
+        17
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-30-7906",
+      "withdrawal_steps": [
+        14,
+        17,
+        16,
+        15,
+        14
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-30-8226",
+      "withdrawal_steps": [
+        13,
+        16,
+        15,
+        16,
+        17
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-30-10466",
+      "withdrawal_steps": [
+        23,
+        22,
+        21,
+        20,
+        19
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PZU-2017-01-30-17250",
+      "withdrawal_steps": [
+        17,
+        18,
+        19,
+        18,
+        21
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-30-17954",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        17,
+        16
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-30-18274",
+      "withdrawal_steps": [
+        10,
+        11,
+        12,
+        13,
+        10
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-30-18978",
+      "withdrawal_steps": [
+        20,
+        17,
+        18,
+        19,
+        20
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-30-20002",
+      "withdrawal_steps": [
+        19,
+        22,
+        21,
+        22,
+        19
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-30-20706",
+      "withdrawal_steps": [
+        19,
+        20,
+        21,
+        20,
+        19
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-30-23714",
+      "withdrawal_steps": [
+        19,
+        22,
+        21,
+        22,
+        19
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-30-25634",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        19,
+        20
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-30-25954",
+      "withdrawal_steps": [
+        18,
+        19,
+        20,
+        21,
+        18
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-30-26978",
+      "withdrawal_steps": [
+        12,
+        13,
+        14,
+        13,
+        12
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-30-29986",
+      "withdrawal_steps": [
+        22,
+        19,
+        20,
+        19,
+        18
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-30-35106",
+      "withdrawal_steps": [
+        7,
+        10,
+        9,
+        8,
+        11
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-31-5539",
+      "withdrawal_steps": [
+        23,
+        20,
+        21,
+        22,
+        19
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-31-6307",
+      "withdrawal_steps": [
+        15,
+        12,
+        13,
+        14,
+        11
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-31-9315",
+      "withdrawal_steps": [
+        21,
+        18,
+        19,
+        20,
+        17
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-31-10723",
+      "withdrawal_steps": [
+        13,
+        12,
+        11,
+        12,
+        9
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-31-11299",
+      "withdrawal_steps": [
+        14,
+        17,
+        16,
+        17,
+        18
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-31-16099",
+      "withdrawal_steps": [
+        11,
+        14,
+        13,
+        14,
+        15
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-31-23075",
+      "withdrawal_steps": [
+        22,
+        19,
+        20,
+        21,
+        22
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-31-28387",
+      "withdrawal_steps": [
+        16,
+        19,
+        18,
+        17,
+        20
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-31-28707",
+      "withdrawal_steps": [
+        8,
+        9,
+        10,
+        9,
+        8
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-31-30115",
+      "withdrawal_steps": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PZU-2017-01-31-31907",
+      "withdrawal_steps": [
+        19,
+        22,
+        21,
+        20,
+        19
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-31-35299",
+      "withdrawal_steps": [
+        17,
+        16,
+        15,
+        14,
+        13
+      ],
+      "offsets": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observational_collision": true
+    },
+    {
+      "id": "PZU-2017-01-31-35619",
+      "withdrawal_steps": [
+        11,
+        14,
+        13,
+        14,
+        11
+      ],
+      "offsets": [
+        0,
+        3,
+        2,
+        3,
+        0
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-31-36451",
+      "withdrawal_steps": [
+        19,
+        16,
+        17,
+        16,
+        19
+      ],
+      "offsets": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    },
+    {
+      "id": "PZU-2017-01-31-41123",
+      "withdrawal_steps": [
+        16,
+        17,
+        18,
+        17,
+        20
+      ],
+      "offsets": [
+        0,
+        1,
+        2,
+        1,
+        4
+      ],
+      "observational_collision": false
+    }
+  ],
+  "role": "Frozen-model test-only robustness, not training or selection"
+}

@@ -1,0 +1,58 @@
+{
+  "name": "FinancialAD 012 frozen direct ten-method date seed0 measured scientific pilot",
+  "work": "FinancialAD-LOB",
+  "code": {
+    "github": "SansaZheng/FinancialAD-LOB",
+    "commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+  },
+  "command": [
+    "bash",
+    "-lc",
+    "set -euo pipefail\npython3 -m scripts.run_cascade_batch --runner direct --dataset results/cq-012/j-1127-1d410b/benchmark/benchmark.npz --output \"$CQ_OUTPUT_DIR/batch\" --regimes date --seeds 0 --workers 1 --device cuda --protocol configs/012-preregistered.json\ncp \"$CQ_OUTPUT_DIR/batch/progress.txt\" \"$CQ_OUTPUT_DIR/progress.txt\""
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "resources": {
+    "gpus": 1,
+    "gpu_mem_gb": 1,
+    "cpus": 2,
+    "ram_gb": 8,
+    "disk_gb": 1
+  },
+  "limits": {
+    "max_hours": 1.5,
+    "max_attempts": 1,
+    "max_usd": 0
+  },
+  "placement": {
+    "target": "kaggle",
+    "allow_rent": false
+  },
+  "outputs": {
+    "dest": "/Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/012-pilot",
+    "expect": [
+      {
+        "path": "batch/batch.json",
+        "contains": "\"status\": \"complete\""
+      },
+      {
+        "path": "progress.txt",
+        "contains": "1/1"
+      }
+    ],
+    "progress": {
+      "path": "batch/progress.txt",
+      "stall_min": 85
+    }
+  },
+  "idempotent": true,
+  "depends_on": [
+    "j-1127-1d410b",
+    "j-1127-fed5f1"
+  ]
+}
