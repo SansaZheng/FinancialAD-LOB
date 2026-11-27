@@ -1,0 +1,132 @@
+{
+  "rows": [
+    {
+      "run": "results/cq-012/j-1127-f8100c/batch/combined-PKNORLEN-s2",
+      "minimum_retained_interaction_scale": 0.0006426539958112648,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.4364054747735739
+    },
+    {
+      "run": "results/cq-012/j-1127-f8100c/batch/combined-PKNORLEN-s3",
+      "minimum_retained_interaction_scale": 0.0006426539958112648,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.4364054747735739
+    },
+    {
+      "run": "results/cq-012/j-1127-f8100c/batch/combined-PKNORLEN-s4",
+      "minimum_retained_interaction_scale": 0.0006426539958112648,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.4364054747735739
+    },
+    {
+      "run": "results/cq-012/j-1127-f8100c/batch/combined-PKNORLEN-s1",
+      "minimum_retained_interaction_scale": 0.0006426539958112648,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.4364054747735739
+    },
+    {
+      "run": "results/cq-012/j-1127-f8100c/batch/combined-PKNORLEN-s0",
+      "minimum_retained_interaction_scale": 0.0006426539958112648,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.4364054747735739
+    },
+    {
+      "run": "results/cq-012/j-1127-d720d4/batch/combined-PKOBP-s2",
+      "minimum_retained_interaction_scale": 0.0016959553328316553,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.426300852008829
+    },
+    {
+      "run": "results/cq-012/j-1127-d720d4/batch/combined-PKOBP-s3",
+      "minimum_retained_interaction_scale": 0.0016959553328316553,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.426300852008829
+    },
+    {
+      "run": "results/cq-012/j-1127-d720d4/batch/combined-PKOBP-s4",
+      "minimum_retained_interaction_scale": 0.0016959553328316553,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.426300852008829
+    },
+    {
+      "run": "results/cq-012/j-1127-d720d4/batch/combined-PKOBP-s1",
+      "minimum_retained_interaction_scale": 0.0016959553328316553,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.426300852008829
+    },
+    {
+      "run": "results/cq-012/j-1127-d720d4/batch/combined-PKOBP-s0",
+      "minimum_retained_interaction_scale": 0.0016959553328316553,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.426300852008829
+    },
+    {
+      "run": "results/cq-012/j-1127-d6ea5e/batch/combined-PEKAO-s0",
+      "minimum_retained_interaction_scale": 0.0005875825417610201,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.42732595728341116
+    },
+    {
+      "run": "results/cq-012/j-1127-d6ea5e/batch/combined-PEKAO-s1",
+      "minimum_retained_interaction_scale": 0.0005875825417610201,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.42732595728341116
+    },
+    {
+      "run": "results/cq-012/j-1127-d6ea5e/batch/combined-PEKAO-s3",
+      "minimum_retained_interaction_scale": 0.0005875825417610201,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.42732595728341116
+    },
+    {
+      "run": "results/cq-012/j-1127-d6ea5e/batch/combined-PEKAO-s4",
+      "minimum_retained_interaction_scale": 0.0005875825417610201,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.42732595728341116
+    },
+    {
+      "run": "results/cq-012/j-1127-d6ea5e/batch/combined-PEKAO-s2",
+      "minimum_retained_interaction_scale": 0.0005875825417610201,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.42732595728341116
+    },
+    {
+      "run": "results/cq-012/j-1127-30d90c/batch/combined-PZU-s0",
+      "minimum_retained_interaction_scale": 0.0018538217609974652,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.4018338631995121
+    },
+    {
+      "run": "results/cq-012/j-1127-30d90c/batch/combined-PZU-s1",
+      "minimum_retained_interaction_scale": 0.0018538217609974652,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.4018338631995121
+    },
+    {
+      "run": "results/cq-012/j-1127-30d90c/batch/combined-PZU-s4",
+      "minimum_retained_interaction_scale": 0.0018538217609974652,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.4018338631995121
+    },
+    {
+      "run": "results/cq-012/j-1127-30d90c/batch/combined-PZU-s3",
+      "minimum_retained_interaction_scale": 0.0018538217609974652,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.4018338631995121
+    },
+    {
+      "run": "results/cq-012/j-1127-30d90c/batch/combined-PZU-s2",
+      "minimum_retained_interaction_scale": 0.0018538217609974652,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.4018338631995121
+    },
+    {
+      "run": "results/cq-012/j-1127-02f40d/batch/date-s0",
+      "minimum_retained_interaction_scale": 0.00160011909014439,
+      "tiny_retained_coordinates": [],
+      "gram_diagonal_min_scale": 0.4213127543256082
+    }
+  ],
+  "any_tiny": false,
+  "scope": "Checks whether mathematically near-constant engineered coordinates were amplified by training standardization; no refitting or protocol changes"
+}

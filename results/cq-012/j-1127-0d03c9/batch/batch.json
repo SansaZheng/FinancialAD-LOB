@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "tasks": [
+    {
+      "regime": "date",
+      "fold": "date",
+      "seed": 2,
+      "returncode": 0,
+      "seconds": 1722.418700919,
+      "folder": "date-s2",
+      "gpu_id": 1
+    },
+    {
+      "regime": "date",
+      "fold": "date",
+      "seed": 1,
+      "returncode": 0,
+      "seconds": 1840.1341888840002,
+      "folder": "date-s1",
+      "gpu_id": 0
+    },
+    {
+      "regime": "date",
+      "fold": "date",
+      "seed": 3,
+      "returncode": 0,
+      "seconds": 1732.8616025739998,
+      "folder": "date-s3",
+      "gpu_id": 1
+    },
+    {
+      "regime": "date",
+      "fold": "date",
+      "seed": 4,
+      "returncode": 0,
+      "seconds": 1615.4374422670003,
+      "folder": "date-s4",
+      "gpu_id": 0
+    }
+  ],
+  "total": 4
+}

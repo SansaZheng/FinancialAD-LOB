@@ -1,5 +1,5 @@
 {
-  "checked_at": 1795794297.01535,
+  "checked_at": 1795801603.808664,
   "jobs": [
     {
       "id": "j-1127-30d90c",
@@ -9,36 +9,40 @@
     },
     {
       "id": "j-1127-d720d4",
-      "state": "running",
-      "reason": null,
+      "state": "done",
+      "reason": "outputs verified (Kaggle, 0.96 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1127-d720d4/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/012-combined-PKOBP",
       "progress_lines": null
     },
     {
       "id": "j-1127-f8100c",
-      "state": "running",
-      "reason": null,
+      "state": "done",
+      "reason": "outputs verified (Kaggle, 0.43 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1127-f8100c/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/012-combined-PKNORLEN",
       "progress_lines": null
     },
     {
       "id": "j-1127-d6ea5e",
-      "state": "queued",
-      "reason": "waiting: 2 Kaggle notebooks already running (limit 2)",
+      "state": "done",
+      "reason": "outputs verified (Kaggle, 0.66 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1127-d6ea5e/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/012-combined-PEKAO",
       "progress_lines": null
     },
     {
       "id": "j-1127-bd6422",
-      "state": "queued",
-      "reason": "waiting: 2 Kaggle notebooks already running (limit 2)",
+      "state": "done",
+      "reason": "outputs verified (Kaggle, 0.80 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1127-bd6422/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/012-combined-KGHM",
       "progress_lines": null
     },
     {
       "id": "j-1127-0d03c9",
-      "state": "queued",
-      "reason": "waiting: 2 Kaggle notebooks already running (limit 2)",
+      "state": "done",
+      "reason": "outputs verified (Kaggle, 0.97 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1127-0d03c9/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/012-date",
       "progress_lines": null
     }
   ],
   "fetched": [
-    "j-1127-30d90c"
+    "j-1127-30d90c",
+    "j-1127-bd6422",
+    "j-1127-d6ea5e",
+    "j-1127-d720d4",
+    "j-1127-f8100c"
   ]
 }

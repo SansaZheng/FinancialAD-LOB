@@ -1,0 +1,259 @@
+{
+  "fold_seeds": 30,
+  "versions": [
+    {
+      "python": "3.13.16",
+      "numpy": "2.1.3",
+      "torch": "2.11.0+cu130",
+      "sklearn": "1.6.1"
+    }
+  ],
+  "rows": [
+    {
+      "fold": "date",
+      "seed": 0,
+      "cq_job": "j-1127-02f40d",
+      "seconds": 1684.2260275239998,
+      "peak_rss_kib": 3219624,
+      "peak_allocated_cuda_bytes": 78422528
+    },
+    {
+      "fold": "date",
+      "seed": 1,
+      "cq_job": "j-1127-0d03c9",
+      "seconds": 1825.451512258,
+      "peak_rss_kib": 3206136,
+      "peak_allocated_cuda_bytes": 78443520
+    },
+    {
+      "fold": "date",
+      "seed": 2,
+      "cq_job": "j-1127-0d03c9",
+      "seconds": 1702.245526962,
+      "peak_rss_kib": 3214424,
+      "peak_allocated_cuda_bytes": 78443520
+    },
+    {
+      "fold": "date",
+      "seed": 3,
+      "cq_job": "j-1127-0d03c9",
+      "seconds": 1724.613152206,
+      "peak_rss_kib": 3204620,
+      "peak_allocated_cuda_bytes": 78437376
+    },
+    {
+      "fold": "date",
+      "seed": 4,
+      "cq_job": "j-1127-0d03c9",
+      "seconds": 1607.279890287,
+      "peak_rss_kib": 3216568,
+      "peak_allocated_cuda_bytes": 78437376
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 0,
+      "cq_job": "j-1127-30d90c",
+      "seconds": 764.554619775,
+      "peak_rss_kib": 2586052,
+      "peak_allocated_cuda_bytes": 78524928
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 1,
+      "cq_job": "j-1127-30d90c",
+      "seconds": 765.086121502,
+      "peak_rss_kib": 2534644,
+      "peak_allocated_cuda_bytes": 78524928
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 2,
+      "cq_job": "j-1127-30d90c",
+      "seconds": 776.8961891100001,
+      "peak_rss_kib": 2542800,
+      "peak_allocated_cuda_bytes": 78524928
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 3,
+      "cq_job": "j-1127-30d90c",
+      "seconds": 777.118482301,
+      "peak_rss_kib": 2542648,
+      "peak_allocated_cuda_bytes": 78524928
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 4,
+      "cq_job": "j-1127-30d90c",
+      "seconds": 743.1352113280002,
+      "peak_rss_kib": 2542820,
+      "peak_allocated_cuda_bytes": 78524928
+    },
+    {
+      "fold": "combined-KGHM",
+      "seed": 0,
+      "cq_job": "j-1127-bd6422",
+      "seconds": 939.417717803,
+      "peak_rss_kib": 2558056,
+      "peak_allocated_cuda_bytes": 78479872
+    },
+    {
+      "fold": "combined-KGHM",
+      "seed": 1,
+      "cq_job": "j-1127-bd6422",
+      "seconds": 933.9051633529999,
+      "peak_rss_kib": 2553300,
+      "peak_allocated_cuda_bytes": 78479872
+    },
+    {
+      "fold": "combined-KGHM",
+      "seed": 2,
+      "cq_job": "j-1127-bd6422",
+      "seconds": 940.72932866,
+      "peak_rss_kib": 2562604,
+      "peak_allocated_cuda_bytes": 78479872
+    },
+    {
+      "fold": "combined-KGHM",
+      "seed": 3,
+      "cq_job": "j-1127-bd6422",
+      "seconds": 942.596249013,
+      "peak_rss_kib": 2585932,
+      "peak_allocated_cuda_bytes": 78479872
+    },
+    {
+      "fold": "combined-KGHM",
+      "seed": 4,
+      "cq_job": "j-1127-bd6422",
+      "seconds": 934.625416006,
+      "peak_rss_kib": 2561560,
+      "peak_allocated_cuda_bytes": 78479872
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seed": 0,
+      "cq_job": "j-1127-d6ea5e",
+      "seconds": 622.961903224,
+      "peak_rss_kib": 2502244,
+      "peak_allocated_cuda_bytes": 77326848
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seed": 1,
+      "cq_job": "j-1127-d6ea5e",
+      "seconds": 622.41459164,
+      "peak_rss_kib": 2501580,
+      "peak_allocated_cuda_bytes": 77326848
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seed": 2,
+      "cq_job": "j-1127-d6ea5e",
+      "seconds": 644.525012109,
+      "peak_rss_kib": 2508784,
+      "peak_allocated_cuda_bytes": 77326848
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seed": 3,
+      "cq_job": "j-1127-d6ea5e",
+      "seconds": 646.1183821950001,
+      "peak_rss_kib": 2508108,
+      "peak_allocated_cuda_bytes": 77326848
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seed": 4,
+      "cq_job": "j-1127-d6ea5e",
+      "seconds": 613.8857086069997,
+      "peak_rss_kib": 2508496,
+      "peak_allocated_cuda_bytes": 77326848
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 0,
+      "cq_job": "j-1127-d720d4",
+      "seconds": 966.4733302369999,
+      "peak_rss_kib": 2554040,
+      "peak_allocated_cuda_bytes": 78174208
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 1,
+      "cq_job": "j-1127-d720d4",
+      "seconds": 966.522282177,
+      "peak_rss_kib": 2554996,
+      "peak_allocated_cuda_bytes": 78174208
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 2,
+      "cq_job": "j-1127-d720d4",
+      "seconds": 956.1278666149997,
+      "peak_rss_kib": 2564804,
+      "peak_allocated_cuda_bytes": 78174208
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 3,
+      "cq_job": "j-1127-d720d4",
+      "seconds": 953.0541338479998,
+      "peak_rss_kib": 2564616,
+      "peak_allocated_cuda_bytes": 78174208
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seed": 4,
+      "cq_job": "j-1127-d720d4",
+      "seconds": 942.030818839,
+      "peak_rss_kib": 2565052,
+      "peak_allocated_cuda_bytes": 78174208
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 0,
+      "cq_job": "j-1127-f8100c",
+      "seconds": 484.187308412,
+      "peak_rss_kib": 2424920,
+      "peak_allocated_cuda_bytes": 78244352
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 1,
+      "cq_job": "j-1127-f8100c",
+      "seconds": 484.26190012200004,
+      "peak_rss_kib": 2425600,
+      "peak_allocated_cuda_bytes": 78244352
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 2,
+      "cq_job": "j-1127-f8100c",
+      "seconds": 482.8065407639999,
+      "peak_rss_kib": 2435564,
+      "peak_allocated_cuda_bytes": 78244352
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 3,
+      "cq_job": "j-1127-f8100c",
+      "seconds": 483.996937976,
+      "peak_rss_kib": 2434508,
+      "peak_allocated_cuda_bytes": 78244352
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seed": 4,
+      "cq_job": "j-1127-f8100c",
+      "seconds": 472.796615279,
+      "peak_rss_kib": 2434456,
+      "peak_allocated_cuda_bytes": 78244352
+    }
+  ],
+  "warnings": [],
+  "status": "complete",
+  "max_worker_rss_kib": 3219624,
+  "max_worker_allocated_cuda_bytes": 78524928,
+  "sum_worker_seconds": 27404.043940132004,
+  "scope": "Linux ru_maxrss KiB; CUDA tensor allocation excludes context; worker seconds are not provider walltime or GPU quota"
+}

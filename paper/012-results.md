@@ -1,6 +1,6 @@
 # Direct scores and hard benign controls
 
-Status: experiments in progress; this document does not contain a completed performance claim.
+Status: experiments in progress;21/30primary fold-seeds independently checked. This document does not contain a completed performance claim. See paper/workflow/current.md for live job status and results/reports/012-partial-16 for the latest16-run aggregate; the verified PEKAO extension is recorded separately.
 
 The previous complete experiment did not establish superiority over strong tabular baselines. Stage011's candidate mean fold-pooled AP was0.4369 on held-out dates and0.3732 on held-out dates plus stocks, compared with HGB0.5161 and0.4429. Its negative results remain archived. Stage012 tests a new, frozen hypothesis on nine additional source dates rather than relabeling the earlier outcomes.
 
