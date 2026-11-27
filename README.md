@@ -66,3 +66,9 @@ them would not reclaim their apparent logical size and could remove cloud copies
 Never delete sole or unverified copies, and never clean another project.
 
 中文结论：仓库用于保存可追溯的研究过程；当前成果是可测试的协议和候选方法，不是已完成的论文复现或性能超越。
+
+## Stage012 archive and local space
+
+The full primary and frozen secondary artifacts are archived on GitHub; [manifest](migration/stage012-result-manifest.json) lists1,378CQartifact paths. [Final cleanup receipt](migration/final-slim-checkout-012.md) records checksum-verified removal of local dataset/model copies and old Git blobs, reclaiming585,953,280allocated bytes. A sparse partial clone retains code/reports and restores job folders on demand with `git sparse-checkout add results/cq-012/JOB_ID`. Do not globally hydrate the archive on a nearly full disk.
+
+中文结论：本轮完整结果与失败记录已归档，Mac数据副本已核验后清理；增强特征优于普通HGB，但不能宣称原论文可比超越或CCF A达标。
