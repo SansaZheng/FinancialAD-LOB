@@ -1,4 +1,8 @@
-# Baseline matrix
+# Historical baseline inventory (stage009)
+
+This historical table is superseded for current execution by [stage013 protocol](../paper/013-protocol.md), [live state](../paper/workflow/current.md), and [fidelity audit](../paper/013-fidelity-and-data-leads.md). Stage010–012 completed suites are preserved in their reports; statuses below describe the earlier implementation inventory.
+
+## Original inventory
 
 All statuses are implementation statuses, not measured scientific performance.
 
