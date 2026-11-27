@@ -2,7 +2,7 @@
 
 Status: experiments in progress; this document does not contain a completed performance claim.
 
-The previous complete experiment did not establish superiority over strong tabular baselines. Stage011's candidate macro stock-day AP was0.4369 on held-out dates and0.3732 on held-out dates plus stocks, compared with HGB0.5161 and0.4429. Its negative results remain archived. Stage012 tests a new, frozen hypothesis on nine additional source dates rather than relabeling the earlier outcomes.
+The previous complete experiment did not establish superiority over strong tabular baselines. Stage011's candidate mean fold-pooled AP was0.4369 on held-out dates and0.3732 on held-out dates plus stocks, compared with HGB0.5161 and0.4429. Its negative results remain archived. Stage012 tests a new, frozen hypothesis on nine additional source dates rather than relabeling the earlier outcomes.
 
 We acquired45stock-day partitions for five WSE stocks on Jan19,20,23,24,25,26,27,30,31,2017. Every one of3,439,144source messages was independently replayed and4,500reference snapshots were checked. The resulting passive-overlay benchmark contains51,118windows, including2,539positive policy labels and2,459benign controls. Training uses the first three dates, validation the next three, and testing the final three. Combined splits additionally exclude the test and validation stocks from training. Source provenance, license attribution, hashes, injection ledgers and censorship records are retained.
 

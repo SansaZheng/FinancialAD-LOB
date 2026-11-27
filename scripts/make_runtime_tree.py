@@ -19,11 +19,15 @@ def make(source,keep,receipt):
         return subprocess.check_output(['git',*args],env=local_env or env,text=True).strip()
     source=git('rev-parse',source)
     paths=git('ls-tree','-r','--name-only',source).splitlines()
-    if not keep.startswith('results/') or keep.endswith('/'):
-        raise ValueError('Keep prefix must name the exact result/input folder')
-    retained=[p for p in paths if p.startswith(keep+'/')]
-    if not retained or not any(p.endswith(('/benchmark.npz','/audit.json')) for p in retained):
-        raise ValueError('Tracked benchmark or audited source input required')
+    prefixes=[keep] if isinstance(keep,str) else keep
+    if not prefixes or any(not p.startswith('results/') or p.endswith('/') or '..' in p.split('/') for p in prefixes):
+        raise ValueError('Keep prefixes must name exact result/input folders')
+    for prefix in prefixes:
+        if not any(p.startswith(prefix+'/') for p in paths):
+            raise ValueError('Untracked or empty keep prefix: '+prefix)
+    retained=[p for p in paths if any(p.startswith(prefix+'/') for prefix in prefixes)]
+    if not any(p.endswith(('/benchmark.npz','/audit.json','/metrics.json','/challenge.npz')) for p in retained):
+        raise ValueError('Tracked benchmark, audited source, fitted model or challenge input required')
     removed=[p for p in paths if p.startswith('results/') and p not in retained]
     before=git('write-tree')
     with tempfile.TemporaryDirectory(prefix='financialad-runtime-index-') as temporary:
@@ -47,5 +51,5 @@ def make(source,keep,receipt):
     return report
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--source',default='HEAD');p.add_argument('--keep-results',required=True);p.add_argument('--receipt',type=Path,required=True)
+    p=argparse.ArgumentParser();p.add_argument('--source',default='HEAD');p.add_argument('--keep-results',required=True,nargs='+');p.add_argument('--receipt',type=Path,required=True)
     a=p.parse_args();make(a.source,a.keep_results,a.receipt)

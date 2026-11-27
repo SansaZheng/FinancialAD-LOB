@@ -6,6 +6,8 @@ The strongest mean-AP comparator is HGB in date/stock/style and logistic in comb
 
 Limitations: three fresh dates, five stocks in one market/year, one synthetic generator seed, policy collisions and marketability censoring, no endogenous response or real intent, missing trade/cancel indicators, compact adapted architecture, window AP versus original aggregation, exploratory cluster intervals without multiplicity correction. Training seeds do not create new independent market samples. These gaps prevent a CCF A-ready or original-paper-superiority claim. Source-paper artifacts and real adjudicated data remain unavailable.
 
-All exact result paths/hashes are listed in migration/stage011-result-manifest.json. Code/data were remotely archived before execution; new complete-result upload is blocked as recorded in current.md. Original and unpublished copies are preserved. Figure source and exported PNG/PDF/SVG live under scripts/plot_cascade_results.py and paper/figures/011-complete.*.
+All exact result paths/hashes are listed in migration/stage011-result-manifest.json. Code/data were remotely archived before execution; the complete archive was pushed and verified at094b7dd; subsequent source/challenge archives are also synchronized. Original and unpublished copies are preserved. Figure source and exported PNG/PDF/SVG live under scripts/plot_cascade_results.py and paper/figures/011-complete.*.
 
-中文结论：证据完整支持本轮半合成评测与价格对齐的局部贡献，尚不支持完整模型优越性或原论文超越；失败结果、数据限制和同步阻塞均已明确保留。
+Stage012 extension: nine fresh source dates,45stock-days and3,439,144rows are verified. All4,500reference snapshots match. The fixed benchmark has51,118windows. The pre-performance-registered secondary challenge has15,852common-ID windows;384benign controls change,1is censored, and55positive-pattern collisions remain. All63engineering tests pass. The date/seed0scientific pilot is running; none of these checks establishes model superiority. Full source/config/data hashes and execution receipts are under results/engineering/direct-012 and cq/012-*.
+
+中文结论：证据完整支持本轮半合成评测与价格对齐的局部贡献，尚不支持完整模型优越性或原论文超越；失败结果、数据限制和历史同步阻塞及其恢复记录均已保留。

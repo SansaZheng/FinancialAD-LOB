@@ -9,7 +9,7 @@ matching or exceeding the source paper's 0.675 AUC-PR.
 
 ## Start here
 
-* [Stage012 direct supervision protocol](paper/012-protocol.md) and [frozen configuration](configs/012-preregistered.json): nine new dates, training-only hard negatives and strong controls; results pending.
+* [Stage012 direct supervision protocol](paper/012-protocol.md), [frozen configuration](configs/012-preregistered.json), [execution steps](docs/reproduce-012.md), and [live report](paper/012-results.md): nine new dates/45stock-days acquired and replayed,51,118labeled windows, training-only hard negatives and strong controls; formal detector results pending. The predeclared matched-lifetime benign challenge is also generated and verified.
 
 * [Current fresh-date protocol](paper/011-protocol.md), [dataset card](docs/dataset-011.md), and [registered eleven-method matrix](configs/011-preregistered.json).
 * [Exact execution and verification steps](docs/reproduce-011.md).
@@ -24,15 +24,15 @@ matching or exceeding the source paper's 0.675 AUC-PR.
 * [Registered stage010 suite](configs/010-preregistered.json): 10 methods, 5 seeds, date/stock/combined/style tests; planned runs are not completed results.
 * [Observation-aware improvements](docs/improvement-009.md): matched causal sequence controls.
 * [CQ access resolution](docs/cq-access.md): free Kaggle environment and smoke jobs completed.
-* [Current state](paper/workflow/current.md) and [execution prompt](paper/workflow/prompts/011b-frozen-matrix.md).
+* [Current state](paper/workflow/current.md) and [execution prompt](paper/workflow/prompts/012-direct-hard-negative.md).
 * [Legacy inventory](migration/legacy-inventory.json): metadata **not backup**.
 * [Engineering checks](results/engineering/): no financial benchmark conclusions.
 
 ## Local bounded engineering checks
 
-Use the dependencies in `requirements.txt`; Python 3.11 is the target CQ runtime.
+Use the dependencies in `requirements.txt`; consult recorded job versions for the actual CQ runtime.
 The recorded local checks use the exact versions in
-`results/engineering/local-versions.json`; CQ CPU compatibility has been qualified (Python3.13.18 / PyTorch2.11.0+cpu); CUDA qualification is tracked separately. No environment should be installed into another user's interpreter.
+`results/engineering/local-versions.json`; CQ CPU compatibility has been qualified (Python3.13.18 / PyTorch2.11.0+cpu). Stage012 CUDA qualification records Python3.13.16 / PyTorch2.11.0+cu130 / sklearn1.6.1 in results/cq-012/j-1127-fed5f1/qualification.json. No environment should be installed into another user's interpreter.
 
 ```bash
 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m unittest discover -s tests -v
