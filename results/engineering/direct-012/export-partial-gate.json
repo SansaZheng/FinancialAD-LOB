@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "rejected_partial_suite": true,
+  "existing_ledger_sha256_unchanged": "9e63705108a6e36944b07a6e127754c91ba46e213f96f8ffc167ddeade18ba7a",
+  "error": "Complete independent verification required"
+}

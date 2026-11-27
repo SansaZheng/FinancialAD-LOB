@@ -1,0 +1,40 @@
+{
+  "status": "prepared_not_submitted",
+  "purpose": "Evaluate all30 frozen primary model sets on predeclared lifetime-matched benign controls; no fitting or recalibration",
+  "required_primary_jobs": [
+    "j-1127-02f40d",
+    "j-1127-0d03c9",
+    "j-1127-bd6422",
+    "j-1127-d6ea5e",
+    "j-1127-f8100c",
+    "j-1127-d720d4",
+    "j-1127-30d90c"
+  ],
+  "challenge_job": "j-1127-d406c2",
+  "execution_inputs": [
+    "results/cq-012/j-1127-02f40d",
+    "results/cq-012/j-1127-0d03c9",
+    "results/cq-012/j-1127-bd6422",
+    "results/cq-012/j-1127-d6ea5e",
+    "results/cq-012/j-1127-f8100c",
+    "results/cq-012/j-1127-d720d4",
+    "results/cq-012/j-1127-30d90c",
+    "results/cq-012/j-1127-d406c2/challenge"
+  ],
+  "prerequisites": [
+    "All30primaryruns independently verified",
+    "Allselectedestimators/scalers/predictions and challenge committed/pushed",
+    "Execution-only tree has unchanged retained blobs"
+  ],
+  "resources": {
+    "gpus": 0,
+    "cpus": 2,
+    "ram_gb": 6,
+    "disk_gb": 1,
+    "max_hours": 1,
+    "max_usd": 0
+  },
+  "command": "python3 -m scripts.evaluate_lifetime_challenge --root results/cq-012 --challenge results/cq-012/j-1127-d406c2/challenge/challenge.npz --output \"$CQ_OUTPUT_DIR/challenge-scores\" --protocol configs/012-preregistered.json",
+  "completion": "challenge-scores/report.json statuscomplete and30/30progress, followed by independent scripts.verify_lifetime_challenge",
+  "no_source_commit_yet": "Pin after all primary model artifacts are archived; this plan is not a submitted job"
+}

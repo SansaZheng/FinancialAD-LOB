@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "complete_suite": false,
+  "fold_seed_runs": 5,
+  "selected_evaluations": 50,
+  "dataset_sha256": "01213ddbaf0ffc19d31d43ce4793839031c283b3ef241abc6a21b31472cc8d2d",
+  "protocol_sha256": "63f4d9f53ceb18b991bb2cba66af116a32298ecc9bd38722c57f87d612f91ab4",
+  "scope": "Artifact consistency, exact train cap and group-disjoint OOF mining, weights, labels/splits/selection/metrics; not real intent or scientific superiority"
+}
