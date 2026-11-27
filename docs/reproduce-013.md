@@ -12,3 +12,5 @@
 Current run states and job IDs live in paper/workflow/current.md and append-only events.jsonl. No step is considered complete merely because its command or CQ spec exists. CCF A is a quality aspiration; the specific venue remains unset.
 
 中文结论：复现步骤覆盖源数据、独立重放、数值资格验证、固定矩阵、同数据比较、审计和归档；必须按实际完成证据报告进展。
+
+Resource accounting: cascade_ocsvm is executed first and its method_seconds includes the sharedAE fit/encoding. cascade_no_scl and shared_bce reuse that representation; the detailed CSV additionally reports shared_ae_seconds and standalone_pipeline_seconds (adds the shared cost for those two methods). Sum actual worker_seconds once per fold-seed for executed work; never sum repeated worker/shared columns across method rows.
