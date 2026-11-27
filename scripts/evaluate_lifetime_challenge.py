@@ -1,15 +1,17 @@
 """Evaluate frozen models on predeclared matched-lifetime controls; no fitting."""
-import argparse,hashlib,json,os
+import argparse,hashlib,json,os,platform,resource,time
 from pathlib import Path
 import joblib
 import numpy as np
 import torch
+import sklearn
 from sklearn.metrics import average_precision_score
 from lobbench.direct import base_features,interaction_features,DirectMLP
 from lobbench.direct_run import predict
 
 
 def evaluate(root,challenge,output,protocol,engineering=False):
+ started=time.monotonic()
  if not os.environ.get('CQ_JOB_ID') and not engineering:raise RuntimeError('CQ required')
  if engineering and challenge.stat().st_size>10*1024**2:raise ValueError('Engineering budget exceeded')
  cfg=json.loads(protocol.read_text());d=dict(np.load(challenge,allow_pickle=False));torch.set_num_threads(1);torch.use_deterministic_algorithms(True)
@@ -49,7 +51,7 @@ def evaluate(root,challenge,output,protocol,engineering=False):
    rr=[r['methods'][method] for r in records if r['fold'].split('-')[0]==regime]
    if not rr:continue
    summary.append(dict(regime=regime,method=method,fold_seeds=len(rr),primary_macro_ap=float(np.mean([np.mean([g['primary_ap'] for g in r['groups'].values()]) for r in rr])),challenge_macro_ap=float(np.mean([np.mean([g['challenge_ap'] for g in r['groups'].values()]) for r in rr])),primary_benign_fpr=float(np.mean([r['primary_benign_fpr'] for r in rr])),challenge_benign_fpr=float(np.mean([r['challenge_benign_fpr'] for r in rr]))))
- report=dict(status='engineering_only' if engineering else ('complete' if seen==expected else 'partial'),fold_seeds=len(seen),summary=summary,scope='Predeclared secondary controls on matched IDs, no re-fitting or threshold calibration; only3test dates and synthetic labels')
+ report=dict(status='engineering_only' if engineering else ('complete' if seen==expected else 'partial'),fold_seeds=len(seen),summary=summary,seconds=time.monotonic()-started,peak_rss_native=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,versions=dict(python=platform.python_version(),numpy=np.__version__,torch=torch.__version__,sklearn=sklearn.__version__),source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),scope='Predeclared secondary controls on matched IDs, no re-fitting or threshold calibration; only3test dates and synthetic labels')
  (output/'report.json').write_text(json.dumps(report,indent=2)+'\n');(output/'progress.txt').write_text(f'{len(seen)}/30 complete\n');return report
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--challenge',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--protocol',type=Path,default=Path('configs/012-preregistered.json'));a=p.parse_args();evaluate(a.root,a.challenge,a.output,a.protocol)

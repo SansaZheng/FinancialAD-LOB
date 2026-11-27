@@ -15,4 +15,6 @@ The frozen scientific protocol is configs/012-preregistered.json. Code and data 
 
 The first experiment source revision is14d5e71df285ce467969427377176ac15571aa3f; its initial engineering runtime tree is47583e3d576195bea3be525f2eb470d70d332b65. Scientific scoring commit45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4 retains exact code/config/input blobs from canonical main13f1ab2. Primary benchmark SHA256 is01213ddbaf0ffc19d31d43ce4793839031c283b3ef241abc6a21b31472cc8d2d. Challenge SHA256 is053af4c6530bb41ebaca935a5b653cda372cdba25ba691468f753bb5f7fb3260. No financial-performance result is implied by this document.
 
+Audit portability note: NumPy2.0.2 on the Mac and2.1.3 on CQ regenerate float32 interactions with at most8.10e-10 mean and1.41e-9 scale absolute differences in the pilot. Base input statistics match exactly. The independent checker retains strict base tolerances and exact constant masks, and uses five float32 eps relative plus1e-10 absolute tolerance only for regenerated interaction statistics. Per-run maximum errors are retained. A.01 tampered interaction mean is rejected. Training code/config/data remain unchanged; the original failed strict check and its diagnosis are retained in pilot-normalizer-numerics.json. All runs also require exact frozen direct.py/direct_run.py SHA256 matches.
+
 中文结论：本轮步骤已明确到输入、队列、训练、核验和存档；只有完整执行并比较强基线后，才能报告实际提升。
