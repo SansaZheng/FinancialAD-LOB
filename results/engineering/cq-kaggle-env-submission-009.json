@@ -1,6 +1,0 @@
-{
-  "returncode": 0,
-  "stdout": "queued j-1125-32c77e: FinancialAD LOB observation-aware CPU environment 009 (waiting for the first placement pass)\n",
-  "stderr": "",
-  "spec": "cq/009-kaggle-env.json"
-}
