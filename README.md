@@ -3,13 +3,13 @@
 Reproducible research toward robust multilevel limit-order-book manipulation
 detection. Canonical archive: https://github.com/SansaZheng/FinancialAD-LOB.
 
-**Status:** stage012 is complete:30primary fold-seeds/300selected evaluations and30frozen benign-control evaluations/300paired scores, all independently checked. Observable feature enhancement improves ordinary histogram boosting; the registered neural candidate loses to feature-matched boosting. The first CPU reload failure is retained; matched-CUDA reload passes. No claim of real manipulation intent, direct superiority to the original0.675AUC-PR, or CCF A readiness.
+**Status:** stage013 is running; see [current gates](paper/workflow/current.md), [component protocol](paper/013-protocol.md), [data card](docs/dataset-013.md), and [execution steps](docs/reproduce-013.md). Twelve new source dates/60stock-days are acquired; scientific performance is pending. Stage012 is complete:30primary fold-seeds/300selected evaluations and30frozen benign-control evaluations/300paired scores, all independently checked. Observable feature enhancement improves ordinary histogram boosting; the registered neural candidate loses to feature-matched boosting. The first CPU reload failure is retained; matched-CUDA reload passes. No claim of real manipulation intent, direct superiority to the original0.675AUC-PR, or CCF A readiness.
 
 ## Start here
 
 * [Stage012 direct supervision protocol](paper/012-protocol.md), [frozen configuration](configs/012-preregistered.json), [execution steps](docs/reproduce-012.md), and [live report](paper/012-results.md): nine new dates/45stock-days acquired and replayed,51,118labeled windows, training-only hard negatives and strong controls; complete primary and predeclared lifetime-challenge results are independently verified; [data card](docs/dataset-012.md) and [bilingual report](paper/workflow/experiment-report.md).
 
-* [Current fresh-date protocol](paper/011-protocol.md), [dataset card](docs/dataset-011.md), and [registered eleven-method matrix](configs/011-preregistered.json).
+* [Stage011 fresh-date protocol](paper/011-protocol.md), [dataset card](docs/dataset-011.md), and [registered eleven-method matrix](configs/011-preregistered.json).
 * [Exact execution and verification steps](docs/reproduce-011.md).
 * [Complete verified results](paper/011-results.md): 60 fold-seed runs / 660 evaluations, including negative findings against strong baselines.
 * [Evaluation protocol](docs/protocol.md): supervision budgets, stock/date splits,
@@ -22,7 +22,7 @@ detection. Canonical archive: https://github.com/SansaZheng/FinancialAD-LOB.
 * [Registered stage010 suite](configs/010-preregistered.json): 10 methods, 5 seeds, date/stock/combined/style tests; planned runs are not completed results.
 * [Observation-aware improvements](docs/improvement-009.md): matched causal sequence controls.
 * [CQ access resolution](docs/cq-access.md): free Kaggle environment and smoke jobs completed.
-* [Current state](paper/workflow/current.md) and [execution prompt](paper/workflow/prompts/012-direct-hard-negative.md).
+* [Current state](paper/workflow/current.md) and [execution prompt](paper/workflow/prompts/013-components-portability.md).
 * [Legacy inventory](migration/legacy-inventory.json): metadata **not backup**.
 * [Engineering checks](results/engineering/): no financial benchmark conclusions.
 
