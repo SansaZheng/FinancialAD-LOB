@@ -1,5 +1,5 @@
 {
-  "revision": 7,
+  "revision": 8,
   "project_path": "/Users/zyy/.local/share/financialad-lob/repo",
   "legacy_project_path": "/Users/zyy/Documents/ChatGPT/FinancialAD/lob-manipulation",
   "github": "https://github.com/SansaZheng/FinancialAD-LOB",
@@ -10,9 +10,9 @@
   },
   "research": {
     "topic": "Multilevel LOB manipulation detection",
-    "route_id": "lob-direct-hard-negative-v3",
-    "route": "Direct supervised scores with observable price-aligned coordination features and cross-fitted hard-negative weighting",
-    "hypothesis": "Direct supervised objectives and train-only hard-negative emphasis improve independent-date AP and benign-control FPR beyond matched histogram boosting baselines"
+    "route_id": "lob-components-portable-v4",
+    "route": "Full feature-component factorial and matched-cohort cascade/direct supervision with portable numerical inference",
+    "hypothesis": "Cross-level terms add value beyond per-level moments on unseen dates, and matched-input direct scoring improves the cascade; numerical parity must hold across tested environments"
   },
   "compute": {
     "scheduler": "CQ",

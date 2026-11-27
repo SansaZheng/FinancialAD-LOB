@@ -24,3 +24,8 @@ Route lob-generalization-v1 → lob-passive-lifecycle-v2. A concrete audit found
 
 ## Revision7 /2026-11-27
 User requests direct supervised scores, hard negatives and independent dates. Preserve previous evidence; replace objective/route, not venue. Source parsing and passive generator reusable; new predictors/mining/splits require qualification and entirely fresh evaluation. All stage011 test outcomes remain development evidence, never pooled with012 confirmatory comparisons.
+
+## Revision8 /2026-11-28 Asia/Singapore
+User requests component ablations, more dates, numerical portability and same-data pipeline comparison. Preserve012, reuse licensedsource/replay/passivegenerator; newfeaturearithmetic, split,cap andmethods require fresh qualification/evaluation. All twelve newdates are untouched. Future comparisons cannot pool013with012. Venue/topic unchanged, route lob-components-portable-v4; no paidcompute.
+
+中文结论：研究路线转向组件证据与可复现性，旧结果保留，新结果必须独立执行验证。
