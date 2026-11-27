@@ -1,0 +1,347 @@
+{
+  "passed": true,
+  "complete": false,
+  "stock_days": 15,
+  "expected_stock_days": 60,
+  "dates": [
+    "2017-02-09",
+    "2017-02-10",
+    "2017-02-13"
+  ],
+  "source_rows": 1224461,
+  "rows": [
+    {
+      "stock": "KGHM",
+      "date": "2017-02-09",
+      "source_rows": 105571,
+      "snapshots": 101335,
+      "raw_sha256": "48b15d2efa11ba53f65d26bf05833fe194fedade6a343a7fdd649b2cf189d2a7",
+      "book_sha256": "8d4137d6930384eda3360169af48702db937a771fef4939182e1a32266da8bfb",
+      "source_job": "j-1128-dcd9a2",
+      "source_audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54"
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-02-10",
+      "source_rows": 103002,
+      "snapshots": 98073,
+      "raw_sha256": "24ecc1b941f51f501c47a4d85437d3eda03ca85caf48b87dcf25bdb2e295394f",
+      "book_sha256": "803ace3c041a427281b5147f7fa070da0e19ca4f5068d94e1160887b35111eca",
+      "source_job": "j-1128-dcd9a2",
+      "source_audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54"
+    },
+    {
+      "stock": "KGHM",
+      "date": "2017-02-13",
+      "source_rows": 80046,
+      "snapshots": 74730,
+      "raw_sha256": "9c2f888f9331b22e13136eb1c1d4a9f702b95b676c96accec712a4da13bdf75d",
+      "book_sha256": "5e8a217bb026e3b08bf37121f99d22076be608684e0eee325c4a5bb9a3bda2cc",
+      "source_job": "j-1128-dcd9a2",
+      "source_audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54"
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-02-09",
+      "source_rows": 65685,
+      "snapshots": 63422,
+      "raw_sha256": "ff12abcba65006465426db4bd68e2648c4e6de1e1e27f15a5c518cfa44402db6",
+      "book_sha256": "39b2b6d52f3a12407d4e2649bbdc562c62637c3b5a6ba96fe8adbfad0860e941",
+      "source_job": "j-1128-dcd9a2",
+      "source_audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54"
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-02-10",
+      "source_rows": 56483,
+      "snapshots": 54810,
+      "raw_sha256": "cc28590e1424d6627c4a59b610b67d937ae63320d1bf472a16f6d5454b31d269",
+      "book_sha256": "6e9e5927eb43fd6f3116b836d8b562ac469662fe5a0b700e6f07bb632839317b",
+      "source_job": "j-1128-dcd9a2",
+      "source_audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54"
+    },
+    {
+      "stock": "PEKAO",
+      "date": "2017-02-13",
+      "source_rows": 41096,
+      "snapshots": 39879,
+      "raw_sha256": "cdd34e23c86a355137745ac620c5037b8f17ecdd242825479e2640eb52846423",
+      "book_sha256": "d99c6f09cfea46e69b4e16049550a9bdf3d4b6bf12cc26c8bd1938be3a2e0da3",
+      "source_job": "j-1128-dcd9a2",
+      "source_audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54"
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-02-09",
+      "source_rows": 138395,
+      "snapshots": 136688,
+      "raw_sha256": "b15d4cab8c10b0e851695e4b2669efd721f3c03e53e835cd7bcb1b180d01aca8",
+      "book_sha256": "a7d9e95d7a8d878956049eb1b641e8fd4d7d4d46c74b8375c1be4416ebd5c62e",
+      "source_job": "j-1128-dcd9a2",
+      "source_audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54"
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-02-10",
+      "source_rows": 121735,
+      "snapshots": 119866,
+      "raw_sha256": "529b4bc63f48037ef2786bf25f52cc353320cafade9f5348f83bfa999a3f10d3",
+      "book_sha256": "fc303c84d15b9091d20624376f10770687074e3fe7e11b56cf2ecd9aa5b47af0",
+      "source_job": "j-1128-dcd9a2",
+      "source_audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54"
+    },
+    {
+      "stock": "PKNORLEN",
+      "date": "2017-02-13",
+      "source_rows": 86817,
+      "snapshots": 84943,
+      "raw_sha256": "3ef7dd3dcc899a14774c75476d30d86ce7cc978d764ed461171692caf276a0da",
+      "book_sha256": "adcf684b5f7b5b3c57ff805a1051ef850e1ecc3d812b0715f4c898ab170a4dcb",
+      "source_job": "j-1128-dcd9a2",
+      "source_audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54"
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-02-09",
+      "source_rows": 72745,
+      "snapshots": 69134,
+      "raw_sha256": "b15230429b59f710e0a74ddded1b553af03c6fb4b3c6870f21084cfa60ae432c",
+      "book_sha256": "b72fdc2804742ff3711fa4c810fea63d7112d2abc7bab9356b66b2306a0df5e8",
+      "source_job": "j-1128-dcd9a2",
+      "source_audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54"
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-02-10",
+      "source_rows": 85223,
+      "snapshots": 81863,
+      "raw_sha256": "9956d524ceedc006f8a558eaeef50c1af23aeb203b83b8acc5f3da8cf625acce",
+      "book_sha256": "3a8d8f5081d525b222f276817f32c124a55e32ee59d8d3126de2fd479a85a842",
+      "source_job": "j-1128-dcd9a2",
+      "source_audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54"
+    },
+    {
+      "stock": "PKOBP",
+      "date": "2017-02-13",
+      "source_rows": 99783,
+      "snapshots": 96518,
+      "raw_sha256": "710eef305b6ae718920bd72c6120463770b6478351e66b87d67ac880e99f0d60",
+      "book_sha256": "f7bdd6c98781660090d64db44b7c6fe5a76bf16926c6f7cd2374c8af2c44cde1",
+      "source_job": "j-1128-dcd9a2",
+      "source_audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54"
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-02-09",
+      "source_rows": 46584,
+      "snapshots": 43891,
+      "raw_sha256": "9e5abcdc82c4f634e4b34f722a1582418a064d16679192de9c4ccf2aebc1622e",
+      "book_sha256": "e8890f3c72eeb6de7c8ccc7cd166f878bb85846d8e17f7fae238efc9768c2e10",
+      "source_job": "j-1128-dcd9a2",
+      "source_audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54"
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-02-10",
+      "source_rows": 65923,
+      "snapshots": 63425,
+      "raw_sha256": "7b2cd19c2c9a705c64d8f1b00bb964aac5a98897107602b2c4d9d06c032e41af",
+      "book_sha256": "482ea53fc5a172805ab00f6b5a7cd1c57124d62eda71b76cacaad32989e83903",
+      "source_job": "j-1128-dcd9a2",
+      "source_audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54"
+    },
+    {
+      "stock": "PZU",
+      "date": "2017-02-13",
+      "source_rows": 55373,
+      "snapshots": 53093,
+      "raw_sha256": "eeacc6a23b5361e9eefdea3d683c3a682d10bc1f7969908079023182c574e38f",
+      "book_sha256": "be8d6aa03ec422f919a8994b8238be06659fbd21adc85964c6a7ea7a6abd1620",
+      "source_job": "j-1128-dcd9a2",
+      "source_audit_sha256": "a7d8da2fae2e97ac85de923c7a61df3d5aee8c441cac665accf3fff69dc61d54"
+    }
+  ],
+  "missing": [
+    [
+      "KGHM",
+      "2017-02-01"
+    ],
+    [
+      "KGHM",
+      "2017-02-02"
+    ],
+    [
+      "KGHM",
+      "2017-02-03"
+    ],
+    [
+      "KGHM",
+      "2017-02-06"
+    ],
+    [
+      "KGHM",
+      "2017-02-07"
+    ],
+    [
+      "KGHM",
+      "2017-02-08"
+    ],
+    [
+      "KGHM",
+      "2017-02-14"
+    ],
+    [
+      "KGHM",
+      "2017-02-15"
+    ],
+    [
+      "KGHM",
+      "2017-02-16"
+    ],
+    [
+      "PEKAO",
+      "2017-02-01"
+    ],
+    [
+      "PEKAO",
+      "2017-02-02"
+    ],
+    [
+      "PEKAO",
+      "2017-02-03"
+    ],
+    [
+      "PEKAO",
+      "2017-02-06"
+    ],
+    [
+      "PEKAO",
+      "2017-02-07"
+    ],
+    [
+      "PEKAO",
+      "2017-02-08"
+    ],
+    [
+      "PEKAO",
+      "2017-02-14"
+    ],
+    [
+      "PEKAO",
+      "2017-02-15"
+    ],
+    [
+      "PEKAO",
+      "2017-02-16"
+    ],
+    [
+      "PKNORLEN",
+      "2017-02-01"
+    ],
+    [
+      "PKNORLEN",
+      "2017-02-02"
+    ],
+    [
+      "PKNORLEN",
+      "2017-02-03"
+    ],
+    [
+      "PKNORLEN",
+      "2017-02-06"
+    ],
+    [
+      "PKNORLEN",
+      "2017-02-07"
+    ],
+    [
+      "PKNORLEN",
+      "2017-02-08"
+    ],
+    [
+      "PKNORLEN",
+      "2017-02-14"
+    ],
+    [
+      "PKNORLEN",
+      "2017-02-15"
+    ],
+    [
+      "PKNORLEN",
+      "2017-02-16"
+    ],
+    [
+      "PKOBP",
+      "2017-02-01"
+    ],
+    [
+      "PKOBP",
+      "2017-02-02"
+    ],
+    [
+      "PKOBP",
+      "2017-02-03"
+    ],
+    [
+      "PKOBP",
+      "2017-02-06"
+    ],
+    [
+      "PKOBP",
+      "2017-02-07"
+    ],
+    [
+      "PKOBP",
+      "2017-02-08"
+    ],
+    [
+      "PKOBP",
+      "2017-02-14"
+    ],
+    [
+      "PKOBP",
+      "2017-02-15"
+    ],
+    [
+      "PKOBP",
+      "2017-02-16"
+    ],
+    [
+      "PZU",
+      "2017-02-01"
+    ],
+    [
+      "PZU",
+      "2017-02-02"
+    ],
+    [
+      "PZU",
+      "2017-02-03"
+    ],
+    [
+      "PZU",
+      "2017-02-06"
+    ],
+    [
+      "PZU",
+      "2017-02-07"
+    ],
+    [
+      "PZU",
+      "2017-02-08"
+    ],
+    [
+      "PZU",
+      "2017-02-14"
+    ],
+    [
+      "PZU",
+      "2017-02-15"
+    ],
+    [
+      "PZU",
+      "2017-02-16"
+    ]
+  ],
+  "scope": "SHA256/full declared row count/causal index checks; independent full-book replay is a separate benchmark prerequisite"
+}

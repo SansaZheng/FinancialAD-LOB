@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import average_precision_score,roc_auc_score,precision_recall_curve,auc
 from lobbench.direct import base_features,weights
 from lobbench.direct_run import splits,subset
-from lobbench.portable import interactions,ae_encode
+from lobbench.portable import interactions,ae_encode,normalize,dense
 
 def verify(root,dataset,protocol,output,engineering=False):
  cfg=json.loads(protocol.read_text());dh=hashlib.sha256(dataset.read_bytes()).hexdigest();ph=hashlib.sha256(protocol.read_bytes()).hexdigest();d=dict(np.load(dataset));known={(f,s) for f in ['date']+['combined-'+s for s in cfg['stocks']] for s in cfg['seeds']};seen=set();checks=[]
@@ -55,7 +55,14 @@ def verify(root,dataset,protocol,output,engineering=False):
     if item['training']['alpha']!=expected_alpha:raise ValueError('Contrastive alpha mismatch')
     grid=[dict(nu=n,gamma_factor=g) for n in cfg['detector_grid']['nu'] for g in cfg['detector_grid']['gamma_factor']]
     detector=np.load(path.parent/(method+'-detector.npz'));ix=detector['normal_train_indices'];np.testing.assert_array_equal(d['y'][tr][ix],0)
-    if len(ix)>cfg['normal_detector_cap']:raise ValueError('Detector normal cap mismatch')
+    normalix=np.flatnonzero(d['y'][tr]==0)
+    take=np.arange(len(normalix)) if len(normalix)<=cfg['normal_detector_cap'] else np.random.default_rng(r['seed']).choice(len(normalix),cfg['normal_detector_cap'],replace=False)
+    np.testing.assert_array_equal(ix,normalix[take])
+    sharednorm=np.load(path.parent/'shared-normalizer.npz');shared=normalize(joined,sharednorm['mean'],sharednorm['scale'],sharednorm['keep']);z=dense(dict(np.load(path.parent/(method+'-encoder.npz'))),shared,embedding=True);sc=StandardScaler().fit(z[d['y'][tr]==0])
+    np.testing.assert_allclose(detector['mean'],sc.mean_,rtol=1e-12,atol=1e-12);np.testing.assert_allclose(detector['scale'],sc.scale_,rtol=1e-12,atol=1e-12)
+    if not set(detector['support_train_indices'])<=set(ix):raise ValueError('Support rows outside normal training subset')
+    expected_support=(z[detector['support_train_indices']].astype('float64')-sc.mean_)/sc.scale_
+    np.testing.assert_allclose(detector['support'],expected_support,rtol=1e-12,atol=1e-12)
    else:
     if any(len(t['training']['loss'])!=(1 if engineering else cfg['mlp_epochs']) for t in trials):raise ValueError('Direct epoch mismatch')
     grid=[dict(lr=lr,weight_decay=wd) for lr in cfg['mlp_grid']['lr'] for wd in cfg['mlp_grid']['weight_decay']]

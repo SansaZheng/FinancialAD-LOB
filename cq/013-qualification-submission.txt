@@ -1,0 +1,1 @@
+queued j-1128-bf0a89: FinancialAD 013 portable14-method CUDA qualification (waiting for the first placement pass)
