@@ -15,3 +15,7 @@ Runtime qualification precedes a scientific date/seed0 pilot, then remaining fix
 This tests a supervised risk-pattern detector on a semi-synthetic public benchmark. It does not establish real manipulation intent, endogenous market reaction, exact original LOBSTER reproduction, superiority to the paper's0.675, or CCF A readiness. A stronger feature-engineered HGB result is a pipeline improvement, not evidence that neural scoring is necessary.
 
 中文结论：本轮用全新日期公平检验直接监督、可观测交互特征和训练内难负例加权；只有完成新测试及强基线对比后才能判断是否提升。
+
+Archive audit detail: after fitting only, a separate script may join saved mining IDs with generator-kind metadata to measure benign-control enrichment and source-group concentration. This metadata is never supplied to the miner or scoring models and cannot change weights or selection. Background negatives are assumed negative for this semi-synthetic task, not adjudicated manipulation-free real events.
+
+中文结论：难负例是否真正富集良性大额行为也将单独核验，避免只凭命名认定加权机制有效。

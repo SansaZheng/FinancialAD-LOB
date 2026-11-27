@@ -1,0 +1,35 @@
+[
+  {
+    "fold": 0,
+    "fit_groups": [
+      "KGHM|2017-01-20",
+      "KGHM|2017-01-23"
+    ],
+    "score_groups": [
+      "KGHM|2017-01-19",
+      "PEKAO|2017-01-19"
+    ]
+  },
+  {
+    "fold": 1,
+    "fit_groups": [
+      "KGHM|2017-01-19",
+      "KGHM|2017-01-20",
+      "PEKAO|2017-01-19"
+    ],
+    "score_groups": [
+      "KGHM|2017-01-23"
+    ]
+  },
+  {
+    "fold": 2,
+    "fit_groups": [
+      "KGHM|2017-01-19",
+      "KGHM|2017-01-23",
+      "PEKAO|2017-01-19"
+    ],
+    "score_groups": [
+      "KGHM|2017-01-20"
+    ]
+  }
+]

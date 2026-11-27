@@ -1,0 +1,15 @@
+# Stage012 execution and evidence steps
+
+The frozen scientific protocol is configs/012-preregistered.json. Code and data changes are versioned; new performance is never pooled with stage011. CQ job IDs and exact execution commits are written to paper/workflow/current.md as work advances. Always query existing project jobs before submitting a spec; do not restart completed or unrelated work.
+
+1. Restore/push the prior complete stage011 archive. Confirm the remote main SHA before removing owned working copies. This completed at094b7dd on2026-11-27; cleanup receipts enumerate exact hashes and recovery commands.
+2. Run registered fresh full-session acquisitions through CQ: cq/012-train-sessions.json, cq/012-validation-sessions.json, cq/012-test-sessions.json. Download only completed jobs, verify raw/book hashes against each audit, and archive all45 daily partitions with CC BY attribution. Never fetch full annual archives.
+3. In CQ, run scripts.prepare_direct_benchmark with the three full-sessions folders and configs/012-preregistered.json. This validates every file, replays every source row, checks100 independent snapshots per stock-day, enforces exact45-group coverage, and applies the registered seed17088 passive lifecycle overlay. Save source-audit.json, full-day-validation.json, manifest.json, injection-ledger.json and benchmark.npz.
+4. Run scripts.qualify_direct in CQ on the actual CUDA environment, including a256×2113 full-batch backward pass and ten-method bounded fixture. Fixture scores are never scientific evidence.
+5. After source/benchmark/runtime qualification, run one scientific chronological seed0 pilot using lobbench.direct_run. Measure resource peaks and retain this registered result. Then run the other29fold-seeds with scripts.run_cascade_batch --runner direct, isolated one process per GPU. Same frozen training cap, six trials, mining and normalization for every method. Pin one execution commit and data hash throughout.
+6. Fetch bounded batch/fold outputs. Verify with scripts.verify_direct_results, summarize with scripts.summarize_direct, and inspect mining composition with scripts.audit_hard_negatives. The latter is a post-fit metadata audit only. Complete status requires30unique fold-seeds and300selected method evaluations, never merely a scheduler done status.
+7. Preserve selected neural weights/sklearn estimators, normalizers, train/validation/test IDs, eligible train IDs, OOF scores/fold assignments/hard weights, all trial configurations/AP/losses/warnings, chosen predictions, runtime versions, code/protocol/data hashes and raw run logs. Push to canonical GitHub before deleting any working copy. Partial/failed results remain archived separately and are never silently excluded.
+
+The first experiment source revision is14d5e71df285ce467969427377176ac15571aa3f; its initial engineering runtime tree is47583e3d576195bea3be525f2eb470d70d332b65. Final scientific commit/data SHA will be recorded after qualified input acquisition. No financial-performance result is implied by this document.
+
+中文结论：本轮步骤已明确到输入、队列、训练、核验和存档；只有完整执行并比较强基线后，才能报告实际提升。

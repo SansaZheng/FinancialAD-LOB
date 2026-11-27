@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "evidence_class": "engineering_only",
+  "seconds": 9.237020550000011,
+  "peak_rss_native": 1274004,
+  "peak_cuda_bytes": 73919488,
+  "cuda_devices": [
+    {
+      "name": "Tesla T4",
+      "memory": 15636037632
+    },
+    {
+      "name": "Tesla T4",
+      "memory": 15636037632
+    }
+  ],
+  "versions": {
+    "python": "3.13.16",
+    "numpy": "2.1.3",
+    "torch": "2.11.0+cu130",
+    "sklearn": "1.6.1"
+  },
+  "source_sha256": {
+    "lobbench/direct.py": "d2e76a4103fa197202cc6fd9b9767567a8eba996643456cf26422926dc807e51",
+    "lobbench/direct_run.py": "3e54dbc792a3c5fc55949d902873dcb60f5f0dc7f31c8b696760b433c70b7eb1",
+    "configs/012-preregistered.json": "63f4d9f53ceb18b991bb2cba66af116a32298ecc9bd38722c57f87d612f91ab4"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "checks": [
+    {
+      "job": "j-1127-636ebd",
+      "partitions": 15,
+      "source_rows": 1363392,
+      "session_snapshots": 1325389,
+      "files_verified": 30
+    },
+    {
+      "job": "j-1127-d4d017",
+      "partitions": 15,
+      "source_rows": 1004413,
+      "session_snapshots": 969461,
+      "files_verified": 30
+    },
+    {
+      "job": "j-1127-d531e0",
+      "partitions": 15,
+      "source_rows": 1071339,
+      "session_snapshots": 1032126,
+      "files_verified": 30
+    }
+  ],
+  "complete_three_shards": true,
+  "qualification_source_match": true
+}
