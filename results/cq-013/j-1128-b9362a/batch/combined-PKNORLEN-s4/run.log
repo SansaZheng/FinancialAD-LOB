@@ -1,0 +1,14 @@
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "hgb_base", "seconds": 80.67587729899992}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "hgb_gram", "seconds": 80.9808951240002}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "hgb_lag", "seconds": 93.6025541719996}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "hgb_perlevel", "seconds": 71.0989628530001}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "hgb_moments", "seconds": 73.832824437}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "hgb_gram_lag", "seconds": 94.90609311399976}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "hgb_gram_moments", "seconds": 77.76741919300002}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "hgb_lag_moments", "seconds": 85.84558046600023}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "hgb_all", "seconds": 89.34069335799995}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "mlp_base", "seconds": 11.631740106000052}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "mlp_all", "seconds": 12.04897969800004}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "cascade_ocsvm", "seconds": 20.843296030000147}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "cascade_no_scl", "seconds": 4.318329471000197}
+{"fold": "combined-PKNORLEN", "seed": 4, "method": "shared_bce", "seconds": 9.781709957000203}

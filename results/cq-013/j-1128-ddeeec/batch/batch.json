@@ -1,0 +1,51 @@
+{
+  "status": "complete",
+  "tasks": [
+    {
+      "regime": "combined",
+      "fold": "combined-PEKAO",
+      "seed": 1,
+      "returncode": 0,
+      "seconds": 832.153988686,
+      "folder": "combined-PEKAO-s1",
+      "gpu_id": 1
+    },
+    {
+      "regime": "combined",
+      "fold": "combined-PEKAO",
+      "seed": 0,
+      "returncode": 0,
+      "seconds": 832.2177517139999,
+      "folder": "combined-PEKAO-s0",
+      "gpu_id": 0
+    },
+    {
+      "regime": "combined",
+      "fold": "combined-PEKAO",
+      "seed": 2,
+      "returncode": 0,
+      "seconds": 817.6441540390001,
+      "folder": "combined-PEKAO-s2",
+      "gpu_id": 1
+    },
+    {
+      "regime": "combined",
+      "fold": "combined-PEKAO",
+      "seed": 3,
+      "returncode": 0,
+      "seconds": 825.6821344750001,
+      "folder": "combined-PEKAO-s3",
+      "gpu_id": 0
+    },
+    {
+      "regime": "combined",
+      "fold": "combined-PEKAO",
+      "seed": 4,
+      "returncode": 0,
+      "seconds": 772.1968322390003,
+      "folder": "combined-PEKAO-s4",
+      "gpu_id": 1
+    }
+  ],
+  "total": 5
+}
