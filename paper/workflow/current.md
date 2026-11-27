@@ -1,9 +1,13 @@
-012-direct-hard-negative | Codex | running | configuration7 | 2026-11-27T11:50:47.108218+00:00
+012-direct-hard-negative | Codex | running | configuration7 | 2026-11-27T15:00:30.034283+00:00
 
-Task:prompts/012-direct-hard-negative.md. Canonical main13f1ab2 pushed/verified. Stage011 complete negative findings retained. Fresh45stock-days /3,439,144rows acquired and hashed; benchmark j-1127-1d410b independently replayed all rows and4,500reference snapshots. Benchmark51,118windows /2,539positives /2,459benign controls; dataset SHA25601213ddbaf0ffc19d31d43ce4793839031c283b3ef241abc6a21b31472cc8d2d.
+Task:prompts/012-direct-hard-negative.md. Canonical repository synchronized through7b66d5a before this update. Stage011 complete negative findings remain unchanged and archived. Nine new dates/45stock-days/3,439,144rows independently replayed;4,500snapshot checks. Primary benchmark51,118windows (2,539positives/2,459benign), SHA01213ddbaf0ffc19d31d43ce4793839031c283b3ef241abc6a21b31472cc8d2d.
 
-Active CQ jobs: j-1127-02f40d date seed0 ten-method scientific pilot, scoringcommit45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4; j-1127-d406c2 secondary per-level-lifetime-matched benign challenge generation. Pilot running; challenge completed, fetched and independently verified:15,852windows /384modified controls /55retained collisions /1censored control. All15,468other inputs unchanged. All63engineering tests passed (20.141s). GPU qualification j-1127-fed5f1 passed; qualification scores are engineering only. Algorithms/config remain frozen; no new detector scores observed.
+Completed scientific pilot j-1127-02f40d:1/30fold-seeds,10/300selected evaluations,60trials. Independent split/weight/selection/prediction/metric verification passed. Actual1684.226s,3,219,624KiB peakRSS,78,422,528GPUbytes; no training warnings. Cross-platform regenerated float32 interaction statistics differ at1e-9 absolute; independently diagnosed and checker tolerance corrected only for those features, with tamper rejection tests. Core training code/config unchanged.
 
-Next: inspect pilot resource use and verify predictions, then submit remaining29registered fold-seeds; fetch/validate challenge; evaluate only frozen models on common test IDs. Final target30fold-seeds /300selected evaluations plus secondary diagnosis. No paid rental or unrelated changes.
+Single-seed macro stock-day AP: HGB.5364, interactionHGB.8624, interactionHGBhard.8696, interactionMLP.7516, registered interactionMLPhard.7441. Benign FPR HGB.1964 vs interactionHGBhard.1664. This is partial evidence, not a completed superiority claim. OOF-mined hard negatives contain48.03%benign controls versus4.87%among training negatives; metadata was joined only after fitting.
 
-中文结论：新增数据与标签已经完成并同步GitHub；正式评分和更难良性对照正在CQ执行，尚不能宣称超过强基线。
+Remaining29fold-seeds submitted in six batches, all scoringcommit45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4: j-1127-0d03c9, j-1127-bd6422, j-1127-d6ea5e, j-1127-f8100c, j-1127-d720d4, j-1127-30d90c. Two workers/10GBRAM/4CPUs per job; date2h, combined2.5h caps based on measured pilot; free backend only. CQ receipts cq/012-batch-submissions.json. Query live states before resubmitting anything.
+
+Secondary challenge j-1127-d406c2 completed/verified/archived:15,852common-ID windows,384modified controls,55retained collisions,1censored; all15,468other inputs unchanged. Frozen-model challenge scores still pending primary model completion. Next: fetch/check all30runs, aggregate paired results, evaluate frozen secondary controls throughCQ, archive all artifacts and update final conclusions.
+
+中文结论：单种子交互特征加梯度提升取得明显增益，但神经候选仍逊于同特征强基线；正在运行其余29组固定实验，完整多种子与更难良性对照结论尚未形成。

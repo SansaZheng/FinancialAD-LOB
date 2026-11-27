@@ -1,0 +1,1 @@
+queued j-1127-f8100c: FinancialAD 012 fixed direct hard-negative combined-PKNORLEN seeds0,1,2,3,4 (waiting for the first placement pass)

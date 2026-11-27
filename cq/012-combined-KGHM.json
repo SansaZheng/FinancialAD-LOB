@@ -1,0 +1,57 @@
+{
+  "name": "FinancialAD 012 fixed direct hard-negative combined-KGHM seeds0,1,2,3,4",
+  "work": "FinancialAD-LOB",
+  "code": {
+    "github": "SansaZheng/FinancialAD-LOB",
+    "commit": "45950e7701a713e61cc7b8aa7a9eb7fcb94d08f4"
+  },
+  "command": [
+    "bash",
+    "-lc",
+    "set -euo pipefail\npython3 -m scripts.run_cascade_batch --runner direct --dataset results/cq-012/j-1127-1d410b/benchmark/benchmark.npz --output \"$CQ_OUTPUT_DIR/batch\" --regimes combined --folds combined-KGHM --seeds 0 1 2 3 4 --workers 2 --device cuda --protocol configs/012-preregistered.json\ncp \"$CQ_OUTPUT_DIR/batch/progress.txt\" \"$CQ_OUTPUT_DIR/progress.txt\""
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "resources": {
+    "gpus": 1,
+    "gpu_mem_gb": 1,
+    "cpus": 4,
+    "ram_gb": 10,
+    "disk_gb": 1
+  },
+  "limits": {
+    "max_hours": 2.5,
+    "max_attempts": 1,
+    "max_usd": 0
+  },
+  "placement": {
+    "target": "kaggle",
+    "allow_rent": false
+  },
+  "outputs": {
+    "dest": "/Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/012-combined-KGHM",
+    "expect": [
+      {
+        "path": "batch/batch.json",
+        "contains": "\"status\": \"complete\""
+      },
+      {
+        "path": "progress.txt",
+        "contains": "5/5"
+      }
+    ],
+    "progress": {
+      "path": "batch/progress.txt",
+      "stall_min": 145
+    }
+  },
+  "idempotent": true,
+  "depends_on": [
+    "j-1127-02f40d"
+  ]
+}

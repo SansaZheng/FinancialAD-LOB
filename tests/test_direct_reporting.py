@@ -42,5 +42,8 @@ class DirectVerifierTests(unittest.TestCase):
    np.savez_compressed(folder/'hgb-predictions.npz',**prediction);(folder/'hgb.joblib').write_bytes(b'unit-test-presence-marker')
    record=dict(fold='date',seed=0,evidence_class='stage012_frozen_semisynthetic',dataset_sha256=hashlib.sha256(dataset.read_bytes()).hexdigest(),protocol_sha256=hashlib.sha256(protocol.read_bytes()).hexdigest(),methods={'hgb':dict(metrics=evaluate(d['y'][te],prediction['score'],0.),selection=dict(trial=0,selected={},validation_ap=1.,threshold=0.,trials=[dict(trial=i,configuration={},validation_ap=1.) for i in range(6)]))})
    (folder/'metrics.json').write_text(json.dumps(record));r=verify(root,dataset,protocol,root/'receipt.json');self.assertTrue(r['passed']);self.assertFalse(r['complete_suite'])
+   normpath=folder/'interaction-normalizer.npz';norm=dict(np.load(normpath));original=norm['mean'].copy();norm['mean'][-1]+=.01;np.savez_compressed(normpath,**norm)
+   with self.assertRaises(AssertionError):verify(root,dataset,protocol,root/'tampered-norm.json')
+   norm['mean']=original;np.savez_compressed(normpath,**norm)
    prediction['validation_y']=1-prediction['validation_y'];np.savez_compressed(folder/'hgb-predictions.npz',**prediction)
    with self.assertRaises(AssertionError):verify(root,dataset,protocol,root/'receipt.json')

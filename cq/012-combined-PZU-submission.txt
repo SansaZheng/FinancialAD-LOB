@@ -1,0 +1,1 @@
+queued j-1127-30d90c: FinancialAD 012 fixed direct hard-negative combined-PZU seeds0,1,2,3,4 (waiting for the first placement pass)

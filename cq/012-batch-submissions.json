@@ -1,0 +1,77 @@
+{
+  "pilot_resource_receipt": "results/cq-012/j-1127-02f40d/batch/date-s0/metrics.json",
+  "reservation": "2workers \u00d73.30GB measured RSS \u00d71.3 headroom plus parent;10GB RAM,4CPUs;1GB GPU >78MBpeak; date2h/combined2.5h time caps",
+  "submissions": [
+    {
+      "fold": "date",
+      "seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "returncode": 0,
+      "response": "queued j-1127-0d03c9: FinancialAD 012 fixed direct hard-negative date seeds1,2,3,4 (waiting for the first placement pass)\n"
+    },
+    {
+      "fold": "combined-KGHM",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "returncode": 0,
+      "response": "queued j-1127-bd6422: FinancialAD 012 fixed direct hard-negative combined-KGHM seeds0,1,2,3,4 (waiting for the first placement pass)\n"
+    },
+    {
+      "fold": "combined-PEKAO",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "returncode": 0,
+      "response": "queued j-1127-d6ea5e: FinancialAD 012 fixed direct hard-negative combined-PEKAO seeds0,1,2,3,4 (waiting for the first placement pass)\n"
+    },
+    {
+      "fold": "combined-PKNORLEN",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "returncode": 0,
+      "response": "queued j-1127-f8100c: FinancialAD 012 fixed direct hard-negative combined-PKNORLEN seeds0,1,2,3,4 (waiting for the first placement pass)\n"
+    },
+    {
+      "fold": "combined-PKOBP",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "returncode": 0,
+      "response": "queued j-1127-d720d4: FinancialAD 012 fixed direct hard-negative combined-PKOBP seeds0,1,2,3,4 (waiting for the first placement pass)\n"
+    },
+    {
+      "fold": "combined-PZU",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "returncode": 0,
+      "response": "queued j-1127-30d90c: FinancialAD 012 fixed direct hard-negative combined-PZU seeds0,1,2,3,4 (waiting for the first placement pass)\n"
+    }
+  ]
+}

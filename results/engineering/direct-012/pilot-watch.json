@@ -1,0 +1,10 @@
+{
+  "id": "j-1127-02f40d",
+  "state": "done",
+  "reason": "outputs verified (Kaggle, 0.49 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1127-02f40d/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/012-pilot",
+  "started": 1795780204.806491,
+  "finished": 1795781940.2729511,
+  "exit_code": 0,
+  "progress": null,
+  "checked_at": 1795782176.394967
+}

@@ -12,12 +12,14 @@ Hard-negative weights are computed from group-disjoint out-of-fold training scor
 
 The secondary challenge was fixed before any new detector score was observed. It changes only test benign-wave withdrawal coordination, using independently selected forward/reverse offsets at each level. The construction matches positive-wave per-level lifetime marginals in the generator distribution before censoring; it does not guarantee equal empirical marginals after censoring. The completed challenge contains15,852windows,384modified controls and55retained positive-pattern collisions. One newly marketable control was excluded; all15,468other inputs are exactly unchanged. Frozen selected models and existing validation thresholds will be evaluated on common IDs, without retraining or recalibration.
 
-All scientific fitting runs through CQ on its free Kaggle backend. CUDA qualification passed, and all63engineering tests passed. The formal date/seed0 pilot j-1127-02f40d is running; its measurements will determine resource reservations for the remaining fixed runs. These engineering and data checks are not detector-performance evidence.
+All scientific fitting runs through CQ on its free Kaggle backend. CUDA qualification passed, and all63engineering tests passed. The formal date/seed0 pilot j-1127-02f40d completed and passed independent checks; measured runtime1684.226s, peakRSS3,219,624KiB, peakGPU78,422,528bytes, no training warnings. The remaining29fixed fold-seeds have been submitted in six two-worker CQ batches. These engineering and data checks are not detector-performance evidence.
 
 Primary outcomes will report macro stock-day AP, pooled fold AP, seed variability, validation-calibrated recall, and benign/background false-positive rates. Paired date/stock bootstrap intervals are exploratory: only three independent test dates are available and multiplicity is not controlled. The challenge comparison must use the common-ID primary score as its reference. CPU reload parity and unchanged-row threshold flips will be reported explicitly.
 
 The labels remain semi-synthetic behavioral policy labels, not verified human intent. WSE snapshot reconstruction lacks authoritative order identities and the original paper's private labeling conditions. These experiments therefore cannot establish direct superiority to the original reported AUC-PR0.675, real regulatory detection performance, or CCF A acceptance readiness. Five stocks from one market and three test dates also limit generalization claims.
 
-中文说明：本轮将直接监督评分、可观测的多档协调特征和仅由训练集产生的难负例权重放到同一公平协议中比较。新增九个日期已经取得并验证，正式试跑正在CQ运行。更难良性对照会使用原模型与原阈值，检查方法是否仅依赖简单的模拟特征。
+Interim single-seed evidence, not the final matrix: macro stock-day AP is0.5364 for HGB,0.8624 for interactionHGB,0.8696 for interactionHGBhard,0.7516 for interactionMLP, and0.7441 for the registered interactionMLPhard candidate. HGBhard with interaction features reduces benign FPR from0.1964 to0.1664 relative to plain HGB. The leading feature-boosting result must be reported alongside the negative neural/hard-weighting findings. Sources: results/reports/012-pilot and its independent verification receipt.
 
-中文结论：目前完成的是独立日期数据、标签与难对照构造，以及运行与核验准备；是否超过梯度提升仍待完整结果。即使本轮AP提高，也只能支持这一半合成协议下的有限结论。
+中文说明：本轮将直接监督评分、可观测的多档协调特征和仅由训练集产生的难负例权重放到同一公平协议中比较。新增九个日期已经取得并验证，正式试跑已通过独立核验，其余29组固定实验已提交CQ。更难良性对照会使用原模型与原阈值，检查方法是否仅依赖简单的模拟特征。
+
+中文结论：首个种子中交互特征配合梯度提升显著优于普通HGB，但神经候选仍低于增强HGB；是否稳定提升仍待完整多种子和难对照结果。即使本轮AP提高，也只能支持这一半合成协议下的有限结论。

@@ -1,0 +1,1 @@
+queued j-1127-0d03c9: FinancialAD 012 fixed direct hard-negative date seeds1,2,3,4 (waiting for the first placement pass)
