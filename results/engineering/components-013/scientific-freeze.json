@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-11-28T04:57:14.532527+08:00",
+  "source_commit": "794dc278d6fe1ae628fa7470558ff7f7e1d2f886",
+  "files": {
+    "lobbench/component_run.py": "7398c7eb5d84bc0ac5eb4fd07506af072f17031c9fdb7be740412a7b2c381901",
+    "lobbench/portable.py": "4a7e9f27980510d85a913800c9fe17257bed5799eb96bfdaa2eea737e1ff7b0e",
+    "lobbench/direct.py": "d2e76a4103fa197202cc6fd9b9767567a8eba996643456cf26422926dc807e51",
+    "lobbench/direct_run.py": "3e54dbc792a3c5fc55949d902873dcb60f5f0dc7f31c8b696760b433c70b7eb1",
+    "lobbench/cascade.py": "8a2640e17738df5a342c59b3b3786823d5bee65d8824507f151825eb4f472d4b",
+    "lobbench/cascade_run.py": "9acaf58cb0dd11bd84a988827e9217704a15b77eee721921673eefd448574152",
+    "configs/013-preregistered.json": "b20f5170482743fa4381578f307550f6406ae36d79fb18f90a5f3fb526b22d04"
+  },
+  "unchanged": true,
+  "scientific_fits_started": false,
+  "note": "Freeze before real-cohort fitting; only fixture models exist. Later reporting/resource-allocation edits do not alter these scientific files."
+}
