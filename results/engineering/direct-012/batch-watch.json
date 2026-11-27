@@ -1,0 +1,44 @@
+{
+  "checked_at": 1795794297.01535,
+  "jobs": [
+    {
+      "id": "j-1127-30d90c",
+      "state": "done",
+      "reason": "outputs verified (Kaggle, 0.66 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1127-30d90c/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/012-combined-PZU",
+      "progress_lines": null
+    },
+    {
+      "id": "j-1127-d720d4",
+      "state": "running",
+      "reason": null,
+      "progress_lines": null
+    },
+    {
+      "id": "j-1127-f8100c",
+      "state": "running",
+      "reason": null,
+      "progress_lines": null
+    },
+    {
+      "id": "j-1127-d6ea5e",
+      "state": "queued",
+      "reason": "waiting: 2 Kaggle notebooks already running (limit 2)",
+      "progress_lines": null
+    },
+    {
+      "id": "j-1127-bd6422",
+      "state": "queued",
+      "reason": "waiting: 2 Kaggle notebooks already running (limit 2)",
+      "progress_lines": null
+    },
+    {
+      "id": "j-1127-0d03c9",
+      "state": "queued",
+      "reason": "waiting: 2 Kaggle notebooks already running (limit 2)",
+      "progress_lines": null
+    }
+  ],
+  "fetched": [
+    "j-1127-30d90c"
+  ]
+}
