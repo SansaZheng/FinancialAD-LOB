@@ -10,4 +10,6 @@ Fix the numerical representation before new performance: compute interactions in
 
 Use CQ only; inspect queue/resources first (no outstanding jobs,6.52freeGPUhours initially). Acquire data onfreeCPU, qualify GPUcost then submit bounded batches. No paidcloud, no changes to otherprojects/files/environments. Only bounded fetched artifacts onMac forverifiedGitHubarchive; cleanup after independent remoteverification. Preserve everyfailedattempt, model, trial, prediction andsourceaudit. End reports inChineseconclusion.
 
-Success: sourcecoverage/replay verified;30fold-seeds/390selectedcomparisons executed and independently recomputed; crossenvironment feature/reload checks accepted or concrete remaining limits disclosed; complete bilingual evidence/report andGitHubsync. Do not stop at queued tasks. Broader CCF A targets remain goals, not completed claims.
+Success: sourcecoverage/replay verified;30fold-seeds/420selectedcomparisons executed and independently recomputed; crossenvironment feature/reload checks accepted or concrete remaining limits disclosed; complete bilingual evidence/report andGitHubsync. Do not stop at queued tasks. Broader CCF A targets remain goals, not completed claims.
+
+Pre-scientific-fit amendment: source inspection found that the88-coordinate moment bundle contains8pooled synchrony/breadth coordinates. Add hgb_perlevel (80coordinates only), preserving all8factorial subsets, to distinguish true per-level moments from pooled coordination.14methods/420evaluations; no new-date detector performance existed. Preserve v1 protocol.

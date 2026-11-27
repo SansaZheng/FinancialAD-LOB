@@ -16,8 +16,8 @@ def execute(task,dataset,output,device,epochs,engineering=False,protocol=Path('c
     dest.mkdir(parents=True,exist_ok=True)
     command=[sys.executable,'-m','lobbench.cascade_run','--dataset',str(dataset),'--output',str(dest),
              '--regimes',regime,'--folds',fold,'--seeds',str(seed),'--epochs',str(epochs),'--device',device,'--protocol',str(protocol)]
-    if runner=='direct':
-        command=[sys.executable,'-m','lobbench.direct_run','--dataset',str(dataset),'--output',str(dest),
+    if runner in ('direct','component'):
+        command=[sys.executable,'-m','lobbench.direct_run' if runner=='direct' else 'lobbench.component_run','--dataset',str(dataset),'--output',str(dest),
                  '--regime',regime,'--fold',fold,'--seed',str(seed),'--device',device,'--protocol',str(protocol)]
     if engineering:command.append('--engineering')
     start=time.monotonic()
@@ -71,5 +71,5 @@ if __name__=='__main__':
     p.add_argument('--regimes',nargs='+',choices=['date','stock','combined','style'],required=True);p.add_argument('--seeds',nargs='+',type=int,default=[0,1,2,3,4])
     p.add_argument('--workers',type=int,default=1);p.add_argument('--device',choices=['cpu','cuda'],default='cpu');p.add_argument('--epochs',type=int,default=10);p.add_argument('--engineering',action='store_true')
     p.add_argument('--protocol',type=Path,default=Path('configs/010-preregistered.json'))
-    p.add_argument('--runner',choices=['cascade','direct'],default='cascade');p.add_argument('--folds',nargs='+')
+    p.add_argument('--runner',choices=['cascade','direct','component'],default='cascade');p.add_argument('--folds',nargs='+')
     a=p.parse_args();main(a.dataset,a.output,a.regimes,a.seeds,a.workers,a.device,a.epochs,a.engineering,a.protocol,a.runner,a.folds)

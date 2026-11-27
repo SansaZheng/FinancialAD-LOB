@@ -1,0 +1,1 @@
+queued j-1128-a5de09: FinancialAD 013 complete fresh validation days 2017-02-06,2017-02-07,2017-02-08 (waiting for the first placement pass)

@@ -1,0 +1,45 @@
+{"fold": "date", "seed": 0, "method": "hgb_base", "seconds": 0.4019290419999999}
+{"fold": "date", "seed": 0, "method": "hgb_gram", "seconds": 0.4110064159999993}
+{"fold": "date", "seed": 0, "method": "hgb_lag", "seconds": 0.4658095419999997}
+{"fold": "date", "seed": 0, "method": "hgb_perlevel", "seconds": 0.40848499999999976}
+{"fold": "date", "seed": 0, "method": "hgb_moments", "seconds": 0.40655195799999966}
+{"fold": "date", "seed": 0, "method": "hgb_gram_lag", "seconds": 0.4880607499999998}
+{"fold": "date", "seed": 0, "method": "hgb_gram_moments", "seconds": 0.4285842089999994}
+{"fold": "date", "seed": 0, "method": "hgb_lag_moments", "seconds": 0.49975070800000054}
+{"fold": "date", "seed": 0, "method": "hgb_all", "seconds": 0.5843859590000005}
+{"fold": "date", "seed": 0, "method": "mlp_base", "seconds": 1.691677791}
+{"fold": "date", "seed": 0, "method": "mlp_all", "seconds": 0.40104433399999984}
+{"fold": "date", "seed": 0, "method": "cascade_ocsvm", "seconds": 0.26305245800000066}
+{"fold": "date", "seed": 0, "method": "cascade_no_scl", "seconds": 0.04998658299999903}
+{"fold": "date", "seed": 0, "method": "shared_bce", "seconds": 0.22444408299999985}
+F.
+======================================================================
+FAIL: test_registered14methods_fixture_and_reusable_models (tests.test_components.ComponentTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/zyy/.local/share/financialad-lob/repo/tests/test_components.py", line 27, in test_registered14methods_fixture_and_reusable_models
+    checked=verify(root/'out',p,Path('configs/013-preregistered.json'),root/'audit.json',engineering=True);self.assertTrue(checked['passed']);self.assertEqual(checked['selected_evaluations'],14)
+  File "/Users/zyy/.local/share/financialad-lob/repo/scripts/verify_components.py", line 39, in verify
+    for name,ix in [('id',te),('validation_id',va),('y',te),('validation_y',va)]:np.testing.assert_array_equal(p[name],d['id' if 'id' in name else 'y'][ix])
+  File "/Users/zyy/Library/Python/3.9/lib/python/site-packages/numpy/_utils/__init__.py", line 85, in wrapper
+    return fun(*args, **kwargs)
+  File "/Users/zyy/Library/Python/3.9/lib/python/site-packages/numpy/testing/_private/utils.py", line 1021, in assert_array_equal
+    assert_array_compare(operator.__eq__, actual, desired, err_msg=err_msg,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/Users/zyy/Library/Python/3.9/lib/python/site-packages/numpy/testing/_private/utils.py", line 885, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Arrays are not equal
+
+Mismatched elements: 24 / 24 (100%)
+ ACTUAL: array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1])
+ DESIRED: array(['fixture013-3-0', 'fixture013-3-2', 'fixture013-3-4',
+       'fixture013-3-6', 'fixture013-3-8', 'fixture013-3-10',
+       'fixture013-3-12', 'fixture013-3-14', 'fixture013-3-16',...
+
+----------------------------------------------------------------------
+Ran 2 tests in 7.126s
+
+FAILED (failures=1)

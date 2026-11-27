@@ -1,0 +1,18 @@
+.....{"fold": "date", "seed": 0, "method": "hgb_base", "seconds": 0.491770625}
+{"fold": "date", "seed": 0, "method": "hgb_gram", "seconds": 0.40883362499999976}
+{"fold": "date", "seed": 0, "method": "hgb_lag", "seconds": 0.4569013340000003}
+{"fold": "date", "seed": 0, "method": "hgb_moments", "seconds": 0.41491137499999997}
+{"fold": "date", "seed": 0, "method": "hgb_gram_lag", "seconds": 0.4815394580000003}
+{"fold": "date", "seed": 0, "method": "hgb_gram_moments", "seconds": 0.49819875000000025}
+{"fold": "date", "seed": 0, "method": "hgb_lag_moments", "seconds": 0.4781908330000002}
+{"fold": "date", "seed": 0, "method": "hgb_all", "seconds": 0.5027525830000004}
+{"fold": "date", "seed": 0, "method": "mlp_base", "seconds": 1.628412749999999}
+{"fold": "date", "seed": 0, "method": "mlp_all", "seconds": 0.39558533399999973}
+{"fold": "date", "seed": 0, "method": "cascade_ocsvm", "seconds": 0.23200158300000062}
+{"fold": "date", "seed": 0, "method": "cascade_no_scl", "seconds": 0.04595433299999918}
+{"fold": "date", "seed": 0, "method": "shared_bce", "seconds": 0.22402624999999965}
+....
+----------------------------------------------------------------------
+Ran 9 tests in 6.701s
+
+OK

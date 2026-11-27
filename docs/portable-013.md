@@ -1,0 +1,13 @@
+# Numerical portability contract
+
+Stage012 remains unchanged. Its CPU reload failure and matching-CUDA success establish an environment-dependent problem; they do not identify a single proven numerical cause. Stage013 addresses the observed failure mode before training on new dates.
+
+Interaction arithmetic uses float64, exact nonzero Gram self-correlations, six-decimal quantization and a final float32 conversion. HGB sees canonical features directly, avoiding an unnecessary fitted affine transform. A data-only tree export stores exact thresholds, leaf values, missing-value branches and baseline; NumPy inference is checked against sklearn before accepting a fit. Dense networks and the frozen Transformer use exported numeric weights with NumPy float64 inference; embeddings are rounded to six decimals and dense/OC-SVM scores to eight. HGB probabilities use twelve decimals. These choices are fixed before new performance. They do not promise bit identity for every possible input, CPU or library version; acceptance is measured on the tested environments and archived inputs.
+
+The full feature hash, shared normalized input hash and frozen embedding hashes are checked on reload. Existing primary scores, validation thresholds and labels are immutable. Cross-platform score differences and any threshold flips must be reported, not hidden by fitting or recalibration. Local synthetic tests check tree missing values, nonlinear branches, Transformer encoding against Torch float64, OC-SVM score offset/sign, exact self-correlations, memory layout, chunk size, and identical shared-encoder initialization.
+
+Component definitions: Gram100, lagged co-occurrence300, and statistics88 form the complete2^3factorial. Statistics88 includes80per-level moments and8pooled synchrony/breadth values. An additional perlevel80 baseline isolates those pooled values; it was added before any new-data detector fit, and the earlier protocol is retained. Do not describe the88-coordinate block as purely per-level information.
+
+Reference context: [NumPy log1p documentation](https://numpy.org/doc/stable/reference/generated/numpy.log1p.html) specifies an element-wise ufunc, not a cross-platform bitwise contract. [scikit-learn persistence guidance](https://scikit-learn.org/stable/model_persistence.html) explains environment requirements for pickle/joblib models. The project keeps original trusted joblib checkpoints for audit but uses explicit numeric exports for portable scoring. These documentation pages do not themselves prove our portability; CQ/Mac qualification supplies the empirical evidence.
+
+中文结论：本轮在新数据训练前固定数值表示和可移植推理，并单独拆出真正的逐档统计对照；是否解决重载问题须以跨环境实测为准。

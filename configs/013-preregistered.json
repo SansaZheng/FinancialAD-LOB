@@ -43,7 +43,7 @@
   },
   "selection": "Validation AP only, earliest trial breaks ties; all six full-budget trials; no early stopping",
   "threshold": "Validation negative upper99% order statistic; strict score>threshold",
-  "version": "013-v1-before-new-date-performance",
+  "version": "013-v2-before-any-scientific-fit",
   "train_dates": [
     "2017-02-01",
     "2017-02-02",
@@ -68,6 +68,7 @@
     "hgb_base",
     "hgb_gram",
     "hgb_lag",
+    "hgb_perlevel",
     "hgb_moments",
     "hgb_gram_lag",
     "hgb_gram_moments",
@@ -107,7 +108,7 @@
   "class_weights": "Class-balanced HGB/BCE; balanced class batches for fusion reconstruction/contrastive objective",
   "lob_representation": "Shared train-only JFDS compact TransformerAE frozen after10epochs; reused unchanged for cascade and shared_bce",
   "cascade": "FrozenLOBembedding+manual125+aligned1000 -> same Fusionencoder32 -> normal-only OC-SVM; compare alpha.1 vs0; native pipeline comparison to raw-input directMLP/HGB",
-  "shared_bce": "Identical frozenLOBembedding/manual/aligned input and identical Fusionencoder dimensions/init; BCEhead trained directly; not identical loss or total search compute",
+  "shared_bce": "Identical frozenLOBembedding/manual/aligned input and identical Fusionencoder dimensions/init; BCEhead trained directly; not identical loss or total search compute; balanced128+128 class batches with identical RNG schedule asfusion, unweightedBCE, Adam and the registered6lr/weight_decay settings",
   "detector_grid": {
     "nu": [
       0.01,
@@ -135,9 +136,11 @@
   ],
   "budget_fairness": "Same source IDs,6000cap,seed,dates,labels,validation selection/threshold rules and6trials per method; cascade representation fit once plus6detector trials versus6BCEfits, report measured compute rather than claim equal FLOPs",
   "expected_fold_seeds": 30,
-  "expected_selected_evaluations": 390,
+  "expected_selected_evaluations": 420,
   "primary": "Macro stock-day AP; training seeds averaged before date/stock paired contrasts",
   "uncertainty": "Six testdates; exploratory paired date/stock bootstrap; no multiplicity-adjusted populationclaim",
   "compute": "CQ free Kaggle only; qualify runtime before batching within remaining6.52GPUhours; no paid rental",
-  "scope": "One market, synthetic policy labels; no original0.675orCCFAreadinessclaim;012is development-only, never pooled with013"
+  "scope": "One market, synthetic policy labels; no original0.675orCCFAreadinessclaim;012is development-only, never pooled with013",
+  "component_clarification": "moments88 comprises80per-level mass/max/time moments plus8pooled synchrony/breadth. Additional hgb_perlevel removes those8; full2^3factorial retains the original88-coordinate bundle. No new-date scores existed at amendment.",
+  "portable_score_contract": "HGB NumPy tree scores rounded12decimals; dense/OCSVM scores8decimals; frozenAE/fusion embeddings6decimals float32. Canonical NumPy float64 inference on all devices; feature/embedding hashes and score/threshold parity independently checked."
 }

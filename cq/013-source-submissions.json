@@ -1,0 +1,38 @@
+[
+  {
+    "label": "train",
+    "days": [
+      "2017-02-01",
+      "2017-02-02",
+      "2017-02-03"
+    ],
+    "receipt": "queued j-1128-a02e9d: FinancialAD 013 complete fresh train days 2017-02-01,2017-02-02,2017-02-03 (waiting for the first placement pass)"
+  },
+  {
+    "label": "validation",
+    "days": [
+      "2017-02-06",
+      "2017-02-07",
+      "2017-02-08"
+    ],
+    "receipt": "queued j-1128-a5de09: FinancialAD 013 complete fresh validation days 2017-02-06,2017-02-07,2017-02-08 (waiting for the first placement pass)"
+  },
+  {
+    "label": "test-a",
+    "days": [
+      "2017-02-09",
+      "2017-02-10",
+      "2017-02-13"
+    ],
+    "receipt": "queued j-1128-dcd9a2: FinancialAD 013 complete fresh test-a days 2017-02-09,2017-02-10,2017-02-13 (waiting for the first placement pass)"
+  },
+  {
+    "label": "test-b",
+    "days": [
+      "2017-02-14",
+      "2017-02-15",
+      "2017-02-16"
+    ],
+    "receipt": "queued j-1128-3545ea: FinancialAD 013 complete fresh test-b days 2017-02-14,2017-02-15,2017-02-16 (waiting for the first placement pass)"
+  }
+]
