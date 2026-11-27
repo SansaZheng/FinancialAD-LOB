@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "tasks": [
+    {
+      "regime": "date",
+      "fold": "date",
+      "seed": 0,
+      "returncode": 0,
+      "seconds": 953.7273450069999,
+      "folder": "date-s0",
+      "gpu_id": 0
+    }
+  ],
+  "total": 1
+}
