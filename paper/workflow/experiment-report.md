@@ -33,6 +33,6 @@ Compute: j-1125-161f04 (date/style), j-1125-5788a5 (stock), j-1125-58fc68 (combi
 
 Next discriminating experiments, not results: (1) keep the price-aligned depth features and test a direct supervised scoring head against the same strong controls, separating objective effects from representation effects; (2) use training-only hard-negative sampling shared across methods, reporting benign-subgroup FPR at fixed recall; (3) add elapsed-time and observed-coverage controls, fresh dates and independent generator seeds, plus amplitude/lifetime shifts and leave-one-generator-out tests. Freeze each next protocol before inspecting its new test set. Obtaining lawful adjudicated or realistic agent-simulator manipulation data is needed before any real-intent claim.
 
-GitHub sync status is tracked in `paper/workflow/current.md`. Local IPv4 failure blocked the latest bulk push; the connected GitHub integration can read this repository but rejected Git blob creation with HTTP403. Unpushed results remain committed locally and preserved on CQ. No unverified result copy has been deleted.
+Archive update2026-11-27 Asia/Singapore: IPv4 access recovered. All stage011 artifacts were pushed to canonical main094b7dd046abcf1cc8812272de9dc395c9c2c55b and independently confirmed with ls-remote. Scientific results are unchanged. Verified binary working copies were subsequently removed; Git objects, GitHub and CQ archives remain. See migration/mac-working-copy-cleanup-011-complete.json.
 
-中文结论：完整 660 项实验已完成并独立核验；逐档价格对齐确有增益，但当前级联候选方法未胜过强监督基线，对比学习组件反而拖累结果。尚不能宣称超过原论文或达到 CCF A 水平。下一轮应围绕监督目标、良性难负例和更多独立日期补证；GitHub 新结果同步仍待网络恢复。
+中文结论：完整 660 项实验已完成并独立核验；逐档价格对齐确有增益，但当前级联候选方法未胜过强监督基线，对比学习组件反而拖累结果。尚不能宣称超过原论文或达到 CCF A 水平。下一轮应围绕监督目标、良性难负例和更多独立日期补证；GitHub 完整结果同步已于2026-11-27恢复并核验。

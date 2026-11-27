@@ -9,12 +9,15 @@ from lobbench.wselob import WSEBook
 from lobbench.semisynthetic import build
 
 
-def prepare(source,output,generator='snapshot'):
+def prepare(source,output,generator='snapshot',registered_dates=None,seed=None):
     if not os.environ.get('CQ_JOB_ID'):
         raise RuntimeError('Full-day processing requires CQ')
     audit=json.loads((source/'audit.json').read_text())
-    if audit['status']!='complete' or len(audit['partitions'])!=15:
-        raise ValueError('Full 15-partition input contract not met')
+    expected=5*len(registered_dates) if registered_dates is not None else 15
+    if audit['status']!='complete' or len(audit['partitions'])!=expected:
+        raise ValueError('Complete registered partition contract not met')
+    if len({(p['stock'],p['date']) for p in audit['partitions']})!=expected:
+        raise ValueError('Duplicate partitions')
     checks=[]
     for p in audit['partitions']:
         for kind in ('raw','book'):
@@ -47,7 +50,10 @@ def prepare(source,output,generator='snapshot'):
     if generator=='passive':
         from lobbench.passive_overlay import build as make
     else:make=build
-    report=make(source,output)
+    options={}
+    if registered_dates is not None:options['registered_dates']=registered_dates
+    if seed is not None:options['seed']=seed
+    report=make(source,output,**options)
     for p in report['partitions']:
         if p['windows']<100 or p['positive']<2:
             raise ValueError('Insufficient qualified windows/labels; do not train')

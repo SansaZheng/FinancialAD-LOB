@@ -1,0 +1,32 @@
+test_all_fresh_splits_and_shared_subset (tests.test_direct.DirectTests) ... ok
+test_all_ten_methods_execute_bounded_fixture (tests.test_direct.DirectTests) ... {"method": "logistic", "seconds": 0.05778491700000021}
+{"method": "logistic_hard", "seconds": 0.042217583000000225}
+{"method": "hgb", "seconds": 0.4702345829999999}
+{"method": "hgb_hard", "seconds": 0.3480306670000006}
+{"method": "mlp", "seconds": 1.9267608750000003}
+{"method": "mlp_hard", "seconds": 0.02800058399999994}
+{"method": "interaction_hgb", "seconds": 0.3896454580000004}
+{"method": "interaction_hgb_hard", "seconds": 0.38426199999999966}
+{"method": "interaction_mlp", "seconds": 0.027993084000000223}
+{"method": "interaction_mlp_hard", "seconds": 0.028842041000000762}
+ok
+test_hard_weights_preserve_class_mass (tests.test_direct.DirectTests) ... ok
+test_metadata_and_labels_do_not_enter_predictors (tests.test_direct.DirectTests) ... ok
+test_miner_held_out_labels_cannot_change_their_own_scores (tests.test_direct.DirectTests) ... ok
+test_mining_is_group_out_of_fold (tests.test_direct.DirectTests) ... ok
+test_synchronized_withdrawal_has_greater_cross_level_cooccurrence (tests.test_direct.DirectTests) ... ok
+test_unknown_mass_ignored_and_zero_finite (tests.test_direct.DirectTests) ... ok
+test_concurrent_children_never_share_device (tests.test_cascade_batch.DeviceLeaseTests) ... ok
+test_exception_returns_device (tests.test_cascade_batch.DeviceLeaseTests) ... ok
+test_hidden_order_reappears_without_losing_quantity (tests.test_passive_overlay.PassiveOverlayTests) ... ok
+test_inactive_orders_leave_exact_base_book (tests.test_passive_overlay.PassiveOverlayTests) ... ok
+test_inserted_order_remains_when_base_level_disappears (tests.test_passive_overlay.PassiveOverlayTests) ... ok
+test_joint_timing_differs_but_single_order_burst_marginals_match (tests.test_passive_overlay.PassiveOverlayTests) ... ok
+test_known_absence_and_censored_boundary_are_distinct (tests.test_passive_overlay.PassiveOverlayTests) ... ok
+test_marketability_is_censored_not_silently_filled (tests.test_passive_overlay.PassiveOverlayTests) ... ok
+test_overlay_conservation_in_fixed_visible_book (tests.test_passive_overlay.PassiveOverlayTests) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 5.658s
+
+OK

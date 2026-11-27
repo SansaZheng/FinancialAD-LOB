@@ -21,3 +21,6 @@ was claimed.
 
 ## Revision6,2026-11-25
 Route lob-generalization-v1 → lob-passive-lifecycle-v2. A concrete audit found474/2222 old injections with passive-volume truncation inside the visible book and46 with marketable inserted orders. Preserve old diagnostics; cancel only unstarted old-data stock/combined jobs; use fresh dates2017-01-16/17/18. Venue/topic unchanged. User already authorized continuing methodological improvements and CQ experiments.
+
+## Revision7 /2026-11-27
+User requests direct supervised scores, hard negatives and independent dates. Preserve previous evidence; replace objective/route, not venue. Source parsing and passive generator reusable; new predictors/mining/splits require qualification and entirely fresh evaluation. All stage011 test outcomes remain development evidence, never pooled with012 confirmatory comparisons.

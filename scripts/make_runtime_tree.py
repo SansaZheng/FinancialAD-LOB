@@ -22,8 +22,8 @@ def make(source,keep,receipt):
     if not keep.startswith('results/') or keep.endswith('/'):
         raise ValueError('Keep prefix must name the exact result/input folder')
     retained=[p for p in paths if p.startswith(keep+'/')]
-    if not retained or not any(p.endswith('/benchmark.npz') for p in retained):
-        raise ValueError('Tracked benchmark input required')
+    if not retained or not any(p.endswith(('/benchmark.npz','/audit.json')) for p in retained):
+        raise ValueError('Tracked benchmark or audited source input required')
     removed=[p for p in paths if p.startswith('results/') and p not in retained]
     before=git('write-tree')
     with tempfile.TemporaryDirectory(prefix='financialad-runtime-index-') as temporary:

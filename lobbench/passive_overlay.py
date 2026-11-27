@@ -100,11 +100,12 @@ Channels per side/level: added, removed, addition-observed, removal-observed.
     return output.reshape(25,40).astype('float32')
 
 
-def build(folder,output,stride=64,seed=17087):
+def build(folder,output,stride=64,seed=17087,registered_dates=None):
     audit=json.loads((folder/'audit.json').read_text())
     if audit['status']!='complete' or audit['snapshot_stride_events']!=1:raise ValueError('Complete event snapshots required')
-    if sorted(set(p['date'] for p in audit['partitions']))!=['2017-01-16','2017-01-17','2017-01-18']:
-        raise ValueError('Stage011 requires untouched registered dates')
+    dates=registered_dates or ['2017-01-16','2017-01-17','2017-01-18']
+    if sorted(set(p['date'] for p in audit['partitions']))!=sorted(dates):
+        raise ValueError('Source dates differ from registered dates')
     output.mkdir(parents=True,exist_ok=True)
     arrays={k:[] for k in ('raw','manual','aligned','rank','y','stock','date','id','kind','start_ns','end_ns')}
     ledger=[];stats=[]
@@ -146,7 +147,7 @@ def build(folder,output,stride=64,seed=17087):
                 benign_observational_collisions=sum(e['benign_policy_observational_collision'] for e in ledger),
                 limitations=['No endogenous response or matching engine','Marketable interventions censored for both classes',
                              'Not real manipulation intent labels','Event-time interventions, not paper millisecond injection',
-                             'Only three fresh evaluation dates; stage010 dates excluded','Burst per-order lifetimes matched; wave lifetime multiset matched; level/time dependence intentionally differs',
+                             f'Only {len(dates)} registered evaluation dates','Burst per-order lifetimes matched; wave lifetime multiset matched; level/time dependence intentionally differs',
                              'Eight trade/cancel manual fields unavailable; five observed fields used'],
                 metadata_not_predictors=['id','y','stock','date','kind','injection-ledger'])
     (output/'manifest.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2));return report

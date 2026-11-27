@@ -1,0 +1,9 @@
+# 012 — Direct supervision, hard negatives and fresh dates
+
+Executor: Codex, local task specification; configuration7. CCF A quality aspiration, venue unset. Route lob-direct-hard-negative-v3. User authorized continuing CQ experiments and GitHub sync on2026-11-27 Asia/Singapore.
+
+Preserve stage011 complete negative results. Retry its GitHub archive. Acquire five-stock complete sessions on nine untouched dates: Jan19/20/23 for training, Jan24/25/26 validation, Jan27/30/31 test. Use the same passive lifecycle generator, new fixed generator seed17088, explicit policy labels and unchanged marketability censoring. Independently replay every daily row and selected reference snapshots before building the benchmark. Archive licensed inputs, ledgers and hashes.
+
+Freeze direct supervised MLP/logistic/gradient-boosting comparisons, observable multilevel interaction feature ablations, and hard-negative weighting applied fairly to all classifier families. Mining must use only cross-fitted training scores and training binary labels, never validation/test or generator-kind metadata. Compare original strong full-input HGB/logistic controls with and without extra interaction features and hard-negative weights. Use validation-only equal search budgets, five training seeds, held-out dates and combined held-out stocks; preserve all attempts. Unseen-style diagnosis is secondary if compute permits. No test-dependent changes, paid rental, or changes to others' jobs/environments/files. All scientific fitting through CQ; local work only bounded fixtures and result verification.
+
+Success: frozen protocols, new complete-day data, remote qualification, executed direct/hard-negative comparisons with saved trial choices, split IDs, weights/checkpoints, predictions and independent recomputation, plus GitHub synchronization or concrete documented blocker. No claim of real intent or direct superiority to original0.675. Every report ends in Chinese conclusion.

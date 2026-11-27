@@ -9,6 +9,8 @@ matching or exceeding the source paper's 0.675 AUC-PR.
 
 ## Start here
 
+* [Stage012 direct supervision protocol](paper/012-protocol.md) and [frozen configuration](configs/012-preregistered.json): nine new dates, training-only hard negatives and strong controls; results pending.
+
 * [Current fresh-date protocol](paper/011-protocol.md), [dataset card](docs/dataset-011.md), and [registered eleven-method matrix](configs/011-preregistered.json).
 * [Exact execution and verification steps](docs/reproduce-011.md).
 * [Complete verified results](paper/011-results.md): 60 fold-seed runs / 660 evaluations, including negative findings against strong baselines.

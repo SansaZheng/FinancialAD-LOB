@@ -1,5 +1,5 @@
 {
-  "revision": 6,
+  "revision": 7,
   "project_path": "/Users/zyy/.local/share/financialad-lob/repo",
   "legacy_project_path": "/Users/zyy/Documents/ChatGPT/FinancialAD/lob-manipulation",
   "github": "https://github.com/SansaZheng/FinancialAD-LOB",
@@ -10,9 +10,9 @@
   },
   "research": {
     "topic": "Multilevel LOB manipulation detection",
-    "route_id": "lob-passive-lifecycle-v2",
-    "route": "Persistent passive-order overlays with duration-matched controls and depth-resolved price-aligned dynamics",
-    "hypothesis": "Depth-resolved price-aligned liquidity changes improve held-out-date/stock/style detection under matched marginal intervention durations, beyond strong supervised controls."
+    "route_id": "lob-direct-hard-negative-v3",
+    "route": "Direct supervised scores with observable price-aligned coordination features and cross-fitted hard-negative weighting",
+    "hypothesis": "Direct supervised objectives and train-only hard-negative emphasis improve independent-date AP and benign-control FPR beyond matched histogram boosting baselines"
   },
   "compute": {
     "scheduler": "CQ",

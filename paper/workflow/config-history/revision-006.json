@@ -1,0 +1,49 @@
+{
+  "revision": 6,
+  "project_path": "/Users/zyy/.local/share/financialad-lob/repo",
+  "legacy_project_path": "/Users/zyy/Documents/ChatGPT/FinancialAD/lob-manipulation",
+  "github": "https://github.com/SansaZheng/FinancialAD-LOB",
+  "venue": {
+    "quality_target": "CCF A",
+    "specific_venue": null,
+    "acceptance_claim": false
+  },
+  "research": {
+    "topic": "Multilevel LOB manipulation detection",
+    "route_id": "lob-passive-lifecycle-v2",
+    "route": "Persistent passive-order overlays with duration-matched controls and depth-resolved price-aligned dynamics",
+    "hypothesis": "Depth-resolved price-aligned liquidity changes improve held-out-date/stock/style detection under matched marginal intervention durations, beyond strong supervised controls."
+  },
+  "compute": {
+    "scheduler": "CQ",
+    "work": "FinancialAD-LOB",
+    "paid_compute_allowed": false,
+    "cloud_budget": null,
+    "storage_roots": [
+      "/date",
+      "/data"
+    ],
+    "preserve_other_jobs_envs_files": true
+  },
+  "archive": {
+    "canonical_repository": "SansaZheng/FinancialAD-LOB",
+    "public_raw_data_requires_redistribution_rights": true,
+    "delete_only_after_remote_checksum_verification": true,
+    "download_large_files_to_mac": false
+  },
+  "experiment_targets": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stocks": 5,
+    "dates": 20,
+    "datasets_planning_target": 10,
+    "baselines_planning_target": 10,
+    "recent_2026_baselines_planning_target": 2,
+    "targets_are_not_completed_evidence": true
+  }
+}

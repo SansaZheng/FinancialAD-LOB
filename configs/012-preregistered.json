@@ -1,0 +1,130 @@
+{
+  "version": "012-v1-before-fresh-date-performance",
+  "train_dates": [
+    "2017-01-19",
+    "2017-01-20",
+    "2017-01-23"
+  ],
+  "validation_dates": [
+    "2017-01-24",
+    "2017-01-25",
+    "2017-01-26"
+  ],
+  "test_dates": [
+    "2017-01-27",
+    "2017-01-30",
+    "2017-01-31"
+  ],
+  "stocks": [
+    "KGHM",
+    "PEKAO",
+    "PKNORLEN",
+    "PKOBP",
+    "PZU"
+  ],
+  "generator_seed": 17088,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "regimes": [
+    "date",
+    "combined"
+  ],
+  "methods": [
+    "logistic",
+    "logistic_hard",
+    "hgb",
+    "hgb_hard",
+    "mlp",
+    "mlp_hard",
+    "interaction_hgb",
+    "interaction_hgb_hard",
+    "interaction_mlp",
+    "interaction_mlp_hard"
+  ],
+  "training_cap": 12000,
+  "training_subset": "Uniform without replacement from registered train split per seed, sorted IDs, identical across methods; no test-dependent selection",
+  "features": "Full raw500/manual125/aligned1000 for every baseline; interaction variants append488 observable co-occurrence and moment features; metadata never predictors",
+  "normalization": "StandardScaler fitted to selected training only; constant features removed; no test-dependent fitting or clipping",
+  "interaction_lags": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    12
+  ],
+  "hard_negatives": "Fixed60-iteration15-leaf HGB miner on observable interaction features;3fold GroupKFold by training stock-day; top10% OOF-scored training negatives get5x relative weight; each class re-normalized to half total weight; same weights across families",
+  "mining_supervision": "Only training binary labels; generator kind, validation and test excluded",
+  "trials": 6,
+  "mlp_epochs": 20,
+  "mlp_batch": 256,
+  "mlp_parameter_target": 200000,
+  "mlp_grid": {
+    "lr": [
+      0.0003,
+      0.001,
+      0.003
+    ],
+    "weight_decay": [
+      0,
+      0.001
+    ]
+  },
+  "mlp_optimizer": "AdamW, gradient norm clipping5, BCEWithLogits weighted by common fixed class/hard-negative weights; natural shuffled training batches",
+  "hgb_grid": {
+    "max_leaf_nodes": [
+      7,
+      15,
+      31
+    ],
+    "learning_rate": [
+      0.03,
+      0.1
+    ],
+    "max_iter": 100,
+    "early_stopping": false
+  },
+  "logistic_grid": {
+    "C": [
+      0.001,
+      0.01,
+      0.1,
+      1,
+      10,
+      100
+    ],
+    "max_iter": 1000,
+    "solver": "liblinear"
+  },
+  "selection": "Validation AP only, earliest trial breaks ties; all six full-budget trials; no early stopping",
+  "threshold": "Validation negative upper99% order statistic; strict score>threshold",
+  "primary": "Mean per-test-date/stock AP, paired within identical train subset and split; pooled AP also reported",
+  "secondary": [
+    "benign-control FPR",
+    "background FPR",
+    "recall at validation-calibrated1% overall FPR",
+    "AUROC",
+    "per-style AP"
+  ],
+  "uncertainty": "Seeds averaged before paired stock-day bootstrap; only3test dates; exploratory intervals, no population-level or multiplicity-adjusted claim",
+  "expected_fold_seeds": 30,
+  "expected_selected_evaluations": 300,
+  "hardware": "CQ free Kaggle; one process per qualified GPU, no paid rental; CPU baselines remain CPU implementations",
+  "limitations": [
+    "One public market/year",
+    "Synthetic policy labels not real intent",
+    "No matching engine or endogenous response",
+    "One generator seed; training seeds not independent markets",
+    "Stage011 used for method development and never pooled with012 test evidence",
+    "Does not reproduce original LOBSTER0.675 setting"
+  ],
+  "primary_candidate": "interaction_mlp_hard",
+  "primary_reference": "hgb",
+  "strong_countercheck": "interaction_hgb_hard",
+  "feature_pipeline_candidate": "interaction_hgb_hard"
+}
