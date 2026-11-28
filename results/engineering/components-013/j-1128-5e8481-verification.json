@@ -1,0 +1,254 @@
+{
+  "passed": true,
+  "complete_suite": false,
+  "fold_seed_runs": 5,
+  "selected_evaluations": 70,
+  "expected_evaluations": 420,
+  "missing": [
+    [
+      "combined-KGHM",
+      0
+    ],
+    [
+      "combined-KGHM",
+      1
+    ],
+    [
+      "combined-KGHM",
+      2
+    ],
+    [
+      "combined-KGHM",
+      3
+    ],
+    [
+      "combined-KGHM",
+      4
+    ],
+    [
+      "combined-PEKAO",
+      0
+    ],
+    [
+      "combined-PEKAO",
+      1
+    ],
+    [
+      "combined-PEKAO",
+      2
+    ],
+    [
+      "combined-PEKAO",
+      3
+    ],
+    [
+      "combined-PEKAO",
+      4
+    ],
+    [
+      "combined-PKNORLEN",
+      0
+    ],
+    [
+      "combined-PKNORLEN",
+      1
+    ],
+    [
+      "combined-PKNORLEN",
+      2
+    ],
+    [
+      "combined-PKNORLEN",
+      3
+    ],
+    [
+      "combined-PKNORLEN",
+      4
+    ],
+    [
+      "combined-PKOBP",
+      0
+    ],
+    [
+      "combined-PKOBP",
+      1
+    ],
+    [
+      "combined-PKOBP",
+      2
+    ],
+    [
+      "combined-PKOBP",
+      3
+    ],
+    [
+      "combined-PKOBP",
+      4
+    ],
+    [
+      "date",
+      0
+    ],
+    [
+      "date",
+      1
+    ],
+    [
+      "date",
+      2
+    ],
+    [
+      "date",
+      3
+    ],
+    [
+      "date",
+      4
+    ]
+  ],
+  "dataset_sha256": "332688a9b1778efd4256b9963792dc056d6d9dfe040930baeb42b3ef7f1c2142",
+  "protocol_sha256": "b20f5170482743fa4381578f307550f6406ae36d79fb18f90a5f3fb526b22d04",
+  "checks": [
+    {
+      "fold": "combined-PZU",
+      "seed": 0,
+      "methods": 14,
+      "normalizers": [
+        {
+          "file": "base-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        },
+        {
+          "file": "all-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        },
+        {
+          "file": "raw-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        },
+        {
+          "file": "shared-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        }
+      ],
+      "metrics_sha256": "ba858486680e309a27f45ac11ec78c9e872b437ad36b8f4a260c321e3ce02dc5"
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 1,
+      "methods": 14,
+      "normalizers": [
+        {
+          "file": "base-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        },
+        {
+          "file": "all-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        },
+        {
+          "file": "raw-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        },
+        {
+          "file": "shared-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        }
+      ],
+      "metrics_sha256": "44e31fbbb4476139b0ff1e6b0ad16547114c6ff40780ac23fd95c1f75f8ba858"
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 2,
+      "methods": 14,
+      "normalizers": [
+        {
+          "file": "base-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        },
+        {
+          "file": "all-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        },
+        {
+          "file": "raw-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        },
+        {
+          "file": "shared-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        }
+      ],
+      "metrics_sha256": "7da9ab89dcdd98895591f8c310a5b835b726f7987e130aae57a2654c5b703c21"
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 3,
+      "methods": 14,
+      "normalizers": [
+        {
+          "file": "base-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        },
+        {
+          "file": "all-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        },
+        {
+          "file": "raw-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        },
+        {
+          "file": "shared-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        }
+      ],
+      "metrics_sha256": "cfbd2b81f97966f6dbbb2273c6896b1cb000c8eec85595a610c0b18d25d89ed7"
+    },
+    {
+      "fold": "combined-PZU",
+      "seed": 4,
+      "methods": 14,
+      "normalizers": [
+        {
+          "file": "base-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        },
+        {
+          "file": "all-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        },
+        {
+          "file": "raw-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        },
+        {
+          "file": "shared-normalizer.npz",
+          "max_mean_error": 0.0,
+          "max_scale_error": 0.0
+        }
+      ],
+      "metrics_sha256": "5142f9da594282b0f61f20186b1406325600eecc969ef1563bbc695fedaba196"
+    }
+  ],
+  "scope": "Independent split/label/train-only-statistic/selection/grid/budget/metric audit; reload is separately checked; no real intent proof"
+}

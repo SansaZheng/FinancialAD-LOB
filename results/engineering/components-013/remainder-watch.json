@@ -2,18 +2,21 @@
   "jobs": [
     {
       "id": "j-1128-4d3122",
-      "state": "running",
-      "reason": null,
+      "state": "done",
+      "reason": "outputs verified (Kaggle, 0.69 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1128-4d3122/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/013-combined-PKOBP",
       "started": 1795818561.085427,
-      "finished": null
+      "finished": 1795821008.953878
     },
     {
       "id": "j-1128-5e8481",
-      "state": "running",
-      "reason": null,
+      "state": "done",
+      "reason": "outputs verified (Kaggle, 0.69 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1128-5e8481/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/013-combined-PZU",
       "started": 1795818464.071776,
-      "finished": null
+      "finished": 1795820897.408472
     }
   ],
-  "fetched": []
+  "fetched": [
+    "j-1128-4d3122",
+    "j-1128-5e8481"
+  ]
 }

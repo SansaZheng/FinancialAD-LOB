@@ -2,11 +2,13 @@
   "jobs": [
     {
       "id": "j-1128-f6f63a",
-      "state": "queued",
-      "reason": "waiting: 2 Kaggle notebooks already running (limit 2)",
-      "started": null,
-      "finished": null
+      "state": "done",
+      "reason": "outputs verified (Kaggle, 0.06 h); results in /Users/sudingli/.local/share/cq/kaggle/results/j-1128-f6f63a/out; copied to /Users/sudingli/.local/share/cq/kaggle/results/financialad-lob/013-cpu-reload-a",
+      "started": 1795821008.953878,
+      "finished": 1795821204.27397
     }
   ],
-  "fetched": []
+  "fetched": [
+    "j-1128-f6f63a"
+  ]
 }

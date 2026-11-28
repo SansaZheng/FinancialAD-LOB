@@ -1,0 +1,51 @@
+{
+  "status": "complete",
+  "tasks": [
+    {
+      "regime": "combined",
+      "fold": "combined-PZU",
+      "seed": 1,
+      "returncode": 0,
+      "seconds": 812.7351633070001,
+      "folder": "combined-PZU-s1",
+      "gpu_id": 1
+    },
+    {
+      "regime": "combined",
+      "fold": "combined-PZU",
+      "seed": 0,
+      "returncode": 0,
+      "seconds": 822.625515611,
+      "folder": "combined-PZU-s0",
+      "gpu_id": 0
+    },
+    {
+      "regime": "combined",
+      "fold": "combined-PZU",
+      "seed": 2,
+      "returncode": 0,
+      "seconds": 821.306367275,
+      "folder": "combined-PZU-s2",
+      "gpu_id": 1
+    },
+    {
+      "regime": "combined",
+      "fold": "combined-PZU",
+      "seed": 3,
+      "returncode": 0,
+      "seconds": 822.6959106229999,
+      "folder": "combined-PZU-s3",
+      "gpu_id": 0
+    },
+    {
+      "regime": "combined",
+      "fold": "combined-PZU",
+      "seed": 4,
+      "returncode": 0,
+      "seconds": 784.6086459279998,
+      "folder": "combined-PZU-s4",
+      "gpu_id": 1
+    }
+  ],
+  "total": 5
+}

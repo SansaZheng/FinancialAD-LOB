@@ -1,0 +1,14 @@
+{"fold": "combined-PZU", "seed": 0, "method": "hgb_base", "seconds": 80.83347679399998}
+{"fold": "combined-PZU", "seed": 0, "method": "hgb_gram", "seconds": 80.603166569}
+{"fold": "combined-PZU", "seed": 0, "method": "hgb_lag", "seconds": 93.81115336900001}
+{"fold": "combined-PZU", "seed": 0, "method": "hgb_perlevel", "seconds": 73.91499229500005}
+{"fold": "combined-PZU", "seed": 0, "method": "hgb_moments", "seconds": 75.48430534800002}
+{"fold": "combined-PZU", "seed": 0, "method": "hgb_gram_lag", "seconds": 92.90123700100003}
+{"fold": "combined-PZU", "seed": 0, "method": "hgb_gram_moments", "seconds": 79.22891669900002}
+{"fold": "combined-PZU", "seed": 0, "method": "hgb_lag_moments", "seconds": 87.27617690900001}
+{"fold": "combined-PZU", "seed": 0, "method": "hgb_all", "seconds": 90.4717131509999}
+{"fold": "combined-PZU", "seed": 0, "method": "mlp_base", "seconds": 12.378221306}
+{"fold": "combined-PZU", "seed": 0, "method": "mlp_all", "seconds": 12.150501573999918}
+{"fold": "combined-PZU", "seed": 0, "method": "cascade_ocsvm", "seconds": 17.455069529999946}
+{"fold": "combined-PZU", "seed": 0, "method": "cascade_no_scl", "seconds": 4.504088595999974}
+{"fold": "combined-PZU", "seed": 0, "method": "shared_bce", "seconds": 10.178232495999964}
